@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "weekly-adfree"
+version = "0.1.0"
+description = ""
+authors = ["Xu Siyuan <inqb@protonmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "process.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandoc = "^2.4b0"
+rich = "^13.7.1"
+jieba = "^0.42.1"
+pytest = "^8.1.1"
+typer = "^0.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

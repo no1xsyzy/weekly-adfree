@@ -1,0 +1,4 @@
+[submodule "weekly"]
+	path = weekly
+	url = https://github.com/ruanyf/weekly.git
+	branch = master
