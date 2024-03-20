@@ -1,6 +1,9 @@
 import json
 import math
 import sys
+from datetime import datetime
+from functools import cached_property
+from hashlib import md5
 from io import TextIOWrapper
 from os import PathLike
 from pathlib import Path
@@ -28,6 +31,52 @@ def omni_opener(sth: CanOpen, mode='r', *, encoding='utf-8'):
         return Path(sth).open(mode, encoding=encoding)
     else:
         return sth
+
+
+class Doc:
+    def __init__(self, p: PathLike | str):
+        self.path = p
+        self._strpath = None
+        self._text = None
+        self._md5 = None
+        self._doc = None
+        self._sections = None
+        self._plain = None
+
+    @cached_property
+    def strpath(self):
+        return str(self.path)
+
+    @cached_property
+    def text(self):
+        with omni_opener(self.path) as f:
+            return f.read()
+
+    @cached_property
+    def md5(self) -> str:
+        return md5(self.text.encode()).hexdigest()
+
+    @cached_property
+    def doc(self) -> Pandoc:
+        return pandoc.read(self.text, format='gfm')
+
+    @cached_property
+    def sections(self) -> list[list]:
+        return sections_from_doc(self.doc)
+
+    @cached_property
+    def plain(self) -> str:
+        return pandoc.write(self.sections, format='plain')
+
+    @cached_property
+    def header(self) -> str:
+        return pandoc.write(self.sections[0], format='plain').strip()
+
+    def guess(self, spam_filter):
+        cut = list(jieba.cut(self.plain))
+        return spam_filter.check_spam(cut,
+                                      header_word_list=list(jieba.cut(self.header)),
+                                      header_impact_multiplier=5.0)
 
 
 def load_doc(p: CanOpen) -> Pandoc:
@@ -142,6 +191,19 @@ def load_nb(fp: CanOpen = 'naive_bayes.json'):
 def dump_nb(fp: CanOpen = 'naive_bayes.json'):
     with omni_opener(fp, 'w') as f:
         f.write(json.dumps(nb.dump()))
+
+
+def load_pub_dates():
+    try:
+        with omni_opener('pub_dates.json') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
+
+
+def save_pub_dates(pub_dates):
+    with omni_opener('pub_dates.json', 'w') as f:
+        json.dump(pub_dates, f)
 
 
 @app.command()
@@ -330,17 +392,53 @@ def proc(infile: Annotated[typer.FileText, typer.Argument()] = '-',
     outfile.flush()
 
 
+def filter_body(sections):
+    filtered_body = []
+
+    for sec in sections:
+        plain = pandoc.write(sec, format='plain')
+        header = pandoc.write(sec[0], format='plain').strip()
+        cut = list(jieba.cut(plain))
+        guess = nb.check_spam(cut, header_word_list=list(jieba.cut(header)),
+                              header_impact_multiplier=5.0)
+        if guess < 0:
+            filtered_body.extend(sec)
+
+    return filtered_body
+
+
 @app.command()
 def proc_all():
     load_nb()
+
+    pub_dates = load_pub_dates()
+
+    docs = {}
 
     outdir = Path('docs')
 
     outdir.mkdir(exist_ok=True)
 
+    changed = False
+
+    last_posts = []
+
+    def last_posts_append(c):
+        nonlocal last_posts
+        last_posts.append(c)
+        last_posts.sort(key=lambda x: x[0], reverse=True)
+        last_posts = last_posts[:6]
+
     for p in all_doc_paths():
-        doc = load_doc(p)
-        sections = sections_from_doc(doc)
+        path = str(p)
+        doc = docs[path] = Doc(p)
+        pub_date, digest = pub_dates.get(path, (None, None))
+        path_out = (outdir / p.name)
+        if digest == doc.md5:
+            last_posts_append((pub_date, path_out, doc))
+            continue
+
+        sections = doc.sections
 
         filtered_body = []
 
@@ -353,9 +451,53 @@ def proc_all():
             if guess < 0:
                 filtered_body.extend(sec)
 
-        result = pandoc.write(Pandoc(doc[0], filtered_body), format='gfm', options=['--wrap=none'])
+        p1 = Pandoc(doc.doc[0], filtered_body)
+        result = pandoc.write(p1, format='gfm', options=['--wrap=none'])
 
-        (outdir/p.name).write_text(result, encoding='utf-8')
+        path_out.write_text(result, encoding='utf-8')
+
+        changed = True
+        pub_date = datetime.now().isoformat()
+        digest = doc.md5
+
+        pub_dates[path] = pub_date, digest
+        last_posts_append((pub_date, path_out, filtered_body))
+
+    if changed:
+        save_pub_dates(pub_dates)
+
+    make_rss(last_posts)
+
+
+def make_rss(last_posts):
+    build_time = datetime.now()
+    import email.utils
+    project_root = 'https://github.com/no1xsyzy/weekly_adfree'
+    with open('rss.xml', 'w', encoding='utf-8') as rss:
+        rss.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        rss.write('<rss version="2.0">\n')
+        rss.write("  <channel>\n")
+        rss.write("    <title>阮一峰的网络日志（免广告版）</title>\n")
+        rss.write(f"    <link>{project_root}</link>\n")
+        rss.write("    <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>\n")
+        rss.write("    <lang>zh-cn</lang>\n")
+        rss.write(f"    <copyright>Copyright {build_time.year}</copyright>\n")
+        rss.write(f"    <lastBuildDate>{email.utils.formatdate(build_time.timestamp())}</lastBuildDate>\n")
+        for pub_date, path_out, body in last_posts:
+            pub_date = email.utils.formatdate(datetime.fromisoformat(pub_date).timestamp())
+            if isinstance(body, Doc):
+                body = filter_body(body.sections)
+            rss.write("    <item>\n")
+            rss.write(f"      <title>{pandoc.write(body[0], format='plain').strip()}</title>\n")
+            rss.write("      <description><![CDATA[")
+            rss.write(pandoc.write(body[1:], format='html'))
+            rss.write("]]></description>\n")
+            rss.write(f"      <link>{project_root}/blob/master/{path_out}</link>\n")
+            rss.write(f"      <guid>{project_root}/blob/master/{path_out}</guid>\n")
+            rss.write(f"      <pubDate>{pub_date}</pubDate>\n")
+            rss.write("    </item>\n")
+        rss.write("  </channel>\n")
+        rss.write("</rss>\n")
 
 
 if __name__ == '__main__':
