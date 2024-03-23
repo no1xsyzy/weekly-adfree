@@ -1,0 +1,25 @@
+name: update every Sunday
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - uses: abatilo/actions-poetry@v2
+        with:
+          poetry-version: "1.7.1"
+      - run: poetry install --without=dev
+      - run: git submodule update --remote
+      - run: poetry run python process.py proc-all
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "auto: update from upstream"
