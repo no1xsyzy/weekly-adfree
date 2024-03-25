@@ -1,22 +1,28 @@
 name: update every Sunday
 
 on:
+  push:
   schedule:
     - cron: '0 0 * * 1'
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: true
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - uses: abatilo/actions-poetry@v2
         with:
           poetry-version: "1.7.1"
+      - uses: pandoc/actions/setup@main
+        with:
+          version: "2.9"
       - run: poetry install --without=dev
       - run: git submodule update --remote
       - run: poetry run python process.py proc-all

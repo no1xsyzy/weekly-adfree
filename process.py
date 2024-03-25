@@ -457,7 +457,7 @@ def proc_all():
         path_out.write_text(result, encoding='utf-8')
 
         changed = True
-        pub_date = datetime.now().isoformat()
+        pub_date = datetime.now().timestamp()
         digest = doc.md5
 
         pub_dates[path] = pub_date, digest
@@ -484,7 +484,7 @@ def make_rss(last_posts):
         rss.write(f"    <copyright>Copyright {build_time.year}</copyright>\n")
         rss.write(f"    <lastBuildDate>{email.utils.formatdate(build_time.timestamp())}</lastBuildDate>\n")
         for pub_date, path_out, body in last_posts:
-            pub_date = email.utils.formatdate(datetime.fromisoformat(pub_date).timestamp())
+            pub_date = email.utils.formatdate(pub_date)
             if isinstance(body, Doc):
                 body = filter_body(body.sections)
             rss.write("    <item>\n")
