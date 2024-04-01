@@ -6,7 +6,234 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2024</copyright>
-    <lastBuildDate>Mon, 25 Mar 2024 02:18:27 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2024 00:45:21 -0000</lastBuildDate>
+    <item>
+      <title>科技爱好者周刊（第 295 期）：巧妙的灯泡钟</title>
+      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。（<strong>[通知] 下周清明节假期，周刊暂停一次。</strong>）</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/4075">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
+<h2 id="封面图">封面图</h2>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024031801.webp" /></p>
+<p>山东日照的“在水美术馆”，是一座水上美术馆，长达一公里。春秋季节，它的外墙玻璃还可以打开，让室内室外融为一体。（<a href="https://m.thepaper.cn/newsDetail_forward_24815035">via</a>）</p>
+<h2 id="巧妙的灯泡钟">巧妙的灯泡钟</h2>
+<p>本周，分享一个构思很巧妙的<a href="https://ironicsans.beehiiv.com/p/life-death-bulbdial-clock">灯泡钟</a>。</p>
+<p>它的灵感来自日晷。我们知道，日晷是一种古代计时工具，根据太阳投影的位置，判断当前的时间。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032412.webp" /></p>
+<p>2008年，一位美国设计师突发奇想，能不能把日晷做成一个现代的时钟？</p>
+<p>他很快发现，这不可行。因为太阳投影的位置在每个纬度都不一样，做不了固定的钟面，而且只有白天有投影（下图），晚上和阴雨天都不能用。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032411.webp" /></p>
+<p>（图片说明：日晷只在上午7点到下午5点之间可用。）</p>
+<p>但是，那个发明家受到了启发，意识到阴影可以表示时间，就提出了“灯泡钟”的设想。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032413.webp" /></p>
+<p>灯泡钟是一个圆盘，圆心位置有一根垂直的棍子，周围有三圈轨道。每圈轨道上安装了一个不同高度的灯泡，对着棍子进行光照，会在钟面上投下阴影。</p>
+<p>这里的关键是这三圈轨道都围绕圆心旋转，但是转速不同，分别为60秒/圈、60分钟/圈、12小时/圈，代表秒、分钟、小时。</p>
+<p>因此，三个灯泡的位置是不断变化的，它们投下的阴影也随之变化，形成秒针、分针和时针，从而构成当前时间。</p>
+<p>这个设计真的很巧妙，而且制造难度不大。它的缺点是通过影子显示时间，只在昏暗的环境可见（比如餐厅、夜总会、电影院），明亮的地方就会看不见指针。</p>
+<p>那个发明家并不是真的想造这个钟，只把它当作一个奇思妙想，写了一篇文章，公开在网上。没想到有人看到了，真的把这个钟造出来了。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032414.webp" /></p>
+<p>为了降低成本，实物版的“灯泡钟”没有采用旋转轨道，而是去掉了机械部分，改为三圈灯环，分别安装了60个、60个和12个 LED 灯泡，同一时间每圈只亮一个灯，对应当前的小时、分钟和秒。</p>
+<p>为了便于区分，这三圈 LED 的颜色还不一样，做成了红绿蓝三原色，三个阴影就是三种颜色。</p>
+<p>后来，这个设计正式投产了，变成了可以购买的商品。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032415.webp" /></p>
+<p>拆开以后，内部是这样的。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032416.webp" /></p>
+<p>可以看到，这个成品一点都不酷，外观根本不吸引人，销量很差也就不奇怪了。</p>
+<p>最终，这家公司倒闭关门了，灯泡钟也被放弃，不过所有设计图纸都<a href="https://wiki.evilmadscientist.com/Bulbdial">开源</a>了。</p>
+<p>于是，网上陆续出现了很多基于开源方案的衍生品，爱好者纷纷做出自己的灯泡钟，下面就是其中两个。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032417.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032418.webp" /></p>
+<p>它们的共同点是没有实体指针，都采用灯泡投影显示时间。</p>
+<p>我觉得，灯泡钟这个设想很酷，做起来也不难，是很好的电子电路玩具项目，感兴趣的朋友不妨动手试试。</p>
+<h2 id="harmonyos-next-的开发方案">HarmonyOS NEXT 的开发方案</h2>
+<p>华为的鸿蒙系统（HarmonyOS）是一个独特的存在。以前，它基于安卓开源版本 ASOP，兼容安卓应用，不用为它做单独的开发。但是，现在不一样了。</p>
+<p>华为确定，今年秋季发布 <strong>HarmonyOS NEXT</strong>。这是一个全新的操作系统，不兼容安卓。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032707.webp" /></p>
+<p>这意味着，<strong>各种应用必须重新开发一次客户端</strong>，从零开始，做一个跟现有安卓/苹果客户端功能完全一样的 App，成本何其大。</p>
+<p>但是，这个问题又避不开。国内安卓用户中，华为市占率最高，而且普遍都是中高端系列。如果再仔细一点，还能发现华为用户的付费率也是安卓中最高的。</p>
+<p>根据第三方统计，截止2023年第一季度，鸿蒙系统的市场占有率已经在8%以上，且还在逆势增长。虽然这些都是鸿蒙，还不是鸿蒙 NEXT，但对于开发者而言，适配鸿蒙 NEXT 只是时间问题。</p>
+<p>政府明确支持 HarmonyOS NEXT，<a href="http://www.news.cn/local/20240303/dca3e6d4bd734380b4dc9602d5df9b76/c.html">深圳</a>、<a href="https://m.21jingji.com/timeline/6d9b6fd73a5bc98a293edc724554a46e.html">上海</a>、<a href="https://www.fuzhou.gov.cn/zwgk/gb/202301/t20230111_4520047.htm">福州</a>都已经出台了政策扶植，很多头部 App（比如小红书、支付宝）已经在着手适配这个新系统了。</p>
+<p>对于大型互联网公司，适配 HarmonyOS NEXT 只是工程师的分配问题，但是对于中小型公司，这就成了一个头痛的难题，开发团队本身就资源不够，难道还要再另外寻找鸿蒙工程师吗？怎么负担这部分成本啊。</p>
+<p>对于中小应用，其实有一个简单的方法，可以解决鸿蒙适配问题。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032702.webp" /></p>
+<p>我们知道，H5 是移动平台兼容性最好的开发技术。它的代码不改动或者少量改动，就可以在多种系统中运行，典型的例子就是小程序。</p>
+<p>目前，很多应用都有微信小程序版本，如果有一种工具，可以<strong>把微信小程序转成鸿蒙原生 App</strong>，就为大多数中小应用提供了一种简单可行的适配方案。</p>
+<p>国产软件 <a href="https://www.finclip.com/">FinClip</a> 就是这样一种工具。它是一个小程序容器，或者说是小程序 SDK，能够不改动一行代码，就让微信小程序、支付宝卡片在其中运行。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032706.webp" /></p>
+<p>它的开发目的，就是让小程序能够不依赖于宿主（微信/支付宝），独立运行在多种环境中。它兼容微信小程序语法与登录体系，能够让小程序直接在其上运行，目前已经支持安卓、iOS、鸿蒙 NEXT、Flutter、Windows、车机等。</p>
+<p>因此，我们可以用它<strong>一键将小程序转为鸿蒙 NEXT 原生 App</strong>。它的鸿蒙版 SDK 功能与安卓、iOS 保持一致，所有开发组件、接口均与微信对标。<u>本质上，它提供一个鸿蒙 NEXT 的适配层，让小程序直接在这个适配层上运行，并将它们打包在一起，形成一个独立 App</u>。</p>
+<p>同时，它作为适配层，可以同时容纳多个小程序。也就是说，你也可以用它作为平台，让现有的各种微信小程序在里面上架，做成一个自己的超级 App。</p>
+<p>总之，对于现有的微信小程序，<a href="https://www.finclip.com/">FinClip</a> 是一个相当简单的鸿蒙 NEXT 适配方案。欢迎大家注册体验，还能抽取 Mate 60 Pro、MatePad 11 等。对技术或者产品有问题的小伙伴，也可进群交流。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032814.webp" /></p>
+<h2 id="科技动态">科技动态</h2>
+<p>1、<a href="https://www.smithsonianmag.com/smart-news/wild-kiwis-born-near-new-zealands-capital-for-the-first-time-in-more-than-150-years-180983386/">奇异鸟</a></p>
+<p>新西兰的国鸟是“奇异鸟”，英语叫做 kiwi。它是一种珍稀鸟类，除了新西兰，其他国家都没有。</p>
+<p>它不会飞，大小跟鸡差不多，最大特点就是嘴特别长。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023120714.webp" /></p>
+<p>它曾经在新西兰大量存在，但自从白貂19世纪引入新西兰后，它被白貂捕食，数量每年减少2%～3%。目前仅存6.8万只左右，如果不采取措施，将在今后几十年内灭绝。</p>
+<p>为了保证它的野外生存，新西兰政府2022年在首都惠灵顿郊外，划了一块保护区，放置了4600个陷阱，把白貂抓干净，然后放养了60多只奇异鸟。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023120715.webp" /></p>
+<p>2023年11月，保护人员惊喜地发现，那里多了两只野生奇异鸟宝宝。这是150多年来，新西兰首都地区首次有野生奇异鸟诞生。</p>
+<p>2、<a href="https://web.archive.org/web/20231210161239/https://www.scientificamerican.com/article/tyrannosaurs-stomach-contents-have-been-found-for-the-first-time/">霸王龙吃什么</a></p>
+<p>霸王龙又称暴龙，是已知最重、最凶猛的肉食恐龙。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023121104.webp" /></p>
+<p>但是，它是肉食动物属于科学家的推测，并没有直接证据，能够证明它吃肉。科学家只是根据它的锋利牙齿、爪子，以及粪便化石，推测它是食肉动物。</p>
+<p>最近，直接证据终于发现了。科学家找到一块小霸王龙的化石（下图），它的胃里有其他恐龙的残骸。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023121105.webp" /></p>
+<p>这件事告诉我们，古生物学是一个多么困难的学科，仅有的证据就是一两块化石，要像侦探一样，从石头里面找出蛛丝马迹。</p>
+<p>3、<a href="https://www.core77.com/posts/125315/A-Wearable-Mouse">手指鼠标</a></p>
+<p>一家德国创业公司发明了手指鼠标，夹在两根手指上使用。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202308/bg2023081501.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202308/bg2023081502.webp" /></p>
+<p>它内部含有陀螺仪，可以感知手的移动，以及手指的动作，比如左键、右键、双击、滚动等。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202308/bg2023081503.webp" /></p>
+<p>它通过蓝牙与外部设备连接，非常适合随身携带，目前售价是65美元（约470元人民币）。</p>
+<p>4、<a href="https://apnews.com/article/chatgpt-gpt4-iowa-ai-water-consumption-microsoft-f551fde98083d17a7e8d904f8be822c4">服务器耗水</a></p>
+<p>大型互联网公司都是用水大户，因为机房的服务器需要用水冷却。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023091103.webp" /></p>
+<p>微软公司最近披露，它的2022年用水量比2021年猛增34%，增加了644万吨水，相当于2,500多个国际标准泳池的用水。</p>
+<p>外界认为，这是因为微软在2022年中，开始进行大量 AI 计算，从而增加了冷却用水。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023091104.webp" /></p>
+<p>加州大学的研究团队估计，ChatGPT 每回答5 到50个问题，就需要用水500毫升（相当于一瓶矿泉水）。因此，AI 的发展将会加剧世界的用水紧张。</p>
+<h2 id="文章">文章</h2>
+<p>1、<a href="https://www.bentoml.com/blog/navigating-the-world-of-large-language-models">畅游 LLM 的世界</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032202.webp" /></p>
+<p>如果在家用电脑上安装 LLM（大型语言模型），应该选择哪一个模型？</p>
+<p>本文分析并评价了目前最流行的几个 LLM 的基本情况和优缺点。</p>
+<p>2、<a href="https://gyrovague.com/2023/08/05/archive-today-on-the-trail-of-the-mysterious-guerrilla-archivist-of-the-internet/">追寻 archive.today 的管理员</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202308/bg2023080508.webp" /></p>
+<p><a href="https://archive.today/">archive.today</a> 是一个神秘的网站，可以生成网页的备份，供在线查看。没人知道谁建立了这个网站。本文试图找出答案。</p>
+<p>3、<a href="https://mp.weixin.qq.com/s/dD-aPhnynOqSC3MUYLjeAA">微信早期的消息收发架构</a>（中文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032813.webp" /></p>
+<p>本文是一篇简化的介绍，讲解微信刚刚建立时，怎么做到消息的收发。（<a href="https://github.com/ruanyf/weekly/issues/4193">@ryantang1991</a> 投稿）</p>
+<p>4、<a href="https://hughfenghen.github.io/posts/2024/03/14/web-storage-and-opfs/">OPFS API 及工具介绍</a>（中文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032810.webp" /></p>
+<p>网页脚本如果要跟本地文件系统交互，是很不方便的。目前，浏览器有一个 OPFS API，为网页提供一个虚拟的本地文件系统，本文介绍它的用法。（<a href="https://github.com/ruanyf/weekly/issues/4189">@hughfenghen</a> 投稿）</p>
+<p>5、<a href="https://garrit.xyz/posts/2023-10-13-organizing-multiple-git-identities">如何管理多个 Git 身份</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101404.webp" /></p>
+<p>Git 使用时，需要指定用户名和邮件地址。本文教你一种简单的方法，不同的项目自动切换 Git 身份。</p>
+<p>6、<a href="https://jasoneckert.github.io/myblog/ultimate-linux-arm64-workstation/">我在 Mac Mini 运行 Asahi</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101617.webp" /></p>
+<p>Asahi 是一个专门为苹果 ARM 芯片开发的 Linux 发行版，作者将其安装在 Mac Mini 上面，得到了一个他见过的最快的 Linux 桌面。</p>
+<p>7、<a href="https://www.akshaykhot.com/content-security-policy/">如何用 CSP 防止 XSS 注入攻击</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202308/bg2023080507.webp" /></p>
+<p>本文讲解怎么使用浏览器的 CSP（内容安全策略），防止网页被 XSS （跨站点脚本注入攻击）。</p>
+<p>8、<a href="https://books.worksinprogress.co/book/maintenance-of-everything/vehicles/digression-3-corrosion-rust-never-sleeps/1">什么是生锈</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023092410.webp" /></p>
+<p>本文向普通读者介绍，生锈相关的各种知识，里面穿插了许多奇闻轶事。上图中，信箱已经生锈了，背后的镀锌板却完好无损。</p>
+<h2 id="工具">工具</h2>
+<p>1、<a href="https://github.com/microsoft/garnet">Garnet</a></p>
+<p>上周，著名的缓存服务器 Redis 宣布更改许可证，未经许可不得基于它对外提供云服务。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032201.webp" /></p>
+<p>此前两天，微软发布了一个兼容 Redis 的缓存服务器 Garnet，不知道两件事之间是否存在关联。</p>
+<p>另外，Redis 现在也被分叉了，诞生了两个全新的项目 <a href="https://redict.io/">Redict</a> 和 <a href="https://github.com/valkey-io/valkey">Valkey</a>，目标是成为自由软件版本的 Redis。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032805.webp" /></p>
+<p>2、<a href="https://github.com/blitz-js/superjson">Superjson</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023102207.webp" /></p>
+<p>一个 JavaScript 模块，用于字符串和 JSON 数据的互相转换，支持多种 JSON 不支持的数据格式。</p>
+<p>3、<a href="https://github.com/logancyang/obsidian-copilot">Copilot for obsidian</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032304.webp" /></p>
+<p>Obsidian 编辑器的一个开源插件，使其可以用上本地的 AI 助手，参见<a href="https://mp.weixin.qq.com/s/at7K_8lEfVzQJq5qnpzvUg">介绍文章</a>。（<a href="https://github.com/ruanyf/weekly/issues/4171">@ivone-liu</a> 投稿）</p>
+<p>4、<a href="https://github.com/tahitimoon/LunarLink">LunarLink</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032806.webp" /></p>
+<p>一个基于 Web 的接口自动化测试平台，可以快速编写和运行接口自动化测试用例。（<a href="https://github.com/ruanyf/weekly/issues/4173">@tahitimoon</a> 投稿）</p>
+<p>5、<a href="https://github.com/bravekingzhang/text2video">text2video</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032808.webp" /></p>
+<p>一个开源的文本转图文视频的软件。（<a href="https://github.com/ruanyf/weekly/issues/4187">@bravekingzhang</a> 投稿）</p>
+<p>6、<a href="https://github.com/wanglin2/mind-map">simple-mind-map</a>（思绪思维导图）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032812.webp" /></p>
+<p>一个开源的 Web 思维导图，试用 <a href="https://wanglin2.github.io/mind-map/">Demo</a>。（<a href="https://github.com/ruanyf/weekly/issues/4190">@wanglin2</a> 投稿）</p>
+<p>7、<a href="https://github.com/openai/shap-e">Shap-E</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202305/bg2023050612.webp" /></p>
+<p>一个生成式 AI 模型，从文本生成 3D 动画图片。</p>
+<p>8、<a href="https://github.com/rameshvarun/blog-cells">blog-cells</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202308/bg2023082403.webp" /></p>
+<p>这个工具可以在网页插入互动式区块，用来展示和执行 JavaScript 代码，类似于 Jupyter。</p>
+<p>9、<a href="https://github.com/magic-wormhole/magic-wormhole">Magic Wormhole</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202308/bg2023082501.webp" /></p>
+<p>一个文件传输协议，可以在任意两台计算机（不必在同一局域网）之间传输文件。上传方会获得一个密码，下载方只要输入密码就能获取文件。</p>
+<p>它有很多第三方客户端（包括手机 App），比如<a href="https://github.com/LeastAuthority/destiny">这个</a>和<a href="https://github.com/pavelsof/mobile-wormhole">这个</a>。</p>
+<p>10、<a href="https://mist-project.github.io">Mist</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202308/bg2023082502.webp" /></p>
+<p>这个工具可以在图片上面添加水印底纹，使得该图片无法再被 AI 模型作为训练材料。上图是添加水印后的效果（左图），以及放大的水印（右图）。</p>
+<h2 id="资源">资源</h2>
+<p>1、<a href="https://tools.buyixiao.xyz/historical-figure-query">中国古代历史人物可视化</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032303.webp" /></p>
+<p>输入一个古代人物名（共收录52000+人物），就可以显示该人物的社会关系、亲戚关系和生平足迹图，上图是李白的生平足迹图，参见<a href="https://mp.weixin.qq.com/s/evUacKtLOVCrZahgRmnjsg">介绍文章</a>。（<a href="https://github.com/ruanyf/weekly/issues/4170">@inspurer</a> 投稿）</p>
+<p>2、<a href="https://www.libhunt.com/css">CSS 框架排名</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032301.webp" /></p>
+<p>这个网页按照 GitHub 的星星数量，为 CSS 框架排名。</p>
+<p>3、<a href="https://aibydoing.com/intro">动手实战人工智能</a>（AI by doing）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032807.webp" /></p>
+<p>一本中文电子书，通过实例介绍一些 AI 算法。（<a href="https://github.com/ruanyf/weekly/issues/4178">@huhuhang</a> 投稿）</p>
+<p>4、<a href="https://lamucal.ai/">Lamucal</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032809.webp" /></p>
+<p>这个网站可以为任何歌曲生成和弦、节拍、歌词、旋律和标签，使用了 <a href="https://github.com/DoMusic/Hybrid-Net?tab=readme-ov-file">Hybrid-Net 模型</a>。（<a href="https://github.com/ruanyf/weekly/issues/4188">@liufeigit</a> 投稿）</p>
+<p>5、<a href="https://paper.z2h.cn/">Z2H 字贴</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032811.webp" /></p>
+<p>一个在线的字帖生成网站，支持中文和英文。（<a href="https://github.com/ruanyf/weekly/issues/4191">@liamwang</a> 投稿）</p>
+<h2 id="图片">图片</h2>
+<p>1、<a href="https://oldoperatingtheatre.com/step-into-the-role-of-a-surgeon-in-our-interactive-game/">19世纪早期的手术器械</a></p>
+<p>19世纪早期，还没有发明麻醉剂和消毒剂，外科手术是一件非常可怕的事情。</p>
+<p>英国圣托马斯医院当年的手术器械，保留到了现在。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202212/bg2022120502.webp" /></p>
+<p>看看上面的器械，特别是那把锯子，难怪当年的外科病人有一半是死在手术台上的。</p>
+<p>2、<a href="https://www.statista.com/chart/22981/average-speed-of-tour-de-france-winners-by-decade/">环法自行车赛的冠军速度</a></p>
+<p>世界最著名的自行车比赛，是环法自行车赛。下图是从1903年第一届比赛开始，冠军的平均速度。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202207/bg2022071106.webp" /></p>
+<p>可以看到，冠军的骑速一直在增加，从第一届的26.85公里/小时，增加到2021年的41.17公里/小时。不过进入21世纪之后，增长似乎停滞了。</p>
+<p>环法自行车赛的路线基本不变，总长3500公里左右。冠军速度的增长，只有两种解释，一种是自行车器材的进步，另一种是运动员可能服用了药物。</p>
+<p>3、<a href="https://lcamtuf.substack.com/p/radios-how-do-they-work">无线电波</a></p>
+<p>无线电波是什么？我们可以把它想象成一个带电的电容器被拉开，其内部电场溢出到周围空间。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032815.webp" /></p>
+<p>如果进行电场可视化，绘制虚拟的正电粒子路径，我们会看到连接两极的弧形线，从两侧一直延伸到无穷大。</p>
+<p>当然，不变的电场对于无线电不是很有用，但是如果改变两极的电荷，电场就会变化。</p>
+<h2 id="文摘">文摘</h2>
+<p>1、<a href="https://hackaday.com/2021/10/25/the-longest-ever-flight-was-over-64-days-in-a-cessna-172/">史上最长的载人飞行</a></p>
+<p>载人飞行最长可以持续多少时间？</p>
+<p>1958年12月到1959年2月，两个飞行员乘坐一架小飞机，一共在空中停留了64天22小时19分钟，这个记录至今无人打破。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202212/bg2022121301.webp" /></p>
+<p>大家可能想不到，这两个飞行员不是科学家，也不是军方人员，而是美国拉斯维加斯一个娱乐城的员工。</p>
+<p>当时，为了吸引顾客，他们想出一个点子，如果开着画着公司标志的小飞机，创造在空中不间断飞行的纪录，就可以提升公司的知名度。老板觉得是个好主意，就同意了。</p>
+<p>1958年12月4日下午3点52分，他们起飞了。公证员驾驶一辆敞篷车在跑道上追赶飞机，起飞的一刹那，他们在轮胎上涂上白油漆，防止飞机偷偷降落。</p>
+<p>为了长时间在空中停留，这架小飞机必须定期接受补给。它平时在空中飞，但是每天有两次贴近地面，让卡车来加油，同时补给生活物质。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202212/bg2022121302.webp" /></p>
+<p>65天的飞行过程中，卡车一共为飞机加油128次。</p>
+<p>两个飞行员轮流驾驶飞机，休息的那个人会阅读漫画和玩游戏，还会数下面道路上有多少辆汽车，以此打发时间。他们的生活垃圾会打包，从空中扔到无人的沙漠中。</p>
+<p>有一天凌晨，驾驶飞机的那个飞行员实在过于疲劳，不禁睡着了。等他醒来，飞机已经自行飞行了一个多小时。除此以外，总体上没有大的事故。</p>
+<p>随着时间的推移，这架飞机的故障越来越多，发动机和仪表都开始出现各种小问题。他们又坚持了几天，最终决定在1959年2月7日降落。</p>
+<p>今天，这架小飞机陈列在拉斯维加斯的麦卡伦国际机场，就挂在旅客行李大厅的上方。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202212/bg2022121303.webp" /></p>
+<p>这架上个世纪50年代的小飞机，它的发动机能够连续运行1500个小时，非常了不起。更了不起的是，两个飞行员能够在充满噪音的狭小机舱里面生活两个多月，这不是常人可以忍受的。可能正是因为这个原因，该记录至今未被打破。</p>
+<h2 id="言论">言论</h2>
+<p>1、</p>
+<p>电动汽车的最大缺点是，大部分能量用来移动电池，而不是移动乘客。</p>
+<p>人类的体重并不重（大约70公斤左右），特斯拉 Y 型汽车的电池重量是770公斤。所以，运送电池的耗能是运送乘客的10倍。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=38835304">Hacker News 读者</a></p>
+<p>2、</p>
+<p>个人的财务管理，其实只有两条原则：一是支出小于收入，二是做对投资，投资对象可以是能够获利的资产，也可以是你的个人技能。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=34532288">Hacker News 读者</a></p>
+<p>3、</p>
+<p>如果你感觉自己被困住了，焦虑并充满消极情绪，生命出现了停滞，那么治疗方法很简单：做点什么。</p>
+<p>-- <a href="https://ggnotes.com/the-best-way-to-get-unstuck">《摆脱束缚的最好方法》</a></p>
+<p>4、</p>
+<p>我所在的公司去年赚了数十亿美元，但是决定解雇数百名工程师（占员工的很大比重）。一些我最尊敬的优秀工程师就这样离开了，这完全没有道理。</p>
+<p>此前公司已经裁员过一轮了，管理层那时告诉我们，员工调整已经完成，一切到此为止。</p>
+<p>你不能相信比你地位高的管理者告诉你的任何事情。他们可能对自己也撒了谎，更何况对你。永远不要对你的公司投入感情。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=38949749">Hacker News 读者</a></p>
+<p>5、</p>
+<p>有一种流行的错误观点，认为黑洞就像宇宙吸尘器，会把周围一切吸进去。事实上，如果太阳塌缩变成一个黑洞，太阳系行星的轨道将不会变化，因为太阳系的中心质量保持不变，行星感受到与以前相同的重力。</p>
+<p>黑洞的独特之处在于尺寸非常小，但密度很高。这使得在非常接近它的质心的地方，引力极其强烈，但这不会增加远离质心之处的引力。</p>
+<p>-- <a href="https://www.amnh.org/learn-teach/curriculum-collections/cosmic-horizons-book/john-michell-black-holes">《最早提出黑洞的人》</a></p>
+<h2 id="往年回顾">往年回顾</h2>
+<p><a href="https://www.ruanyifeng.com/blog/2023/03/weekly-issue-248.html">不要夸大 ChatGPT</a>（2023 #248）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2022/03/weekly-issue-198.html">美国制造是否可能</a>（2022 #198）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2021/03/weekly-issue-148.html">微增长时代</a>（2021 #148）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2020/03/weekly-issue-98.html">怎样清晰地表达自己的观点？</a>（2020 #98）</p>
+<p>（完）</p>
+]]></description>
+      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-295.md</link>
+      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-295.md</guid>
+      <pubDate>Mon, 01 Apr 2024 00:45:21 -0000</pubDate>
+    </item>
     <item>
       <title>科技爱好者周刊（第 294 期）：崖门海战的感想</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -1030,214 +1257,6 @@
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-290.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-290.md</guid>
       <pubDate>Tue, 19 Mar 2024 12:52:00 -0000</pubDate>
-    </item>
-    <item>
-      <title>科技爱好者周刊（第 289 期）：宽容从何而来</title>
-      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。(<strong>[通知] 下周春节假期，周刊休息，节后再见。</strong>)</p>
-<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/4002">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
-<h2 id="封面图">封面图</h2>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024013101.webp" /></p>
-<p>上海某品牌体验店的店外装饰，迎接即将到来的龙年。（<a href="https://www.instagram.com/p/C2uGQOxMD3A/">via</a>）</p>
-<h2 id="宽容从何而来">宽容从何而来</h2>
-<p>今天，我想分享一个<a href="https://www.psypost.org/2023/02/contrary-to-popular-opinion-people-with-higher-education-level-and-cognitive-ability-are-not-more-tolerant-67796">有趣的研究</a>，跟“宽容”（tolerant）有关系。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012802.webp" /></p>
-<p>“宽容”是一种很奇怪的东西，平时很少有人强调它，但是关键时刻，你又很需要它。</p>
-<p>什么是宽容？</p>
-<p>《现代汉语词典》的定义是：（对待他人）宽大有气量，不计较或追究。在我看来，可以更简单，宽容就是<strong>你能不能容忍他人的缺点错误</strong>。</p>
-<p>生活中，跟宽容的人交朋友，会比较自在，不担心犯错时，遭受苛刻的评价和严厉的指责。</p>
-<p>工作中，在宽容的公司上班。万一不小心犯错，公司不会将责任推给你。领导会拍拍你的肩膀说：“小伙子，别担心。犯错是难免的，以后注意点。”</p>
-<p>宽容还能推动社会发展，<strong>创新型社会尤其需要宽容</strong>。如果一个社会对创新创业中犯错的人非常严厉，还有多少人敢于创新呢？</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012801.webp" /></p>
-<p>但是，现实生活中，大家恐怕都有感觉，宽容的人和公司不太多，苛责和严厉批评的比较多。</p>
-<p>今天我要分享的研究，是芬兰心理学家的一个社会调查。<strong>他们想知道，多少人是宽容的？怎样才能让人们变得宽容？</strong></p>
-<p>他们对3500多个芬兰人进行了问卷调查。问卷列举了很多行为和观点，请调查对象用五分制表示自己的态度，1分代表“完全不同意”，5分代表“完全同意”。</p>
-<p>你对所有问题的平均打分，越接近1就代表越不宽容；越接近5，就代表越宽容。</p>
-<p>根据调查，芬兰人的平均打分在2.1～2.2之间，这代表芬兰是一个略微不宽容的社会。</p>
-<p>这个调查最有意思的部分，是心理学家发现，很多传统的观点都是错的。</p>
-<p>一种传统的观点是，高学历、高收入者比较宽容，低学历、低收入者比较偏激和不宽容。</p>
-<p>调查发现，这种观点完全错误。<strong>一个人是否宽容，与他的学历、收入、理性思维、认知潜力都无关</strong>。高学历、高收入者，也可能是偏激和不宽容的人。</p>
-<p><strong>真正决定一个人是否宽容，是下面三个因素。</strong></p>
-<ul>
-<li>思维灵活</li>
-<li>个性不固执</li>
-<li>专注</li>
-</ul>
-<p>这就是说，如果某人容易接受新观点（思维灵活），不固执已见，也不容易分心（专注），他很可能是一个宽容的人。</p>
-<p>心理学家在论文中建议，仅仅提高教育水平，可能不是增加社会宽容的最有效方法，更好的方法是培养学生的思维灵活性、减少固执的个性、增强做事的专注。</p>
-<h2 id="科技动态">科技动态</h2>
-<p>1、<a href="https://www.space.com/jaxa-slim-moon-lander-lev-2-ball-robot">最小的月球车</a></p>
-<p>1月20日，日本的 SLIM 探测器登陆月球，成为飞行器成功登陆月球的第五个国家。</p>
-<p>但是，这次登陆并非完全成功。发动机的一个喷嘴熄火，导致飞行器倾覆，头朝下栽倒在月球上。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024020101.webp" /></p>
-<p>上图是月球探测器 SLIM 的正常样子。</p>
-<p>下图是它在月球上的实际样子。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024020102.webp" /></p>
-<p>拍下这张照片的，是 SLIM 携带的世界最小月球车 LEV-2。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024020103.webp" /></p>
-<p>SLIM 登陆后，自动弹出了这辆月球车。它用自带的摄像头，拍摄周围的情况，传回信号。</p>
-<p>LEV-2 是一个金属球，大约网球大小，重250克。工作时，它会自动展开身体，在月球表面滚动前进。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024020104.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024020105.webp" /></p>
-<p>如果你觉得，它看上去很好玩，那就对了。因为它是一家日本玩具公司设计的，设计者希望，它能激发孩子们对探索太空的兴趣。</p>
-<p>2、<a href="https://heatmap.news/technology/antora-rondo-energy-thermal-batteries">石头电池</a></p>
-<p>人类很早就知道，加热岩石能够储存热量。</p>
-<p>几千年前，埃及人建造了土坯房，白天吸收热量，晚上释放热量。欧洲从中世纪开始，就用砖块烤箱来烤面包，火熄灭以后，热量还能释放很长时间。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012902.webp" /></p>
-<p>今天，科学家正在将这项古老的发明重新发扬光大，用来制造电池。</p>
-<p>一家美国的创业公司推出了集装箱大小的热电池（下图），用来储存热量。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012903.webp" /></p>
-<p>集装箱里面不是锂电池，而是一块块石头（下图）。据称它可以储存然后释放超过1000摄氏度的热量，持续16小时至18小时。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012904.webp" /></p>
-<p>这种方法技术简单，成本低，适合用于大量释放热能的钢铁厂、水泥厂和化工厂。</p>
-<p>3、<a href="https://www.readtrung.com/p/psychology-of-apple-packaging">幻兽帕鲁</a></p>
-<p>最近一款叫做《幻兽帕鲁》（Palworld）的游戏，突然爆红。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012913.webp" /></p>
-<p>它是由一家日本的小游戏公司开发的，制作预算仅仅700万美元，但在 Steam 平台上一周内至少卖出800万份，赚了约2亿美元。</p>
-<p>关于这款游戏的开发，有一些非常疯狂的故事。</p>
-<p>（1）制作公司成立于2015年，最初仅有4个人，启动资金为1万美元。</p>
-<p>（2）游戏模型的主要开发者是一个高中生，在一家便利店打工时，认识了制作公司的人。</p>
-<p>（3）他们没有版本控制，程序员把自己的代码存在 U 盘，功能完成后，再合并到主版本。</p>
-<p>（4）游戏的早期版本，没有枪支和射击功能。后来，团队认识到，游戏要在全球取得成功，必须在美国卖得好，而“美国人喜欢开枪射击”。</p>
-<p>4、<a href="https://www.washington.edu/news/2023/06/21/an-app-can-transform-smartphones-into-thermometers-that-accurately-detect-fevers/">手机测体温</a></p>
-<p>华盛顿大学开发了一款神奇的手机 App，让手机变成体温计，可以测量体温。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202306/bg2023062817.webp" /></p>
-<p>用户把手机的触摸屏紧贴额头，约90秒，手机就会显示你的体温。</p>
-<p>原理是手机含有热敏电阻，用来监测电池的温度。如果人的体温让手机的温度发生变化，传感器就会捕捉到。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202306/bg2023062818.webp" /></p>
-<p>研究人员称，它的误差是0.23摄氏度，还算可以接受。如果手边没有体温计，它是一个不错的替代方案。缺点是它在安装后需要用体温计校准，另外测量时间也较长。</p>
-<h2 id="文章">文章</h2>
-<p>1、<a href="https://mp.weixin.qq.com/s/2EiYgxCC9q6lCIz9V0ZhbA">中美企业服务市场差异浅析</a>（中文）</p>
-<p>本文作者是一家企业软件供应商，在中国和美国都有客户。他比较两国企业软件市场的差异。</p>
-<p>他提到，中国客户喜欢自己搞“in-house”实现，不喜欢购买外部服务，更不喜欢订阅。而且，买的时候希望一个产品提供 N 个本应由不同工具链完成的功能。</p>
-<p>2、<a href="https://godruoyi.com/posts/why-laravel">为什么 Laravel 这么优秀</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012912.webp" /></p>
-<p>Laravel 是 PHP 生态中最流行的框架，本文介绍 Laravel 的设计，以及作者为什么喜欢使用它。（<a href="https://github.com/ruanyf/weekly/issues/3971">@godruoyi</a> 投稿）</p>
-<p>3、<a href="https://www.cnbeta.com.tw/articles/tech/1415071.htm">中国开发者上传盗版视频到 NPM</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024013008.webp" /></p>
-<p>一个国外安全团队发现，748个 NPM 模块包含视频文件。也就是说，有人利用 NPM 托管视频，内容是盗版的《武林外传》。很难理解，他为什么这么做？</p>
-<p>4、<a href="https://www.seroundtable.com/google-search-drops-cache-link-from-search-results-36787.html">谷歌删除搜索缓存链接</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024020106.webp" /></p>
-<p>网友发现，谷歌已经从搜索结果页面删除了缓存链接，不能点击查看页面缓存。</p>
-<p>但是，缓存结果依然保存在谷歌服务器，可以手动用<code>cache:</code>指令查看。本文给出了解决方案，它的留言里还有写好的书签工具。</p>
-<p>5、<a href="https://onfold.sh/blog/is-it-time-to-ditch-mysql-and-postgresql-for-sqlite">SQLite 可以替代 MySQL 和 PostgreSQL 吗</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012601.webp" /></p>
-<p>SQLite 一般用于单机的嵌入式数据库，但是最近发展得越来越好，作者讨论是否可以把它用作服务器的主数据库。</p>
-<p>6、<a href="https://manas.tech/blog/2023/10/25/approaching-unconventional-problems/">如何在没有信号的地方找到手机</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023102602.webp" /></p>
-<p>作者的朋友野外露营时，手机找不到了，不知道忘在家里，还是遗失在露营地。作者提出一种方法，可以找到手机。</p>
-<p>7、<a href="https://www.cato.org/blog/why-legal-immigration-nearly-impossible">为什么你几乎不可能移民美国</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012901.webp" /></p>
-<p>很多人以为，在美国待上几年，就能获得绿卡（永久居留权）。本文告诉你这种看法是错的，从概率上看，外国人几乎不可能（合法）移民美国。</p>
-<p>本文最有价值的部分，是用通俗的语言解释了美国复杂的移民制度。</p>
-<h2 id="工具">工具</h2>
-<p>1、<a href="https://github.com/lencx/Noi">Noi</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024013001.webp" /></p>
-<p>跨平台的桌面应用，在一个界面里面集成了多个 AI 网站，支持复用提示，以及同时向多款 AI 提问。（<a href="https://github.com/ruanyf/weekly/issues/3976">@lencx</a> 投稿）</p>
-<p>2、<a href="https://github.com/tarka/xcp/">xcp</a></p>
-<p>使用 rust 重写的 cp 命令，针对多核、大内存、固态磁盘、nfs 挂载目录等情况进行了优化。（<a href="https://github.com/ruanyf/weekly/issues/3972">@lengyijun</a> 投稿）</p>
-<p>同一作者还有一个相关项目 <a href="https://github.com/lengyijun/smartscp">Smartscp</a>，用来替代同步命令 scp，但会排除 .gitignore 和 node_modules 目录。</p>
-<p>3、<a href="https://github.com/hanxi/xiaomusic">xiaomusic</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024013002.webp" /></p>
-<p>小爱音箱播放本地音乐的一个工具。（<a href="https://github.com/ruanyf/weekly/issues/3980">@hanxi</a> 投稿）</p>
-<p>4、<a href="https://github.com/utilmeta/utilmeta-py">UtilMeta</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024013003.webp" /></p>
-<p>一个用于快速生成 RESTful API 的 Python 框架。（<a href="https://github.com/ruanyf/weekly/issues/3978">@voidZXL</a> 投稿）</p>
-<p>5、<a href="https://github.com/homeinfra-org/infra">Home Infra</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024013004.webp" /></p>
-<p>一个 Docker 镜像，提供个人或小团队使用的 DevOps 实验环境。（<a href="https://github.com/ruanyf/weekly/issues/3977">@NoCLin</a> 投稿）</p>
-<p>6、<a href="https://aitdk.com/zh-CN/extension/">AITDK</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024013007.webp" /></p>
-<p>一款浏览器插件，提供当前网站的流量/Whois/SEO 等信息。（<a href="https://github.com/ruanyf/weekly/issues/3990">@typewe</a> 投稿）</p>
-<p>7、<a href="https://github.com/zh-lx/code-inspector">code-inspector</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024013005.webp" /></p>
-<p>一个 JS 打包器的插件，点击网页 DOM，就会自动打开 IDE，并定位到相应的源码位置，目前支持 webpack/vite/rspack 打包器。（<a href="https://github.com/ruanyf/weekly/issues/3985">@zh-lx</a> 投稿）</p>
-<p>8、<a href="https://easychuan.cn/">轻松传</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024013006.webp" /></p>
-<p>局域网内的文件互传工具，只需双方打开网页，基于 WebRTC 技术。（<a href="https://github.com/ruanyf/weekly/issues/3986">@AndySpider</a> 投稿）</p>
-<p>另有命令行程序 <a href="https://github.com/schollz/croc">croc</a>，可在任意两台电脑之间传送文件。</p>
-<p>9、<a href="https://github.com/all-in-aigc/aicover">AI 红包封面</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024013009.webp" /></p>
-<p>输入提示词，一键生成精美的 AI 红包封面图，上传到微信红包封面开放平台，试用 <a href="https://aicover.design">Demo</a>。（<a href="https://github.com/ruanyf/weekly/issues/3991">@idoubi</a> 投稿）</p>
-<p>10、<a href="https://github.com/jianchang512/ott">Offine-Text-Translate</a></p>
-<p>本地离线翻译的 API 工具，不联网就可以翻译多种语言，基于 LibreTranslate 的封装，支持 Mac/Linux/Win。（<a href="https://github.com/ruanyf/weekly/issues/3992">@jianchang512</a> 投稿）</p>
-<p>11、<a href="https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer">Process Explorer</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023092505.webp" /></p>
-<p>微软官方工具，可以查看 Windows 所有进程的详细信息，免费下载。</p>
-<p>12、<a href="https://github.com/brunodev85/winlator">winlator</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023093003.webp" /></p>
-<p>一个安卓 App，让安卓手机可以运行 Windows 应用程序。</p>
-<h2 id="资源">资源</h2>
-<p>1、<a href="https://sketchfab.com/ffishAsia-and-floraZia">3D 生物模型</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023100807.webp" /></p>
-<p>这个网站提供2000多种生物的 3D 模型。</p>
-<p>2、<a href="https://choubey.gitbook.io/internals-of-deno/">Deno 的内部结构</a>（The Internals of Deno）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023093008.webp" /></p>
-<p>一本免费的英文电子书，介绍 Deno 的内部原理。</p>
-<p>3、<a href="https://cs193p.sites.stanford.edu/2023">iOS 应用开发教程</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202308/bg2023082103.webp" /></p>
-<p>斯坦福大学2023年学年的一个英文课程，现在已经全部上网，包含讲课视频和课件。</p>
-<h2 id="图片">图片</h2>
-<p>1、<a href="https://blog.luap.info/drafts/i-built-a-lay-down-desk.html?hnn">自制躺式电脑椅</a></p>
-<p>一个国外网友想要一个可以躺着用的电脑椅，可以同时观看三台显示器。</p>
-<p>这种电脑椅都非常贵，他就决定自己动手做。</p>
-<p>他先找了一张躺椅，加装了搁脚的脚凳。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023091001.webp" /></p>
-<p>然后，又用木架安装了操作台和显示器支架。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023091002.webp" /></p>
-<p>最后，装上显示器。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023091003.webp" /></p>
-<p>下面就是成品。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023091004.webp" /></p>
-<h2 id="文摘">文摘</h2>
-<p>1、<a href="https://twitter.com/latifnasser/status/1750952860131729544">金星有卫星吗？</a></p>
-<p>我为两岁的儿子买了一张太阳系海报，贴在他卧室的墙上。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012905.webp" /></p>
-<p>我无意中发现，海报有一个地方很奇怪。</p>
-<p>它标示金星有一颗卫星，叫做 ZOOZVE。这个名字我从来没有听说过。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012906.webp" /></p>
-<p>我查了维基百科和美国宇航局的网站，都明确写着“金星没有卫星”。</p>
-<p>ZOOZVE 这个词，甚至在搜索引擎也搜不到，只有零星的捷克语结果。</p>
-<p>我还问了一位天文学家朋友，她确定地告诉我：“金星肯定没有卫星”。</p>
-<p>难道是出版社的错误？但是，出版社也没有理由，故意为金星添加一颗卫星啊。</p>
-<p>我联系到了绘制这张海报的那位英国画家。他告诉我，这不是他编造的，而是来源于一份资料，但他现在找不到这份资料了。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012907.webp" /></p>
-<p>我相信他没有撒谎，那么 ZOOZVE 到底从何而来呢？</p>
-<p>这时，那位天文学家朋友又联系我了，说她搞清楚这是怎么回事了。</p>
-<p>原来，那颗卫星的真正名字不是 ZOOZVE，而是2002VE，插画家可能不慎将名字看错了。它是金星附近的一颗小天体，在2002年被发现和编号。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012908.webp" /></p>
-<p>新的问题来了，既然它在金星轨道上被发现，为什么不能算作金星的卫星呢？</p>
-<p>我联系了它的发现者：亚利桑那州天文台的一位研究员。他发现过许许多多小行星，早就不记得20年前发现的这颗小行星了。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012909.webp" /></p>
-<p>他告诉我，2002VE 其实围绕太阳运转，经过金星轨道时，受引力影响，也会围绕金星运转。但是，过了一段时间（也许几千年后）就会脱离金星，继续沿着自己的轨道运行。</p>
-<p>下面就是这种受多个引力影响的小天体的复杂运行轨道。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012910.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012911.webp" /></p>
-<p>我终于搞清楚一切了。我现在有一个大胆的计划，就是推动将 2002VE 正式更名为 ZOOZVE。</p>
-<h2 id="言论">言论</h2>
-<p>1、</p>
-<p>我们将在1月25日震惊世界。</p>
-<p>-- <a href="https://www.linkedin.com/pulse/paypal-shock-world-january-25-marcel-van-oost-escee/">PayPal 公司 CEO</a> 在产品发布会前这样宣称。</p>
-<p>但是，当天发布的只是更快的付款流程，以及现金返还计划。发布会后，股价立即下跌5%。</p>
-<p>2、</p>
-<p>AI 会首先取代创意工作者。没错，人类艺术家可以创造出伟大的作品，AI 不行。但问题是，市场并不需要伟大的作品，只需要一些可以用的作品，用于游戏、影视剧等等。</p>
-<p>-- <a href="https://news.ycombinator.com/item?id=34544888">Hacker News 读者</a></p>
-<p>3、</p>
-<p>16世纪，奥斯曼帝国禁止使用印刷机，导致此后300年都落后于西方。</p>
-<p>如果我们对 AI 过度监管，后果可能就像禁止印刷机。</p>
-<p>-- <a href="https://fortune.com/2023/11/28/artificial-intelligence-ai-technology-regulation-policy-guardrails-uae-fortune-global-forum/">阿联酋 AI 部长</a> 评论是否应该限制 AI 发展。</p>
-<p>4、</p>
-<p>经理们对员工的要求，就是一句话：做你们昨天做过的事情，但是速度更快，成本更低。</p>
-<p>-- <a href="https://www.hottakes.space/p/creatives-vs-bureaucrats">《创意者与官僚》</a></p>
-<h2 id="往年回顾">往年回顾</h2>
-<p><a href="http://www.ruanyifeng.com/blog/2023/02/weekly-issue-242.html">一次尴尬的服务器被黑</a>（2023 #242）</p>
-<p><a href="http://www.ruanyifeng.com/blog/2022/01/weekly-issue-192.html">最大的机会来自新技术</a>（2022 #192）</p>
-<p><a href="http://www.ruanyifeng.com/blog/2021/01/weekly-issue-142.html">2020年才是21世纪元年</a>（2021 #142）</p>
-<p><a href="http://www.ruanyifeng.com/blog/2020/01/weekly-issue-92.html">听觉暂留</a>（2020 #92）</p>
-<p>（完）</p>
-]]></description>
-      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-289.md</link>
-      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-289.md</guid>
-      <pubDate>Tue, 19 Mar 2024 12:51:58 -0000</pubDate>
     </item>
   </channel>
 </rss>
