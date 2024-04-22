@@ -4,7 +4,7 @@
 
 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 [ruanyf/weekly](https://github.com/ruanyf/weekly) 提交 issue。
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052401.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052401.jpg)
 
 （题图：陆家嘴，上海，2018）
 
@@ -22,7 +22,7 @@
 
 1、[宇宙射线观测站](http://news.workercn.cn/32843/201904/27/190427152745882.shtml)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052402.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052402.jpg)
 
 4月26日，中国的第一个高海拔宇宙射线观测站，正式在四川稻城启动，当地的海拔是4400米。宇宙射线是来自外太空的高能粒子，携带着宇宙起源、天体演化、太阳活动及地球空间环境等重要科学信息，被称为传递宇宙大事件的“信使”。
 
@@ -30,43 +30,43 @@
 
 2、[白鲸武器](https://www.theguardian.com/environment/2019/apr/29/whale-with-harness-could-be-russian-weapon-say-norwegian-experts)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052403.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052403.jpg)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052404.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052404.jpg)
 
 一个挪威渔民最近出海时，发现一条小白鲸主动游到船边。这条白鲸身上还有绑带，上面写着俄文，意思是“圣彼得堡的设备”。
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052405.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052405.jpg)
 
 渔民说，这头鲸鱼的行为非常奇怪，会主动寻找船只，并试图拉动船的两侧的绳索。考虑到它可以携带相机和武器，专家怀疑这是附近摩尔曼斯克的俄罗斯海军专门训练的白鲸。上个世纪80年代，苏联曾经训练海豚发现鱼雷，海豚视野敏锐，有良好的记忆力，使它们成为有效的水下探测武器工具。一份2017年的报告显示，俄罗斯海军重新开始训练用于军事目的的白鲸、海豹和宽吻海豚。
 
 3、[Red Hat 的新 Logo](https://www.redhat.com/en/about/brand/new-brand#)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052406.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052406.jpg)
 
 Red Hat 公司发布了新 logo（上图），变得更简洁和更具有可识别性，从一个戴着红色帽子的男人（下图），变成一顶红帽子。
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052407.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052407.jpg)
 
 Red Hat 这个名字来自创始人之一 Marc Ewing，他总是戴着红色曲棍球帽。每当他的同学们在卡内基梅隆大学的计算机实验室需要帮助时，他们就会说“寻找红帽子的那个人。”Red Hat 公司希望，每当人们发现自己需要帮助时，就会去找他们。
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052408.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052408.jpg)
 
 4、[停车场办公](https://www.vice.com/en_us/article/pajgyz/rogue-coder-turned-a-parking-spot-into-a-coworking-space)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052409.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052409.jpg)
 
 创业者往往想要使用共享的办公空间，但是大城市的办公空间很贵。旧金山的一个创业者灵机一动，注册了 WePark 公司。他在旧金山的热门区域，选择若干个停车位，付出一整天的停车费，然后摆上桌椅，按小时卖给创业者。创业者就在停车位办公。
 
 WePark 的优势在于价格，每小时收费 2.25美元。相比之下，WeWork 的办公空间，每天收费50美元加上每月会员费。
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052410.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052410.jpg)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052411.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052411.jpg)
 
 5、[菠菜叶生成的血管](https://news.nationalgeographic.com/2017/03/human-heart-spinach-leaf-medicine-science/)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052412.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052412.jpg)
 
 人工心脏的一大问题，就是无法生成心脏肌肉上面的毛细血管，3D 打印可以生成人体组织，但是毛细血管不行。科学家提出了一种新的设想，菠菜叶子或许可以达到这个目的。
 
@@ -74,7 +74,7 @@ WePark 的优势在于价格，每小时收费 2.25美元。相比之下，WeWor
 
 6、[大麦哲伦星云的照片](https://www.thisiscolossal.com/2019/05/1060-hour-photograph-of-multicolored-cloud-galaxy/)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052413.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052413.jpg)
 
 一群法国的天文爱好者使用4,000张图片，拼接成一张大麦哲伦星云的照片。这些照片是2017年7月至2019年2月期间，使用位于智利天文台的160毫米折射望远镜拍摄的。
 
@@ -82,7 +82,7 @@ WePark 的优势在于价格，每小时收费 2.25美元。相比之下，WeWor
 
 7、[Minecraft 的 AR 玩法](https://www.minecraft.net/en-us/article/new-game--minecraft-earth)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052414.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052414.jpg)
 
 Minecraft 发布了 AR （增强现实）新玩法，允许在现实世界叠加像素艺术。你只要掏出手机，对准街景，就可以在上面叠加一个 Minecraft 层。其他玩家在同一个地点，就可以看到这个层，与你互动。
 
@@ -102,13 +102,13 @@ Minecraft 发布了 AR （增强现实）新玩法，允许在现实世界叠加
 
 1、[电路图符号解释](https://learn.sparkfun.com/tutorials/how-to-read-a-schematic/all)（英文）
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052415.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052415.jpg)
 
 本文介绍基本的电路图符号的含义。
 
 2、[一张纸对折12次](https://www.fxsolver.com/browse/formulas/Paper+folding+theorem+\(required+strip+length+for+single-direction+folding\))（英文）
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052416.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052416.jpg)
 
 长久以来，人们一直认为，一张纸最多对折7次。2002年，加利福尼亚州的17岁中学生 Britney Crystal Gallivan（1985年出生）成功演示了，将一张1200米长的卫生纸对折12次。她还给出了一个计算公式（上图），根据纸张的厚度和想要对折的次数，算出所需的纸张的最小长度。
 
@@ -118,7 +118,7 @@ Caddy 是一种非常好用的 Web 服务器，作者演示如何根据 HTTP 请
 
 4、[一种新的网络钓鱼方法](https://jameshfisher.com/2019/04/27/the-inception-bar-a-new-phishing-method/)（英文）
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052417.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052417.jpg)
 
 安卓系统的 Chrome 浏览器，用户向下滚动网页的时候，会自动隐藏地址栏。有人就利用这个特点，伪造了一个地址栏（上图的 hsbc 的地址栏就是伪造的），用来网络钓鱼。
 
@@ -136,7 +136,7 @@ Caddy 是一种非常好用的 Web 服务器，作者演示如何根据 HTTP 请
 
 8、[如何从零开始制作一块智能手表](https://imgur.com/gallery/FSBwD3g)（英文）
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052418.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052418.jpg)
 
 本文含有大量图片，作者从零开始制作一块手表，表盘是3D打印的，电路是自己设计的，电池和充电器都是自己装配的。
 
@@ -160,7 +160,7 @@ Caddy 是一种非常好用的 Web 服务器，作者演示如何根据 HTTP 请
 
 3、[googler](https://github.com/jarun/googler)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052419.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052419.jpg)
 
 命令行搜索谷歌的工具。另外，还有一个 DuckDuckGo 的命令行客户端 [ddgr](https://github.com/jarun/ddgr)。
 
@@ -186,7 +186,7 @@ Caddy 是一种非常好用的 Web 服务器，作者演示如何根据 HTTP 请
 
 9、[js-cloudimage-360-view](https://github.com/scaleflex/js-cloudimage-360-view)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052420.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052420.jpg)
 
 一个可以360度旋转观看图片的 JS 库，用于在网页上展示商品。
 
@@ -206,7 +206,7 @@ Microsoft 公司的 Edge 浏览器发布第一个 macOS 的版本。（@[sedgwic
 
 1、[国家地理频道纪录片：宇宙时空之旅](http://open.163.com/special/opencourse/aspacetimeodyssey.html)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052421.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052421.jpg)
 
 美国国家地理频道拍摄的13集科学纪录片，从理论物理学的角度，探讨宇宙的奥秘。中英文字幕，网易公开课提供全片。（@[qinhanlei](https://github.com/ruanyf/weekly/issues/479) 投稿）
 
@@ -216,7 +216,7 @@ Microsoft 公司的 Edge 浏览器发布第一个 macOS 的版本。（@[sedgwic
 
 3、[数据库基础](http://webdam.inria.fr/Alice/)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052422.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052422.jpg)
 
 免费的英文电子书，介绍数据库涉及的基本的数学知识。
 
@@ -230,7 +230,7 @@ Microsoft 公司的 Edge 浏览器发布第一个 macOS 的版本。（@[sedgwic
 
 6、[RemixIcon](https://github.com/Remix-Design/RemixIcon)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052423.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052423.jpg)
 
 一套免费高质量的开源图标库，目前有1500多枚图标，提供矢量图和字体图标文件，可用于商业用途。（@[xiaochunjimmy](https://github.com/ruanyf/weekly/issues/520) 投稿）
 
@@ -280,31 +280,31 @@ Microsoft 公司的 Edge 浏览器发布第一个 macOS 的版本。（@[sedgwic
 
 微软在那里雇佣了超过50,000名员工。午餐时间，你会发现很多人在微软内部的许多咖啡馆和餐馆闲逛，在建筑物之间漫步，浏览商店，就像周末在一个小镇一样。
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052424.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052424.jpg)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052425.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052425.jpg)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052426.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052426.jpg)
 
 微软总部的中央大楼，里面有咖啡馆、银行、电信服务、快递服务、酒吧、餐厅和体育用品商店。较低楼层是提供全世界各种口味食物的免费食堂。
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052427.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052427.jpg)
 
 中央大楼室外有几个运动场，那里举办的员工足球和板球联赛非常受欢迎。
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052428.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052428.jpg)
 
 总部内部还有一片森林，里面有一套树屋会议室。
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052429.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052429.jpg)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052430.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052430.jpg)
 
 在微软较新的工作空间中，八到十二人的团队一起工作在大型吊舱中，附近有一些会议室、休息区、咖啡馆、游戏设施，甚至还有充满乐器的音乐室。
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052431.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052431.jpg)
 
-![](https://www.wangbase.com/blogimg/asset/201905/bg2019052432.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201905/bg2019052432.jpg)
 
 ## 言论
 
@@ -342,4 +342,4 @@ Microsoft 公司的 Edge 浏览器发布第一个 macOS 的版本。（@[sedgwic
 
 去年的本周：[《每周分享第 5 期》](http://www.ruanyifeng.com/blog/2018/05/weekly-issue-5.html)
 
-[![](https://www.wangbase.com/blogimg/asset/201805/bg2018051801.jpg)](http://www.ruanyifeng.com/blog/2018/05/weekly-issue-5.html)
+[![](https://cdn.beekka.com/blogimg/asset/201805/bg2018051801.jpg)](http://www.ruanyifeng.com/blog/2018/05/weekly-issue-5.html)

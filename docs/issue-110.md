@@ -8,7 +8,7 @@
 
 ## 封面图
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020052905.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052905.jpg)
 
 5月28日，全球唯一一架最大的喷气式运输机 An-225 和全球唯一一架最大的涡桨运输机 An-22 在天津机场相遇。（[出处](https://www.weibo.com/2579788730/J46Hz3M1L)）
 
@@ -16,7 +16,7 @@
 
 中国的优秀技术公司，在国内上市的并不多，大部分在美国上市。如果以后美国不允许中国企业上市，那对国内会有什么影响？
 
-![](https://www.wangbase.com/blogimg/asset/202006/bg2020060308.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202006/bg2020060308.jpg)
 
 这是一个假设的问题，还没有真的发生。但是，看上去很有可能。这里不讨论经济影响和政治影响，只关注对国内行业环境的影响。
 
@@ -32,7 +32,7 @@
 
 1、[不分科教育](https://curiousmindmagazine.com/goodbye-subjects-finland-taking-revolution-education-step/)
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020052111.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052111.jpg)
 
 芬兰宣布，从今年开始，小学将尝试不分科教育。学校不再开设物理、数学、文学、历史、地理等不同的课程，而是统一上课，引入基于现象的综合教学。
 
@@ -40,7 +40,7 @@
 
 2、[恐龙灭绝的最新解释](https://buzzorange.com/techorange/2020/05/28/asteroid-makes-dinosaurs-extinct/)
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020053105.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020053105.jpg)
 
 6500万年前，恐龙为什么会灭绝？目前最流行的解释是，有一颗直径10 公里的陨石撞地球，将大量岩石抛到平流层，遮蔽阳光，引发长达数年的黑暗与寒冬。这么大的陨石撞击地球，一定会留下陨石坑，科学家认为，位于墨西哥湾的直径约180 公里的希克苏鲁伯陨石坑（Chicxulub crater），就是撞击的地点。
 
@@ -48,11 +48,11 @@
 
 首先，墨西哥湾下方有大量的硫化沉积物，陨石撞击同时造成硫化物与海水蒸发，两者在平流层混合，遮蔽阳光，产生长达数年的寒冬。其次，陨石以东北方向撞击地面，而这个方向的含硫岩层最厚。最后，陨石以60度角撞击地面，该角度会将最多的碎片抛到大气层。下图是按照时间顺序，陨石撞击造成的地幔结构改变和地表隆起。
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020053106.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020053106.jpg)
 
 3、[苹果追踪被抢的 iPhone](https://www.forbes.com/sites/zakdoffman/2020/06/01/apple-warns-looters-with-stolen-iphones-you-are-being-tracked/)
 
-![](https://www.wangbase.com/blogimg/asset/202006/bg2020060301.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202006/bg2020060301.jpg)
 
 本周，美国多个城市发生骚乱，苹果公司不得不关闭零售店。即使如此，华盛顿特区、洛杉矶、旧金山、纽约和费城的苹果商店，还是都遭到了袭击或破坏。抢劫者偷走了店里所有可用的产品。
 
@@ -60,7 +60,7 @@
 
 4、[崩溃安卓手机的壁纸](https://www.bbc.com/news/technology-52891650)
 
-![](https://www.wangbase.com/blogimg/asset/202006/bg2020060401.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202006/bg2020060401.jpg)
 
 有人发现，将上图用作某些安卓手机的壁纸，会导致系统立即崩溃重启，屏幕会不断地打开和关闭，无法再进入系统，不得不送修。目前确认受影响的手机，主要是三星和谷歌的 Pixel 手机，而且是最新的 Android 10 系统。
 
@@ -68,7 +68,7 @@
 
 5、[机器学习生成的《吃豆人》](https://www.theverge.com/2020/5/22/21266251/nvidia-ai-gamegan-recreate-pac-man-virutal-environment)
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020052403.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052403.jpg)
 
 今年是著名游戏《吃豆人》（PAC-MAN）诞生40周年，为了纪念这个日子，Nvidia 公司创建了一个人工智能系统，软件可以仅仅通过观看这个游戏，就自动编程重新实现它。这个软件自动实现的游戏可以被人类玩，Nvidia 表示不久将在线发布该游戏。
 
@@ -78,21 +78,21 @@
 
 >   - [通用电气公司](https://arstechnica.com/information-technology/2020/05/ge-switches-off-light-bulb-business-after-almost-130-years/)出售了灯泡业务，从此不再生产灯泡。该公司是灯泡发明人爱迪生1892年创建的，起家业务就是灯泡。
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020052801.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052801.jpg)
 
 >   - [《魔鬼经济学》的作者](https://www.sivv.io/article/5ecededf46cc9f76d4639b24/In-marginal-decisions,-favour-action-over-inaction)、芝加哥大学经济学教授莱维特（Steven D Levitt）对2万人进行了调查，发现在做出决定后的六个月中，那些选择改变（而不是坚持现状）的人对他们的决定更加满意，并且通常会更快乐。
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020053104.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020053104.jpg)
 
 >   - [两位美国华裔学者](https://arstechnica.com/science/2020/02/georgia-tech-physicists-unlock-the-secret-to-perfect-wok-tossed-fried-rice/)研究中国炒饭的物理过程，拍摄了五位厨师炒米饭。经过统计，炒一次米饭平均需要2分钟，翻炒276次，每次持续大约三分之一秒。
 
-![](https://www.wangbase.com/blogimg/asset/202002/bg2020022802.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202002/bg2020022802.jpg)
 
 >   - [美国科学家](https://directorsblog.nih.gov/2020/02/25/early-riser-or-night-owl-new-study-may-help-to-explain-the-difference/)提出，有些人习惯早起，是出于生理原因。他们的生物钟周期是每天20小时，导致一天比别人早开始。
 
 >   - [谷歌](https://www.businessinsider.com/google-cloud-vision-api-wont-tag-images-by-gender-2020-2)表示，它的 API 照片进行 AI 识别时，将不再返回人像的性别，理由是“无法通过外貌来推断一个人的性别”。
 
-![](https://www.wangbase.com/blogimg/asset/202002/bg2020022009.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202002/bg2020022009.jpg)
 
 ## 文章
 
@@ -102,15 +102,15 @@ Chrome 84 增强了对 Web Animations API 的支持。这个 API 的主要作用
 
 2、[游戏摄影师，这种靠“截图”赚钱的新职业](https://www.ifanr.com/1134181)（中文）
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020052811.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052811.jpg)
 
 随着游戏画质和细节的不断进步，里面史诗级的风景已经足以让玩家流连忘返。
 
 在游戏圈里，还真有一个叫做游戏摄影师的职业，他们更像是游戏中的旅客，重点是拍摄游戏中的有趣画面而非玩游戏，而这种「拍摄」更准确来说是在游戏中截图。
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020052812.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052812.jpg)
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020052813.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052813.jpg)
 
 3、[如何看待 Deno 的模块加载方案？](https://kitsonkelly.com/posts/deno-is-a-browser-for-code/)（英文）
 
@@ -118,7 +118,7 @@ Deno 通过 URL 加载 JS 模块，然后在本地缓存，并没有中央的模
 
 4、[Gmail 的退订按钮如何工作？](https://blog.leavemealone.app/how-does-the-gmail-unsubscribe-button-work/)（英文）
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020053001.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020053001.jpg)
 
 Gmail 对于营销邮件和新闻列表，提供一个“退订”按钮（unsubscribe）。本文分析这个按钮是怎么实现的。
 
@@ -146,31 +146,31 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 2、[AsmBB](https://board.asm32.info/asmbb-v2-9-has-been-released.328/)
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020052814.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052814.jpg)
 
 一个汇编语言写的 Web 论坛程序，使用 SQLite 作为数据库后端。它号称是世界最快的论坛程序，可以用在硬件配置很差的服务器，本身就是一个单独的二进制程序。
 
 3、[Micro](https://github.com/zyedidia/micro)
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020052815.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052815.jpg)
 
 一个命令行的文本编辑器，有窗格和便签，系统资源占用少，支持 Linux 和 Windows 系统。
 
 4、[Excalidraw](https://excalidraw.com/)
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020052901.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052901.jpg)
 
 流程图工具 Excalidraw 可以做出上图这样的图示效果，可惜中文没有手写效果。如果一定要加，需要自己克隆代码，再安装中文字体。
 
 5、[AudioMass](https://audiomass.co/)
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020052903.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052903.jpg)
 
 一个在线的音频处理工具，可以对声音的波形进行各种加工，添加特效。
 
 6、[trilium](https://github.com/zadam/trilium)
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020052904.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052904.jpg)
 
 一个 Markdown 格式的笔记软件，使用目录层级整理笔记。可以下载安装桌面版，也可以自己架设在线版。
 
@@ -198,19 +198,19 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 2、[分析工具](https://untools.co/)
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020053005.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020053005.jpg)
 
 该网站收集各种思考工具（比如决策树和冰山模型），这些工具可以帮助你解决问题、制定决策和理解系统。
 
 3、[设计模式](https://refactoringguru.cn/design-patterns)
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020053101.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020053101.jpg)
 
 该网站为中文教程，使用通俗的语言，介绍各种设计模式，图文并茂。此外，还有代码重构方面的英语内容。（[@jsonleex](https://github.com/ruanyf/weekly/issues/1266) 投稿）
 
 4、[Fuun.fun](https://fuun.fun/)
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020053102.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020053102.jpg)
 
 该网站收集了一些有趣的网页小程序，主要是 HTML5 小游戏。（[@Bakumon](https://github.com/ruanyf/weekly/issues/1268) 投稿）
 
@@ -228,7 +228,7 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 1、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051811.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051811.jpg)
 
 默奇森小镇（Murchison）位于澳大利亚北部，距离墨尔本大约两个小时的车程。
 
@@ -240,7 +240,7 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 2、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051812.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051812.jpg)
 
 小镇居民玛丽安·贝格回忆说：“当时，我和丈夫正准备去教堂，11岁的儿子和7岁的女儿在外面的阳台上。”
 
@@ -252,7 +252,7 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 3、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051813.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051813.jpg)
 
 那天晚上，阿诺德·布里斯班去农场挤牛奶。
 
@@ -262,7 +262,7 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 4、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051814.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051814.jpg)
 
 第二天早上，小镇居民又开始议论昨天的巨响，以及那时天空中的亮光和烟雾。阿诺德·布里斯班想起来了，农场的那些类似木炭的奇怪物质，就取了一点剩下的样本，交给当地报纸的记者。
 
@@ -270,7 +270,7 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 5、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051815.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051815.jpg)
 
 墨尔本大学地质学教授约翰·洛夫林（John Lovering）从报纸上看到了这件事，猜测应该是一块陨石。但是，他没有空，因为三个月前阿波罗11号采集了月球岩石，送回了地球。他碰巧得到了其中一块，正忙于分析那块石头。
 
@@ -278,7 +278,7 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 6、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051816.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051816.jpg)
 
 安德鲁·格莱多（Andrew Gleadow）当时是地质专业的三年级学生。他被分配到农场，任务是从粪坑里面找回陨石。
 
@@ -288,7 +288,7 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 7、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051824.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051824.jpg)
 
 大多数陨石是石质（硅酸盐）或铁质（铁镍合金），碳质陨石是很少的。因为进入地球大气层的时候，大部分碳都会燃烧掉。
 
@@ -298,7 +298,7 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 8、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051817.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051817.jpg)
 
 碳质陨石因为包含碳，进入大气层时会破裂，裂成碎片，所以它与大多数陨石不同，不是一整块落下，而是散布在一块11公里长、3公里宽的区域。
 
@@ -308,7 +308,7 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 9、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051818.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051818.jpg)
 
 兄弟俩很熟悉小镇的地形，他们根据各种信息，在地图上画出了陨石落下的大致位置和方向。他们很快意识到，小碎片离中心点比较近，大碎片会散落比较远。
 
@@ -316,7 +316,7 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 10、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051820.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051820.jpg)
 
 默奇森陨石后来一共找回了100公斤，大约三分之一是吉利克兄弟找到的。
 
@@ -324,7 +324,7 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 11、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051821.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051821.jpg)
 
 默奇森陨石已经过去了半个世纪，直到今天，它仍然具有巨大的科学意义。它的标本保存在全世界许多大学和博物馆里。
 
@@ -332,13 +332,13 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 12、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051822.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051822.jpg)
 
 默奇森陨石有46亿年的历史，比太阳系还要古老，里面包含了各种来自46亿年前的有机化合物，例如氨基酸、水、糖和酒精等。这使得科学家可以了解太阳系形成之前的情况，以及生命的起源。
 
 13、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051823.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051823.jpg)
 
 科学家猜测，默奇森陨石来自一颗富含碳的小行星，可能撞到了火星外部的小行星带，然后飞向地球，经过一百万年才到达地球。
 
@@ -346,7 +346,7 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 14、
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020051825.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020051825.jpg)
 
 今天的默奇森小镇与50年前没有很大的变化，但是阿诺德·布里斯班已经过世了。他的女儿站在当年的农场里面，有时候想到，如果她父亲当时不把陨石样本交给记者，或者索性忽略了那些奇怪的碎片，还会有人知道这块陨石吗？
 
@@ -366,7 +366,7 @@ Deb 格式是 Debian 和 Ubuntu 系统的软件包格式，本文是一篇非常
 
 \-- David Perell
 
-![](https://www.wangbase.com/blogimg/asset/202005/bg2020052908.jpg)
+![](https://cdn.beekka.com/blogimg/asset/202005/bg2020052908.jpg)
 
 3、
 
@@ -398,8 +398,8 @@ Tencent 这个名字模仿朗讯（Lucent），而且左右对称。
 
 2019年的本周（第 59 期）：[未来交不到朋友](http://www.ruanyifeng.com/blog/2019/06/weekly-issue-59.html)
 
-![](https://www.wangbase.com/blogimg/asset/201906/bg2019060701.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201906/bg2019060701.jpg)
 
 2018年的本周（第 7 期）：[垃圾星球](http://www.ruanyifeng.com/blog/2018/06/weekly-issue-7.html)
 
-![](https://www.wangbase.com/blogimg/asset/201805/bg2018053001.jpg)
+![](https://cdn.beekka.com/blogimg/asset/201805/bg2018053001.jpg)
