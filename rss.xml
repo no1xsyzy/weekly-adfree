@@ -6,7 +6,194 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2024</copyright>
-    <lastBuildDate>Mon, 13 May 2024 00:44:25 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 May 2024 00:44:04 -0000</lastBuildDate>
+    <item>
+      <title>科技爱好者周刊（第 300 期）：三十年，解决人生三大问题</title>
+      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/4390">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
+<h2 id="封面图">封面图</h2>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051501.webp" /></p>
+<p>本周，太阳活动剧烈，引起几十年来最大的地磁暴。地球的中高纬度地区，普遍可以看到极光，就连北京这样的中纬度城市，都出现了极光，上图是长城。（<a href="https://m.bjnews.com.cn/detail/1715495546129388.html">via</a>）</p>
+<h2 id="三十年解决人生三大问题">三十年，解决人生三大问题</h2>
+<p>我最近看到<a href="https://huyenchip.com/2024/04/17/personal-growth.html">一篇文章</a>，很有意思，分享给大家。</p>
+<p>文章大意是，<strong>人的一生就是解决三个基本问题：事业、家庭和财务。</strong></p>
+<p>一份有成就的事业，一个幸福的家庭，一个健康的财务状况，人生就没有遗憾了。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051513.webp" /></p>
+<p>我们的人生规划，就是朝着解决这三个问题努力。哪怕其中只有一个没有解决，你的人生就过不好。</p>
+<p>原文作者提出了他的规划。他说，这三个问题要分阶段解决，每个阶段重点解决一个问题。而且<strong>他估计，每个阶段要花费十年</strong>，总共需要三十年。</p>
+<p><strong>（1）第一个十年</strong>。你搞清楚自己想干什么，找到方向，为事业打下基础，从此全力投入。</p>
+<p><strong>（2）第二个十年</strong>。你结婚、买房、养育后代。</p>
+<p><strong>（3）第三个十年</strong>。你努力赚钱，积蓄退休金。</p>
+<p>如果将18岁成年作为起点，过完这三个十年，你就已经48岁了。</p>
+<p>也就是说，你的目标是，到了48岁，基本解决人生三大问题。48岁以后的时间，就是自己的选择，追求梦想，照顾家人，或者继续推进事业，积累更多财富。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051607.webp" /></p>
+<p>原文作者没有解释，为什么每个阶段需要十年。我倒是觉得，十年是一个合理的时间。</p>
+<p>如果是八年、七年、甚至五年，那样固然很好，不过难度也会相应变大，多少人能做到呢。如果更长一点，每个阶段需要十二年，甚至十五年，那样就有点太晚了，你都要退休了。更重要的是，年纪越大，人生改变的可能性越小，五十岁以后其实能做的有限。</p>
+<p>总之，我认为，这是一个很新颖的视角，可以用作思考人生问题的框架，对我很有启发。</p>
+<p><u>凡事就看它是否有助于“事业、家庭和财务”，我们的目标就是在48岁前解决好这些问题。</u></p>
+<h2 id="科技动态">科技动态</h2>
+<p>1、<a href="https://www.theguardian.com/artanddesign/article/2024/may/11/where-mona-lisa-was-painted-mystery-solved-geologist-claims">蒙娜丽莎的地点</a></p>
+<p>达芬奇的世界名画《蒙娜丽莎》是一个谜。人们不知道，它是什么时候画的、为什么达芬奇会画、画里女子到底是谁……</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051510.webp" /></p>
+<p>一位地质学家最近声称，她找到了一部分的答案，那就是这幅画的地点。</p>
+<p>她认为，这幅画的地点是意大利科莫湖东南端的莱科市，理由是莱科的地质环境跟画的背景很像。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051511.webp" /></p>
+<p>达芬奇用灰白色绘制背景的湖畔岩石，这是石灰岩的颜色，莱科的岩石就是石灰岩，而意大利其他的石灰岩地区都没有湖。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051512.webp" /></p>
+<p>另外，背景里还有一座桥，正好跟莱科14世纪的一座古桥相吻合。</p>
+<p>2、<a href="https://www.core77.com/posts/132116/An-Unusual-Furniture-Design-Niche-Behind-the-Sofa-Consoles">沙发充电插座</a></p>
+<p>很多人喜欢坐在沙发上玩手机，但是常常找不到插座充电。</p>
+<p>因此，现在就流行一种新家具，是沙发后面装一个木架，木架上面有插座。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051003.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051004.webp" /></p>
+<p>这个架子放在沙发后面，很简单就解决了找不到插座的问题。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051005.webp" /></p>
+<p>3、<a href="https://www.theverge.com/2023/9/14/23873153/nasa-bike-tire-shape-memory-price-smart-specs">金属轮胎</a></p>
+<p>一家美国创业公司发布了自行车的“金属轮胎”，轮胎里面不是空气，而是金属弹簧。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023091605.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023091606.webp" /></p>
+<p>这家公司介绍，它采用美国宇航局发现的镍钛诺合金。这种合金具有记忆功能，能够记住加热后锻造的形状，同时重量非常轻而且坚韧，适合做成弹簧替代轮胎。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023091607.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023091608.webp" /></p>
+<p>这种“金属轮胎”的优点是不用充气，耐用性好。缺点是价格贵，不含轮圈的价格是500美元一对，是普通的优质自行车轮胎的10倍。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023091609.webp" /></p>
+<p>4、<a href="https://uxdesign.cc/how-do-you-accidentally-run-for-president-of-iceland-0d71a4785a1e">冰岛的总统选举网站</a></p>
+<p>冰岛即将举行总统选举，报名资格是最少需要1500人的签名支持。</p>
+<p>政府架设了<a href="https://island.is/forsetaframbod">一个网站</a>，让公民在网站上，向支持的候选人提交电子签名。</p>
+<p>但是，这个网站出了一个乌龙事件。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024043009.webp" /></p>
+<p>它的签名页有一个“注册”按钮（下图的蓝色按钮），很多人点击注册了。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024043010.webp" /></p>
+<p>殊不知，签名只需要身份证，不需要注册。这个按钮实际上是“总统候选人”注册。你点击后，会显示一张表格，填完以后你就变成总统候选人了。</p>
+<p>于是，冰岛现在就有了82个总统候选人，要知道以前选举的候选人，最多一次也只有9个。网站发现闯祸了，赶紧把 UI 改了。</p>
+<p>我在想，要是有一部电影，讲述因为网站出错，一个普通人变成了总统，那就好玩了。</p>
+<h2 id="文章">文章</h2>
+<p>1、<a href="https://mp.weixin.qq.com/s/3i-bOEtM78xKSku5ndqp7Q">一个不知名的开源项目可以带来多少收入？</a>（中文）</p>
+<p>三年前，作者决定做一个开源的开发工具。三年过去了，这个项目怎么样了，赚了多少钱。（<a href="https://github.com/ruanyf/weekly/issues/4458">@zhouyanliang</a> 投稿）</p>
+<p>2、<a href="https://www.htmhell.dev/adventcalendar/2023/4/">5个改善用户体验的 HTML 属性</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023120502.webp" /></p>
+<p>本文介绍5个不常用的 HTML 属性。</p>
+<p>3、<a href="https://nolanlawson.com/2023/12/02/lets-learn-how-modern-javascript-frameworks-work-by-building-one/">现代 JavaScript 框架是如何工作的</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023120302.webp" /></p>
+<p>作者通过示例，解释反应式的 JavaScript 前端框架的核心原理，并且自己实现了一个最简框架。内容还可以，但是写得不易读。</p>
+<p>4、<a href="https://taxodium.ink/post/emoji-regexp/">Emoji 正则匹配</a>（中文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051505.webp" /></p>
+<p>本文介绍一个 JS 技巧，如何用一个简单的正则表达式匹配 Emoji 表情符号。（<a href="https://github.com/ruanyf/weekly/issues/4452">@Spike-Leung</a> 投稿）</p>
+<p>5、<a href="https://www.annwan.me/computers/what-why-how-containers/">Linux 容器的底层技术</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024032803.webp" /></p>
+<p>一篇非常简单的文章，列出了容器技术底层依赖的几个 Linux 技术。</p>
+<p>6、<a href="https://www.jonashietala.se/blog/2023/10/24/the_killer_features_of_the_steam_deck/">Steam Deck 的五个杀手级功能</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023102406.webp" /></p>
+<p>作者非常喜欢便携式游戏机 Steam Deck，列出了五个他最喜欢的点。</p>
+<h2 id="工具">工具</h2>
+<p>1、<a href="https://github.com/extrawurst/gitui">GitUI</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024011508.webp" /></p>
+<p>终端里面的 Git 图形界面，将各种 git 操作可视化，使用 Rust 语言开发。</p>
+<p>2、<a href="https://github.com/outline/outline">Outline</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024011701.webp" /></p>
+<p>一个开源的在线知识库软件，支持多人合作。</p>
+<p>3、<a href="https://github.com/lbl8603/vnt">Vnt</a></p>
+<p>一个开源工具，将不同网络下的多个设备虚拟到一个局域网下，类似与 tailscale、zerotier、n2n。（<a href="https://github.com/ruanyf/weekly/issues/4444">@lbl8603</a> 投稿）</p>
+<p>4、<a href="https://github.com/solidSpoon/DashPlayer">DashPlayer</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051506.webp" /></p>
+<p>一款专为英语学习打造的开源视频播放器，支持生成双语字幕，进行精听或泛听练习。（<a href="https://github.com/ruanyf/weekly/issues/4454">@solidSpoon</a> 投稿）</p>
+<p>5、<a href="https://zm.i8k.tv/">字幕工具箱</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051508.webp" /></p>
+<p>这个网站收集了一些字幕相关的工具，纯前端处理，无需安装任何插件或软件。（<a href="https://github.com/ruanyf/weekly/issues/4464">@mzhren</a> 投稿）</p>
+<p>6、<a href="https://spacexcode.com/coverview/">封面图片生成器</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051108.webp" /></p>
+<p>一个制作简单封面图的 Web 工具。（<a href="https://github.com/ruanyf/weekly/issues/4439">@fantingsheng</a> 投稿）</p>
+<p>另外，还有一个类似的 Logo 制作工具“<a href="https://www.logocook.shop/">Logo 厨师</a>”。（<a href="https://github.com/ruanyf/weekly/issues/4455">@gdfsdjj145</a> 投稿）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051507.webp" /></p>
+<p>7、<a href="https://github.com/Spr-Aachen/Easy-Voice-Toolkit">Easy Voice Toolkit</a></p>
+<p>一个简易的语音工具箱，提供音频处理、语音识别、合成等音频工具，使用 Python 语言开发。（<a href="https://github.com/ruanyf/weekly/issues/4471">@Hao4Wang</a> 投稿）</p>
+<p>8、<a href="https://segmentify.app/zh">Segmentify</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051509.webp" /></p>
+<p>一个 Figma 插件，使用浏览器 GPU 能力运行 AI SAM 模型，快速分割图片，从图片中提取元素至 Figma 文件。（<a href="https://github.com/ruanyf/weekly/issues/4472">@janily</a> 投稿）</p>
+<p>9、<a href="https://github.com/M-cheng-web/web-tracing">Web-Tracing</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051504.webp" /></p>
+<p>一个开源的前端埋点工具，提供项目监控。（<a href="https://github.com/ruanyf/weekly/issues/4451">@M-cheng-web</a> 投稿）</p>
+<p>10、<a href="https://technitium.com/dns/">Technitium DNS</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024011706.webp" /></p>
+<p>一款开源 DNS 服务器，带有 Web 管理面板。</p>
+<p>11、<a href="https://github.com/kochrt/qr-designer">QR code designer</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202305/bg2023053102.webp" /></p>
+<p>一个 Web 工具，用来设计二维码，可以嵌入各种文字和图形，另有一个<a href="http://jsfiddle.net/lachlan/r8qWV/">类似工具</a>。</p>
+<p>12、<a href="https://github.com/taskforcesh/bullmq">BullMQ</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202211/bg2022111202.webp" /></p>
+<p>Redis 的 JS 客户端，号称强大且快速。</p>
+<h2 id="资源">资源</h2>
+<p>1、<a href="https://latex.lierhua.top/zh/">LaTeX 入门与进阶</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051107.webp" /></p>
+<p>网友写的中文书籍，介绍如何使用 LaTeX 和宏包编写。（<a href="https://github.com/ruanyf/weekly/issues/4436">@immotal</a> 投稿）</p>
+<p>2、<a href="https://urlhaus.abuse.ch/browse/">URLhaus 数据库</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051503.webp" /></p>
+<p>这个数据库专门收集各种恶意 URL 网址，目前已经收集了280万个，可以免费查询和下载。</p>
+<p>3、<a href="https://rafalab.dfci.harvard.edu/dsbook-part-1/">数据科学导论</a>（Introduction to Data Science）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024030201.webp" /></p>
+<p>开源的英文教材，源于哈佛大学同名课程，使用 R 语言学习数据科学。</p>
+<p>4、<a href="https://pinouts.org/">引脚定义</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023091204.webp" /></p>
+<p>一本免费英文电子书，收集了130种电子产品常见组件（比如 USB 口）的引脚定义。</p>
+<h2 id="图片">图片</h2>
+<p>1、<a href="https://mymodernmet.com/angry-bird-cardinal-photo/">愤怒的小鸟原型</a></p>
+<p>著名游戏《愤怒的小鸟》的主角，是一群彩色的麻雀。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023113012.webp" /></p>
+<p>这种小鸟的原型是北美红雀（cardinal），它们长得简直跟游戏里面一模一样。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023113013.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023113014.webp" /></p>
+<p>2、<a href="https://alt-f4.blog/ALTF4-65/">《异星工厂》的 3D 图像</a></p>
+<p><a href="https://www.factorio.com/">《异星工厂》</a>（Factorio）是一个策略类游戏，要求玩家在一个荒芜的星球建造出一个完整的生产系统（即建造各种各样的工厂）。</p>
+<p>原始游戏是 2D 图像。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023070301.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023070302.webp" /></p>
+<p><a href="https://github.com/FUE5BASE/FUE5">FUE5</a> 是一个社区项目，目标是使用 Unreal 引擎将这个游戏变成 3D 的样子，效果非常出色。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023070305.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023070303.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023070304.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023070306.webp" /></p>
+<h2 id="文摘">文摘</h2>
+<p>1、<a href="https://austinhenley.com/blog/11000lines.html">11,000行的单个源码文件</a></p>
+<p>我曾经遇到过一个超过11,000行的源码文件，它是 VBScript 代码的电子表格应用程序，公司所有员工需要的各种表格都在这个程序里面。</p>
+<p>这个文件包含了你能想到的软件开发的所有噩梦。</p>
+<p>多年来，无数人对这个文件进行了更改，但他们不是程序员，而是从 IT 支持到业务分析师各种人都有。你无从追踪每个人更改了什么地方。</p>
+<p>整个文件看起来是从上到下执行，但我从未真正确认。代码的大致逻辑是，获取一些用户数据，然后检查数据是否满足某些条件，再执行各种动作，包括显示表单、访问共享驱动器上的文件、运行 SQL 查询、向硬编码地址发送电子邮件等等。</p>
+<p>文件里面许多变量似乎没有从未使用到，变量名也难以搞清楚含义，同义词到处都是。</p>
+<p>有趣的是，一个变量可能在第200行-210行使用，然后突然又在第8544行再次使用，其他地方就找不到踪迹了。</p>
+<p>很多逻辑似乎是多余的，可能是复制粘贴进来的，然后从未清理过。一旦我清理它，代码突然就出错了，直到今天，我有时躺在床上还想知道是什么原因造成的。</p>
+<p>它没有版本控制。关于代码更改的唯一线索，是看它抛出的错误提示和代码注释，但是我学会了不要信任那些注释。</p>
+<p>它没有测试环境。如果我进行了更改，就必须在生产环境中对其进行测试。程序的所有状态都基于用户的权限，我们只有冒充报告错误的人，才能看到他们看到的内容。</p>
+<p>它没有单元测试。如果我修改了一个地方，也没法知道会不会出错，可能要等到一周后，才有用户报告遇到了一个错误。</p>
+<p>这个故事的寓意是什么？</p>
+<p>我不知道，也许是它告诉我们，现实生活中真的有这样可怕的代码存在。</p>
+<h2 id="言论">言论</h2>
+<p>1、</p>
+<p>参观日本就像参观2000年代初期：随处可见的 CD 店，百货商店兴旺发达，人们还在使用厚重的笔记本电脑。</p>
+<p>-- <a href="https://alexanderweichart.de/5_Archive/1.-Projects/Notes/Notes-on-Japan">《访问日本的感想》</a></p>
+<p>2、</p>
+<p>人工智能背后的实际技术，主要是一小部分巧妙的技巧，使用神经网络有效地对数据进行处理，神经网络本身并不神奇，并且开发过程很好理解，但是除非你有大钱购买硬件，并且使用每个人的私人数据进行训练，否则你的模型就没什么用。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=40359459">Hacker News 读者</a></p>
+<p>3、</p>
+<p>不要将技术博客的写作视为打造“个人品牌”，它肯定对此有所帮助。但是，写作最重要的功能是，它是提升个人知识和批判性思维的一个工具。</p>
+<p>-- <a href="https://jack-vanlightly.com/blog/2022/1/25/write-for-others-but-mostly-for-yourself">《为别人而写，但主要是为自己而写》</a></p>
+<p>4、</p>
+<p>今天的创业公司还面临一个资金过剩的风险。许多创业公司资金充足，就过度招聘并迅速扩张，但并没有真正的增长或实际需求。</p>
+<p>他们没有安排最好的工程师来创造最好的产品，而是从一开始就忙于招募和处理臃肿的团队和人员扩张的烦恼。</p>
+<p>-- <a href="https://www.june.so/blog/lean-startup-method-2024">《遵循精益创业的方法》</a></p>
+<p>5、</p>
+<p>瓶装水的保质期，指的是塑料瓶的保质期，而不是水的保质期。纯净水是不会变质的。</p>
+<p>-- <a href="https://www.businessinsider.com/does-bottled-water-go-bad-yes-but-it-probably-wont-harm-you-2023-3">BusinessInsider.com</a></p>
+<h2 id="往年回顾">往年回顾</h2>
+<p><a href="https://www.ruanyifeng.com/blog/2023/05/weekly-issue-253.html">训练材料用完之日</a>（2023 #253）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2022/04/weekly-issue-203.html">英国的名校签证，伯克利的计算机教育</a>（2022 #203）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2021/04/weekly-issue-153.html">机器翻译是对译者的侮辱吗？</a>（2021 #153）</p>
+<p><a href="http://www.ruanyifeng.com/blog/2020/04/weekly-issue-103.html">信息的半衰期</a>（2020 #103）</p>
+<p>（完）</p>
+]]></description>
+      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-300.md</link>
+      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-300.md</guid>
+      <pubDate>Mon, 20 May 2024 00:44:04 -0000</pubDate>
+    </item>
     <item>
       <title>科技爱好者周刊（第 299 期）：AI 的关键是语料</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -1067,219 +1254,6 @@
 ]]></description>
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-175.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-175.md</guid>
-      <pubDate>Mon, 22 Apr 2024 00:44:15 -0000</pubDate>
-    </item>
-    <item>
-      <title>科技爱好者周刊（第 172 期）：我们会死于气候灾难吗？</title>
-      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
-<p>本杂志开源（GitHub: <a href="https://github.com/ruanyf/weekly">ruanyf/weekly</a>），欢迎提交 issue，投稿或推荐科技内容。</p>
-<p>周刊讨论区的帖子<a href="https://github.com/ruanyf/weekly/issues/1870">《谁在招人？》</a>，提供大量程序员就业信息，欢迎访问或发布工作/实习岗位。</p>
-<h2 id="封面图">封面图</h2>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080514.jpg" /></p>
-<p>今年4月，西宁野生动物园成功地人工孵化了一个高山兀鹫的鸟蛋。目前，这只雏鸟已经达到了四月龄，生长得非常良好，成为中国首只人工养活的高山兀鹫雏鸟。（<a href="http://slide.news.sina.com.cn/slide_1_86058_519393.html#p=2">via</a>）</p>
-<h2 id="本周话题我们会死于气候灾难吗">本周话题：我们会死于气候灾难吗？</h2>
-<p>上周，联合国发布了一份<a href="https://www.ipcc.ch/report/sixth-assessment-report-working-group-i/">《气候问题评估报告》</a>，供各国政府参考。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081508.jpg" /></p>
-<p>国内媒体没怎么报道这件事，但在国际上，它都是各国的头版新闻。</p>
-<p>一般来说，政府单位的报告都写得四平八稳、滴水不漏。但是，这份报告是罕见的例外，它写得非常明确尖锐，结论就是四个字：“大难临头”。</p>
-<p>报告认为，根据各种科学研究和观测结果，可以认定 <strong>气候灾难已经发生了，并将继续加剧。</strong> 人类现在所做的种种减碳努力，并不能避免灾难，只是为了不让最糟糕的结果发生。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081703.jpg" /></p>
-<p>报告描绘了非常可怕的全球变暖进程，地球的平均气温，目前比工业革命前上升了1.2度，估计未来一两年内就会上升1.5度。如果温室气体排放量继续增加，2050年前将会上升2度，本世纪末之前达到3度。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081704.jpg" /></p>
-<p>有的朋友可能觉得，两三度不算什么。但这是全球平均气温，包括海洋和陆地，由于海洋的温度波动远远小于陆地，这意味着陆地的温度上升，可能是四五度。</p>
-<p>以上海为例，<a href="https://www.tianqi.com/qiwen/city_shanghai/">七月的平均气温</a>，现在是28度到35度。如果到了2050年上升三度，就变成31度到38度，如果更高，最高气温的平均值就会达到40度。这住起来就太痛苦了。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081705.jpg" /></p>
-<p>我们会遭遇什么样的灾难？联合国报告是这样描述的：</p>
-<blockquote>
-<p>“地球将变得干燥许多，整个生态系统被破坏，导致大规模物种灭绝，并使全球的粮食保障面临巨大风险。</p>
-<p>以下五种灾难现象将会越来越严重：（1）高温，（2）干旱，（3）洪水，（4）飓风，（5）海平面上升。”</p>
-</blockquote>
-<p>气候灾难其实已经发生了，比如上个月郑州“千年一遇”的大暴雨，再比如这个月，欧洲遭遇史上最热的夏天。就在几天前，<a href="https://finance.sina.com.cn/tech/2021-08-13/doc-ikqciyzm1312604.shtml">意大利</a>报告欧洲有记录以来最高温 48.8 摄氏度，同一时间<a href="https://abcnews.go.com/Health/wireStory/europe-heat-wave-brings-concern-older-adults-homeless-79455026">西班牙</a>是47.2度，<a href="https://wap.xinmin.cn/content/32002962.html">希腊</a>是46度。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081706.jpg" /></p>
-<p>气候灾难不再是一个科学名词，而是日常生活中，真真实实发生在每个人身边。</p>
-<p>我们应该有所准备，避免或减轻气候灾难对自己的伤害。对普通人威胁比较大的，主要还是暴雨和高温。</p>
-<p>（1）遇到大暴雨，尽量不要进入地下空间或地势低洼处，也不要靠近山地，防止遇到山洪。</p>
-<p>（2）居住地的选择要考虑气温，尽量选择气候凉爽的城市。中国东部沿海各省，恐怕以后夏季高温都会破40度。深圳这种北回归线以南的城市，一年可能有半年，全天气温在30度以上。</p>
-<h2 id="科技动态">科技动态</h2>
-<p>1、<a href="https://www.fastcompany.com/90660790/this-wildly-experimental-building-has-a-roof-made-of-boats">船屋顶</a></p>
-<p>大型的世界性活动，比如奥运会和世博会，会新建大量场馆。等到活动结束，场馆就会闲置，非常可惜。</p>
-<p>即将开幕的迪拜2020世博会，意大利馆做了一个疯狂的尝试。设计师让三艘长度为40米的船，从意大利航行过来，到达迪拜以后，把船拆开翻转过来，船底当作屋顶，下面用150根钢柱支撑在地面上，变成一栋房子。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080515.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080516.jpg" /></p>
-<p>等到活动结束，再把场馆拆掉，屋顶重新变成船，继续航行回意大利。这样既节省了材料，也节省了建筑材料的运输费用。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080517.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080518.jpg" /></p>
-<p>2、<a href="https://arstechnica.com/science/2021/08/nasa-stands-by-its-astronaut-after-incendiary-russian-claims/">国际空间站的钻孔</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081402.jpg" /></p>
-<p>2018年8月的一天，宇航员突然发现，国际空间站的舱体上有一个小小的钻孔（上图），导致舱内的氧气逃逸到宇宙空间。虽然宇航员马上用胶水，临时封闭了这个孔，但是，它是从哪里来的呢？</p>
-<p>上周，俄罗斯塔斯社发表一篇文章，爆出猛料。文章点名，这个孔是一个美国女宇航员蓄意钻开的，她当时心理状况异常，幻想通过破坏飞船，触发紧急撤离，从而提前返回地球。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081403.jpg" /></p>
-<p>美国宇航局立刻发表声明，驳斥这是一派胡言，事发之前，美国宇航员根本没有靠近钻孔的位置，“我们认为这些指控没有任何可信度。”但是，美国宇航局也不能回答，这个洞是怎么回事。</p>
-<p>3、<a href="https://www.eurekalert.org/news-releases/924367">音乐消费量下降</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080406.jpg" /></p>
-<p>一项研究发现，自从新冠疫情爆发以后，音乐流媒体的消费量大约下降了10%，使得全球最大音乐网站之一的 Spotify 收入减少。</p>
-<p>这很奇怪，人们在隔离期间无事可做，反而减少了听音乐。</p>
-<p>原因可能是，音乐并不是独立的娱乐活动，而往往是对其他活动（比如上下班期间）的补充。一旦人们减少了其它活动，音乐消费也随之减少。</p>
-<p>4、<a href="https://www.vice.com/en/article/dyvk9z/every-car-made-after-2027-may-have-drunk-driving-monitoring-system">酒驾监控系统</a></p>
-<p>最近，美国国会通过一项法律，规定2027年后生产的所有汽车都必须配备酒驾监控系统，防止驾驶员酒后驾车。美国每年因为酒后驾车，有超过10000人丧生。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080405.jpg" /></p>
-<p>但是，麻烦的是目前还没有任何技术，能够主动发现酒后驾车。美国政府正在研究两种有希望的方案。一种是检测车内空气，找出空气里面的酒精成分，这种方法的问题是，无法区分酒精来自驾驶员的呼吸，还是来自乘客的呼吸。</p>
-<p>另一种方案是在引擎按钮上，装备一个红外线触摸传感器，通过皮肤检测血液中的酒精含量。</p>
-<p>5、<a href="http://peterhajas.com/blog/streamdeck.html">USB 快捷键盘</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080204.jpg" /></p>
-<p>一家国外的电脑配件厂商，最近推出了一款 USB 快捷键盘，一共有32个键。每个键都可以编程，指定所对应的操作。同时，它的键帽是一个 LCD 小屏幕，可以指定显示的图片。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080210.jpg" /></p>
-<p>网友发挥创意，为它设计了各种用途。</p>
-<p>比如，数字键盘</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080206.jpg" /></p>
-<p>功能键盘</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080207.jpg" /></p>
-<p>音控键盘。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080209.jpg" /></p>
-<p>Emoji 键盘。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080208.jpg" /></p>
-<p>6、<a href="http://darbelofflab.mit.edu/robotics-research/supernumerary-robotic-limbs-srl/">机械手臂</a></p>
-<p>麻省理工学院的科学家，正在开发可穿戴机器人，为人类用户提供两个额外的机械手臂。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202106/bg2021061404.jpg" /></p>
-<p>这个机器人的最大难度，还不是产品本身，而是如何让人类灵活地操作它们，以及如何在行走时保证人体的平衡。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202106/bg2021061405.jpg" /></p>
-<p>如果开发成功，这种机器人会有巨大的实用价值，可以用于制造业、建筑业、老人辅助、行走康复训练等等。</p>
-<h2 id="文章">文章</h2>
-<p>1、<a href="https://www.tmtpost.com/5527751.html">碳排放交易是怎么回事</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081222.jpg" /></p>
-<p>作者10年前从西安交通大学热能工程系毕业，选择从事碳排放管理员职业。本文用通俗的语言，解释碳排放交易到底是怎么回事，为什么对火力电厂的利润有很大影响。</p>
-<p>2、<a href="https://justyy.com/archives/45543">微软入职大礼包</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081802.jpg" /></p>
-<p>作者入职微软英国，上班第一天拿到入职大礼包，看看里面有什么。（<a href="https://github.com/ruanyf/weekly/issues/1889">@DoctorLai</a> 投稿）</p>
-<p>3、<a href="https://sspai.com/post/68027">空气湿度知识</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080101.jpg" /></p>
-<p>空气湿度对人体的影响非常大，比如气温为31度时，如果湿度达到78%，人体实际感受到的温度相当于40度。本文介绍什么是湿度，以及如何除湿或加湿。</p>
-<p>4、<a href="https://ciechanow.ski/internal-combustion-engine/">内燃机原理</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080102.jpg" /></p>
-<p>一篇令人叹为观止的文章，使用大量互动式的动画，讲解内燃机（也就是汽车发动机）是运作过程。</p>
-<p>5、<a href="https://hacks.mozilla.org/2021/08/mdns-autocomplete-search/">MDN 如何实现自动补全搜索？</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080410.jpg" /></p>
-<p>本文介绍 Mozilla 的文档网站如何实现搜索框的自动补全功能。</p>
-<p>6、<a href="https://blog.gitguardian.com/how-to-improve-your-docker-containers-security-cheat-sheet/">如何提高 Docker 容器的安全性</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080302.jpg" /></p>
-<p>本文逐点列出提高 Docker 容器安全性的一些措施。</p>
-<p>7、<a href="https://utcc.utoronto.ca/~cks/space/blog/programming/CUnionsForNamespaces">C 语言 Union 结构的妙用</a>（英文）</p>
-<p>作者介绍了 Union 结构的一个小技巧，用来隐藏 Struct 结构，实现内部属性的直接访问。</p>
-<p>8、<a href="https://www.expatsoftware.com/Articles/guy-on-the-beach-with-a-laptop.html">我如何住在海滩上建立自己的软件生意</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080211.jpg" /></p>
-<p>作者是一个国外程序员，一直住在海滩边冲浪，他利用业余时间开发 SaaS 服务，远程赚钱支持自己的冲浪生活。</p>
-<p>9、<a href="https://www.banterly.net/2021/07/31/new-in-git-switch-and-restore/">Git 的两个新命令</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080201.jpg" /></p>
-<p>新版本的 Git 加了两个命令：git switch 和 git restore，本文介绍它们的用法。</p>
-<p>git switch 用来切换分支，git restore 用来恢复原样，可以取代 git checkout。</p>
-<h2 id="工具">工具</h2>
-<p>1、<a href="https://github.com/saghul/txiki.js">txiki.js</a></p>
-<p>一个极小化的 JavaScript 运行时，跟 Node.js 类似，但只有 1.8MB。</p>
-<p>2、<a href="https://github.com/segfall/static-wiki">static.wiki</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021073101.jpg" /></p>
-<p>维基百科的静态化工具，将维基百科变成一个只读的离线静态网站。</p>
-<p>它将所有条目导入一个 SQLite 数据库，然后实现一个前端的查询展示页面。注意，它的查询是 SQLite 的静态化查询，不需要有后端服务。</p>
-<p>3、<a href="https://daisyui.com/">daisyUI</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021073003.jpg" /></p>
-<p>一个基于 Tailwind 的 CSS 组件库，用法简洁，封装掉了 Tailwind CSS 的复杂性，看上去还不错。</p>
-<p>4、<a href="https://github.com/satorumurmur/bibi">Bibi</a></p>
-<p>网页 Epub 阅读器，可以在网页上展示、阅读 Epub 书籍。</p>
-<p>5、<a href="https://creator.nightcafe.studio/text-to-image-art">Text-To-Image Art</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080606.jpg" /></p>
-<p>一个在线工具，根据用户提供的英文句子，使用人工智能模型，自动生成一幅绘画，比如上图是《夏日微风中的白色建筑》（white architecture in the summer breeze）。</p>
-<p>这是一个收费服务，但提供三张图的免费额度。</p>
-<p>6、<a href="https://postgresapp.com/">Postgres.app</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080701.jpg" /></p>
-<p>macOS 系统的 PostgreSQL 数据库安装包，并且内置了许多常用插件，号称是在 Mac 上使用 PostgreSQL 的最简单方法。</p>
-<p>7、<a href="https://www.calligrapher.ai/">Calligrapher.ai</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080703.jpg" /></p>
-<p>一个 Web 工具，自动生成英文字符串的手写动画，可以定制各种参数。还有<a href="https://github.com/GirkovArpa/calligrapher-ai">桌面版</a>下载。</p>
-<p>8、<a href="https://honzaap.github.io/Systemizer/">Systemizer</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080702.jpg" /></p>
-<p>一个开源的计算机系统示意图的作图工具，可以快速在网页上画出系统结构图。</p>
-<h2 id="资源">资源</h2>
-<p>1、<a href="https://www.ipprimer.com/">Daryl 的 TCP/IP 入门</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202106/bg2021062810.jpg" /></p>
-<p>一份英语教程，向初学者介绍 TCP/IP 协议的子网、寻址和路由知识。</p>
-<p>2、<a href="https://github.com/douchuan/algorithm/tree/main/src">算法（第 4 版）的 Rust 实现</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081708.jpg" /></p>
-<p>作者学习《算法（第 4 版）》时，将书中的算法逐一用 Rust 语言实现，做成了一个仓库。（<a href="https://github.com/ruanyf/weekly/issues/1885">@douchuan</a> 投稿）</p>
-<p>3、<a href="https://github.com/pandolia/tinyc">自己动手写编译器</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081803.jpg" /></p>
-<p>一本中文电子书，介绍一个非常简单的编译器的实现，通过实例，描述基本的编译原理及过程。（<a href="https://github.com/ruanyf/weekly/issues/1895">@pandolia</a> 投稿）</p>
-<p>4、<a href="http://www.redwoodworld.co.uk/locations.htm">Redwoods in the British Isles</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021080513.jpg" /></p>
-<p>国外经常有一些奇怪的网站，比如这个网站收集英国每一棵红杉树的位置和照片。</p>
-<h2 id="图片">图片</h2>
-<p>1、<a href="https://www.bbc.com/future/article/20210628-concrete-the-material-that-defines-our-age">海啸墙</a></p>
-<p>2011年，日本遭受了地震引发的巨大海啸，大约2万人死亡。</p>
-<p>为了避免以后再发生这样的惨剧，日本政府在沿海地区，修建了长250公里、高12.5米的海啸墙。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202106/bg2021063002.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202106/bg2021063005.jpg" /></p>
-<p>政府希望这一片高墙可以阻挡海啸，至少为海边的居民多赢得一些逃生的时间。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202106/bg2021063007.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202106/bg2021063004.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202106/bg2021063003.jpg" /></p>
-<p>墙上留下一些小窗口，可以看到外面。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202106/bg2021063006.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202106/bg2021063008.jpg" /></p>
-<p>2、<a href="https://www.marinetraffic.com/blog/renewing-our-respect-for-invisible-essential-workers-of-the-seas/">远洋运输船</a></p>
-<p>大家可能有一种印象，人类都居住在陆地上，大海是没有人居住的。</p>
-<p>但是实际上，任何一个时刻，都有几万条船在远洋航行，包括货轮、油轮、渔轮，这意味着大概有几十万人生活在海上。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021070302.jpg" /></p>
-<p>上图中，每一个绿点是油轮，每一个红点是货轮。要是没有这些船，以及船上的船员，世界贸易就要停顿了。</p>
-<p>3、<a href="https://www.visualcapitalist.com/map-explainer-key-facts-about-afghanistan/">阿富汗地形图</a></p>
-<p>下面是阿富汗的地形图。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081920.jpg" /></p>
-<p>可以看到，这个国家全境都是高山，只有西南方向有一点点平原。而且，它东部连接帕米尔高原，海拔非常高，最高峰将近7500米，到处是高耸的雪山、深邃的山谷和无人的高原荒漠。</p>
-<p>这种地形，再加上没有高等级道路，特别适合游击队出没，不适合正规军作战，大型武器无法发挥威力。这就是前苏联和美国都无法在阿富汗获胜，最终只能铩羽而归的主要外部原因。</p>
-<h2 id="文摘">文摘</h2>
-<p>1、<a href="https://slimemoldtimemold.com/2021/07/07/a-chemical-hunger-part-i-mysteries/">为什么人们会肥胖？</a></p>
-<p>现代人很难想象，人类在历史上一直是瘦的，而且是非常瘦。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081914.jpg" /></p>
-<p>只有工业化时代后，人类才开始变胖，而且变得越来越胖。</p>
-<p>一个世纪前，美国成年男子的平均体重是70公斤，今天是88.5公斤。当时约有 1% 的人口有肥胖问题，今天大约是 36%。而且，肥胖率在 2010 年至 2018 年间的增幅，是 2000 年至 2008 年间的两倍多。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081915.jpg" /></p>
-<p>曾经有一个研究生，对实验室老鼠做过一个实验。他将超市买来的人类食品喂老鼠，包括糖果、蛋糕、油炸食品等等，都是带有大量卡路里的美味食品。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081916.jpg" /></p>
-<p>老鼠吃了这些人类食品以后，以前所未有的速度增重。研究者又将这些食品，拿给浣熊和猴子吃，结果它们也是会迅速长胖。</p>
-<p>他因此得到一个结论： <strong>大量食用当代的人类加工食品，是长胖的最有效方法。</strong></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081917.jpg" /></p>
-<p>那些加工食品有一个问题，就是它会引诱你不停地吃，明明已经吃过了，但是没过多久，你又开始想吃了，即使事实上你并不饿。未加工的自然食物，就没有这个问题，吃过适量的食物后，你会停止进食，并保持健康的体重。</p>
-<p>今天，非洲和南美洲还有一些原始民族，生活在丛林里面，他们只吃自然获取的食物，几乎没有任何肥胖问题。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081918.jpg" /></p>
-<p>科学家的另一个关于肥胖症的发现是，搬到高海拔地区的人有时会一下子减轻很多体重。而且，高海拔地区人的平均体重，要比低海拔地区轻。</p>
-<p>为什么高海拔地区有助于减肥，至今没有答案。有的学者认为存在“高原厌食症”，但是并没有足够证据。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081919.jpg" /></p>
-<p>如果你有肥胖问题，搬到高海拔地区，也许是一个不错的减肥方法。</p>
-<h2 id="言论">言论</h2>
-<p>1、</p>
-<p>向别人销售东西时，要把它说得很复杂，人们愿意为复杂的东西买单；说服别人时，要把内容说得很简单，越复杂的东西，能说服的听众就越少。</p>
-<p>-- <a href="https://www.collaborativefund.com/blog/too-smart/">《太聪明的人，为何不容易沟通》</a></p>
-<p>2、</p>
-<p>科幻小说《三体》提出，宇宙就像一个黑暗森林，外星文明可能充满敌意，所以最好不要暴露自己。</p>
-<p>但是在不久的将来，由于核战争、全球变暖、流氓 AI 或其它原因，消灭我们人类的可能不是外星文明，而是我们自己。我们似乎就是那些对人类怀有敌意的外星人。</p>
-<p>-- <a href="https://news.ycombinator.com/item?id=27855558">Hacker News 读者</a></p>
-<p>3、</p>
-<p>悉尼是一个生活成本六位数的城市，但是你很难找到六位数收入的工作。</p>
-<p>-- <a href="https://news.ycombinator.com/item?id=27926743">Hacker News 读者</a></p>
-<p>4、</p>
-<p>频率错觉（Frequency illusion）是一种认知偏差，指的是第一次注意到某事后，往往会更频繁地注意到它，导致认为此事是高频现象。简单说，频率错觉就是“你刚刚发现一个概念或事物，然后突然发现它似乎无处不在”。</p>
-<p>-- <a href="https://en.wikipedia.org/wiki/Frequency_illusion">维基百科</a></p>
-<p>5、</p>
-<p>Windows 的游戏优势有多大？根据 Steam 游戏平台 2021 年 6 月的数据，Linux 上玩家比例是 0.89%，macOS 是 2.54%，Windows 是 96.57%。</p>
-<p>-- <a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Steam-On-Linux-Tap-Dance-0.9">phoronix.com</a></p>
-<p>6、</p>
-<p>苹果公司刚成立时，员工编号由第一任 CEO 斯科蒂分配。他喜欢激怒乔布斯，所以给沃兹的员工编号是1号，给乔布斯是2号。</p>
-<p>乔布斯恳求变成0号员工，斯科蒂拒绝了。后来，斯科蒂被解雇了，乔布斯就得到了梦寐以求的 0 号。顺便说一句，沃兹从不关心他的编号是什么。</p>
-<p>-- <a href="https://www.quora.com/When-Apple-began-designating-employee-numbers-was-Steve-Jobs-offended-that-Wozniak-received-1-while-he-got-2-and-so-he-believed-he-should-be-second-to-no-one-so-he-took-0-instead/answer/Randy-Wigginton">兰迪·威金顿</a>，苹果公司第一位软件工程师</p>
-<h2 id="历史上的本周">历史上的本周</h2>
-<p>2020年（第 121 期）：<a href="https://www.ruanyifeng.com/blog/2020/08/weekly-issue-121.html">为什么人类没有越来越闲？</a></p>
-<p>2019年（第 69 期）：<a href="https://www.ruanyifeng.com/blog/2019/08/weekly-issue-69.html">做得好 vs 做得快</a></p>
-<p>2018年（第 18 期）：<a href="https://www.ruanyifeng.com/blog/2018/06/weekly-issue-8.html">无人机攻击，难以防范</a></p>
-]]></description>
-      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-172.md</link>
-      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-172.md</guid>
       <pubDate>Mon, 22 Apr 2024 00:44:15 -0000</pubDate>
     </item>
   </channel>
