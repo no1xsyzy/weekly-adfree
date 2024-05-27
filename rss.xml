@@ -6,7 +6,213 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2024</copyright>
-    <lastBuildDate>Mon, 20 May 2024 00:44:04 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 May 2024 00:45:10 -0000</lastBuildDate>
+    <item>
+      <title>科技爱好者周刊（第 301 期）：OpenAI 的图书馆工位</title>
+      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/4390">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
+<h2 id="封面图">封面图</h2>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052207.webp" /></p>
+<p>新疆喀什的阿图什天门景区，爬山路线都是在悬崖上架设的栈道，非常壮观。（<a href="https://www.douyin.com/video/7358322104661527843">via</a>）</p>
+<h2 id="openai-的图书馆工位">OpenAI 的图书馆工位</h2>
+<p>OpenAI 是眼下最炙手可热、排名第一的 AI 公司。</p>
+<p>大家大概没见过，这家公司的总部。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051902.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051904.webp" /></p>
+<p>它的总部是旧金山市区的一栋三层小楼，原来是一家食品厂，后来改建为办公楼。</p>
+<p>这栋小楼很不起眼，外面也没有大幅的标识，你根本想不到，里面正在开发人类最先进的人工智能模型。</p>
+<p>那么，楼里什么样？</p>
+<p>《纽约时报》最近公开了<a href="https://www.nytimes.com/2024/05/15/technology/openai-library-office.html?unlocked_article_code=1.sk0.YPlO.TYf5O94wbM-o&amp;smid=url-share">一组照片</a>，披露楼里有一个很漂亮的图书馆。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051905.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051909.webp" /></p>
+<p>藏书都是 OpenAI 员工推荐的，还装饰了科学家的照片。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051907.webp" /></p>
+<p>这个图书馆可不是只有一间屋子，而是有两层，面积相当大。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051908.webp" /></p>
+<p>最特别的是，图书馆里面有很多自习桌，就像大学的自习室一样。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051910.webp" /></p>
+<p>员工可以在里面读书、休息，也可以一整天在这里办公，相当于工位。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051911.webp" /></p>
+<p>图书馆工位有很多好处。首先，就是安静，可以集中注意力，全力投入工作，思考一些困难的问题。这对 OpenAI 那样开创性的公司非常重要。</p>
+<p>其次，图书馆的气氛比较放松，不压抑，工作时精神不容易疲倦，甚至还有一些漫游知识海洋的趣味，可能激发意想不到的灵感。</p>
+<p>我不由联想到了，国内互联网公司的工位。通常是一整层写字楼，改造成开放式空间，大家挤在一起办公，整层往往有几百个工位，就像一个喧闹的大车间。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051912.webp" /></p>
+<p>这种车间式工位会互相影响，而且有一种压抑的气氛，容易让人烦躁和焦虑。</p>
+<p>它只适合“大军团作战”、依靠大量人力资源投入的项目。对于那种极其困难、需要苦思冥想的智力项目，我认为这种工位有反作用。</p>
+<p>现在的情况是，移动互联网已经饱和了，没有那么多市场机会了，“大军团作战”越来越显示它的局限性。</p>
+<p>未来的市场要靠货真价实的创新，我建议创新型的小公司，尤其是从事 AI 模型的公司，可以借鉴 OpenAI 的做法，在公司里面设置舒适的图书馆和自习室，允许员工在这里办公，也许会有奇效。</p>
+<h2 id="科技动态">科技动态</h2>
+<p>1、<a href="https://a.exozy.me/posts/bad-apple-animated-qr-code/">动态二维码</a></p>
+<p>我们每天扫描的二维码都是静态的，你有没有想过，二维码也可以动态。</p>
+<p>动态二维码每时每刻都在变化，我们用摄像头扫描它，读到的就是连续不断的数据，可以实现摄像头下载文件。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051804.webp" /></p>
+<p>麻省理工学院的两位研究人员，提出了这个设想，还给出了<a href="https://a.exozy.me/posts/bad-apple-animated-qr-code/">初步的代码</a>。</p>
+<p>他们把文件先编码成一段视频，格式就是动态二维码，在手机上播放。另一个手机使用摄影头，对视频里面的动态二维码进行解码，再还原出原始文件。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051803.webp" /></p>
+<p>这种技术用起来很简单，符合直觉，速度也不慢，可以达到 2Mbps，很适合两台手机在没有网络的情况下（比如飞机上）互传数据。</p>
+<p>2、<a href="https://news.artnet.com/art-world/ancient-tools-monkeys-2237820">猴子的石器</a></p>
+<p>一般认为，美洲最早的居民是印第安人，大约1万年前来到美洲。</p>
+<p>但是后来，考古学家在南美洲发现了5万年前的石器。难道印第安人之前，美洲还有其他人类？</p>
+<p>但是，除了这些石器，找不到任何其他证据。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023092201.webp" /></p>
+<p>最近，有一篇论文提出，这些石器并不是来自人类，而是来自卷尾猴。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023092202.webp" /></p>
+<p>这些猴子也会做石器，而且做出来的跟“古人类的石器”非常相似。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023092203.webp" /></p>
+<p>猴子们有自己的采石场，在那里它们选择合适的石头作为锤子，敲碎坚果。石器还可以帮助卷尾猴挖掘。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023092204.webp" /></p>
+<p>这就引出一个问题：我们在博物馆看到的那些石器，会不会也是猴子做的？</p>
+<p>3、<a href="https://newatlas.com/good-thinking/ingenious-cardboard-bed/">纸板床</a></p>
+<p>一家西班牙创业公司，发明了一种纸板床，可以低成本、快速地为难民和灾民搭建床位。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023100103.webp" /></p>
+<p>它的成本是每张17美元（约125元人民币），大量生产还能再降低。工厂能在数小时内生产出1000张床。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023100104.webp" /></p>
+<p>这种床的搭建也非常简单，一个人一小时就可以搭建700张床，其实就是打开纸箱，比任何其他方案都要快几十倍。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023100105.webp" /></p>
+<p>每张床最多可支撑350公斤的重量，床上可以站5个成年人。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023100106.webp" /></p>
+<p>西班牙红十字会已经订购了首批几百张纸板床，用于救援行动时安置难民和灾民。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023100107.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023100108.webp" /></p>
+<h2 id="ai-相关">AI 相关</h2>
+<p>1、<a href="https://tedium.co/2024/05/17/google-web-search-make-default/">谷歌搜索的新模式</a>（英文）</p>
+<p>谷歌美国版在搜索页面上，加了一个“人工智能概述”，给出 AI 对搜索结果的总结。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052201.webp" /></p>
+<p>很多人不喜欢这样，因为他们使用谷歌是为了查找网站而不是获取答案。所以，谷歌又添加了一个“传统模式”，让你查看没有 AI 的搜索结果。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052004.webp" /></p>
+<p>未来，很多网站可能会特别标注“本站无 AI”，作为吸引用户的特色。</p>
+<p>2、<a href="https://petapixel.com/2024/05/21/microsoft-paints-new-ai-image-generator-builds-on-your-brushstrokes/">Windows 画板引入 AI</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052301.webp" /></p>
+<p>Windows 11 的新版本，将 AI 引入了传统的画板程序（Paint）。用户只需画出轮廓（图左），AI 会自动生成对应的图片（图右）。</p>
+<p>3、<a href="https://developer.chrome.com/docs/devtools/console/understand-messages?hl=zh-cn">AI 解读网页报错</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051802.webp" /></p>
+<p>谷歌为 Chrome 浏览器的开发者工具，引入了 AI，现在可以查看网页报错的 AI 解读。</p>
+<p>4、<a href="https://support.qq.com/product/637894">万象生图</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052309.webp" /></p>
+<p>Windows 桌面软件，可以在日常电脑上运行的快速文生图模型，无需 GPU 和 Python。（<a href="https://github.com/ruanyf/weekly/issues/4508">@taotaow</a> 投稿）</p>
+<p>5、<a href="https://github.com/Acly/krita-ai-diffusion">krita-ai-diffusion</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023112103.webp" /></p>
+<p>图像编辑器软件 Krita 的 AI 插件，类似 PhotoShop 的“图片 AI 扩充”，用 AI 绘制原图没有的部分，不过它是开源的。</p>
+<p>6、<a href="https://www.reddit.com/r/ArtificialInteligence/comments/1cpbh1s/ilya_sutskever_if_you_really_learn_all_of_these/">AI 重要论文</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052312.webp" /></p>
+<p>OpenAI 的前首席科学家 Ilya Sutskever 开出了一份论文清单，一共包含30篇论文。</p>
+<p>他说：”如果你真正学会了所有这些，你就会知道当今 AI 的 90% 重要内容。“</p>
+<h2 id="文章">文章</h2>
+<p>1、<a href="https://taki-mekhalfa.github.io/misc/2024/04/14/beauty_of_olap_sql.html">数据分析的 SQL 示例</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024041502.webp" /></p>
+<p>本文是一篇教程，给出了几个示例，如何编写 SQL 进行数据分析。</p>
+<p>2、<a href="https://mp.weixin.qq.com/s/HAT1UwG42R_1SFmTjVDlCA">PHP 老矣，尚能饭否？</a>（中文）</p>
+<p>本文作者是 PHP 官方 PECL 开发组成员，分析了 PHP 流行度下降的原因，存在的问题和现有的优势。（<a href="https://github.com/ruanyf/weekly/issues">@ryantang1991</a> 投稿）</p>
+<p>3、<a href="https://wcedmisten.fyi/post/keyboard-shortcuts-userscripts/">如何为网页添加快捷键</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024022101.webp" /></p>
+<p>作者讲解如何用油猴脚本，为网页添加自己的快捷键。</p>
+<p>4、<a href="https://ishadeed.com/article/css-has-guide/">CSS :has() 选择器教程</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024022402.webp" /></p>
+<p>本文介绍如何使用<code>:has()</code>选择器，特点是有大量互动示例。</p>
+<p>5、<a href="https://www.lilysthings.org/blog/daily-driving-freebsd/">我安装 FreeBSD 桌面的经历</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023111601.webp" /></p>
+<p>FreeBSD 是 Unix 系统的正统后代，很少有人选它作为桌面系统。万一你想这么做，可以参考这篇文章。</p>
+<p>6、<a href="https://dhashe.com/xargs-is-the-inverse-function-of-echo.html">xargs 是 echo 的逆操作</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024041302.webp" /></p>
+<p>xargs 是一个重要的 Linux 命令，本文讲解它到底有什么用。</p>
+<h2 id="工具">工具</h2>
+<p>1、<a href="https://github.com/JiHong88/suneditor">SunEditor</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023111801.webp" /></p>
+<p>一个开源的“所见即所得”编辑器，兼容性比较好。</p>
+<p>2、<a href="https://httpraccoons.com/">TrasHTTPandas</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023111905.webp" /></p>
+<p>这个网站提供各种状态码的 HTTP 回应，供 API 调用，可以用来调试前端请求。</p>
+<p>3、<a href="https://github.com/Anxcye/anx-reader">安读</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051901.webp" /></p>
+<p>一款使用 Flutter 编写的桌面读书软件，支持 WebDAV 同步。（<a href="https://github.com/ruanyf/weekly/issues/4486">@Anxcye</a> 投稿）</p>
+<p>4、<a href="https://vspace.cyhuajuan.site/">VSpace</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052202.webp" /></p>
+<p>一个浏览器插件，提供侧边栏的垂直书签和标签页管理器。 （<a href="https://github.com/ruanyf/weekly/issues/4490">@cyhuajuan</a> 投稿）</p>
+<p>5、<a href="https://github.com/cyhuajuan/FreeReNamer">FreeReNamer</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052203.webp" /></p>
+<p>开源的跨平台桌面软件，用来将文件批量重命名。（<a href="https://github.com/ruanyf/weekly/issues/4491">@cyhuajuan</a> 投稿）</p>
+<p>另有一个类似的照片重命名软件 <a href="https://github.com/Arman19941113/rename-photos">Rename Photos</a>。（<a href="https://github.com/ruanyf/weekly/issues/4513">@Arman19941113</a> 投稿）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052311.webp" /></p>
+<p>6、<a href="https://github.com/mulaRahul/keyviz">Keyviz</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052204.webp" /></p>
+<p>开源的 Windows 软件，在桌面上显示用户实时的按键。（<a href="https://github.com/ruanyf/weekly/issues/4505">@Y024</a> 投稿）</p>
+<p>7、<a href="https://github.com/didi/xiaoju-survey">XIAOJUSURVEY</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052310.webp" /></p>
+<p>一套开源的问卷系统，自带后端和前端，用于架设管理自己的问卷。（<a href="https://github.com/ruanyf/weekly/issues/4510">@sudoooooo</a> 投稿）</p>
+<p>8、<a href="https://www.quetta.net/">Quetta</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024012001.webp" /></p>
+<p>一个注意保护个人隐私的手机浏览器，支持 iOS 和安卓，不收集用户的任何数据，也防止被网站收集。</p>
+<p>9、<a href="https://sandstorm.io/">Sandstorm</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202306/bg2023060504.webp" /></p>
+<p>一个开源的 Web 应用软件商店，安装以后，就可以在它的商店里面，点击安装/运行多种 Web 应用。</p>
+<p>10、<a href="https://databasediagram.com/">Database Diagram</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202306/bg2023060902.webp" /></p>
+<p>一个免费网站，在线生成数据库的 ER（实体-关系）图。</p>
+<p>11、<a href="https://github.com/algolia/autocomplete">autocomplete</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202306/bg2023060904.webp" /></p>
+<p>Algolia 公司推出的 JS 库，实现搜索关键字的自动补全。</p>
+<h2 id="资源">资源</h2>
+<p>1、<a href="https://rust-exercises.com/01_intro/00_welcome">学习 Rust 的 100 个练习</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051807.webp" /></p>
+<p>Rust 语言的一个初学者教程，通过100个练习来学习这门语言。</p>
+<p>2、<a href="https://github.com/lydiahallie/javascript-questions/blob/master/zh-CN/README-zh_CN.md">JavaScript 语法问题</a>（中文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051808.webp" /></p>
+<p>这个仓库收集了100多个 JavaScript 的语法选择题，可以试试你是否真的了解这门语言。</p>
+<p>3、<a href="https://www.playphrase.me/">PlayPhrase.me</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202305/bg2023052004.webp" /></p>
+<p>搜索一个英语短语，这个网站会展示包含这个短语的电影片段。</p>
+<p>4、<a href="https://ambiph.one/">ambiphone</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024010701.webp" /></p>
+<p>这个网站可以播放环境音和白噪声，适合当作背景音乐。</p>
+<p>5、<a href="https://proxy.incolumitas.com/proxy_detect.html">代理检测</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024010709.webp" /></p>
+<p>该网站提供一系列测试，用来检测用户是否正在使用代理。</p>
+<h2 id="图片">图片</h2>
+<p>1、<a href="https://www.revk.uk/2017/12/its-official-adsl-works-over-wet-string.html">湿绳子传信号</a></p>
+<p>电话线和网线都是铜线，因为铜可以传送电信号。</p>
+<p>水也是导电的，因此理论上，水也可以充当电线。</p>
+<p>有人就真的做了这样的尝试，找了一根细麻绳，浸透了咸水（增加导电能力），当作 ADSL 的连接线，看看能否上网。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051805.webp" /></p>
+<p>他把入户线连上湿麻绳，再连上另一端。下图中，地毯湿漉漉的地方，上面就是挂着两根湿麻绳。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024051806.webp" /></p>
+<p>事实证明，湿麻绳真的可以上网，而且速度不慢，下行网速达到了3.5Mb/s。</p>
+<p>只是你不能用手碰这根绳子，并且绳子干了以后，就没法上网了。</p>
+<h2 id="文摘">文摘</h2>
+<p>1、<a href="https://kevinkruse.com/the-ceo-and-the-three-envelopes/">CEO 和三个信封</a></p>
+<p>一家陷入困境的公司，聘请了一位新的 CEO。</p>
+<p>即将卸任的前 CEO 私下会见了他，并向他赠送了三个有编号的信封。“如果你遇到了重大麻烦，请打开这些信封，每次只能打开一个。”前 CEO 说。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052304.webp" /></p>
+<p>三个月过去了，公司的销售额和利润仍然在大幅下降，新任 CEO 受到了很大的压力。</p>
+<p>他开始惊慌，但随后他想起了那些信封。他从抽屉里拿出第一个信封，上面写着：“责怪你的前任。”</p>
+<p>新任 CEO 就召开新闻发布会并解释说，前任给他留下了烂摊子，清理它的时间比预期要长，但一切都在正确的轨道上。媒体和华尔街对他的解释感到满意，做出了积极回应。</p>
+<p>又一个季度过去了，公司仍在苦苦挣扎。吸取了之前的经验，他就打开了第二个信封，上面写着：“重组。” 因此，他解雇了员工，整合了部门，尽可能地削减成本，华尔街和媒体都对他的努力表示赞赏。</p>
+<p>三个月过去了，公司的销售额和利润仍然裹足不前。他在财报电话会议前，走进办公室，关上门，打开第三个信封，上面写着：“准备三个信封。”</p>
+<h2 id="言论">言论</h2>
+<p>1、</p>
+<p>我终于做到了，让 AI 关闭 AI。几个月前，微软将 Copilot 服务加到了 Windows，我关掉了它。但是，最新一次的更新让它又复活了。</p>
+<p>我就问 Copilot，如何才能摆脱它？它建议我像其他程序一样卸载，但微软没有提供它的卸载。我又问 Copilot 怎么办？它继续告诉我要更改的注册表项的确切位置，可以阻止它的加载。现在，它已经消失了。</p>
+<p>-- <a href="https://realsocial.life/@WearsHats/112449961604246276">@WearsHats@realsocial.life</a></p>
+<p>2、</p>
+<p>我的职业建议是，行动要急不可耐，对于结果要抱有耐心。</p>
+<p>-- <a href="https://noahkagan.com/brutally-honest-career-advice-to-my-younger-self/">《给年轻自己的职业建议》</a></p>
+<p>3、</p>
+<p>大量的面试和考试，基本上是在测试你能在多大程度上替代编译器。比如，Java 认证考试倾向于考察语法和编译问题，而不是实际编程的能力或系统设计的能力。</p>
+<p>-- <a href="https://www.blobstreaming.org/im-a-developer-not-a-compiler/">《我是程序员而不是编译器》</a></p>
+<p>4、</p>
+<p>20多岁时，我跟一个长辈说：“我很担心，别人会怎么看待我做的那个决定。”长辈说：“放心吧，你没有观众的。”</p>
+<p>现在想起来，我认为这是我得到过的最好建议。</p>
+<p>-- <a href="https://kottke.org/24/04/amanda-there-is-no-audience">阿曼达·福蒂尼</a>（Amanda Fortini），美国作家</p>
+<h2 id="往年回顾">往年回顾</h2>
+<p><a href="https://www.ruanyifeng.com/blog/2023/05/weekly-issue-254.html">人生是一个长板问题</a>（2023 #254）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2022/04/weekly-issue-204.html">如何度过疫情、裁员、还有战争</a>（2022 #204）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2021/04/weekly-issue-154.html">1982年的信息社会预言</a>（2021 #154）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2020/04/weekly-issue-104.html">语音合成的用途</a>（2020 #104）</p>
+<p>（完）</p>
+]]></description>
+      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-301.md</link>
+      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-301.md</guid>
+      <pubDate>Mon, 27 May 2024 00:45:10 -0000</pubDate>
+    </item>
     <item>
       <title>科技爱好者周刊（第 300 期）：三十年，解决人生三大问题</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -1035,226 +1241,6 @@
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-226.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-226.md</guid>
       <pubDate>Mon, 22 Apr 2024 00:44:16 -0000</pubDate>
-    </item>
-    <item>
-      <title>科技爱好者周刊（第 175 期）：知识广度 vs 知识深度</title>
-      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
-<p>本杂志开源（GitHub: <a href="https://github.com/ruanyf/weekly">ruanyf/weekly</a>），欢迎提交 issue，投稿或推荐科技内容。</p>
-<p>周刊讨论区的帖子<a href="https://github.com/ruanyf/weekly/issues/1913">《谁在招人？》</a>，提供大量程序员就业信息，欢迎访问或发布工作/实习岗位。</p>
-<h2 id="封面图">封面图</h2>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202109/bg2021090809.jpg" /></p>
-<p>河北太行山脉，山头密密麻麻都被太阳能板覆盖了。（<a href="http://m.thepaper.cn/rss_newsDetail_2755422">via</a>）</p>
-<h2 id="本周话题知识广度-vs-知识深度">本周话题：知识广度 vs 知识深度</h2>
-<p><a href="https://www.ruanyifeng.com/blog/2021/09/weekly-issue-174.html">上一期</a>谈到，“特长程序员”比“全能程序员”吃香。</p>
-<p>网友发给我一个<a href="https://nested.substack.com/p/short-fat-engineers-are-undervalued">网址</a>，国外有人已经谈过这个话题。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202102/bg2021021404.jpg" /></p>
-<p>国外作者画了一张图，将世界上的程序员比喻成三种形状。</p>
-<p>（1）大饼型：拥有知识广度，但没有知识深度。</p>
-<p>（2）竹竿型：拥有知识深度，但没有知识广度。</p>
-<p>（3）T 型：介于前两者之间。</p>
-<p>那篇文章也认为，通常情况下，竹竿型程序员的出路最好，雇主愿意为知识深度买单。因为现代社会高度分工，越是大公司，岗位职责越明确，需要的是领域专家，而不是多面手。</p>
-<p>但是作者提到，<strong>有一种情况例外，知识广度有明显优势，那就是确定项目路线的时候。</strong></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202102/bg2021021405.jpg" /></p>
-<p>请看上图，右上角有一个黑点，那是公司的目标。当前位置在左下角的原点，两点之间没有现成的道路，需要自己寻找实现路径。</p>
-<p>这时，知识广度就发挥作用了，了解的信息越广泛，知道的情况越多，就越可能具备洞察力，能够在多条路径里面，选出最合适的道路。知识面狭窄的人，由于不了解其它道路，不管遇到什么问题，可能都选择他会的那一条路，比如 Java。</p>
-<p>这就是全能程序员的优势，判断正确的仰角 θ，使得两点之间距离最短；特长程序员的优势是前进速度 r，可以在既定道路上做到快速前进。所以，<strong>知识的广度能告诉你什么是正确的方向，知识的深度则可以让你在该方向上快速前进。</strong></p>
-<p>对于长期而艰巨的项目，走得快固然重要，但更重要的是走对方向。如果仰角 θ 不对，走得再快也没用，因为一开始就走错方向，后期必须停下来校正方向，甚至可能永远到达不了目标，白白浪费了生命。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202109/bg2021090815.jpg" /></p>
-<p>因此，<strong>全能型的人才比较适合确定项目方向，担任团队领导。</strong> 乔布斯、马斯克就是这样的人，强在知识的广度，而不是知识的深度。他们既懂技术，又懂市场和管理，还了解人文（“我喜欢站在人文和技术的交叉点”），一旦掌握资源，就能带领团队，做出创新的产品。但是，如果让他们担任工程师，绝对是糟糕的工程师，会被开除。</p>
-<p>不过话说回来，现实中，谁会因为你知道的事情多，就让你担任团队领导呢？反而是因为你克服了技术难题，才有机会来领导团队。乔布斯和马斯克都是自己创业才出头的，恐怕不是偶然。</p>
-<p>总结一下，对于公司来说，如果有明确的技术方向，那么就需要聘请特长程序员，帮助加快开发速度。如果是刚刚诞生的创业公司，方向还在摸索之中，那么全能程序员也许更有价值。</p>
-<h2 id="科技动态">科技动态</h2>
-<p>1、<a href="https://www.tmtpost.com/5565230.html">高科技软甲</a></p>
-<p>《自然》杂志报道，科学家最近研发出一种 3D 打印面料，可以做成人体软甲。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081302.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081404.jpg" /></p>
-<p>这种材料是一种聚合物，而不是针织物。它的最大特点是能在柔软和坚硬两种状态之间切换。处于柔软状态时，它易弯折，可以贴附在人体表面。</p>
-<p>但是一旦成型以后，它会变得异常坚硬，能够承受巨大的外力。因此，可以用作运动员、军人的外骨骼和防弹衣。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081304.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081303.jpg" /></p>
-<p>2、<a href="https://www.ithome.com/0/573/894.htm">智能机器马</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202109/bg2021090801.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202109/bg2021090804.jpg" /></p>
-<p>小鹏汽车发布了一款可以乘坐的智能机器马，其实就是一个四足机器人，带有摄像头、激光雷达等汽车级别的智能驾驶系统。</p>
-<p>它可以当作玩具，让小朋友骑，会自动行进，智能避障，并且能跟小朋友进行互动对话。小朋友抚摸机器马，它也会做出反应。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202109/bg2021090802.jpg" /></p>
-<p>此外，它还可以当作载具，在主人取货、逛街、远足时载货。它的具体发售日期和售价，还没有公布。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202109/bg2021090803.jpg" /></p>
-<p>3、<a href="https://cn.nytimes.com/health/20210813/metabolism-weight-aging/">新陈代谢速率</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081401.jpg" /></p>
-<p>《科学》杂志报道，科学家发现人体新陈代谢的速率，与以前认为的不一样。</p>
-<ul>
-<li>1岁时，新陈代谢达到最高点。</li>
-<li>1岁到20岁，新陈代谢每年放缓约3%。</li>
-<li>20岁到60岁，新陈代谢保持稳定。</li>
-<li>60岁以后，每年下降约0.7%。</li>
-</ul>
-<p>这意味着，青年和中年时期，人体的能量消耗速度并没有下降。</p>
-<p>所以，20岁到60岁之间，节食可以减肥，因为新陈代谢并没有放缓，只要吃得少，体重就会下降。进入60岁以后，就很难通过节食减肥，因为新陈代谢每年都在下降，节食效果越来越小。</p>
-<p>4、<a href="https://nypost.com/2021/09/05/spacex-cleared-for-historic-civilian-launch-next-week/">SpaceX 的民用航天项目</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202109/bg2021090713.jpg" /></p>
-<p>SpaceX 公司预定在下周三（9月15日），发射一艘宇宙飞船，四名宇航员全部都是平民。这是历史上第一次“平民宇航员”的宇宙飞行，为将来的太空旅游做尝试。</p>
-<p>这四名乘客此前没有任何宇航经验，他们将在太空停留三天。这与贝佐斯今年7月份仅仅持续50分钟的“飞出大气层”之旅完全不一样，更接近真正意义上的“太空旅游”。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202109/bg2021090714.jpg" /></p>
-<p>5、<a href="https://www.fierceelectronics.com/electronics/goodbye-gas-tax-hello-road-user-fees">道路使用费</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081501.jpg" /></p>
-<p>美国国会最近通过了一项计划，研究征收统一的道路使用费是否可行。</p>
-<p>目前，世界各国都对汽油额外收费，用于道路维护，比如美国征收汽油税，中国征收燃油附加费。但是，越来越多的人开始使用电动汽车，不再使用汽油车，这笔钱就收不到了。</p>
-<p>为了给道路维护提供资金，确实应该找到一种办法，按照行驶里程，对所有车辆征收道路使用费。</p>
-<p>6、<a href="https://news.yahoo.com/nasa-boosts-impact-risk-potentially-220546594.html">小行星撞地球</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081602.jpg" /></p>
-<p>根据美国宇航局的计算，有一颗叫做 Bennu 的小行星，直径约为492米，将在一个多世纪后的2135年到2200年之间，在地球和月球之间经过，而且不能排除撞上地球的可能性。</p>
-<p>早先的计算是撞击概率为2,700分之一，后来经过修正为1,750分之一。不过，就算千分之一的可能，真的相撞了，那时的科技应该有改变小行星轨道的方法。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081603.jpg" /></p>
-<p>7、<a href="https://www.theverge.com/2021/7/16/22579847/epomaker-nt68-wireless-mechanical-keyboard-laptop-macbook">Mac 专用机械键盘</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071603.jpg" /></p>
-<p>很多人不喜欢笔记本电脑的键盘，不如机械键盘手感好。一家英国的键盘公司，就发明了一种供笔记本电脑使用的便携式机械键盘。</p>
-<p>使用时，套在 Mac 笔记本键盘上方即可。这样的话，既提供了良好的打字手感，又不必适应不同的键盘布局。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071604.jpg" /></p>
-<h2 id="文章">文章</h2>
-<p>1、<a href="https://finance.sina.com.cn/tech/2021-08-19/doc-ikqciyzm2290832.shtml">青海冷湖：东半球唯一一个世界级天文台址诞生记</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081905.jpg" /></p>
-<p>中国国家天文台经过3年连续监测认定，青海冷湖的光学观测条件比肩国际一流大型天文台。</p>
-<p>这一发现为中国光学天文发展创造了重大机遇，也为国际光学天文发展提供了宝贵的战略资源。8月18日的《自然》杂志公布了这项重大科学进展。</p>
-<p>2、<a href="https://www.bjnews.com.cn/detail/163111532114807.html">中国的实验室猴子短缺</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202109/bg2021090907.jpg" /></p>
-<p>生物医药研究，都需要用到实验室猴子（主要是猕猴）。猕猴是国家保护动物，不能去野外抓，只能从养殖场购买。由于疫情，猴子供应紧缺，价格飞涨。本文介绍了国内实验室猴子的状况。</p>
-<p>3、<a href="https://alexsidorenko.com/blog/react-render-always-rerenders/">使用 React.memo() 提高组件性能</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021082005.jpg" /></p>
-<p>默认情况下，如果 React 父组件重新渲染，它包含的所有子组件都会重新渲染，即使子组件没有任何变化。</p>
-<p>React.memo() 方法可以防止子组件不必要的渲染，从而提高组件性能。</p>
-<p>4、<a href="https://css-tricks.com/css-logical-properties-and-values/">CSS 盒状模型的 block 和 inline 之分</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081310.jpg" /></p>
-<p>CSS 盒状模型的<code>border</code>、<code>margin</code>、<code>padding</code>属性，有 block 和 line 之分，比如<code>padding</code>有<code>padding-inline</code>和<code>padding-block</code>两个子属性。本文介绍这种区别。</p>
-<p>5、<a href="https://engineering.rakuten.today/post/elm-at-rakuten/">elm 语言的使用心得</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081902.jpg" /></p>
-<p>作者在生产环境使用 Elm 将近两年了，写了10万行代码。这篇文章详细评价了 elm 语言，给予很高的评价。本文写得很好，推荐阅读。</p>
-<p>6、<a href="https://www.makeuseof.com/what-is-netbsd/">NetBSD 解释</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081908.jpg" /></p>
-<p>一篇科普文章，介绍什么是 NetBSD 操作系统，它的由来和特点。</p>
-<p>7、<a href="https://scotthelme.co.uk/heres-another-free-ca-as-an-alternative-to-lets-encrypt/">Let's Encrypt 的免费替代品</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021082107.jpg" /></p>
-<p>现在大家都用 Let's Encrypt 生成免费的 HTTPS 证书，本文介绍其它三个类似的免费证书服务。</p>
-<p>8、<a href="https://www.bryanbraun.com/2021/04/15/ripple-animation-in-javascript/">JavaScript 涟漪动画</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021082001.jpg" /></p>
-<p>一篇简单的 JavaScript 教程，介绍如何在 Canvas 上面，使用正弦函数画出涟漪动画。</p>
-<h2 id="工具">工具</h2>
-<p>1、<a href="https://hypetrigger.io/clipit/">Clip It</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081913.jpg" /></p>
-<p>一个智能视频剪辑软件，分析 OBS 软件的直播视频，从中选出精彩片段，通过人工智能自动生成一段精选视频。</p>
-<p>2、<a href="https://github.com/NvChad/NvChad">NvChad</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021082004.jpg" /></p>
-<p>一个 NeoVim 编辑器的插件集合，将其变成一个完备的 IDE 开发环境。你也可以用它来了解 NeoVim 编辑器需要安装什么插件。</p>
-<p>3、<a href="https://lit.dev/">Lit</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021082106.jpg" /></p>
-<p>谷歌推出的基于 Web Components 的前端框架，非常小巧（5KB），用法很优雅。</p>
-<p>4、<a href="https://github.com/wuyr/intellij-media-player">intellij-media-player</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202109/bg2021090718.jpg" /></p>
-<p>这个插件可以让 JetBrains 公司的 IDE，在背景里面播放视频。适合在同一个窗口，一边编码，一边看视频。(<a href="https://github.com/ruanyf/weekly/issues/1926">@wuyr</a> 投稿）</p>
-<p>5、<a href="https://github.com/reidjs/markdown-tweet-scheduler">markdown-tweet-scheduler</a></p>
-<p>使用 GitHub Actions 将仓库里面的 Markdown 文件，定时发到推特上面。</p>
-<p>6、<a href="https://github.com/originjs/webpack-to-vite">Webpack to Vite</a></p>
-<p>这个工具可以将 Webpack 项目转为 Vite 项目。（<a href="https://github.com/ruanyf/weekly/issues/1924">@Chieffo2021</a> 投稿）</p>
-<p>7、<a href="https://github.com/nektos/act">Act</a></p>
-<p>一个在本机搭建 GitHub Actions 环境的工具，让你在本机运行 GitHub Actions，可以用来验证 workflow 文件是否正确。</p>
-<p>8、<a href="https://typeitjs.com/">TypeIt</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021082301.jpg" /></p>
-<p>一个 JS 库，用来在网页上生成打字机输入文字的动画效果。</p>
-<p>9、<a href="https://www.presslabs.com/docs/code/gitfs/">Gitfs</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021082302.jpg" /></p>
-<p>这个工具把一个远程 Git 仓库挂载到本地目录，该目录所有的变动自动提交到 Git，并推送到远程仓库，因此也可以回滚到任意时点。它相当于实现了基于 Git 的文件系统。</p>
-<h2 id="资源">资源</h2>
-<p>1、<a href="http://fec.mofcom.gov.cn/article/gbdqzn/">商务部国别指南</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081029.jpg" /></p>
-<p>商务部网站提供全世界各国的《国别指南》，PDF 文件免费下载，详细介绍各国基本情况，内容非常实用。</p>
-<p>2、<a href="http://textbooks.math.gatech.edu/ila/index.html">交互式线性代数</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081415.jpg" /></p>
-<p>一本英文的初级线性代数教材，免费在线阅读，并提供 PDF 下载，最大特点就是配有很多图片，方便理解。</p>
-<p>3、<a href="http://smlbook.org/">机器学习入门</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081416.jpg" /></p>
-<p>瑞典乌普萨拉大学的《机器学习》英文教材，针对大学新生，有 PDF 全书下载。</p>
-<p>4、<a href="https://merlin.allaboutbirds.org/">Merlin</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021081901.jpg" /></p>
-<p>一个手机 App，用来识别看到或听到的鸟类，特色是可以根据鸟的叫声识别是什么鸟。</p>
-<p>5、<a href="https://techinterviewhandbook.org/">技术面试手册</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021082401.jpg" /></p>
-<p>工程师如何准备技术面试的英文免费电子书，全书分成两部分：面试本身的准备和技术知识的准备。GitHub 有5万多颗星。</p>
-<h2 id="图片">图片</h2>
-<p>1、<a href="https://failedarchitecture.com/2014/06/a-year-in-the-metabolist-future-of-1972/">中银胶囊塔大厦</a></p>
-<p>1972年，日本东京建造了一个胶囊大厦，使用140个预置的公寓单元，堆叠成一幢楼，称为中银胶囊塔。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071305.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071306.jpg" /></p>
-<p>建筑师的设想是，以后可以随意更换某个单元，使用新的胶囊替换旧的，不影响其他单元。但是建造完成后，开发公司就破产了，所有单元后来都没有更换过。</p>
-<p>更糟糕的是，由于组合结构本身的缺陷，以及建造质量不过关，建成后一直有漏水问题，导致内部结构生锈，破损不堪。前几年，政府决定拆除这栋楼，但是一直没有动工。</p>
-<p>目前，楼里只有少部分的房间，还有人居住。前几年，有一位摄影师拍摄了一些胶囊大楼居民的生活状态。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071307.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071308.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071309.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071310.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071311.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071312.jpg" /></p>
-<p>2、<a href="https://en.wikipedia.org/wiki/Gustaf_H%C3%A5kansson">古斯塔夫·哈肯松</a></p>
-<p>1951年，66岁的瑞典人古斯塔夫·哈肯松（Gustaf Håkansson），报名参加一个超长距离1764公里的自行车比赛。主办方拒绝了，理由是他的年纪太大了，比赛只允许40岁以下的人参加。</p>
-<p>但是，他还是跟选手一起出发了，但不是正式参赛者，而是在最后一名参赛者出发后一分钟出发，并穿着一件写着零的号码牌衬衫。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071403.jpg" /></p>
-<p>比赛分成好几天，其它参赛者睡觉时，古斯塔夫·哈肯松依然在骑车。他留着很长的白胡子，显得更加苍老。许多报纸都报道了他的故事，引起了全国的关注，他变成了知名人物。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071402.jpg" /></p>
-<p>经过6 天 14 小时 20 分钟，他率先到达终点，比其它参赛者早了 24 小时。人们在终点迎接他。</p>
-<p>他一直活到了1987年，102岁逝世。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071404.jpg" /></p>
-<p>3、<a href="https://twistedsifter.com/2021/09/southern-lights-under-full-moon-from-space-iss/">空中看极光</a></p>
-<p>一位欧洲宇航员在国际空间站，拍到了地球南极的极光照片。</p>
-<p>最难得的是，那天是满月，所以光照非常好，可以清晰地看到云层和地面，非常壮观。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202109/bg2021090806.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202109/bg2021090807.jpg" /></p>
-<h2 id="文摘">文摘</h2>
-<p>1、<a href="https://dewitters.com/i-had-to-give-a-wrong-answer-to-get-the-job/">错误的面试答案，让我得到了工作</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202107/bg2021071903.jpg" /></p>
-<p>2007年，我去一家公司应聘程序员。当时，为了应聘成功，我不得不故意答错了一个问题。你可能觉得很奇怪，让我解释一下怎么回事。</p>
-<p>面试官有两个人：技术团队的负责人和公司总经理。总经理是技术负责人的上级，技术负责人对我进行提问。</p>
-<p>一开始是几个一般性的问题，然后他问我“什么三层架构”？</p>
-<p>我回答说，“三层架构”就是客户端-服务器-数据库。我还补充说 Web 浏览器就是最常见的瘦客户端。他们似乎对我的回答很满意。</p>
-<p>他接着问：“三层架构与 MVC 模式（模型-视图-控制器）有什么关系？”</p>
-<p>我知道，这个问题有一点棘手。大多数人都会将两者等同起来，但是实际上，MVC 模式只用于中间的“应用程序”层，并不涉及客户端和数据库。</p>
-<p>维基百科是这样解释的：</p>
-<blockquote>
-<p>“三层架构”的一个基本规则是，客户端不直接与数据层通信，所有通信都必须通过中间层。因此，从概念上讲，三层架构是线性的。</p>
-<p>然而，MVC 模式是三角形的：视图层向控制器发送更新，控制器更新模型，模型的更新又直接触发视图的更新。</p>
-</blockquote>
-<p>我原想这样回答，但是我怀疑，面试官认定的正确答案，就是大多数人的错误答案。如果我说出自己的答案，他会认为我是错的。</p>
-<p>要是我当面指出他的错误，而他的老板又在一旁，就等于在老板面前让他丢脸。那么，他可能会坚持自己的立场，拒绝我的正确答案，挽回自己的面子。他也可能承认自己错了，当众丢脸。</p>
-<p>我觉得这两种结果都不好，最后决定，我必须回答他们眼中正确的答案。</p>
-<p>我先试探着，说出我的正确答案，看看对方的反应。</p>
-<p>“MVC 模式是一种软件模式，属于代码的组织形式，大多数情况下，仅在应用程序层运行……”</p>
-<p>我看到技术负责人皱着眉头，所以猜想这不是他预期的答案。我就改口说：“视图对应用户界面，控制器对应应用层，模型对应数据库”。</p>
-<p>搞定！回答正确！大家都很高兴，我得到了这份工作。</p>
-<p>这个故事告诉我们，面试不仅仅需要技术技能，还需要人际交往能力。这也很合理，因为实际工作中，确实两种能力都需要。</p>
-<h2 id="言论">言论</h2>
-<p>1、</p>
-<p>宇宙诞生于138亿年前的大爆炸，可能会在未来数十亿年后终结。我们还不知道宇宙到底是什么，但是无论宇宙是什么，它肯定与我们人类无关。我们越了解宇宙，宇宙也就越发显得毫无意义。</p>
-<p>-- <a href="https://www.scientificamerican.com/article/learning-to-live-in-steven-weinbergs-pointless-universe/">史蒂芬·温伯格</a>，不久前去世的诺贝尔奖得主、美国物理学家。这是他的畅销科普书《宇宙诞生后的前三分钟》里面的名言。</p>
-<p>2、</p>
-<p>自由软件运动，本质上不是一场软件运动，而是一场社会运动，因为它的核心是提倡一种基于“共享”的意识形态，要求成员相互支持和帮助。</p>
-<p>-- <a href="https://www.cmpod.net/all-transcripts/history-open-source-free-software-text/">《理查德·斯托曼与自由软件的历史》</a></p>
-<p>3、</p>
-<p>许多企业拒绝自由软件，提出质疑：如果一家公司免费赠送软件产品，它如何生存？</p>
-<p>理查德·斯托曼不得不向他们解释：自由软件只是要求给予用户自由，而不是提倡免费。但是，企业无法理解这种意识形态的细微差别。</p>
-<p>-- <a href="https://www.cmpod.net/all-transcripts/history-open-source-free-software-text/">《理查德·斯托曼与自由软件的历史》</a></p>
-<p>4、</p>
-<p>日本的卡通片画师，画一帧可以赚 1.80 美元，有时一个月只能画 300 帧，总收入为 540 美元。这点钱维持生计非常困难，所以日本动画师离职率极高。</p>
-<p>-- <a href="https://www.animenewsnetwork.com/interest/2021-08-06/animator-dorm-project-about-90-percent-of-animators-quit-their-jobs-within-3-years/.175908">《日本动画师离职率高达90%》</a></p>
-<p>5、</p>
-<p>我在普林斯顿大学学习物理学时，曾经与一个同学一起花了三个小时，研究一个非常困难的偏微分方程，但一无所获。后来，我们去找了班上最聪明的同学，他看了几分钟就说：“余弦变换可以解”。我们表示不理解，他就写了三页纸的答案，并说几年前就解过类似的问题。</p>
-<p>因为这件事，我知道自己永远不会成为一名伟大的理论物理学家，所以就改学了计算机。</p>
-<p>-- <a href="https://get21stnight.com/2021/08/09/difficult-math-is-about-recognizing-patterns-lessons-from-jeff-bezos/">贝佐斯</a>，亚马逊公司的老板，回忆大学生活</p>
-<h2 id="历史上的本周">历史上的本周</h2>
-<p>2020年（第 124 期）：<a href="https://www.ruanyifeng.com/blog/2020/09/weekly-issue-124.html">华为如何考核员工</a></p>
-<p>2019年（第 72 期）：<a href="https://www.ruanyifeng.com/blog/2019/09/weekly-issue-72.html">当代人不再有手稿</a></p>
-<p>2018年（第 21 期）：<a href="https://www.ruanyifeng.com/blog/2018/09/weekly-issue-21.html">人生的水平运动和垂直运动</a></p>
-]]></description>
-      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-175.md</link>
-      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-175.md</guid>
-      <pubDate>Mon, 22 Apr 2024 00:44:15 -0000</pubDate>
     </item>
   </channel>
 </rss>
