@@ -414,7 +414,8 @@ def filter_body(sections):
 
 
 @app.command()
-def proc_all():
+def proc_all(force_rebuild: list[int] = ()):
+    force_rebuild_set = set(force_rebuild)
     load_nb()
 
     pub_dates = load_pub_dates()
@@ -440,7 +441,8 @@ def proc_all():
         doc = docs[path] = Doc(p)
         pub_date, digest = pub_dates.get(path, (None, None))
         path_out = (outdir / p.name)
-        if digest == doc.md5:
+
+        if get_issue_index(p) not in force_rebuild_set and digest == doc.md5:
             last_posts_append((pub_date, path_out, doc))
             continue
 
