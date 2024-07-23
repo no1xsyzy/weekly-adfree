@@ -241,7 +241,8 @@ def check(c: int):
         plain = pandoc.write(sec, format='plain')
         header = pandoc.write(sec[0], format='plain').strip()
         cut = list(jieba.cut(plain))
-        guess = nb.check_spam(cut)
+        guess = nb.check_spam(cut, header_word_list=list(jieba.cut(header)),
+                              header_impact_multiplier=5.0)
         print(f"[{j}] {header} {guess=}")
 
 
