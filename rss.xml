@@ -6,7 +6,7 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2024</copyright>
-    <lastBuildDate>Tue, 23 Jul 2024 01:28:13 -0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2024 11:23:43 -0000</lastBuildDate>
     <item>
       <title>科技爱好者周刊（第 309 期）：无人驾驶出租车的双面刃</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -257,29 +257,6 @@
 <p>我很认同这段话，但是必须承认，这太理想化了。</p>
 <p>找不到工作是非常现实的压力，而读博是有工资的。走投无路的时候，其实是没有选择的，内心的意愿并不重要。</p>
 <p>我转发他的文章，只是因为喜欢他说的，<strong>只要有可能，就应该从自我发展和成长的角度，来思考人生的选择</strong>，否则读博只是把眼前的就业困境，推迟到几年后，而且那时的选择余地比现在更少。</p>
-<h2 id="本周精选-ai-超市-302ai">[本周精选] AI 超市 302.AI</h2>
-<p>AI 产品层出不穷，大家都在研究，怎么使用它们。</p>
-<p>下面介绍的 <a href="https://302.ai/">302.AI</a>，思路很独特。它把自己定位为 <strong>“AI 超市”，在一个网站汇集，全世界的各种 AI 机器人 + 工具 + API</strong>。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024070801.webp" /></p>
-<p>注册后，它会让你选择，要搭建什么机器人（下图）。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024070803.webp" /></p>
-<p>比如，选择“<strong>聊天机器人</strong>”，你就需要指定底层模型（下图），一共有几十种模型可以选。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024070811.webp" /></p>
-<p>然后，系统分配一个二级域名，通过这个域名使用该模型。也就是说，用户选择后端，它来生成使用界面。</p>
-<p>这个界面跟官方的是一样的，支持 OpenAI 的所有最新特性，比如上传图片文件、语音对话等等，还能实时预览 HTML 和 SVG 代码效果。</p>
-<p><a href="https://302.ai/">302.AI</a> 基本上都是这个模式：<strong>用户想要什么 AI，它都做了适配，为你生成使用界面</strong>。并且，它分配的二级域名是你独享的，你可以分享给其他人，但是这样会消耗你的额度，所以系统允许你设置一个“分享码”（页面密码）。</p>
-<p>除了聊天机器人，它还提供其他类型的机器人。</p>
-<p>（1）绘图机器人：生成“文生图”使用界面，底层模型可选 Midjourney 或 Stable Diffusion 3。</p>
-<p>（2）应用机器人：对应 OpenAI 的应用商店。你可以<a href="https://gpts.302.ai/">搜索</a>里面的50万个应用，一键生成使用界面。</p>
-<p>（3）API 超市：提供不同模型的 <a href="https://apifox.com/apidoc/project-4012774">API 统一调用接口</a>，都放在<code>api.302.ai</code>这个域名下面，通过参数<code>model</code>指定模型。它支持的 API 非常多，最新的视频生成模型 Luma AI 和 Runway 都是可用的。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024070814.webp" /></p>
-<p>（4）工具超市：提供一些专门的 AI 功能，目前有几十个工具可选，比如 AI 搜索引擎、AI 翻译、提示词生成、老照片修复、照片放大、电商图片生成等等。</p>
-<p>举例来说，工具里面有一个“AI 网页复制器”（下图）。进入使用界面后，我上传了抖音首页的截图，它就给出了网页代码，还能在 CodePen 打开。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024070903.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024070904.webp" /></p>
-<p>最后，302.AI 的开发团队就是 <a href="https://www.proxy302.com/">Proxy302</a> 的开发团队，在跨境软件服务上有丰富的经验和资源，已经稳定运作了4年。</p>
-<p>关于费用，他们是<strong>按需付费，没有月费</strong>，用多少付多少，而且国外模型是原价的五折，详见<a href="https://302.ai/pricing_robot/">定价页</a>。</p>
-<p>大家可以去他们的<a href="https://302.ai/">官网</a>，开通试用，体验一下。如果你使用 <a href="https://www.coze.cn/">Coze</a>，他们在那里也上架了插件、bot 和工作流。详细了解，可以看<a href="https://help.302.ai/docs/302-AI-wu-fen-zhong-shang-shou-jiao-cheng">官方文档</a>。</p>
 <h2 id="科技动态">科技动态</h2>
 <p>1、<a href="https://today.line.me/hk/v2/article/LXwy2oz">香港的无影时间</a></p>
 <p>香港媒体报道，7月8日和7月9日，连续两天的中午12点28分和29分左右，香港街头出现“无影时间”，事物没有影子。</p>
@@ -561,13 +538,6 @@
 <p>10、<a href="https://play.google.com/store/apps/details?id=com.earth.wallpaper">Live Earth Wallpaper</a></p>
 <p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024070309.webp" /></p>
 <p>一个安卓 App，每半小时动态更新的卫星影像壁纸。（<a href="https://github.com/ruanyf/weekly/issues/4758">@GongShengyue</a> 投稿）</p>
-<h2 id="ai-相关">AI 相关</h2>
-<p>1、<a href="https://stable-diffusion-art.com/realistic-people/">如何在 Stable Diffusion 生成逼真人像</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024063004.webp" /></p>
-<p>一篇长文，详细介绍各个参数，用来在 Stable Diffusion 生成逼真人像。</p>
-<p>2、<a href="https://chromeai.org/">ChromeAI.org</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024070401.webp" /></p>
-<p>一个测试 Chrome 浏览器内置的 Gemini Nano 模型的网站。（<a href="https://github.com/ruanyf/weekly/issues/4765">@debugtheworldbot</a> 投稿）</p>
 <h2 id="资源">资源</h2>
 <p>1、<a href="https://www.compuserve.com/">CompuServe.com</a></p>
 <p><img src="https://cdn.beekka.com/blogimg/asset/202308/bg2023082301.webp" /></p>
@@ -759,16 +729,6 @@
 <p>一个将 React + Prisma（数据库的 ORM 库）封装在一起的 Node.js 全栈框架，设计目标是尽量像 Rails 一样好用。</p>
 <p>10、<a href="https://oxc-project.github.io/docs/guide/usage/linter.html">Oxlint</a></p>
 <p>一个 JS 的 Linter 代码检查工具，可以取代 ESLint。它是用 Rust 写的，据称比 ESLint 快50-100倍。</p>
-<h2 id="ai-相关">AI 相关</h2>
-<p>1、<a href="https://logogalleria.com/zh-CN/app">Logo Galleria</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062201.webp" /></p>
-<p>免费的在线 AI 徽标制作器。（<a href="https://github.com/ruanyf/weekly/issues/4675">@ddewfrefref</a> 投稿）</p>
-<p>2、<a href="https://github.com/bravekingzhang/gpt-frontend-code-gen">React 组件的 AI 生成器</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062503.webp" /></p>
-<p>一个开源的 Web 应用，通过 AI 快速生成 React 组件，用于预览前端效果。（<a href="https://github.com/ruanyf/weekly/issues/4704">@bravekingzhang</a> 投稿）</p>
-<p>3、<a href="https://github.com/Richasy/Rodel.Agent">小幻助理</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062504.webp" /></p>
-<p>一个开源的 Windows 桌面应用，可以接入各种 AI 模型，提供聊天、文生图、文本转语音、机器翻译。（<a href="https://github.com/ruanyf/weekly/issues/4706">@Richasy</a> 投稿）</p>
 <h2 id="资源">资源</h2>
 <p>1、<a href="https://jakelazaroff.com/words/an-interactive-intro-to-crdts/">CRDT 入门介绍</a></p>
 <p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023100502.webp" /></p>
