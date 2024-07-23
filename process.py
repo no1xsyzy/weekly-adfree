@@ -1,4 +1,5 @@
 import json
+import logging
 import math
 import sys
 from datetime import datetime
@@ -439,6 +440,8 @@ def proc_all():
             last_posts_append((pub_date, path_out, doc))
             continue
 
+        logging.info(f"building {p} ...")
+
         sections = doc.sections
 
         filtered_body = []
@@ -502,4 +505,5 @@ def make_rss(last_posts):
 
 
 if __name__ == '__main__':
+    logging.basicConfig()
     app()
