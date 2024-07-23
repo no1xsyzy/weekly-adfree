@@ -85,8 +85,12 @@ def load_doc(p: CanOpen) -> Pandoc:
         return pandoc.read(f.read(), format='gfm')
 
 
+def get_issue_index(x):
+    return int(x.name[6:-3])
+
+
 def all_doc_paths():
-    return sorted(Path(f'weekly/docs/').glob('issue-*.md'), key=lambda x: int(x.name[6:-3]))
+    return sorted(Path(f'weekly/docs/').glob('issue-*.md'), key=get_issue_index)
 
 
 def load_all() -> list[Pandoc]:
