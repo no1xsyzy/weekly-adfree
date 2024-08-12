@@ -6,7 +6,199 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2024</copyright>
-    <lastBuildDate>Mon, 05 Aug 2024 00:50:50 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2024 00:51:18 -0000</lastBuildDate>
+    <item>
+      <title>科技爱好者周刊（第 312 期）：从英特尔看“美国制造”</title>
+      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/4911">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
+<h2 id="封面图">封面图</h2>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080702.webp" /></p>
+<p>南京的秦淮河夜游，让游客体验唐朝诗人杜牧的诗句“烟笼寒水月笼沙，夜泊秦淮近酒家。”（<a href="https://us.trip.com/moments/poi-qinhuai-river-boat-tour-15009176/">via</a>）</p>
+<h2 id="从英特尔看美国制造">从英特尔看“美国制造”</h2>
+<p>上周，英特尔的股价，一天之内<a href="https://finance.eastmoney.com/a/202408033147242767.html">下跌了26%</a>，是这家公司50年来最糟糕的一天。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080804.webp" /></p>
+<p>英特尔是美国制造的指标公司。美国政府推动“美国制造”，希望高技术制造业回流本土，英特尔是这个计划的重要一环。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080607.webp" /></p>
+<p>英特尔曾经是世界最大的半导体公司，即使到了今天，也是美国最先进的半导体制造商（台积电美国厂尚未建成）。</p>
+<p>只有英特尔发展好，美国才能有独立的本土芯片制造业，否则终究必须依靠台积电。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080608.webp" /></p>
+<p>但是，英特尔就是不争气，产品没有突破，亏损一路加大。这一次大跌后，市值只有 Nvidia 的4%，老对手 AMD 的一半。</p>
+<p>后两者都是半导体设计公司，对美国制造没有帮助。所以，<strong>英特尔股价大跌这件事，对“美国制造”的打击很大。</strong></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080803.webp" /></p>
+<p><strong>美国制造的重中之重就是半导体</strong>，政策目标就是确保最尖端芯片能在美国本土生产。</p>
+<p>为此，美国一方面命令台积电来美国建厂，另一方面给予英特尔大量补助（超过100亿美元），毕竟它是“自家的孩子”。</p>
+<p>那么，为什么英特尔有了美国政府的“百般呵护”，还是做不好？</p>
+<p>一般来说，<strong>制造业的成功有三个因素，至少必须占一个</strong>：（1）你的产品独一无二，（2）你的产品更好用，（3）你的成本更低。</p>
+<p>这三个因素，英特尔都做不到。</p>
+<p>（1）它的核心产品 x86 芯片停滞了，多年来没有突破，市场不断缩小。不仅无缘手机市场，就连桌面市场也在被 ARM 芯片蚕食，Windows 今年都开售 ARM 版本了。</p>
+<p>（2）它的生产工艺一直无法改善，生产出来的 x86 芯片落后于竞争对手 AMD（由台积电代工）。最近更是爆出，它的13代和14代高端芯片有<a href="https://36kr.com/p/2874746383683716">工艺缺陷</a>，会引发软件崩溃，彻底动摇了市场信心。</p>
+<p>（3）美国本土的生产成本，远远高于亚洲，所以英特尔发展代工业务不现实。</p>
+<p>更要命的是，上面三点没有丝毫改善的迹象，还在恶化。所以，英特尔还没有到谷底，尽管已经宣布将要解雇15000个员工，恐怕还是很难翻身。</p>
+<p>从英特尔可以看出来，“美国制造”大概率不会成功。半导体是美国的优势行业，技术、人才、资金都有优势，还有政府的大力扶植。<strong>如果半导体制造业都要失败，就更不要提其他的制造业了。</strong></p>
+<p>英特尔不是个例，它是美国制造的缩影。它面临的问题，也是美国工厂普遍面临的问题。</p>
+<p>英特尔走出困境，其实有一个简单的办法。目前，美国政府<a href="https://new.qq.com/rain/a/20240322A00RFW00">禁止英特尔</a>向中国销售高端芯片，还<a href="https://finance.sina.cn/2024-05-08/detail-inaunxvc8274501.d.html">禁止向华为</a>出售所有 CPU 产品。这些措施对英特尔打击特别大，因为它在其他市场没优势，而中国是世界最大的游戏市场，游戏电脑的 CPU 是清一色的 x86 芯片。对中国禁售，就是断了英特尔的财路。</p>
+<p>拯救英特尔，最简单的方法就是取消英特尔对中国的禁售。但是，美国政客肯定不会这样做，所以英特尔的东山再起，恐怕遥遥无期。</p>
+<h2 id="科技动态">科技动态</h2>
+<p>1、<a href="https://newatlas.com/robotics/unitree-go2-wheeled-robot-dog/">带轮子的机器狗</a></p>
+<p>宇树科技为它的机器狗，推出了一组轮子套件，让机器狗除了四足行走，还能用轮子前进。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080602.webp" /></p>
+<p>7英寸的充气轮胎，使得机器狗行进更稳定，减少颠簸路面和跳跃时的振动。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080603.webp" /></p>
+<p>轮胎还有一个好处，就是可以在垂直方向上滚动，从而更容易翻墙。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080604.webp" /></p>
+<p>2、<a href="https://www.forbes.com/sites/davidhambling/2024/03/08/russian-fiber-optic-drone-can-beat-any-jammer/">光纤无人机</a></p>
+<p>最近，俄乌战场上击落了一架无人机，里面有一个空心的塑料球（下图红框处），这有什么用？</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080605.webp" /></p>
+<p>经过调查，这个塑料球放的是光纤，无人机是拖着极细的光纤在飞。</p>
+<p>所有的通信都通过光纤，传回操作员。这样的好处是完全不需要无线电，从而避免了被敌方无线电识别和拦截。</p>
+<p>缺点是，无人机变成了风筝，飞行距离受到了光纤的限制。另外，光通信加大了无人机的自重，使得它的载重变小。</p>
+<p>3、<a href="https://old.reddit.com/r/Damnthatsinteresting/comments/1ekb7gt/technical_analysis_of_mens_100m_final_photo_finish/">奥运百米冠军</a></p>
+<p>巴黎奥运会的男子百米决赛非常激烈，多人同时触线，肉眼根本分不清谁是冠军。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080501.webp" /></p>
+<p>甚至参赛的运动员也不知道，自己是赢是输。最后，还是通过高速摄影确认，冠亚军的差距只有0.005秒。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080502.webp" /></p>
+<p>照片里面，第二赛道美国运动员的脚先过线，但是规则是以锁骨触线为准。</p>
+<p>4、其他</p>
+<p>（1）<a href="https://www.c114.com.cn/satellite/2515/a1269985.html">国产星链</a>“千帆星座”计划，首批18颗组网卫星8月5日在太原发射。</p>
+<p>（2）<a href="https://www.163.com/dy/article/J8JF06LI0512D03F.html">深圳</a>宣布，2025年底全市建成1000个以上低空飞行器起降平台。</p>
+<p>（3）<a href="https://www.landiannews.com/archives/105251.html">uBlock Origin</a> 很快将无法在 Chrome 上使用，需要安装 uBlock Origin Lite。</p>
+<p>（4）<a href="https://www.bleepingcomputer.com/news/google/google-chrome-will-let-you-send-money-to-your-favourite-website/">Chrome 浏览器</a>加入货币化（monetization）接口，帮助网站所有者接受付款。</p>
+<h2 id="文章">文章</h2>
+<p>1、<a href="https://technicalwriting.dev/www/pdf.html">指定 PDF 的跳转页面</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024071202.webp" /></p>
+<p>很多人不知道，在 URL 链接里面可以指定，浏览器跳转到 PDF 文件的第几页。</p>
+<p>2、<a href="https://kovalevsky.io/full-introduction-to-golang-with-test-driven-development-part-1/">从测试驱动学习 Go 语言</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080401.webp" /></p>
+<p>一篇初学者教程，从写测试用例开始，教你学习 Go 语言。</p>
+<p>3、<a href="https://nekonull.me/posts/ruankao-architect/">软考高级架构师备考记录</a>（中文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080503.webp" /></p>
+<p>作者参加24年上半年高级资格”系统架构设计师“的考试并成功通过。（<a href="https://github.com/ruanyf/weekly/issues/4932">@jerrylususu</a> 投稿）</p>
+<p>4、<a href="https://blog.shalvah.me/posts/an-exploration-of-vector-search">向量搜索是什么？</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080402.webp" /></p>
+<p>本文用简单的例子，讲解如何将文本转换成向量（vector）进行搜索。</p>
+<p>5、<a href="https://notso.boringsql.com/posts/postgrest-tutorial-part1/">PostgREST 教程</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024061101.webp" /></p>
+<p>PostgREST 这个工具可以为 PostgreSQL 数据库加上 REST 接口，用户就可以直接通过 HTTP 请求操作数据库。本文是一篇详细教程。</p>
+<p>6、<a href="https://0x00.cl/blog/2024/exploring-tls-certs/">一步步生成一张 TLS 证书</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024071302.webp" /></p>
+<p>在这篇长文中，作者演示如何手动生成一张网站的 TLS 证书，详细讲解了每个字段的含义。</p>
+<p>7、<a href="https://www.edge.org/conversation/freeman_dyson-heretical-thoughts-about-science-and-society">我的异端思想</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024061004.webp" /></p>
+<p>物理学家弗里曼·戴森（Freeman Dyson）的一篇长文，解释他为什么不担心全球变暖。这篇文章读起来有些费劲，但是很有启发，虽然结论未必正确。</p>
+<h2 id="工具">工具</h2>
+<p>1、<a href="https://apps.apple.com/de/app/codebrew-ide-for-java/id6475267297">CodeBrew</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024050102.webp" /></p>
+<p>一个 iOS 应用，手机和平板使用的 Java IDE 开发环境。</p>
+<p>2、<a href="https://github.com/penpot/penpot">Penpot</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024050111.webp" /></p>
+<p>一个基于 Web 的开源设计工具，Figma 的替代品。</p>
+<p>3、<a href="https://josh.fail/2022/pure-bash-markdown-table-generator/">markdown-table</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024050301.webp" /></p>
+<p>一个 Bash 脚本，用来生成 Markdown 表格，否则手写太麻烦。</p>
+<p>4、<a href="https://github.com/Stirling-Tools/Stirling-PDF">Stirling-PDF</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024050302.webp" /></p>
+<p>一个开源工具，用来完成各种 PDF 操作，基于 Web，需要自己架设。</p>
+<p>5、<a href="https://dns.fish/">DNS.fish</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080802.webp" /></p>
+<p>这个工具提供 DNS 查询的 API，以 JSON 格式返回指定域名的 DNS 记录。（<a href="https://github.com/ruanyf/weekly/issues/4952">@airyland</a> 投稿）</p>
+<p>6、<a href="https://github.com/RGAA-Software/GammaRay">GammaRay</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080801.webp" /></p>
+<p>一个开源工具，用来把手机和 PC 的桌面传到其他设备，支持远程桌面、视频采集等功能。（<a href="https://github.com/ruanyf/weekly/issues/4951">@RGAA-Software</a> 投稿）</p>
+<p>7、<a href="https://www.serpchecking.com/">SERP Checker</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080403.webp" /></p>
+<p>一个比较谷歌在不同地区、不同语言下返回的搜索结果的工具，代码<a href="https://github.com/serping/serp-checker">开源</a>。（<a href="https://github.com/ruanyf/weekly/issues/4931">@expertbeacon</a> 投稿）</p>
+<p>8、<a href="https://github.com/Flomp/wanderer">wanderer</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024050804.webp" /></p>
+<p>一个管理 GPS 路径的开源工具，需要自己架设服务。</p>
+<p>9、<a href="https://github.com/every-day-things/citadel">Citadel</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024011413.webp" /></p>
+<p>个人电子书的管理系统，可以代替 Calibre。</p>
+<p>10、<a href="https://github.com/fogleman/primitive">Primitive Pictures</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024011414.webp" /></p>
+<p>这个工具可以将输入的图片，使用几何形状重新绘制，参见<a href="https://schollz.com/tinker/primitives/">作者自述</a>。</p>
+<p>11、<a href="https://asmbb.org/">AsmBB</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024011418.webp" /></p>
+<p>一个使用汇编语言写的论坛应用，性能很强，对机器配置的要求很低。</p>
+<p>12、<a href="https://github.com/FrigadeHQ/remote-storage">remoteStorage</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024011505.webp" /></p>
+<p>这个库可以在多台设备、多个浏览器之间，同步浏览器 localStorage 的内容，需要自己架设一台服务器。</p>
+<h2 id="资源">资源</h2>
+<p>1、<a href="https://btxx.org/posts/OpenBSD_is_a_Cozy_Operating_System/">OpenBSD 新手安装指南</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024041405.webp" /></p>
+<p>向新手介绍如何安装 OpenBSD。</p>
+<p>2、<a href="https://www.ip.network/">ip.network</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080601.webp" /></p>
+<p>一个查询 IP 地域信息的网站。</p>
+<p>3、<a href="https://github.com/abdoufermat5/unix-and-linux-sysadmin-notes">Linux 系统管理手册</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062103.webp" /></p>
+<p>介绍 Linux 操作的入门书籍，这是该书的原文仓库，可以免费阅读。</p>
+<p>4、<a href="http://www.douglas-self.com/MUSEUM/TRANSPORT/nwheelcar/nwheelcar.htm">N 轮车辆</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024042001.webp" /></p>
+<p>这个网站专门收集拥有不同数量的轮子的车辆，从独轮车一直到72个轮子的工程车，上图是一辆九个轮子的汽车。</p>
+<h2 id="图片">图片</h2>
+<p>1、<a href="https://www.bbc.com/news/uk-politics-66404487">电塔的美化</a></p>
+<p>很多人觉得，输电的电塔不够美观，因此一直有人尝试把它建成更美丽的样子。</p>
+<p>下面是2010年，艺术家设计的一座德国铁塔。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023112201.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023112202.webp" /></p>
+<p>另一些艺术家则尝试，把铁塔设计成更有趣的形状。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023112203.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023112204.webp" /></p>
+<p>下面是一个概念设计，赢得过电塔设计比赛，但没有投入实际应用。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023112205.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023112206.webp" /></p>
+<p>2、<strong>收获最多的学习途径</strong></p>
+<p>什么途径可以学到更多的知识？</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202306/bg2023062902.webp" /></p>
+<p>上图中，从左到右分别为“从理论学习”、“从实践学习”、“从错误学习”。</p>
+<p>这张图的意思是，书本知识只是基础，实践应用可以学到更多，如果实践发生错误，那就是最好的学习机会。</p>
+<h2 id="文摘">文摘</h2>
+<p>1、<a href="https://www.gkogan.co/increase-reply-rates/">得到邮件回复的最简单方法</a></p>
+<p>Netlify 公司希望给用户发邮件，让用户回信提供产品反馈。</p>
+<p>但是公司知道，群发邮件的回复率很低。他们就请了一个营销顾问，希望他设法提高邮件回复率。</p>
+<p>这个顾问认为，用户不回邮有两个原因：（1）邮件篇幅太长，大多数人懒得读。（2）群发邮件都是模板格式，用户觉得这是机器发送的，没必要理睬。</p>
+<p>他决定，缩短邮件内容，采用口语表达，看看能不能提高回复率。</p>
+<p>他设计了一个 A/B 测试。A 格式是传统样式的邮件，150多个单词。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080201.webp" /></p>
+<p>结果，邮件回复率是1%，100个收信人有1个回复。</p>
+<p>B 格式是一封更短的邮件，只有37个单词。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080202.webp" /></p>
+<p>结果，回复率上升到了4%。邮件长度减少到了四分之一，但是回复率变成了四倍。</p>
+<p>他一不做二不休，索性将邮件删到14个单词，就是直接了当的一个问题。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024080203.webp" /></p>
+<p>这一次，回复率进一步上升到了8%。</p>
+<p>因此，营销邮件提高效果的最简单方法，就是删除任何的多余词汇，尽可能短。</p>
+<h2 id="言论">言论</h2>
+<p>1、</p>
+<p>AI 的危险在于，它让你跳过思考，让机器填补思想的空白。我们需要 AI 使我们增加思考，而不是减少思考。</p>
+<p>我们每外包一个想法，就会错失一次成长的机会。</p>
+<p>-- <a href="https://ia.net/topics/turning-the-tables-on-ai">《扭转人工智能局面》</a></p>
+<p>2、</p>
+<p>想象一个场景，奥本海默成功引爆第一颗原子弹后，世界其他国家没有任何感觉，继续正常生活。</p>
+<p>我觉得，这就是最近几周音乐界发生的事情。几周前，一家名为 Suno 的公司发布了一个 AI 音乐模型，只要你描述想听什么，它就会生成那样的音乐。</p>
+<p>我认为，这件事标志着一个音乐时代的结束，以及下一个音乐时代的开始。就像原子弹改变了所有战争一样，AI 已经到了改变所有音乐的时刻。但是，音乐家们似乎还浑然不觉。</p>
+<p>--<a href="https://www.persuasion.community/p/music-just-changed-forever">《音乐永远变了》</a></p>
+<p>3、</p>
+<p>人类可能会在大约50年内变得无线电静默。我们已经过了无线电波的使用高峰，而是越来越多地使用窄波通信和光纤电缆，不再向天空发射电视和无线电信号。</p>
+<p>-- <a href="https://www.theguardian.com/science/2024/apr/27/is-it-aliens-how-a-mysterious-star-could-help-the-search-for-extraterrestrial-life">卫报</a></p>
+<p>4、</p>
+<p>费马大定理是一个极困难的数学猜想，自从1637年提出后，直到1993年才解决。</p>
+<p>这个定理没有任何实际应用，只是用来提醒人们数学是多么深奥。</p>
+<p>-- <a href="https://leanprover-community.github.io/blog/posts/FLT-announcement/">《费马大定理》</a></p>
+<p>5、</p>
+<p>简单性是一种优点，但糟糕的是，复杂的东西卖得更好。</p>
+<p>-- <a href="https://eugeneyan.com/writing/simplicity/">Edsger Dijkstra</a>，著名计算机科学家</p>
+<h2 id="往年回顾">往年回顾</h2>
+<p><a href="https://www.ruanyifeng.com/blog/2023/08/weekly-issue-265.html">WiFi 的后面是 LiFi</a>（2023 #265）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2022/07/weekly-issue-215.html">互联网最喜欢的行为模式</a>（2022 #215）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2021/07/weekly-issue-165.html">全端 App 的时代</a>（2021 #165）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2020/07/weekly-issue-115.html">保护你的 DNA，不要泄漏</a>（2020 #115）</p>
+<p>（完）</p>
+]]></description>
+      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-312.md</link>
+      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-312.md</guid>
+      <pubDate>Mon, 12 Aug 2024 00:51:18 -0000</pubDate>
+    </item>
     <item>
       <title>科技爱好者周刊（第 311 期）：低利率与长期项目</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -1011,213 +1203,6 @@
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-307.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-307.md</guid>
       <pubDate>Mon, 08 Jul 2024 00:48:25 -0000</pubDate>
-    </item>
-    <item>
-      <title>科技爱好者周刊（第 306 期）：信息就像糖一样上瘾</title>
-      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
-<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/4550">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
-<h2 id="封面图">封面图</h2>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062704.webp" /></p>
-<p>香港屯门码头，海边的夜色。（<a href="https://www.facebook.com/groups/553511078046085/permalink/8085453638185087">via</a>）</p>
-<h2 id="信息就像糖一样上瘾">信息就像糖一样上瘾</h2>
-<p>工业革命有一个很少人提到的后果，就是人类可以大量生产糖了。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062505.webp" /></p>
-<p>古时候，糖主要来自甘蔗和蜂蜜，难以大量生产。所以，古人的菜肴不放糖，主要依靠食物本身的甜味。可以想象，古代的大部分食物，尤其是日常食品，应该是不好吃的。</p>
-<p><strong>一旦糖大量生产，人类就疯狂地爱上了它</strong>。我们喜欢糖，喜欢到现在的大部分食物，都必须添加糖，比如饮料、糕点、奶制品，甚至鸡排的配料都包含糖。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062506.webp" /></p>
-<p>对糖上瘾，已经成了一种常见病。百度百科有一个“<a href="https://baike.baidu.com/item/%E7%B3%96%E7%98%BE/5685388">糖瘾</a>”条目，解释上瘾原因是“甜味会带给人愉悦的感觉。”</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062507.webp" /></p>
-<p>科学家认为，<strong>糖会增加多巴胺的分泌，使大脑兴奋，感觉不到饱腹</strong>。通俗地说，就是糖会让你吃得很愉快，从而吃了还想吃，即使已经饱了。</p>
-<p>过量摄入糖，是体重超标的根本原因。<strong>糖本身只是一种甜味剂，没有营养，只有热量</strong>，最终都转化为体内脂肪，让你越来越胖。世界卫生组织一直在呼吁<a href="https://www.who.int/zh/news/item/04-03-2015-who-calls-on-countries-to-reduce-sugars-intake-among-adults-and-children">少吃糖</a>。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062508.webp" /></p>
-<p>不过，我今天想谈的不是糖，而是最近看到的一篇<a href="https://www.gurwinder.blog/p/the-intellectual-obesity-crisis">文章</a>，里面有一个很有趣的观点：<strong>信息就像糖，让人上瘾</strong>。</p>
-<p>作者列举了，信息与糖的相似之处。</p>
-<p><strong>（1）低成本的大量生产</strong>。信息革命之后，人类就像生产糖一样，大量生产信息。</p>
-<p>信息不仅生产成本低，传播成本更低，可以接近零成本地到达消费者。</p>
-<p><strong>（2）上瘾机制相同</strong>。2019年，加州大学伯克利分校的一项研究发现，信息也会刺激大脑产生多巴胺，跟糖的作用机制相同。</p>
-<p>所以，看到一则吸引人的信息，跟吃一件甜点，带给你的满足感是一样的。你会对信息上瘾，看了还想看，具体表现就是放不下手机，划了又划。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062509.webp" /></p>
-<p><strong>（3）垃圾信息泛滥</strong>。就像垃圾食品流行一样，人类对信息上瘾的后果，就是垃圾信息的大量供给。</p>
-<p>生产商发现，那些最刺激多巴胺的信息，有最多的阅读量，可以赚到更多的钱。于是，垃圾信息就被大量生产，变得无处不在。</p>
-<p>人类已经陷入了这样一种境地，最容易获得的食品是垃圾食品，最容易接触到的信息是垃圾信息。</p>
-<p><strong>（4）思维“发胖”</strong>。就像垃圾食品让人体发胖一样，垃圾信息也会让思维发胖。</p>
-<p>垃圾信息降低你的思考水平，将没意义的内容充斥你的大脑，分散你的注意力，堵塞你的思考，让你思维迟缓，判断力下降。</p>
-<p>综上所述，信息上瘾与糖瘾一样有危害，需要积极防治。健康生活不仅少吃糖，还要少接触垃圾信息。</p>
-<p>但是，就像躲不开糖一样，生活中根本没机会躲开垃圾信息。我们只能自我克制，反复告诫自己，远离垃圾信息，防止信息上瘾。</p>
-<h2 id="科技动态">科技动态</h2>
-<p>1、<a href="https://www.wired.com/story/amazon-ai-cameras-emotions-uk-train-passengers/">摄像头情绪检测</a></p>
-<p>英国火车站的摄像头，正在使用一种新技术，监控火车站。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024061803.webp" /></p>
-<p>它不进行人脸识别，而是进行情绪识别。</p>
-<p>它会根据脸部表情，判断每个人的情绪，到底是快乐、悲伤，还是愤怒。如果你的情绪异常，就说明很可疑，它就会通知工作人员，查看怎么回事。</p>
-<p>这提醒我们，以后进入公共场合，需要注意自己的表情，以免招来麻烦。</p>
-<p>2、<a href="https://www.tomshardware.com/tech-industry/optical-pcie-70-connection-hits-a-blazing-128-gts">PCIe 光通信</a></p>
-<p>目前，在计算机的内部，CPU 与周边设备都使用 PCIe 接口进行通信。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024061804.webp" /></p>
-<p>PCIe 接口与设备之间，则是使用铜手指传输数据。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024061805.webp" /></p>
-<p>但是，铜手指有物理限制，到了一定程度后，传输速率就上不去了。</p>
-<p>本月早些时候，一家美国公司公布了 PCIe 7.0 版的接口原型，放弃了铜手指，改用光纤传输数据，比目前主流的 PCIe 4.0 版快了8倍。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024061806.webp" /></p>
-<p>上图的黄线就是光纤，将设备连接到主板。以后，凡是大带宽的通信，可能都不使用铜了，而改用光纤。</p>
-<p>3、<a href="https://news.northeastern.edu/2023/04/21/parrots-talking-video-calls/">鹦鹉的视频聊天</a></p>
-<p>美国科学家做了一个实验，让鹦鹉视频聊天。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023120407.webp" /></p>
-<p>科学家在笼子里放了一个平板电脑，两只鹦鹉通过平板电脑见面，互相通话（鸣叫）。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023120405.webp" /></p>
-<p>科学家发现，鹦鹉很喜欢视频聊天，会连续跟屏幕互动几个小时。</p>
-<p>最神奇的地方是，一旦它们学会如何呼叫对方。它们就会自己打开关着的平板电脑，主动找对方聊天。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023120408.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023120406.webp" /></p>
-<p>这件事是不是说明，群居动物都有可能网络上瘾？</p>
-<p>4、<a href="https://www.bbc.com/news/articles/cg33kgd81mvo">癫痫治疗</a></p>
-<p>癫痫是一种神经系统的常见病，发病时会不由自主抽搐和丧失意识。</p>
-<p>它的原因是脑电波异常，也就是大脑里面有异常的电流，通过神经系统，导致意识和行为失常。</p>
-<p>最近，英国完成了世界第一例大脑植入，治疗癫痫。患者是一个小男孩，每天都会严重发作好几次。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062705.webp" /></p>
-<p>医生在他的大脑里面，植入了一个3.5厘米 x 3.5厘米的神经刺激器，通过电极连接脑神经。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062706.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062707.webp" /></p>
-<p>这个装置会不断向神经系统放电，干扰异常的脑电波信号，从而减少癫痫的发作。据说，小男孩手术后，发作次数就大幅下降。</p>
-<p>联想到马斯克正在搞的“脑机接口”，我感觉人脑和电脑的物理连接，可能很快就会变成现实。</p>
-<h2 id="文章">文章</h2>
-<p>1、<a href="https://www.landiannews.com/archives/104662.html">GitCode 全盘搬运 GitHub</a>（中文）</p>
-<p>国内代码托管服务 GitCode，全盘搬运了 GitHub，将后者的仓库一模一样放到自己网站上。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062703.webp" /></p>
-<p>开源代码或许可以搬运，但把作者账户也一起搬运过来，未免太过份了。</p>
-<p>2、<a href="https://kilianvalkhof.com/2024/javascript/the-problem-with-new-url-and-how-url-parse-fixes-that/">new URL() 的问题</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052403.webp" /></p>
-<p>JS 的 <code>URL()</code> 用来解析网址，遇到非法字符串会抛错。作者认为这是一个非常糟糕的设计，并给出了解决办法。</p>
-<p>3、<a href="https://www.scientificamerican.com/article/how-the-guinness-brewery-invented-the-most-important-statistical-method-in/">t 检验是怎么来的</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052705.webp" /></p>
-<p>《科学美国人》杂志的文章，介绍一家英国啤酒厂如何促成统计学 t 检验的诞生，它的含义是什么。可能读起来有点费劲，但是写得不错。</p>
-<p>4、<a href="https://jakearchibald.com/2024/attributes-vs-properties/">HTML 属性与 DOM 属性</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024042505.webp" /></p>
-<p>一篇前端初级教程，介绍 HTML 元素的属性（attribue）与 DOM 节点的属性（property）的差异，这个地方很容易混淆。</p>
-<p>5、<a href="https://www.onsclom.net/posts/javascript-tco">Bun 的 JavaScript 尾调用优化</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024010101.webp" /></p>
-<p>JS 语言的服务器运行环境，目前有三种：Node、Deno 和 Bun。前两种使用 V8 引擎，而 Bun 使用 Safari 的 JavaScriptCore 引擎。</p>
-<p>它们的“尾调用优化”（TCO）行为不一致，只有 Bun 支持，本文作者进行了测试。</p>
-<p>6、<a href="https://romeov.github.io/malicious_ip_addresses/malicious_ip_analysis.html">恶意 IP 地址的可视化</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024042604.webp" /></p>
-<p>作者的服务器每天收到几千次恶意访问，本文讲述他如何将这些 IP 地址的物理位置，进行可视化。</p>
-<p>7、<a href="https://www.pythonmorsels.com/cli-tools/">Python 的命令行小工具</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024060402.webp" /></p>
-<p>Python 自带很多实用的小工具，不用编写脚本，就可以在命令行下直接使用。</p>
-<h2 id="工具">工具</h2>
-<p>1、<a href="https://www.figma.com/slides/">Figma Slides</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062701.webp" /></p>
-<p>Figma 公司新发布的幻灯片制作工具。</p>
-<p>2、<a href="https://github.com/plankanban/planka">Planka</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024031901.webp" /></p>
-<p>一个 Trello 的开源替代品，可以自己搭建，进行项目管理。</p>
-<p>3、<a href="https://github.com/pacexy/flow">Flow</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023121908.webp" /></p>
-<p>一款基于浏览器的 Epub 阅读器，可以自己部署。</p>
-<p>4、<a href="https://github.com/Librum-Reader/Librum">Librum</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023121914.webp" /></p>
-<p>一款开源的桌面软件，用来管理电子书。</p>
-<p>5、<a href="https://github.com/plasmicapp/plasmic">Plasmic</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023122005.webp" /></p>
-<p>一款 React 框架的无代码/低代码开发工具，可视化生成网站和应用程序。</p>
-<p>6、<a href="https://github.com/streetwriters/notesnook">Notesnook</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023122009.webp" /></p>
-<p>一个端对端加密的开源笔记本，有 Web 版和跨平台的桌面版。</p>
-<p>7、<a href="https://shipfa.st/tools/logo-fast">LogoFast</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023122102.webp" /></p>
-<p>一个徽标设计工具。</p>
-<p>8、<a href="https://observablehq.com/plot/">Observable Plot</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202304/bg2023043005.webp" /></p>
-<p>D3.js 团队推出的新的图表库，用来做线性图，大大简化了语法。</p>
-<p>9、<a href="https://wasp-lang.dev/">Wasp</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202312/bg2023121602.webp" /></p>
-<p>一个将 React + Prisma（数据库的 ORM 库）封装在一起的 Node.js 全栈框架，设计目标是尽量像 Rails 一样好用。</p>
-<p>10、<a href="https://oxc-project.github.io/docs/guide/usage/linter.html">Oxlint</a></p>
-<p>一个 JS 的 Linter 代码检查工具，可以取代 ESLint。它是用 Rust 写的，据称比 ESLint 快50-100倍。</p>
-<h2 id="资源">资源</h2>
-<p>1、<a href="https://jakelazaroff.com/words/an-interactive-intro-to-crdts/">CRDT 入门介绍</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202310/bg2023100502.webp" /></p>
-<p>本文用代码实例详细介绍多人实时协同算法 CRDT。</p>
-<p>2、<a href="https://www.igloo.inc/">IGloo</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062501.webp" /></p>
-<p>这是一家区块链公司的主页，全部采用 3D 制作，非常炫酷。</p>
-<p>3、<a href="https://jrmf.org/puzzle/">数学小游戏</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024041811.webp" /></p>
-<p>这个网站收集各种小朋友可以玩的数学游戏。</p>
-<h2 id="图片">图片</h2>
-<p>1、<a href="https://fabulous.systems/posts/2024/06/if-i-ever-get-a-dog-ill-name-it-rover-ms-bob-retrospective/">微软鲍勃</a></p>
-<p>1995年，Windows 95 即将发布，用户界面进行了重大升级，与前一个版本 Windows 3.2 完全不同。</p>
-<p>微软为了让用户接受新界面，特别发布了一个应用程序，叫做“微软鲍勃”，教你怎么使用新版 Windows。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062401.webp" /></p>
-<p>打开程序，会有一条小狗，充当向导，领你进入一栋住宅。</p>
-<p>它的客厅里面有各种物件。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062402.webp" /></p>
-<p>小狗会让你依次点击各个物件，跳出对应的程序，让你熟悉使用方法。</p>
-<p>比如，点击桌面上的笔记本，就会跳出一个文本框，让你写一封信。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062403.webp" /></p>
-<p>下面是点击“行事历”跳出的程序。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062404.webp" /></p>
-<p>你还可以进入其他房间，游戏室里会有一些小游戏。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062405.webp" /></p>
-<p>这个软件总体上就是这样，但是微软犯了一个错误：它不是免费提供的，而是要花钱购买。</p>
-<p>可以想象，这个软件的销量和评价，都非常糟糕。以至于1996年初，这个项目就被撤销了，寿命不到一年，可能是正式发售的寿命最短的微软产品。</p>
-<p>2、<a href="https://kottke.org/24/02/this-artist-used-microsoft-paint-to-create-art-into-her-90s">Microsoft Paint 作画</a></p>
-<p>西班牙艺术家孔查·加西亚·赛拉（Concha García Zaera）去年去世了，享年93岁。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024020801.webp" /></p>
-<p>她生前一直用 Windows 内置的画图程序（Paint）作画。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024020802.webp" /></p>
-<p>她的作品细腻、清新、精美，观众很难意识到，它们都是老太太用鼠标一个像素、一个像素地画出来的。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024020803.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024020804.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024020805.webp" /></p>
-<h2 id="文摘">文摘</h2>
-<p>1、<a href="https://taylor.town/-10x">如何成为 -10x 工程师</a></p>
-<p>互联网行业有一个共识，就是寻找 10x（10倍效率）的工程师。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062801.webp" /></p>
-<p>这样的工程师很难找，现实生活中不一定能遇到，你反而可能遇到 -10x（负10倍效率）的工程师。</p>
-<p>所谓 -10x 工程师，就是他不仅不能为团队节省时间，反而每周要浪费团队 400 个小时的工作。</p>
-<p>-10x 工程师有以下特征。</p>
-<p>（1）他会创造出大量的无效工作。最常见的就是，他会推动建立毫无意义的流程，以及让大家忙于幻灯片、图表、报告、工单管理等等。</p>
-<p>（2）他会鼓励团队追求优雅，而不是实用主义。</p>
-<p>（3）他会使得团队无法一锤定音地做出任何决定。</p>
-<p>（4）他写出冗长的消息/文件，并尽可能广泛地分享，让所有人发表意见并参与讨论。</p>
-<p>（5）他编写很慢的程序，比如避免数据库索引、在16核机器上运行单线程程序、不压缩文件。</p>
-<p>（6）他编写只有自己看得懂的脚本，并且没有文档。</p>
-<p>（7）他编写缓慢的构建，以及缓慢的测试。</p>
-<p>（8）他编写无意义的测试用例。</p>
-<p>（9）他添加需要大量时间维护的依赖项，迫使工程师单独学习每个库。</p>
-<p>（10）他将10名工程师困在一个艰难的项目中，吸引并浪费他们的才智。</p>
-<p>（11）他让管理层低估项目的难度，并夸大项目的实用性，直至最后延迟完成或根本无法完成。</p>
-<p>（12）他雇用其他毫无生产力的工程师。</p>
-<h2 id="言论">言论</h2>
-<p>1、</p>
-<p>PCRE 是 Perl 语言的正则库，作者 Philip Hazel 在1998年创建了这个库，那一年他54岁。</p>
-<p>今天，他80岁了，还在维护这个库。他正在找接班人，准备移交工作。他说，当初做梦也想不到，他要在这个项目上一直工作到2024年。</p>
-<p>-- <a href="https://lwn.net/SubscriberLink/978463/608c876c1153fd31/">《自由软件如何劫持 Philip Hazel 的生活》</a></p>
-<p>2、</p>
-<p>Kubernetes 和微服务都是重量级工具，会让你的软件变得更重。</p>
-<p>使用它们之前，请务必想清楚，你能不能处理它们带来的额外的重量、运营成本、工程开销。</p>
-<p>-- <a href="https://toot.cat/@plexus/112403882840794498">Arne Brasseur</a></p>
-<p>3</p>
-<p>如果你过于悲观，就意味着你会做出不必要的牺牲，试图减轻实际上不存在的风险。</p>
-<p>-- <a href="https://causal.app/blog/forecasting-with-uncertainty">《极端的假设可能导致更极端的结果》</a></p>
-<p>4、</p>
-<p>苹果公司发现，大多数用户同时拥有 Mac 电脑和 iPad。</p>
-<p>所以尽管两者的硬件几乎一样，但是苹果坚决不让 iPad 运行 macOS 系统，因为这样的话，用户可能只购买 iPad，不再购买 Mac 了。</p>
-<p>-- <a href="https://9to5mac.com/2024/05/15/majority-of-mac-users-also-own-ipad/">《macOS 永远不会出现在 iPad 上》</a></p>
-<p>5、</p>
-<p>公司的 CEO 谈论工作场所文化时，实际上谈的是工作场所控制。</p>
-<p>-- <a href="https://scottberkun.com/2021/why-bad-ceos-fear-remote-work/">《为什么糟糕的 CEO 害怕远程工作》</a></p>
-<h2 id="往年回顾">往年回顾</h2>
-<p><a href="https://www.ruanyifeng.com/blog/2023/06/weekly-issue-259.html">第 259 期</a>（2023 #259）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2022/06/weekly-issue-209.html">程序员是怎样的人</a>（2022 #209）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2021/05/weekly-issue-159.html">游戏开发者的年薪</a>（2021 #159）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2020/05/weekly-issue-109.html">播客的价值</a>（2020 #109）</p>
-<p>（完）</p>
-]]></description>
-      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-306.md</link>
-      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-306.md</guid>
-      <pubDate>Mon, 01 Jul 2024 00:52:54 -0000</pubDate>
     </item>
   </channel>
 </rss>
