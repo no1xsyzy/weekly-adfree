@@ -6,7 +6,213 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2024</copyright>
-    <lastBuildDate>Mon, 26 Aug 2024 00:50:25 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Sep 2024 00:53:12 -0000</lastBuildDate>
+    <item>
+      <title>科技爱好者周刊（第 315 期）：一份谷歌离职报告</title>
+      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/4911">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
+<h2 id="封面图">封面图</h2>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082605.webp" /></p>
+<p>入夜后，大理洱海上亮起无数鱼灯，吸引鱼类浮上水面，渔民趁机捕捉，消灭外来的西太公鱼。（<a href="https://news.haiwainet.cn/n/2024/0820/c3541083-32782962.html">via</a>）</p>
+<h2 id="一份谷歌离职报告">一份谷歌离职报告</h2>
+<p>上周，我看到一篇<a href="https://tinystruggles.com/posts/google_postmortem/">有趣的文章</a>。一位谷歌 SRE 工程师离职了。</p>
+<p>她负责服务器的运维，平时要为网站故障写分析报告（postmortem），现在离职了，就为自己的离职也写了一份分析报告。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082015.webp" /></p>
+<p>她写得非常坦率，说了心里话，也透露了很多谷歌公司的情况。信息量挺大的，下面分享给大家，碍于篇幅，有所删节。</p>
+<p><strong>（1）我的基本情况。</strong> 2015年，我从波兰的大学毕业，加入谷歌，来到爱尔兰分公司，担任 SRE 工程师。</p>
+<p>入职时，我的职级是 L3，9个月内就晋升到 L4，一年后晋升到 L5，现在是 L6。</p>
+<p><strong>（2）我从谷歌得到了什么。</strong> 在谷歌待了九年后，我在本周离职。回顾这九年，我得到了很多东西。</p>
+<p>首先，我得到了大量的钱。</p>
+<p>其次，我得到了工程技能，理解了复杂的大型网站系统，还拥有处理生产故障和调试机器的世界一流的技能。</p>
+<p>再次，我得到了领导和管理团队的技能，以及成为一家巨型技术公司一员的满足感。</p>
+<p>最后，我得到了各种福利，比如办公室、游泳池、健身房、体育课程、每周按摩、美味和健康的膳食、医疗保健等，还有好玩且舒适的异地出差和商务旅行机会。</p>
+<p><strong>（3）谷歌的变化。</strong> 现在的谷歌，相比我刚加入时，发生了很多变化，已经不再那么有趣和酷炫了。</p>
+<p>以前，谷歌的技术是顶尖的。现在，其他公司的技术水平，正在接近谷歌。</p>
+<p>谷歌的内部预算也在削减，我们的商务旅行减少了，裁员不断。公司还把招聘名额转移到更廉价的地区。这对我产生了直接影响，我没法为自己的团队招人了。</p>
+<p>这些年来，谷歌内部的安全制度和规章，不断增加，越来越繁琐。公司的内部系统，以及各种团队之间的关系，变得非常复杂。这减慢了我们的开发速度，并带来了许多艰巨的工程挑战。</p>
+<p>对于我们来说，理解公司内部系统，成了越来越大的负担。你需要牢记无数的系统和技术细节，其中任何一个都可能对你产生影响（对于 SRE 工程师尤其如此）。新入职的员工可能需要一年的时间才能完全理解这些东西，这太疯狂了。</p>
+<p>很多时候，我觉得自己被会议、重复性劳动、资源不足的团队工作，压得喘不过气，但同时又没有良好的成长机会。</p>
+<p>公司两次承诺我，可以扩招手下的员工，但是两次都被取消了。我觉得，现在的工作没有充分发挥我的能力，但是在公司内部，又找不到发挥的方式。</p>
+<p>与此同时，谷歌的高管们不提供支持和反馈，也几乎没有任何监督。你问他们下一步如何开展工作，他们会不知所措，让你自己去解决。</p>
+<p><strong>（4）我的想法改变了。</strong> 那些曾经吸引我的东西，已经不再有很强的吸引力了。</p>
+<p>我已经达到并且超过了自己的财务目标。</p>
+<p>我对谷歌技术的迷恋，逐渐变少。实际工作中遇到的技术问题，也不再那么令人兴奋。</p>
+<p>我的兴趣转移到了其他方面。SRE 工程师跟我的兴趣和性格都不太符合。我是一个乐观和有创造力的人，但是 SRE 岗位要求稳重和保守。另外，长期夜班扰乱了我的睡眠，SRE 要求“七天24小时在线”使我很难放下工作。</p>
+<p>我想离开 SRE 换个岗位，而爱尔兰又没有太多其他岗位可选择。由于惰性和个人原因，我也没有申请去其他地区。老实说，谷歌是一家以美国为中心的公司，只要你不在美国总部，推进任何事情都很麻烦，很容易感到孤立和边缘化。</p>
+<p>我在谷歌看不到大的升迁机会。我已经是 L6 工程师了，在工程领域到顶了。我对 L7 并不真正感兴趣，因为 L7 更多是一种政治角色，不是工程角色，并且也很难说手下会管理多少人。如果我有机会自己领导一个大团队，我可能愿意留下来，否则我更渴望创办自己的公司。</p>
+<p><strong>（5）其他想法。</strong> 回顾这九年，我感到自己很幸运。</p>
+<p>谷歌的股票表现非常好，再加上我的快速晋升和高绩效，使得个人收入很不错。我经过仔细思考后，对这些收入做出的财务决策，也很正确，给我带来了更多财务回报。</p>
+<p>我在谷歌认识了大量的人，建立了许多关系。我雇用的员工也都非常可靠。</p>
+<p>我有一些后悔没有做的事情。最主要的就是，我本应该早点退出 SRE，申请转移到其他国家，从一开始我就知道 SRE 不是我想要的。我只是坐等情况发生变化，结果没有如愿，现在我知道了，我应该主动寻求变化。</p>
+<h2 id="微软工程师的薪资">微软工程师的薪资</h2>
+<p>上周，一家<a href="https://www.businessinsider.com/microsoft-spreadsheet-shows-pay-engineers-2024-8">美国媒体</a>获得一张电子表格，里面是500多个微软员工自愿分享的自己的薪资数据。</p>
+<p>这家媒体就统计了微软各级别工程师的平均薪资。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082301.webp" /></p>
+<p>上图可以看到，2024年美国互联网大厂的程序员的收入水平。微软最低的59级工程师，基本工资也超过了12万美元。这是很高的收入，跟美国大学普通的正教授差不多了。</p>
+<p>程序员的收入，最主要由职级决定，职级越高，收入越高。这就是为什么大厂程序员那么看重晋升的原因。</p>
+<p>但是，不同职级的基本工资，相差不是那么大，收入差异主要由奖金和股票决定，高职级的绩效收入远大于基本工资。</p>
+<p>当然，由于数据总量比较小，上表肯定不完全准确，只能作为参考。</p>
+<h2 id="科技动态">科技动态</h2>
+<p>1、<a href="https://www.sohu.com/a/802511112_121873449">载人飞艇</a></p>
+<p>8月20日上午6时，中国的载人飞艇 AS700 从湖北荆门起飞，飞行近1000公里，于次日中午12点达到广西桂林。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082606.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082607.webp" /></p>
+<p>由于中间有落地休整，整个飞行时间是12小时44分钟。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082608.webp" /></p>
+<p>飞艇到达桂林后，从8月23日开始20天的展演。如果这段时间你在阳朔，每天中午就可以看到它在飞行。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082609.webp" /></p>
+<p>它最大载人数10人（含一名驾驶员），飞行高度500米到2000米，最长航时10小时，最大航程700公里。</p>
+<p>它主要用于旅游出行，空中观光，甚至举办“云端婚礼”。由于内部是氦气，所以非常安全。</p>
+<p>2、<a href="https://kottke.org/21/03/the-invention-of-a-new-pasta-shape">新形状意大利面</a></p>
+<p>意大利面的酱汁，需要吸附在面条上，这样才好吃。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072612.webp" /></p>
+<p>一位美国网红别出心裁，使用计算机设计了一种新形状的意大利面条。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072613.webp" /></p>
+<p>据说，这种新型面条的表面褶皱尽量最大化，以便吸附更多的酱汁，同时还要保证足够的弹性，以便产生良好的口感。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072614.webp" /></p>
+<p>它每包的售价高达200多元人民币，一上市就售罄。</p>
+<p>3、<a href="https://arstechnica.com/gadgets/2024/08/acemagics-x1-is-a-clever-but-delicate-approach-to-dual-screen-laptops/">折叠屏笔记本</a></p>
+<p>一家深圳公司推出了折叠屏笔记本，具有两个折叠在一起的屏幕。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082501.webp" /></p>
+<p>以前的双屏笔记本，基本都没有实体键盘，用其中一块触摸屏当作键盘，或者外接键盘。</p>
+<p>但是，这款笔记本别出心裁，使用铰链将两块屏幕连在一起。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082502.webp" /></p>
+<p>所以，它的第二块屏幕可以反转，放在主屏幕的背面（上图），也可以向左翻，作为侧屏（下图）。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082503.webp" /></p>
+<p>根据用过的人说，左侧的侧屏，对于使用者非常有用。但是，重心有点不稳，用力击键时，侧屏会抖动。</p>
+<p>从它可以看出，笔记本这种成熟产品，还是有很大的创新空间。</p>
+<p>4、<strong>其他</strong></p>
+<p>（1） <a href="https://www.idownloadblog.com/2024/08/22/iphone-16-jpeg-xl-rumor/">iPhone 16 系列</a>据报道将支持 JPEG-XL 格式的图片，体积是 JPEG 的三分之一。</p>
+<p>（2）<a href="https://china.chinadaily.com.cn/a/202408/29/WS66d00abba310b35299d39168.html">中国互联网络信息中心</a>（CNNIC）统计，截止6月底，中国注册的域名共3187万个，其中<code>.cn</code>域名1956万个。</p>
+<p>同一份报告称，中国网民的95.5%看短视频，65.2%看长视频。</p>
+<h2 id="文章">文章</h2>
+<p>1、<a href="https://www.sheshbabu.com/posts/visual-explanation-of-saml-authentication/">SAML 身份验证的可视化解释</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072503.webp" /></p>
+<p>SAML 是企业常用的身份验证协议和 SSO（单点登录）解决方案。本文解释它是什么。</p>
+<p>2、<a href="https://piccalil.li/blog/styling-tables-the-modern-css-way/">现代 CSS 方式设置 table 样式</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072504.webp" /></p>
+<p>本文介绍怎么用现代 CSS，对网页的<code>&lt;table&gt;</code>标签进行样式设置。</p>
+<p>3、<a href="https://www.fffuel.co/svg-spinner/">如何制作 SVG 加载器</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072508.webp" /></p>
+<p>本文一步步讲解，如何写 SVG 代码，生成一个“正在加载中”的动画图标。</p>
+<p>4、<a href="https://endtimes.dev/why-lowercase-letters-save-data/">小写可以减少压缩文件体积</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072512.webp" /></p>
+<p>本文解释为什么将大写字母改成小写后，文件的压缩体积会变小，是一篇压缩算法的简介。</p>
+<p>5、<a href="https://jvns.ca/blog/2024/01/26/inside-git/">.git 子目录内部</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072610.webp" /></p>
+<p>Git 仓库的元数据都保存在 .git 子目录，本文解释该子目录里面每一项的作用。</p>
+<p>6、<a href="https://tonsky.me/blog/checkbox/">方形复选框的记忆</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072611.webp" /></p>
+<p>作者认为，设计师应该遵守一个约定：复选框是方形的，单选框是圆形的。</p>
+<h2 id="工具">工具</h2>
+<p>1、<a href="https://github.com/coollabsio/coolify">Coolify</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082701.webp" /></p>
+<p>一个开源的应用运行平台，相当于自己搭建一个 Heroku / Netlify / Vercel 替代品，各种应用可以轻松在上面运行。</p>
+<p>2、<a href="https://ente.io/auth/">Ente Auth</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052603.webp" /></p>
+<p>一个开源的双因素认证码管理器。</p>
+<p>3、<a href="https://github.com/JackySoft/marsview">Marsview</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082512.webp" /></p>
+<p>一款面向后台的低代码可视化搭建平台，快速搭建中后台管理系统。（<a href="https://github.com/ruanyf/weekly/issues/5060">@JackySoft</a> 投稿）</p>
+<p>4、<a href="https://notionexporter.com/">Notion Exporter</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082808.webp" /></p>
+<p>一个浏览器插件，将 Notion 内容导出为长图或卡片，同时保留排版格式。（<a href="https://github.com/ruanyf/weekly/issues/5079">@Shanshi66</a> 投稿）</p>
+<p>5、<a href="https://deepesh-01.github.io/battery_indicator/">电池的电量显示</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023112807.webp" /></p>
+<p>该网站使用一个简单的脚本（<a href="https://deepesh-01.github.io/battery_indicator/app.js">源码</a>），显示当前设备的电池电量百分比。</p>
+<p>6、<a href="https://github.com/tapjs/tsimp">tsimp</a></p>
+<p>一个 Node.js 的 TypeScript 加载器，也就是说，它可以让 Node.js 运行 TS 脚本。</p>
+<p>7、<a href="https://github.com/krupkat/xpano">xpano</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023112905.webp" /></p>
+<p>一个自动拼接多张照片的工具。</p>
+<p>8、<a href="https://concrete.style/">concrete.css</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024020806.webp" /></p>
+<p>一个简单的、无类的 CSS 极简框架，受到 <a href="https://milligram.io/">Milligram</a> 和 <a href="http://getskeleton.com/">Skeleton</a> 的启发。</p>
+<p>9、<a href="https://peoplegraphmaker.com/">Person Diagram</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024020108.webp" /></p>
+<p>一个玩具应用，在线制作人口比重图（占总人口的比重）。</p>
+<h2 id="ai-相关">AI 相关</h2>
+<p>1、<a href="https://modelscope.cn/studios/chostem/ancient_Chinese_text_generator">现代文转古文大模型</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082511.webp" /></p>
+<p>输入现代汉语句子，生成古汉语风格的句子，<a href="https://github.com/JianXiao2021/ancient_text_generation_LLM">代码开源</a>。（<a href="https://github.com/ruanyf/weekly/issues/5057">@JianXiao2021</a> 开源）</p>
+<p>2、<a href="https://github.com/Kedreamix/Linly-Dubbing">Linly-Dubbing</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082805.webp" /></p>
+<p>AI 视频配音的开源工具，自动将外语视频改成中文配音。（<a href="https://github.com/ruanyf/weekly/issues/5074">@Y024</a> 投稿）</p>
+<p>3、<a href="https://github.com/Cinnamon/kotaemon">kotaemon</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082806.webp" /></p>
+<p>一个开源的本地工具，可以指定 AI 模型，与添加的文档聊天。（<a href="https://github.com/ruanyf/weekly/issues/5075">@Y024</a> 投稿）</p>
+<p>4、<a href="https://www.guillaume.sh/watson">Watson AI</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082504.webp" /></p>
+<p>一个开源的 Mac/Windows 桌面程序，通过系统麦克风，录制远程会议的音频，然后用 AI 生成会议记录和摘要。</p>
+<p>5、<a href="https://fluximg.com/">Fluximg.com</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082510.webp" /></p>
+<p>免费使用的 Flux AI 文生图服务。（<a href="https://github.com/ruanyf/weekly/issues/5055">@youyuela</a> 投稿）</p>
+<h2 id="资源">资源</h2>
+<p>1、<a href="https://github.com/meethigher/black-wukong-youji/blob/master/%E9%BB%91%E7%A5%9E%E8%AF%9D%E6%82%9F%E7%A9%BA%E5%A6%96%E6%80%AA%E5%B9%B3%E7%94%9F%E5%BD%95.md">妖怪平生录</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082705.webp" /></p>
+<p>这个仓库收录了游戏《黑神话：悟空》内附的203个妖怪的图片、小诗和故事。（<a href="https://github.com/ruanyf/weekly/issues/5063">@meethigher</a> 投稿）</p>
+<p>2、<a href="https://emojispark.com/">Emoji Spark</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082801.webp" /></p>
+<p>快速匹配搜索 Emoji 的网站。（<a href="https://github.com/ruanyf/weekly/issues/5067">@0xjoanne</a> 投稿）</p>
+<p>3、<a href="https://jverzani.github.io/CalculusWithJuliaNotes.jl/">使用 Julia 语言学习微积分</a>（Calculus With Julia）（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024060509.webp" /></p>
+<p>一本在线阅读的电子书，从最简单的极限开始介绍微积分，需要计算的地方使用 Julia 语言举例。</p>
+<p>4、<a href="https://ihavenotv.com/">Documentaries</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024011601.webp" /></p>
+<p>该网站可以免费观看英文纪录片。</p>
+<h2 id="图片">图片</h2>
+<p>1、<a href="https://www.bbc.com/future/article/20230725-making-the-blue-flash-how-i-reconstructed-a-fatal-atomic-accident">还原致命的原子弹实验事故</a></p>
+<p>1946年，负责制造原子弹的美国洛斯阿拉莫斯实验室，发生了一起致命事故。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023072903.webp" /></p>
+<p>核物理学家路易斯·斯洛廷，带人参观实验室。他决定演示一下，原子弹的“关键组件”。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023072904.webp" /></p>
+<p>他用螺丝刀将铍半球支撑在钚核上。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023072905.webp" /></p>
+<p>但是，螺丝刀一滑，铍半球落到了钚核上方，引发了辐射反应。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023072906.webp" /></p>
+<p>他立刻用手将两者分开，导致自己受到了致命辐射，九天后就去世了。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023072907.webp" /></p>
+<p>下面是一个英国艺术家使用各种模型材料，重新还原的事故现场。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023072908.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023072909.webp" /></p>
+<h2 id="文摘">文摘</h2>
+<p>1、<a href="https://waitbutwhy.com/2015/03/7-3-billion-people-one-building.html">73亿人，一栋小楼</a></p>
+<p>地球的总人口，目前是81.7亿。</p>
+<p>10年前的2014年，总人口是73亿。</p>
+<p>当时有人做过计算，73亿看上去是很大的数字，但并没有大家想象的那么大。</p>
+<p>如果每个人用一粒米来代表，73亿粒米刚好填满一个边长为6.1米的立方体，大约相当于一栋两层小楼的体积。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202405/bg2024052604.webp" /></p>
+<p>如果每个人用一粒沙来代表，总体积将取决于沙粒的大小。最极端的情况下，73亿粒细沙刚好填满一个2升的饮料瓶。</p>
+<p>在地球眼里，人就是一粒米或一粒沙的大小。每天喧闹无比、仿佛宇宙中心的人类社会，不过就是一栋小楼，或者一个饮料瓶里面发生的事情。</p>
+<h2 id="言论">言论</h2>
+<p>1、</p>
+<p>问：如果网速提高到 1Tb/s，互联网会怎样？</p>
+<p>答：会有更多、更大、更快的广告。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=41332413">Hacker News 读者</a></p>
+<p>2、</p>
+<p>大家都认为 Nvidia 是销售 GPU（显卡）的公司，但是实际上他们是在销售 CUDA 加速运算库，GPU 只是非常昂贵又必不可少的独家配件。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=41361597">Hacker News 读者</a></p>
+<p>3、</p>
+<p>我不喜欢现场听技术演讲，95%的情况收获非常少。我更喜欢看技术演讲的录像，可以仔细思考，推荐给他人。我还可以将播放速度提高到 1.5倍或2倍，如果演讲不是那么好，这样至少可以减少浪费的时间。</p>
+<p>-- <a href="https://chelseatroy.com/2022/08/03/how-i-do-and-dont-prepare-a-talk-for-a-technical-conference/">《我如何准备技术演讲》</a></p>
+<p>4、</p>
+<p>飞行器直立登陆月球非常困难，最近美国和日本的月球登陆器，都在登陆时倾倒了。主要原因是月球的重力只有地球的六分之一，重心稍高一点，就很容易翻倒了。</p>
+<p>-- <a href="https://www.nytimes.com/2024/03/04/science/moon-landing-sideways-gravity.html">《为什么直立登陆月球如此困难》</a></p>
+<p>5、</p>
+<p>敏捷宣言提出四大原则，其中之一是“正常工作的软件胜过详尽的文档”。</p>
+<p>这条原则造成的结果，就是敏捷开发的项目，文档普遍很简陋。一项研究发现，敏捷开发的项目比不采用敏捷开发的项目，失败可能性高出268%。</p>
+<p>-- <a href="https://www.theregister.com/2024/06/05/agile_failure_rates/">theregister.com</a></p>
+<h2 id="往年回顾">往年回顾</h2>
+<p><a href="https://www.ruanyifeng.com/blog/2023/08/weekly-issue-268.html">生产力是形容机器，不是形容人</a>（2023 #268）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2022/08/weekly-issue-218.html">葡萄酒，樱花，全球变暖</a>（2022 #218）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2021/07/weekly-issue-168.html">游戏《底特律：变人》</a>（2021 #168）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2020/07/weekly-issue-118.html">高考志愿怎么填</a>（2020 #118）</p>
+<p>（完）</p>
+]]></description>
+      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-315.md</link>
+      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-315.md</guid>
+      <pubDate>Mon, 02 Sep 2024 00:53:12 -0000</pubDate>
+    </item>
     <item>
       <title>科技爱好者周刊（第 314 期）：《黑神话：悟空》可以产业化吗？</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -1017,213 +1223,6 @@
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-311.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-311.md</guid>
       <pubDate>Mon, 05 Aug 2024 00:50:50 -0000</pubDate>
-    </item>
-    <item>
-      <title>科技爱好者周刊（第 310 期）：内容农场的 AI 赚钱术</title>
-      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
-<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/4743">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
-<h2 id="封面图">封面图</h2>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072110.webp" /></p>
-<p>热闹的重庆南滨路夜市，就在长江边上，江对面就是渝中半岛的高楼。（<a href="https://www.facebook.com/photo.php?fbid=785809217049222&amp;id=100068604533594&amp;set=a.526690652961081">via</a>）</p>
-<h2 id="内容农场的-ai-赚钱术">内容农场的 AI 赚钱术</h2>
-<p>内容农场指的是，通过炮制大量文章，以骗取点击、赚取流量的网站。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072004.webp" /></p>
-<p>它会炮制数以万计的垃圾文章，每个页面充满了广告，冠以诱人的、关键词优化的标题，吸引读者点进去看。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072005.webp" /></p>
-<p>以前，内容农场要聘请写手，到处搜罗资料，来生成内容。现在简单了，交给 AI 来写，两秒就生成一篇。</p>
-<p>而且，<strong>AI 的价格已经足够低，低到单次浏览的广告收入就可以覆盖成本</strong>。下面，我就来演示，打造一个 AI 内容农场是多么便宜。</p>
-<p>首先，可以根据热搜，找到读者感兴趣的主题。</p>
-<p>我们随便找一个经常搜索的 IT 问题，比如关闭 Windows 的更新功能。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072006.webp" /></p>
-<p>然后，让 AI 撰写文章。</p>
-<p>这时你需要一段精确的提示词（prompt），我从<a href="https://batchmon.com/blog/ai-cheaper-than-ads/">老外的文章</a>拷贝了一段。</p>
-<blockquote>
-<p>你是一位优秀的博客作者。你撰写的博客在搜索引擎中排名靠前，因为你了解 SEO 以及如何使用高度相关和热门的关键字。你的博客文章信息丰富，可帮助用户实现他们所寻找的内容。</p>
-<p>你将收到搜索博客文章的用户的查询。你将创建与他们的查询相匹配、有帮助且能回答或与他们所搜索的内容相关的博客文章。</p>
-<p>仅使用博客文章进行回复。</p>
-<p>读者的问题是：如何关闭 Windows 的更新功能？</p>
-</blockquote>
-<p>我把这段提示词，输入一个国产 AI。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072401.webp" /></p>
-<p>AI 马上给出了下面的文章。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072007.webp" /></p>
-<p>接着，我们计算一下，上面这篇文章要花多少钱。</p>
-<p>AI 计费是根据 token（词元），我用的那个国产 AI，收费标准如下：</p>
-<blockquote>
-<ul>
-<li>输入：0.0008元/千 token</li>
-<li>输出：0.0020元/千 token</li>
-</ul>
-</blockquote>
-<p>我们用 OpenAI 的 <a href="https://platform.openai.com/tokenizer">token 计算器</a>，可以得到上面的输入是168个 token，输出是622个 token，那么总费用如下。</p>
-<blockquote>
-<p>（168 * 0.0008 + 622 * 0.0020）/ 1000<br />
-= 0.00138</p>
-</blockquote>
-<p>也就是说，<strong>这篇文章的成本是人民币0.00138元</strong>，一分钱可以生成7篇，生成1000篇也只要1.38元。</p>
-<p>那么，我能用它赚取多少广告费呢？</p>
-<p>国内广告平台的数据比较少，国外一般使用谷歌广告，<a href="https://snigel.com/blog/adsense-revenue-calculator">它的收入</a>是0.2美元～2.5美元/千次浏览。</p>
-<p>我们就取最低的0.2美元，相当于人民币1.45元，那么单次浏览就是0.00145元，刚好高于文章的生成成本。</p>
-<p>因此，<strong>每一次浏览都是赚钱的</strong>，只要有人点进来就弥补内容成本了，后面再点进来都是纯利润。</p>
-<p>内容农场从来没有这么容易过，我先买一个热搜数据库，然后花费100多元，就能生成10万篇文章，最后加入广告，做好 SEO，网站上线，等着用户点进来就行了。</p>
-<p>不难想象，资讯类网站未来大概都是这个模式。真人生产内容，成本太高，无法与 AI 内容抗衡，注定只能是小众网站。</p>
-<h2 id="科技动态">科技动态</h2>
-<p>1、<a href="https://www.macrumors.com/2024/07/22/microsoft-blames-european-commission-for-outage/">Windows 蓝屏</a></p>
-<p>上周，Windows 系统出现全球故障，几百万台电脑发生蓝屏，无法启动。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072301.webp" /></p>
-<p>原因是安全软件公司 CrowdStrike 的更新包，引发了内核故障。</p>
-<p>这就很奇怪了，为什么一个第三方应用软件，可以修改内核？</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072302.webp" /></p>
-<p>微软的解释是，多年前，欧盟认为微软自家的安全软件 Windows Defender 有垄断嫌疑，微软必须向其他安全软件开放同样的内核访问权限，所以 CrowdStrike 才能修改内核。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072506.webp" /></p>
-<p>相比之下，苹果公司始终不开放内核权限，所以这次故障不影响 Mac 系统。但是，欧盟已经把矛头对准了苹果。</p>
-<p>幸亏汽车、飞机不使用 Windows 系统，否则行驶中突然蓝屏，真得害死人。</p>
-<p>2、<a href="https://www.scientificamerican.com/article/young-adulthood-is-no-longer-one-of-lifes-happiest-times/">幸福感</a></p>
-<p>心理学家以前认为，幸福感是一个 U 形曲线，两头高中间低，中年人最不快乐。</p>
-<p>但是，最新研究发现，人们的心理已经发生了变化。现在的幸福感是一根向上的曲线。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072108.webp" /></p>
-<p>上图中，蓝色曲线是以前调查的幸福感，30岁以前是上升的，后面开始下降，50岁达到最低点。进入老年后，又不断上升。</p>
-<p>黄色曲线是最新调查。年轻时的幸福感比以前大幅下降，15岁是最低点，然后不断上升，直到老年。</p>
-<p>心理学家的解释是，对于现在的年轻人，青春期变得十分困难，属于人生的低点。他刚开始自己的生活，感到焦虑和沮丧，对未来没有希望，还容易犯下一些严重错误。</p>
-<p>3、<a href="https://asia.nikkei.com/Business/Food-Beverage/Happy-hourglass-Japan-brewer-helps-beer-go-down-slower">沙漏啤酒杯</a></p>
-<p>夏天，人们喝啤酒，容易暴饮。有没有办法，减缓人们喝啤酒的速度呢？</p>
-<p>一家日本公司推出了“沙漏啤酒杯”，据说可以把喝啤酒的速度降低三倍。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072303.webp" /></p>
-<p>这个杯子可以容纳350毫升啤酒，但是中间瓶颈处只有6毫米，相当于用一根6毫米的吸管喝啤酒。而且喝完后，向杯中添加啤酒也很麻烦。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072304.webp" /></p>
-<p>该公司把这个杯子定位为玩具，“希望人们饮酒的同时享受乐趣。”</p>
-<h2 id="文章">文章</h2>
-<p>1、<a href="https://www.landiannews.com/archives/105048.html">阿里云公共 DNS 免费版限速</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072008.webp" /></p>
-<p>阿里云的免费 DNS 自9月30日开始限速，单个 IP 的请求数不能超过 20QPS，超过需要使用付费版。它开了公共 DNS 限速的先河。</p>
-<p>2、<a href="https://krebsonsecurity.com/2024/07/phish-friendly-domain-registry-top-put-on-notice/"><code>.top</code>域名的钓鱼问题</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072501.webp" /></p>
-<p><code>.top</code>是钓鱼网站最泛滥的域名，它的注册管理商是一家中国公司。ICANN 已要求该公司采取行动，否则将吊销它的管理权。</p>
-<p>3、<a href="https://blog.stackademic.com/testing-in-javascript-with-jest-085b26e1750e">JS 测试框架 Jest 入门</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072106.webp" /></p>
-<p>初学者教程，简单介绍如何使用 Jest 写测试用例。（<a href="https://github.com/ruanyf/weekly/issues/4852">@Faizan711</a> 投稿）</p>
-<p>4、<a href="https://linuxiac.com/how-to-use-cron-and-crontab-on-linux/">Cron 定时任务入门</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202403/bg2024030602.webp" /></p>
-<p>一篇 Linux 初学者教程，介绍如何使用 cron 设置定时任务，非常详细。</p>
-<p>5、<a href="https://sunsetglow.net/posts/frontend-build-systems.html">前端构建概述</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024062301.webp" /></p>
-<p>本文综合介绍前端构建的概念、步骤和工具。</p>
-<p>6、<a href="https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github">GitHub 的 fork 仓库的安全问题</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072502.webp" /></p>
-<p>GitHub 允许 fork 他人的仓库。只要一个仓库被 fork 过，那么就再也删不掉了，即使转为私有仓库，他人也可能看到你新提交的代码。</p>
-<p>7、<strong>其他文章</strong></p>
-<ul>
-<li><a href="http://www.stdaily.com/index/kejixinwen/202407/1b9a0db4eee24f3184101054da3783a7.shtml">7月22日</a>是有记录以来全球最热的一天。</li>
-<li><a href="https://finance.sina.com.cn/roll/2024-07-25/doc-incfikph3095737.shtml">腾讯游戏</a>对于未成年玩家，强制每秒自动人脸识别1次。</li>
-<li><a href="https://github.com/nodejs/node/pull/53725">Node.js</a> 官方添加剥离 TypeScript 类型代码功能。</li>
-</ul>
-<h2 id="工具">工具</h2>
-<p>1、<a href="https://github.com/johnfactotum/foliate">Foliate</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072112.webp" /></p>
-<p>Linux 平台的 epub 电子书阅读软件。</p>
-<p>2、<a href="https://github.com/SendWithSES/Drag-and-Drop-Email-Designer">Sendune</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072002.webp" /></p>
-<p>一个可视化的 HTML 电子邮件设计工具，代码开源。类似的还有一个 HTML 邮件制作库 <a href="https://documentation.mjml.io">mjml</a>。</p>
-<p>3、<a href="https://github.com/Daninet/hash-wasm">hash-wasm</a></p>
-<p>一个轻量级的哈希函数库，提供了二十几种常见的哈希算法，比如 MD5 和 SHA-1，以及更安全的 BLAKE3。</p>
-<p>4、<a href="https://github.com/html5-ninja/page-replica">Page Replica</a></p>
-<p>这个开源工具用来架设一个缓存网站，可以抓取其他网站和网页，建立一个缓存版本，通过它来中介访问。</p>
-<p>5、<a href="https://github.com/webui-dev/webui">WebUI</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024010704.webp" /></p>
-<p>一个跨平台的桌面应用的打包程序，允许你直接将浏览器作为桌面应用的前端，比 Electron 要轻量化很多，同时又避免使用 WebView。</p>
-<p>6、<a href="https://github.com/zhaoolee/Sport">深蹲计数器</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072402.webp" /></p>
-<p>一个开源的 Web 应用，通过移动设备的加速度计，实现深蹲计数。（<a href="https://github.com/ruanyf/weekly/issues/4869">@zhaoolee</a> 投稿）</p>
-<p>7、<a href="https://anori.app/">Anori</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024042002.webp" /></p>
-<p>一个浏览器插件，可以在主页上定制各种小组件。</p>
-<p>8、<a href="https://www.blurmatic.com/">Blurmatic</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024042004.webp" /></p>
-<p>这个在线工具可以为图片加上模糊景深，还可以 3D 旋转图片。</p>
-<p>9、<a href="https://www.fastdownload.io/">FastDownload.io</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024042202.webp" /></p>
-<p>一个下载各种流媒体视频的在线工具，支持 Youtube 和 TikTok。</p>
-<p>10、<a href="https://github.com/stackframe-projects/stack">Stack</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024042204.webp" /></p>
-<p>开源的用户管理解决方案，自带前端组件和管理后台。</p>
-<h2 id="资源">资源</h2>
-<p>1、<a href="https://ai-emoji.bettergogo.com/">AIEmoji</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072101.webp" /></p>
-<p>Emoji 搜索引擎，输入想表达的内容，返回最匹配的 Emoji 符号。（<a href="https://github.com/ruanyf/weekly/issues/4848">@bettergoo</a> 投稿）</p>
-<p>2、<a href="https://gallery.selfboot.cn/algorithms/">算法可视化</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072105.webp" /></p>
-<p>作者在 AI 协助下，完成的经典算法的交互式可视化网站，代码开源。（<a href="https://github.com/ruanyf/weekly/issues/4851">@selfboot</a> 投稿）</p>
-<p>3、<a href="https://flowingdata.com/2024/07/16/more-or-less-college-admissions-time/">美国大学申请成功率</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072211.webp" /></p>
-<p>这个网站可以查询美国各大学历年的申请成功率。上图是纽约州立大学石溪分校，最近几年的申请成功率在50%左右。</p>
-<p>4、<a href="https://devdocs.io/">DevDocs</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024011506.webp" /></p>
-<p>这个网站可以查询 Web 标准和主流软件工具的 API 文档。</p>
-<h2 id="图片">图片</h2>
-<p>今天介绍一些墨西哥的情况。</p>
-<p>1、<a href="https://unchartedterritories.tomaspueyo.com/p/25-fascinating-facts-about-mexico">墨西哥的面积</a></p>
-<p>墨西哥是一个面积很大的国家，大到出乎你的想象。</p>
-<p>欧洲的30个国家，可以一起放进墨西哥，包括德国、英国、爱尔兰、奥地利、捷克、匈牙利等等。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024071901.webp" /></p>
-<p>历史上，墨西哥的面积甚至更大，比现在大一倍多。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024071902.webp" /></p>
-<p>上图中，绿色部分是过去的墨西哥，两根红线是现在的墨西哥国界。</p>
-<p>墨西哥的领土主要被美国抢走。今天的得克萨斯州、加利福尼亚州、内华达州和犹他州全境，以及亚利桑那州、科罗拉多州、新墨西哥州和怀俄明州的部分地区，历史上都属于墨西哥。</p>
-<p>1846年到1848年爆发的美墨战争，以墨西哥割让这些领土告终。</p>
-<p>2、<a href="https://unchartedterritories.tomaspueyo.com/p/whats-mexicos-future">美墨边境</a></p>
-<p>下图是美国和墨西哥的边境。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072204.webp" /></p>
-<p>上图中，左侧是美国的圣地亚哥市，基本上是农村；右侧是墨西哥的蒂华纳市，完全是都市。</p>
-<p>两边的反差这么大，主要是墨西哥北部的经济完全依靠美国，越靠近美国的地方，经济越繁荣。</p>
-<h2 id="文摘">文摘</h2>
-<p>1、<a href="https://evanhahn.com/programming-beliefs-as-of-july-2024/">我的编程信念</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072505.webp" /></p>
-<p>下面是我目前对计算机编程的一些看法。这些看法都是基于我自己的经验。</p>
-<p>（1）当面临一项艰巨的任务时，我会问自己：“<strong>如果我根本不做这件事会怎么样？</strong>”</p>
-<p>大多数情况下，这是一个愚蠢的问题，我必须做这件事。但大约 5% 的情况，我意识到我可以完全跳过一些工作。</p>
-<p>（2）<strong>“简单”和“容易”之间的区别很重要</strong>。简单是复杂的对立面。复杂性来自多个东西捆绑在一起。</p>
-<p>容易是另外一回事，复杂的东西也可以很容易。理解“简单”和“容易”的区别，可以让你开发更简单的软件。</p>
-<p>（3）<strong>消除无效状态（NULL）</strong>。如果我可以设计数据/类型防止无效状态，那么就可以消除大量的错误来源。类型系统或数据库架构的一点麻烦是值得的。</p>
-<p>（4）<strong>代码的可测试性</strong>，基本上与代码模块化是一回事。</p>
-<p>（5）<strong>软件最重要的问题都是非技术性的</strong>。现实世界的问题往往是最重要的，我所构建的东西帮助对象是谁？我的团队在健康运作吗？</p>
-<p>（6）<strong>制作无用的东西</strong>可能是学习新事物的好方法。我曾经花了很多时间，为一个业余项目编写自定义 PNG 编码器。我从未想过它会有用，但几个月后，我的另一个项目需要用到某个功能时，我确切地知道如何去做。</p>
-<p>2、<a href="https://www.ggd.world/p/why-do-east-asian-firms-value-drinking">为什么东亚公司重视饮酒？</a></p>
-<p>东亚商人经常出去喝酒，在酒桌上讨论生意。世界其他地区并不如此，这是为什么？</p>
-<p>这跟东亚文化有关。东亚地区强调集体主义和等级制度，不提倡面对面直接说出想法，更喜欢通过隐含和间接的方式表达。</p>
-<p>人们避免直接的冲突，压制自己的情绪，使得我们很难了解别人的真实想法。</p>
-<p>饮酒是一种弥补方法。酒精会降低人们的抑制力，从而促进了人际关系和信息共享。</p>
-<p>饮酒提供了宝贵的机会——无论在公司内部还是外部，让参加者放松下来，说出自己的真实感受并建立融洽的关系。</p>
-<h2 id="言论">言论</h2>
-<p>1、</p>
-<p>王传福多年前关于造车的一句话给了我很大的勇气。</p>
-<p>他说很多企业因为不了解，会把技术想象到令人畏惧的高度，这种畏惧正是对手给后来者营造了一种产业恐吓。他们不断地告诉你做不成，投入很大，研发很难，直到你放弃。其实你解决不了的不是因为你没有能力，而是你缺乏勇气。</p>
-<p>-- <a href="https://finance.sina.com.cn/tech/roll/2024-07-23/doc-incfcpey8084281.shtml">雷军年度演讲</a></p>
-<p>2、</p>
-<p>以太坊创始人之一的 Vitalik Buterin 在2017年曾经提出，区块链存在三难困境：无法同时实现去中心化、可扩展性和安全性。</p>
-<p>--<a href="https://ieeexplore.ieee.org/document/10549891">《区块链的三难困境》</a></p>
-<p>3、</p>
-<p>世界最长的巴士路线是从英国伦敦到印度加尔各答，一共16000公里，单程要开50天。</p>
-<p>这条线路已经在1976年停运，当时的票价相当于今天的2200英镑（约20000人民币）。</p>
-<p>-- <a href="https://en.wikipedia.org/wiki/London%E2%80%93Calcutta_bus_service">维基百科</a></p>
-<p>4、</p>
-<p>Slack 是一款工作场所生产力聊天工具，但你可能不知道，它是一个缩写词，意为“所有通信和知识的可搜索日志”（Searchable Log of All Communication and Knowledge）。</p>
-<p>--<a href="https://www.theverge.com/2016/9/28/13098164/slack-is-an-acronym">《Slack 是一个缩写词》</a></p>
-<p>5、</p>
-<p>可以用下面的一套规则来描述我们对技术的反应：</p>
-<p>（1）当你出生时，世界上的任何事物都是正常和普通的，是世界自然的运作方式。</p>
-<p>（2）当你十五岁到三十五岁之间发明的任何东西都是新的、令人兴奋的和革命性的，你可能会在其中找到一份职业。</p>
-<p>（3）在你三十五岁以后，世界上发明的任何东西都是违背事物自然规律的。</p>
-<p>-- <a href="https://fs.blog/douglas-adams-reactions-technology-over-time/">道格拉斯·亚当斯</a>，英国作家</p>
-<h2 id="往年回顾">往年回顾</h2>
-<p><a href="https://www.ruanyifeng.com/blog/2023/07/weekly-issue-263.html">开源软件如何赚钱？</a>（2023 #263）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2022/07/weekly-issue-213.html">知识孤岛，知识软件</a>（2022 #213）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2021/06/weekly-issue-163.html">你的城市有多少张病床？</a>（2021 #163）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2020/06/weekly-issue-113.html">暴力犯罪为什么越来越少？</a>（2020 #113）</p>
-<p>（完）</p>
-]]></description>
-      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-310.md</link>
-      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-310.md</guid>
-      <pubDate>Mon, 29 Jul 2024 00:50:24 -0000</pubDate>
     </item>
   </channel>
 </rss>
