@@ -6,7 +6,218 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2024</copyright>
-    <lastBuildDate>Mon, 04 Nov 2024 00:57:25 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Nov 2024 00:56:35 -0000</lastBuildDate>
+    <item>
+      <title>科技爱好者周刊（第 324 期）：人类已知的最大质数</title>
+      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/5445">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
+<h2 id="封面图">封面图</h2>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110209.webp" /></p>
+<p>世界最大博物馆之一的卢浮宫，在阿联酋的阿布扎比有一个分馆。这个分馆建在一个海岛上，游客可以划着皮划艇进入参观。（<a href="https://visitabudhabi.ae/zh/what-to-see/historical-and-cultural-attractions/louvre-abu-dhabi">via</a>）</p>
+<h2 id="人类已知的最大质数">人类已知的最大质数</h2>
+<p>上个月，有一个不太引人注目的科学发现：<a href="https://www.163.com/dy/article/JF9HFDUG0514B52J.html">人类已知的最大质数</a>诞生了。</p>
+<p>除了数学家，大概没人会对这个消息感兴趣，它离日常生活太远了。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110708.webp" /></p>
+<p>但是，本周《华盛顿邮报》的<a href="https://www.washingtonpost.com/science/2024/10/23/nvidia-prime-mersenne-gpu-cloud/">一篇报道</a>，却把这个发现跟普通人拉近了距离。</p>
+<p>大家恐怕想不到，<strong>发现这个数字的人不是数学家，而是程序员</strong>。《华盛顿邮报》就是讲述背后的精彩故事，我看得津津有味，科学报道就该这么写，下面分享给大家。</p>
+<p>====================</p>
+<p>2024年10月10日，美国程序员卢克·杜兰特 (Luke Durant) 发现了人类已知的最大质数。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110703.webp" /></p>
+<p>那天晚上，他收拾衣物，准备从加州返回阿拉巴马州的老家。出门之前，他决定远程登录服务器，看一下正在运行的脚本。</p>
+<p>他原以为，就像过去一年的每次远程登录一样，脚本要么没有结果，要么报错。但是，那天晚上不一样，脚本给出了运行结果。</p>
+<p>杜兰特意识到，他刚刚发现了世界上新的最大质数。他立刻告诉同伴这个消息，然后顾不上回老家了，开始仔细检查脚本的结果。</p>
+<p>他发现的这个质数，后来被命名为 M136279841。它大得离谱，足足有41,024,320个十进制位。如果你每秒读一位，需要475天才能读完。这个数字等于2的136,279,841 次方减一。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110704.webp" /></p>
+<p>为了算出这个数字，杜兰特花了差不多一年，自掏腰包大约200万美元，去购买 GPU 计算时间，用来运行脚本。</p>
+<p>今年36岁的杜兰特，曾经在 Nvidia 公司担任程序员。公司的股价上涨，让他赚到了足够的钱，于2021年离职，开始投入自己的项目。</p>
+<p>他选择的项目，就是计算梅森质数。他在 Nvidia 的经历，让他能够熟练使用 GPU 编程，去完成高速计算。</p>
+<p>17世纪，法国传道士马林·梅森（Marin Mersenne）提出，存在无数个质数，可以表示成 2<sup>n</sup> - 1 的形式，比如3等于2<sup>2</sup> - 1，7等于2<sup>3</sup> - 1。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110705.webp" /></p>
+<p>目前，人类已知的梅森质数有52个（包括杜兰特发现的那个）。寻找新的梅森质数，早就成了数学迷的一种爱好。</p>
+<p>上个世纪90年代，互联网出现后，一个美国程序员乔治·沃尔特曼（George Woltman）组织了“互联网梅森质数搜索计划”（Great Internet Mersenne Prime Search，简称 GIMPS 计划）。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110706.webp" /></p>
+<p>GIMPS 计划的目的，就是使用计算机程序，寻找梅森质数。它的<a href="http://www.mersenne.org/">官网</a>提供程序下载，你可以在自己的电脑上运行这个程序，它会在计算机的空闲时间进行计算，寻找下一个梅森质数。</p>
+<p>目前，全世界大约有3,000～5,000名志愿者在运行这个程序。梅森质数实在太难算了，在过去的28年里，GIMPS 计划一共发现了18个梅森质数。</p>
+<p>上一个数字发现于2018年，比杜兰特发现的第52个梅森质数短了1600万个十进制位。</p>
+<p>杜兰特的不同之处在于，在他以前，所有人都使用 CPU 进行计算，只有他使用 GPU。CPU 一两周的计算量，GPU 大约只需要一两天的时间。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110709.webp" /></p>
+<p>杜兰特为了找到这个数字，动用了17个国家/地区24个机房和两家云服务商的服务器，进行协同计算。</p>
+<p>他说：“<strong>如今个人的能力比历史上任何时候都强得多，你能调用的云计算，规模令人难以置信</strong>。我们拥有这样神奇的强大系统，所以最好弄清楚如何利用它们。”</p>
+<p>梅森质数没有任何实际用途，科学家寻找它只是为了乐趣和探索人类知识的边界。</p>
+<p>杜兰特由于这个发现，得到了3000美元奖金。他把这些钱捐给了阿拉巴马州的公立寄宿学校，那是他去加州理工学院读大学前的母校。</p>
+<p>他发现的最大质数已经到了4100万位，GIMPS 计划依然在悬赏第一个找到十亿位质数的人。</p>
+<h2 id="科技动态">科技动态</h2>
+<p>1、<a href="https://www.theguardian.com/society/2024/oct/31/san-francisco-sleeping-pods-affordable-housing-crisis">旧金山胶囊旅馆</a></p>
+<p>旧金山市中心有一家月租的胶囊旅馆，由于太受欢迎，想入住的人必须网上申请，然后进行抽签。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110201.webp" /></p>
+<p>结果，17个床位有300个人申请。</p>
+<p>一个上下铺的床位，月租价格是700美元（约人民币5000元），包含水电费、上网费、公共淋浴、厕所、一个储藏柜和共用厨房的使用权。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110202.webp" /></p>
+<p>这么贵的铺位，还如此抢手，原因是你在旧金山再也找不到如此便宜的住宿了。</p>
+<p>由于有硅谷，旧金山是美国房价最高的地区。公寓里面的一个合租单间，月租要3000美元～3500美元，普通美国人也租不起。</p>
+<p>2、<a href="https://www.theregister.com/2024/08/20/birmingham_oracle_cost/">伯明翰的 Oracle 灾难</a></p>
+<p>2022年，英国伯明翰市政府更换 ERP 系统，使用 Oracle 替换已经运行20多年的 SAP 公司产品。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110501.webp" /></p>
+<p>上线后才发现，Oracle 无法生成现金审计报告，市政府迫不得已改用人工审计。</p>
+<p>Oracle 系统的更换成本，已经最初估计的1900万英镑（约1.75亿人民币）增加到1.31亿英镑（约12亿人民币）。</p>
+<p>该问题何时解决，还不得而知，成本将进一步上升。这件事情反应了，更换大型的线上系统的风险有多高。</p>
+<p>3、<a href="https://www.irishtimes.com/ireland/2024/11/01/we-are-highly-embarrassed-website-creator-behind-non-existent-dublin-halloween-parade-says-it-was-a-mistake/">AI 虚构的万圣节晚会</a></p>
+<p>上月底是万圣节，两个巴基斯坦青年做了一个<a href="https://myspirithalloween.com/">网站</a>，上面是全世界各地的活动信息。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110507.webp" /></p>
+<p>但是，他们没有披露，为了节省数据搜集的成本，这些活动都是 AI 生成的，实际上不存在。</p>
+<p>结果，一个不知情的爱尔兰访问者转发了活动信息，更多的人看到后，又转发到 Tiktok 和 Instagram。</p>
+<p>结果，万圣节那天晚上，爱尔兰首都都柏林的某条大街上，聚集了上千人，都等着参加活动。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110508.webp" /></p>
+<p>大家在街上站了几个小时，发现上当了，根本没有活动。为了避免更多人聚集，警方不得不发出通告。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110509.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110512.webp" /></p>
+<p>第二天，这个事件就上了国际媒体，那两个巴基斯坦青年不得不道歉。它凸显了，内容注明“AI 生成”的必要性。</p>
+<p>4、<strong>其他</strong></p>
+<p>（1）中国开始向民众征集<a href="https://www.cmse.gov.cn/xwzx/202410/t20241028_55835.html">月球车名称</a>，并披露了两种月球车设计方案。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110701.webp" /></p>
+<p>（2）Etched 公司宣布了世界第一款实时 AI 游戏<a href="https://www.etched.com/blog-posts/oasis">《绿洲》</a>，基于 MineCraft 进行训练，游戏画面都是 AI 实时生成，参见<a href="https://github.com/ruanyf/weekly/issues/5480">网友</a>的<a href="https://oasisaiminecraft.com/">介绍网站</a>。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110208.webp" /></p>
+<p>（3）OpenAI 公司启用域名 <a href="https://chat.com/">chat.com</a>，跳转到 chatgpt.com 。</p>
+<h2 id="文章">文章</h2>
+<p>1、<a href="https://www.tomsguide.com/ai/i-just-tested-google-vs-chatgpt-search-and-im-shocked-by-the-results">ChatGPT 搜索 vs 谷歌搜索</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110207.webp" /></p>
+<p>上周，OpenAI 公司推出了 ChatGPT 搜索，跟谷歌发生正面竞争。</p>
+<p>网络媒体就去对比了两者的搜索结果，结果就是一句话：谷歌有麻烦了。</p>
+<p>2、<a href="https://tutorialedge.net/tips/aliasing-your-git-commands/">为 Git 命令设置别名</a>（英文）</p>
+<p>作者介绍怎么为 git 命令设置方便的别名，比如<code>git add -A</code>可以设为<code>git a</code>。</p>
+<p>3、<a href="https://michaelengen.com/posts/my-eleventy-resume/">如何生成简历网页</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110402.webp" /></p>
+<p>作者用静态站点生成器 Eleventy（基于 JS 语言），为自己做了一张简历网页（上图），还可以本地打印为 PDF 文件。</p>
+<p>4、<a href="https://imbant.github.io/blog/2024/10/29/VS-Code-Thankyou/">我为 VS Code 贡献了代码</a>（中文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110504.webp" /></p>
+<p>VS Code 内置的 TypeScript 语言服务器，有一个 bug，作者修复了这一问题。（<a href="https://github.com/ruanyf/weekly/issues/5478">@imbant</a> 投稿）</p>
+<p>5、<a href="https://rosszurowski.com/log/2022/makefiles">如何将 makefile 用于 Node.js 项目</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082401.webp" /></p>
+<p>本文详细教你怎么用 makefile 管理 Node.js 项目的各种内部操作。</p>
+<p>6、<a href="https://pwp.stevecassidy.net/javascript/lit/">Lit 框架开发 Web Components 入门教程</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082505.webp" /></p>
+<p>一篇不错的 Lit 框架入门教程，教你怎么写一个 Web component。</p>
+<p>7、<a href="https://www.railsexplained.com/pages/hunting-for-gems/">Ruby 如何加载模块</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202409/bg2024093005.webp" /></p>
+<p>一篇初学者教程，介绍 Ruby 程序的模块加载方法的历史演变。</p>
+<h2 id="工具">工具</h2>
+<p>1、<a href="https://flyscrape.com/">flyscrape</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023111201.webp" /></p>
+<p>一个网页抓取的跨平台命令行工具，使用 Go 语言编写，但是它的操作脚本是用 JS 写的，方便用户提取网页内容。</p>
+<p>2、<a href="https://github.com/astral-sh/uv">uv</a></p>
+<p>Rust 语言写的 Python 包安装器，可以替代 pip，运行速度更快，参见<a href="https://astral.sh/blog/uv">介绍文章</a>。</p>
+<p>3、<a href="https://chattcp.com">ChatTCP</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110212.webp" /></p>
+<p>一款 Mac 的 TCP 数据包分析工具，致力于简化 TCP 分析，核心功能免费。（<a href="https://github.com/ruanyf/weekly/issues/5454">@wujiuye</a> 投稿）</p>
+<p>4、<a href="https://github.com/wincatcher/typing-practice.toolsnav.top">typing-practice</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110211.webp" /></p>
+<p>开源的英文打字练习工具。（<a href="https://github.com/ruanyf/weekly/issues/5451">@wincatcher</a> 投稿）</p>
+<p>5、<a href="https://github.com/wangyuan389/yunda">云搭</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110502.webp" /></p>
+<p>开源的低代码平台，用来搭建小程序、H5、问卷、图文文章等多种应用，试用 <a href="https://www.sunmao-design.top/sunmao/admin">Demo</a>。（<a href="https://github.com/ruanyf/weekly/issues/5473">@wangyuan389</a> 投稿）</p>
+<p>6、<a href="https://github.com/Mebius1916/NextTalk_web">NextTalk</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110213.webp" /></p>
+<p>一个基于 Next.js 的网页版实时聊天工具，使用说明详见它的<a href="https://github.com/Mebius1916/NextTalk">桌面版</a>，可以作为开发参考。（<a href="https://github.com/ruanyf/weekly/issues/5457">@Mebius1916</a> 投稿）</p>
+<p>7、<a href="https://github.com/dazhengs/tools">dazhengTools</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110306.webp" /></p>
+<p>开源的纯前端在线加/解密工具箱，可以离线使用。（<a href="https://github.com/ruanyf/weekly/issues/5460">@dazhengs</a> 投稿）</p>
+<p>8、<a href="https://tempmail100.com/">TempMail</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110308.webp" /></p>
+<p>临时邮箱服务，支持 iOS 和网页端。（<a href="https://github.com/ruanyf/weekly/issues/5455">@houzhongjian</a> 投稿）</p>
+<p>9、<a href="https://github.com/TheCoolQATeam/online-inspection-tracker">自动化巡检系统</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110702.webp" /></p>
+<p>一个开源的网址状态定时巡检工具，防止指定网址出现白屏、服务无响应等问题，有异常会发送钉钉、企业微信、飞书警报，体验 <a href="https://check.itest.ren/">Demo</a>。（<a href="https://github.com/ruanyf/weekly/issues/5486">@zdx0122</a> 投稿）</p>
+<p>10、<a href="https://google.github.io/magika/">Magika</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072507.webp" /></p>
+<p>一个命令行工具，可以检测某个文件是什么类型（比如图片文件还是文本文件），有网页的 JS 版。它是谷歌的产品，谷歌内部也在用它检测文件类型。</p>
+<h2 id="ai-相关">AI 相关</h2>
+<p>1、<a href="https://hear.thucydides.net/zh-cn/">AI Hear</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110305.webp" /></p>
+<p>一款离线运行的桌面软件，实时语音转文字、实时翻译、字幕导出，支持 Mac、Windows。（<a href="https://github.com/ruanyf/weekly/issues/5458">@phonechan</a> 投稿）</p>
+<p>2、<a href="https://5ire.app/">5ire</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110307.webp" /></p>
+<p>开源的大模型桌面客户端，支持 Windows、Mac。（<a href="https://github.com/ruanyf/weekly/issues/5461">@nanbingxyz</a> 投稿）</p>
+<p>3、<a href="https://github.com/Gijela/CR-Mentor">CR-Mentor</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110503.webp" /></p>
+<p>一个开源应用，自己搭建 AI 服务，自动对 GitHub 的代码提交进行 code review。（<a href="https://github.com/ruanyf/weekly/issues/5476">@Gijela</a> 投稿）</p>
+<p>4、<a href="https://github.com/APIParkLab/APIPark">APIPark</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110518.webp" /></p>
+<p>开源的一站式 AI 网关，搭建企业自己的 AI 开放平台，方便同时接入多种模型，进行 API 调用。（<a href="https://github.com/ruanyf/weekly/issues/5481">@Frey2024</a> 投稿）</p>
+<p>5、<a href="https://github.com/srcbookdev/srcbook">Srcbook</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110514.webp" /></p>
+<p>一个开源编程平台，给出文字描述，然后通过 AI 生成 JS 的全栈应用。</p>
+<p>6、<a href="https://simonwillison.net/2024/Oct/21/claude-artifacts/">Claude Artifacts</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110517.webp" /></p>
+<p>Claude 模型的 Artifacts 功能，与上一条的作用相同，可以生成一个单页应用，但是不开源，本文介绍该功能。</p>
+<p>7、<a href="https://github.com/gregpr07/browser-use">Browser-Use</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110710.webp" /></p>
+<p>一个 Python 库，可以通过 AI 模型，完成浏览器自动化。</p>
+<h2 id="资源">资源</h2>
+<p>1、<a href="https://www.gounfaked.com/">Unfaked</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024100804.webp" /></p>
+<p>一个免费图片库，收集可以乱真的 AI 生成图片。</p>
+<p>2、<a href="https://learning-guide.gitbook.io/system-design-interview">系统设计面试：内幕指南</a>（中译）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110210.webp" /></p>
+<p>《System Design Interview: An Insider's Guide》一书的中文翻译，介绍如何设计不同目的的软件系统，可以用来准备面试。（<a href="https://github.com/ruanyf/weekly/issues/5448">@Admol</a> 投稿）</p>
+<p>3、<a href="https://auth.wiki/">Auth Wiki</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110403.webp" /></p>
+<p>一个维基网站，收录各种与身份验证、授权和身份管理相关的条目，解释很详细。</p>
+<p>4、<a href="https://app.keeptrack.space/">3D 卫星图</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024100304.webp" /></p>
+<p>这个网站可以实时查看所有运行中的地球卫星，选择一个地点，可以看到该地上空现在是什么卫星。</p>
+<h2 id="图片">图片</h2>
+<p>1、<a href="https://x.com/jessepeltan/status/1836523494840111613">太阳能板</a></p>
+<p>太阳能板的价格，正在快速下降，已经接近或低于普通的挡板。</p>
+<p>以后，我们看到的建筑物，很可能都会采用太阳能板作为外墙。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110301.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110302.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110303.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110304.webp" /></p>
+<h2 id="文摘">文摘</h2>
+<p>1、<a href="https://healthtechmagazine.net/article/2019/06/why-hospital-pager-withstood-test-time">为什么美国医院还在使用寻呼机？</a></p>
+<p>寻呼机是上个世纪的通讯工具，现在已经淘汰了。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110713.webp" /></p>
+<p>但是，近80%的美国医院还在使用寻呼机，这是为什么？</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110714.webp" /></p>
+<p>这有几个原因。</p>
+<p>（1）信号问题。</p>
+<p>寻呼机使用的是类似调频广播的信号，不是手机的 3G/4G/5G 信号，穿透性更好，覆盖范围更广。医院的某些死角，收不到手机信号和 Wi-Fi，但是寻呼机依然有信号。</p>
+<p>这使得寻呼机比手机更可靠，如果发生灾难，寻呼机比手机更不容易断网。</p>
+<p>（2）续航。</p>
+<p>寻呼机的电池寿命很长，可以两周充电一次，而手机一般是每天一充。</p>
+<p>（3）简单性。</p>
+<p>寻呼机比较简单，不易被攻击或破解。即使落在别人手里，泄漏的信息也很有限。</p>
+<h2 id="言论">言论</h2>
+<p>1、</p>
+<p>一项美国的调查发现，81%的公司发布过虚假的招聘广告，目的有几个：（1）在招聘网站持续亮相，（2）建立人才库，（3）让现有员工感到自己是可替代的，从而不敢松懈。</p>
+<p>-- <a href="https://www.sfgate.com/tech/article/ghost-jobs-california-tech-industry-19871249.php">《幽灵工作对科技从业者的破坏》</a></p>
+<p>2、</p>
+<p>现代硬件的速度快得难以置信，苹果的 M1 Max 芯片运行频率为 3.2GHz，即每秒32亿个时钟周期。</p>
+<p>然而，我用它打开微软的 Teams 需要3秒，我不相信这需要花费96亿个时钟周期。我知道这样说过于简化，我的意思是：硬件变得如此之快，我们使用的应用程序却变慢了，这究竟是怎么回事？</p>
+<p>-- <a href="https://blog.preyneyv.dev/doing-less-with-more">preyneyv.dev</a></p>
+<p>3、</p>
+<p>一项调查发现，科学论文中 might 和 probably 这种表示不确定的修饰词的出现频率，过去20年中下降了40%。</p>
+<p>这表明科学论文的不可靠、夸大其词的论断，正在令人担忧地增多了。</p>
+<p>-- <a href="https://www.science.org/content/article/some-scientific-papers-words-expressing-uncertainty-have-decreased">Science 官网</a></p>
+<p>4、</p>
+<p>“中产阶级”这个词在美国的含义，正在改变。以前的中产阶级，是指有足够资金进行投资的人，他们有稳定的工作，有房子、汽车、家庭和退休金。</p>
+<p>现在的中产阶级，更像不稳定阶层。你有一份工作，但随时可能失去它。你买不起房子，无力为退休储蓄，平时仅仅支付账单就手头紧张。</p>
+<p>这是美国的新常态。我的一个银行朋友说，他的大多数客户，支付租金后的账户余额最多只有几百美元。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=42066439">Hacker News 读者</a></p>
+<p>5、</p>
+<p>美国心理学会的一项研究表明，消耗脑力的思考，会导致烦躁、沮丧或其他负面情绪，所以“思考不利于健康”这个观点是对的。</p>
+<p>-- <a href="https://www.upi.com/Health_News/2024/08/05/netherlands-mental-exertion-thinking/2701722810331/">合众社报道</a></p>
+<h2 id="往年回顾">往年回顾</h2>
+<p><a href="https://www.ruanyifeng.com/blog/2023/11/weekly-issue-277.html">工作台副屏的最佳选择</a>（2023 #277）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2022/10/weekly-issue-227.html">脸书的公司入职教育</a>（2022 #227）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2021/09/weekly-issue-177.html">iPad 的真正用途</a>（2021 #177）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2020/09/weekly-issue-127.html">未来人人开发软件，几乎没人编码</a>（2020 #127）</p>
+<p>（完）</p>
+]]></description>
+      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-324.md</link>
+      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-324.md</guid>
+      <pubDate>Mon, 11 Nov 2024 00:56:35 -0000</pubDate>
+    </item>
     <item>
       <title>科技爱好者周刊（第 323 期）：技术公司的口号比拼</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -1073,181 +1284,6 @@
 ]]></description>
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-319.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-319.md</guid>
-      <pubDate>Mon, 30 Sep 2024 00:57:23 -0000</pubDate>
-    </item>
-    <item>
-      <title>每周分享第 43 期</title>
-      <description><![CDATA[<p>这里记录过去一周，我看到的值得分享的东西，每周五发布。</p>
-<p>欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 <a href="https://github.com/ruanyf/weekly">ruanyf/weekly</a> 提交 issue。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021501.jpg" /></p>
-<p>上图是一架小飞机停在草地，一个人从上面跳下来。</p>
-<p>这张图取自一篇2018年12月发表的<a href="https://www.bmj.com/content/363/bmj.k5094">正式论文</a>，作者单位是哈佛大学医学院，论文题目叫做**《从飞机跳下时，降落伞防止伤亡的作用研究》**。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021502.jpg" /></p>
-<p>研究小组让一组人带着降落伞，另一组人不带（就像上图），都从停在草坪上的小飞机跳下来。可想而知，所有人都平安无事，因此论文经过模型分析，一本正经地得出结论：降落伞没有明显作用。</p>
-<p>这篇论文不是恶搞。它想用一个讽刺的实证研究来证明，医学界传统的双盲测试有重大弊端。医生当中流传着一句<a href="https://blogs.bmj.com/bmj/2018/12/13/we-jumped-from-planes-without-parachutes-and-lived-to-tell-the-tale/">名言</a>：<strong>没有降落伞，谁愿意从飞机跳出来？</strong> 意思是只有那些有降落伞的病人（即知道自己死不了的人），才会参加双盲测试。</p>
-<p>这是因为，如果不考虑那些无药可救的绝症，一般来说，风险比较小的病人，更可能参加双盲测试，因为就算被抽到对照组，天天吃安慰剂，也不怕被耽误。但是，如果测试对象都是风险小的病人，试验结果很可能就是新药无效，因为病人本来就会康复。</p>
-<p>这篇论文就是用实验证明：如果你想让没有降落伞的人，参加双盲测试，他们只会愿意从停着的小飞机上跳下来，因此你会得到降落伞（新发明）没用的结论。这是我看过的最好玩的论文之一，推荐大家看看，它完全采用最严谨的学术语言和论证过程，写得一丝不苟，最后得出了一个荒谬的结论。</p>
-<h2 id="新闻">新闻</h2>
-<p>1、<a href="https://yellrobot.com/amazon-delivery-robot-scout-autonomous-snohomish/">亚马逊的自动送货车</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021503.jpg" /></p>
-<p>美国电商亚马逊在华盛顿州（该公司总部所在地），开始试验自动送货车。该车是电动的，跟小冰箱差不多大，能沿着人行道快速前进。它配备了传感器和 GPS，可以自动规划行进路线，避免跟行人、宠物或其他障碍发生碰撞。</p>
-<p>测试期间，每辆车送货的时候，会有一个员工跟在后面，处理各种可能的问题。如果测试顺利，亚马逊将扩大试验范围，并考虑将其投入实用。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021504.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021505.jpg" /></p>
-<p>2、<a href="https://www.bloomberg.com/news/articles/2019-01-23/boeing-s-flying-car-takes-off-to-show-a-glimpse-of-the-future">飞行汽车</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021506.jpg" /></p>
-<p>1月22日，波音公司在弗吉尼亚州第一次试飞了它开发的飞行汽车。这其实不能算汽车，因为它不能在地面上行驶，只能在大楼之间飞行，从一幢楼顶飞到另一幢楼顶。</p>
-<p>该产品是电动飞机，一次可以飞行80公里，比直升飞机成本更低，可控性更高。它是优步公司的定制车型，如果顺利的话，优步将采用它，在2023年推出空中出租车服务。此外，<a href="https://www.bloomberg.com/news/articles/2019-01-23/airbus-s-flying-taxi-is-poised-for-takeoff-within-weeks">空中客车公司设计的空中汽车</a>（见下图）也将在几周内试飞，目标也是2023年供优步公司使用。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021507.jpg" /></p>
-<p>3、<a href="https://www.kxan.com/news/local/austin/apd-identifies-bank-robbery-suspect-who-used-e-scooter-for-getaway/1726367092">逃跑不要使用共享滑板车</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021508.jpg" /></p>
-<p>2018年12月18日，19岁的 Luca Mangiarano 走进美国德州首府奥斯汀的一家银行，递给银行柜员一张纸条，上面写着：“这是一起抢劫案。请把柜台所有的钱给我。”柜员不知道他会做出什么举动，就顺从地把钱给了他，共计18000美元。</p>
-<p>然后，Mangiarano 就在银行门口，骑上一辆共享滑板车逃跑了。这对警方来说，就很简单了。警察找到提供滑板车服务的优步公司，调出哪个帐号在这个时间地点，使用了滑板车，然后顺利逮捕了 Mangiarano。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021509.jpg" /></p>
-<p>4、<a href="https://www.fastcompany.com/90294948/what-happened-when-oslo-decided-to-make-its-downtown-basically-car-free">无车城市</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021510.jpg" /></p>
-<p>挪威首都奥斯陆市政府决定，拆除市区700多个停车位，用自行车道、小公园和长椅取代，为最终实现市中心无车做准备。政府的规划是，第一步取消停车位，第二步在一些街道禁止自驾车，第三步则是整个市中心无车，交通需求完全依靠公共交通或自行车。</p>
-<p>5、<a href="https://www.standard.co.uk/tech/gatwick-airport-trial-for-valetparking-robots-will-cut-hassle-for-travellers-a4046406.html">泊车机器人</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021511.jpg" /></p>
-<p>英国盖特威克机场推出了代客泊车机器人，车主在下车区下车以后，使用手机 App 召唤泊车机器人，该机器人会自动把车拉到停车位。这样不仅可以节省时间，还可以将车紧凑地停满整个空间。</p>
-<p>这个机器人实际上是一个自动的小型叉车，使用 GPS 定位，整个泊车过程之中都不需要使用车钥匙。该系统去年已经在巴黎戴高乐机场进行了5个月试用。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021512.jpg" /></p>
-<p>6、<a href="https://www.cbsnews.com/news/meet-the-man-behind-a-third-of-whats-on-wikipedia/">维基百科的编辑</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021513.jpg" /></p>
-<p>Steven Pruitt 是维基百科最忙碌的编辑，他在13年的时候里面，一共完成了近300万次编辑，并撰写了35,000篇原创条目。维基百科英文版现在有570万条目，其中三分之一都被他编辑过。《时代》杂志将他评为互联网上最有影响力的25个人之一。他的维基用户名是 Ser Amantio Di Nicolao。</p>
-<p>他没有从这些工作里面赚到一分钱， 他说：“知识自由的想法让我着迷。我的母亲在苏联长大......所以我非常清楚，知识自由意味着什么。”</p>
-<p>7、<a href="https://phys.org/news/2019-01-moon-recovered-astronauts-earth.html">月球岩石</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021514.jpg" /></p>
-<p>1971年阿波罗14号登月期间，采集了一块月球岩石送回了地球。现在，这块岩石里面发现了一些微量矿物质，跟地球的岩石成份很像。这意味着，这块石头原本来自地球。</p>
-<p>这块岩石大约形成于40亿年前，里面含有锆石的成分，与地球上发现的锆石非常相似。由于锆石需要在水和氧化条件下形成，因此这块石头很大可能来自地球。这有可能是40亿年前，一颗小行星撞击地球，将这块石头带到了月球，也有可能整个月球是因为撞击，而从地球分裂出来的。</p>
-<p>8、<a href="https://www.dw.com/zh/%E8%80%81%E8%B5%96%E6%97%A0%E9%9A%90%E7%A7%81%E5%90%8D%E8%AA%89%E6%9D%83%E7%BD%91%E6%B0%91%E7%BA%B7%E7%BA%B7%E8%B0%88/a-47262459">老赖地图</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021515.jpg" /></p>
-<p>《河北日报》1月28日报道，河北省法院自主研发微信小程序"老赖地图"，可扫描出方圆500米以内的"老赖"（长期拒绝偿还债务的人员）数量，并可点击显示"老赖"的身份证和家庭住址。</p>
-<p>河北省法院的一名工作人员称，可将失信人信息页面分享到朋友圈，这是使用互联网技术对"老赖"进行"精准曝光"，利用社会压力和熟人圈子对"老赖"进行"精准围剿"。</p>
-<p>9、<a href="http://world.huanqiu.com/article/2019-01/14206830.html">极端气候</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021516.jpg" /></p>
-<p><a href="https://www.theguardian.com/australia-news/2019/feb/01/january-named-as-australias-hottest-month-on-record">澳大利亚</a>今年一月份的平均气温，创了历史新高，很多地方都超过摄氏40度，最高摄氏49.5度。与此同时，<a href="http://world.huanqiu.com/article/2019-01/14206830.html">美国</a>遭遇北极寒流，超过或接近历史最低温，有些地方达到零下60度，比南极还冷。地球的气候正变得越来越极端化。</p>
-<p>上图为芝加哥旁边的密西根湖已经完全结冰。</p>
-<p>10、<strong>一句话新闻</strong></p>
-<ul>
-<li><p><a href="https://singaporedatacompany.com/blog/how-many-domain-names-are-unused">统计</a>发现，目前共有1.37亿个 .com 域名，其中大约1/3（4300万个域名）正在使用。</p></li>
-<li><p><a href="https://www.buzzfeednews.com/article/salvadorhernandez/family-tree-dna-fbi-investigative-genealogy-privacy">美国最大 DNA 测试网站</a>将自己的数据库共享给联邦调查局 FBI，这将大大扩展警方 DNA 搜索的范围。以后，只要能够拿到嫌疑人的 DNA，可能就会快速确定嫌疑人是谁，或者他是谁的亲戚。</p></li>
-<li><p><a href="https://ai.googleblog.com/2019/02/real-time-continuous-transcription-with.html">谷歌</a>宣布，安卓内置 Live Transcribe 功能，运用 Youtube 的自动字幕技术，实时将语音转换成字幕，帮助聋哑人交流。</p></li>
-<li><p><a href="https://www.instagram.com/p/BsOGulcndj-/?utm_source=ig_embed">Instagram</a> 最受欢迎的照片是一只鸡蛋，1月5日上传，截至2月4日，已经收到了5200万个赞。</p></li>
-</ul>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021517.jpg" /></p>
-<h2 id="教程">教程</h2>
-<p>1、<a href="https://www.tutorialdocs.com/article/java-inter-thread-communication.html">Java 语言如何实现线程间通信</a>（英文）</p>
-<p>一篇简单的教程，Java 语言如何实现多线程编程。</p>
-<p>2、<a href="https://ahrefs.com/blog/google-advanced-search-operators/">谷歌搜索的运算符</a>（英文）</p>
-<p>本文详细介绍谷歌搜索的运算符，用来定制搜索结果。</p>
-<p>3、<a href="http://www.gamasutra.com/view/news/169296/Indepth_Functional_programming_in_C.php">函数式编程的好处</a>（英文）</p>
-<p>著名程序员 John Carmack 谈了函数式编程对 C++ 语言的好处。不涉及代码，只是概念上的讲解。</p>
-<p>4、<a href="https://hackernoon.com/undefining-the-c-pre-processor-c4eeb3d06e1f">取消 C++ 的预处理器</a>（英文）</p>
-<p>本文作者建议，不要使用预处理器定义宏（Macro），甚至不要使用（自定义的）宏。</p>
-<p>5、<a href="https://fossil-scm.org/fossil/doc/trunk/www/fossil-v-git.wiki">Fossil 与 Git 的对比</a>（英文）</p>
-<p>Fossil 是专为 SQLite 开发的版本管理系统，与 Git 采用不一样的模型，总体上来说，比 Git 更简单。</p>
-<p>6、<a href="https://coderefinery.wordpress.com/2019/01/28/beyond-dry-why-redundancy-makes-your-code-more-robust-and-less-fragile/">超越 DRY</a>（英文）</p>
-<p>DRY 原则指的是“不要重复自己”，意思是如果代码有重复，就应该把它提炼出来。本文提出，这条原则不应过分严格地使用，有时候代码冗余对软件是有利的。</p>
-<p>7、<a href="https://43081j.com/2019/01/first-look-at-deno">Deno 运行时介绍</a>（英文）</p>
-<p>Deno 是一个 JS/TypeScript 运行时，用来取代 Node。它的最大特点就是不支持 CommonJS，只支持 ES6 模块。</p>
-<p>8、<a href="https://writing.kemitchell.com/2016/09/21/MIT-License-Line-by-Line.html">MIT 许可证逐句解释</a>（英文）</p>
-<p>MIT 是常见的开源许可证，但是很多人并没有看过它的条文。本文逐句解释该许可证的每一句话。</p>
-<p>9、<a href="http://2ality.com/2019/01/future-js.html">未来的 JavaScript 语言</a>（英文）</p>
-<p>本文介绍 TC39 委员会正在考虑的、加入 JavaScript 语言的一些新功能。</p>
-<p>10、<a href="https://thehustle.co/bionic-boot/">30年的梦想失败是什么感觉？</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021518.jpg" /></p>
-<p>一个发明家受鸵鸟奔跑姿势的启发，发明了一种弹簧鞋。他为这个梦想投入了30年，依然没有成功。现在专利即将到期，30年可能就是白忙一场。</p>
-<h2 id="资源">资源</h2>
-<p>1、<a href="https://github.com/MRNIU/SimpleKernel">SimpleKernel</a></p>
-<p>一个操作系统内核的简单实现，提供了各个阶段完成度不同的内核，可以用来练手和学习。（@<a href="https://github.com/ruanyf/weekly/issues/204">MRNIU</a> 投稿）</p>
-<p>2、<a href="https://www.flaticon.com">FlatIcon</a></p>
-<p>一个图标搜索引擎。（@<a href="https://github.com/ruanyf/weekly/issues/202">LanjianNUll</a> 投稿）</p>
-<p>3、<a href="https://TravelAdapter.xyz">TravelAdapter.xyz</a></p>
-<p>该网站收集各国的电压、插头和插座资料。</p>
-<p>4、<a href="https://dontkillmyapp.com/">如果保留后台进程</a></p>
-<p>手机为了节省电力，会主动杀死后台进程，有时这种行为不是用户希望的。该网站收集各品牌安卓手机的做法，如何关闭主动杀死后台进程这个功能。</p>
-<p>5、<a href="https://composingprograms.com/">《组合程序》（Composing Programs）</a></p>
-<p>加州大学伯克莱分校以 SICP 为范本，使用 Python 3 语言解释编程原理的教程。</p>
-<p>6、<a href="https://codecurmudgeon.com/wp/sql-injection-hall-of-shame/">SQLi Hall of Shame</a></p>
-<p>该网站收集 SQL 注入的各种真实案例。</p>
-<p>7、<a href="https://serialmentor.com/dataviz/">数据可视化基础</a></p>
-<p>O'Reilly 新书《数据可视化基础》一书的在线预览版。</p>
-<p>8、<a href="https://guacamole.apache.org/">Apache Guacamole</a></p>
-<p>浏览器里面的远程桌面连接器，可以在网页上登录远程桌面，支持 VNC、RDP、SSH。（@<a href="https://github.com/ruanyf/weekly/issues/240">barrer</a> 投稿）</p>
-<p>9、<a href="https://wanmaoor.github.io/ryfWeekly/">周刊资源整理</a></p>
-<p>读者对这个周刊提到的内容进行了分类整理。（@<a href="https://github.com/ruanyf/weekly/issues/269">wanmaoor</a> 投稿）</p>
-<h2 id="工具">工具</h2>
-<p>1、<a href="https://github.com/zadam/trilium">trilium</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021519.jpg" /></p>
-<p>一个开源的笔记软件，可以安装桌面版，也可以自己架设服务器，使用它提供 Web 界面。</p>
-<p>2、<a href="https://tox.chat/">Tox</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021520.jpg" /></p>
-<p>Tox 是一个开源的实时通信协议，不需要中央服务器，提供多种跨平台的客户端。</p>
-<p>3、<a href="https://github.com/elliottzheng/CopyTranslator/blob/master/README_zh.md">CopyTranslator</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021521.jpg" /></p>
-<p>PDF 文件即时翻译工具。只要选中 PDF 文件里面的文字，就自动调用谷歌翻译的 API，将其翻译成中文，粘贴出来就是中文。（@<a href="https://github.com/ruanyf/weekly/issues/212">chempeng</a> 投稿）</p>
-<p>4、<a href="https://github.com/LinShunKang/MyPerf4J">MyPerf4J</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021522.jpg" /></p>
-<p>Java 应用的性能监控工具。（@<a href="https://github.com/ruanyf/weekly/issues/207">LinShunKang</a> 投稿）</p>
-<p>5、<a href="https://asciidoctor.org/">Asciidoctor</a></p>
-<p>AsciiDoc 的渲染引擎，还提供 AsciiDoc 格式的教程。</p>
-<p>6、<a href="https://github.com/rocky/python-uncompyle6">python-uncompyle6</a></p>
-<p>Python 反编译工具，可以将 Python 字节码 pyc 文件反编译回源码 py 文件。</p>
-<p>7、<a href="https://github.com/fatedier/frp">frp</a></p>
-<p>一个反向代理服务器，可以让公网访问架设在内网的服务。（@<a href="https://github.com/ruanyf/weekly/issues/201">Seven-Steven</a> 投稿）</p>
-<p>8、<a href="https://github.com/wee-slack/wee-slack">wee-slack</a></p>
-<p>一个 Slack 的命令行客户端。</p>
-<p>9、<a href="https://gitlab.com/rbdr/ngx_http_office_hours_filter_module">Nginx Office Hours</a></p>
-<p>一个 Nginx 模块，使得网站只能在工作时间访问，一到下午五点，网站就自动下线。</p>
-<p>10、<a href="https://puffer.stanford.edu/">Puffer</a></p>
-<p>斯坦福大学的一个视频算法实验项目，可以免费观看美国的电视直播，画质1080P。</p>
-<p>11、<a href="https://www.nvidia.com/research/inpainting/">Image Inpainting</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021523.jpg" /></p>
-<p>nvidia 官方的在线图像修复，自动生成图像缺失的部分。</p>
-<h2 id="文摘">文摘</h2>
-<p>1、<a href="https://www.technologyreview.com/s/612656/its-only-a-matter-of-time-before-a-drone-takes-down-a-passenger-plane/">无人机击落客机只是时间问题</a></p>
-<p>2018年12月，英国第二大机场盖特威克机场，发现有一架无人机飞过机场，不得不关闭一天，几十万旅客受到影响。目前还不知道这架无人机是谁操作，为什么要飞入机场。</p>
-<p>这个事件表明，无人机对商业航空已经构成威胁。更严重的是，“反无人机”技术起不了多大作用。无人机已经变得太便宜，太强大，客机将不可避免地受到影响。无论是开枪、无线电干扰、或者其他措施，都无法可靠地保护客机。这可能听起来危言耸听，但我们对无人机真的缺乏办法。</p>
-<p>现在，消费者可以买到的最便宜无人机，只需要25美元。这些产品接受遥控器的无线信号，相对容易防范，只要干扰它们的无线电信号，就可以了。稍微昂贵的无人机有 GPS 芯片，这种无人机可以编程设置一个“地理围栏”，防止它们飞入指定的地理坐标范围内。</p>
-<p>但是，上面的这些措施，只能防住普通消费者从正规渠道买到的无人机。对于具有中等技术水平的人来说，制造一架无人机很容易，自制无人机也不需要 GPS 芯片。它们也不一定需要与操作员通信，才能保持飞行，这使得无线电干扰无效。而且，强度太大的干扰信号，反而可能会影响到本来要保护的客机。</p>
-<p>可以肯定的是，一架无人机攻击一架客机，成功机会不大。这是因为在起飞和着陆时（最容易遭遇无人机的阶段），客机的移动速度非常快，通常在每小时150到200英里之间，很少有无人机能够以50~70英里/小时的速度飞行，所以客机应该可以避开无人机。此外，飞机的设计可以承受鸟撞，如果一架无人机意外撞到客机，客机可能只会受到轻微损坏，很可能还是能够安全降落。</p>
-<p>但是，如果无人机成群飞行，事情就会发生变化。虽然单个无人机很难攻击飞机，但是在客机的飞行路径上放置30架无人机，就可能会发生变化。考虑到无人机的价格，多架无人机群体攻击是很容易的。如果通过编程，找出客机的引擎（通过红外传感或通过图像），然后无人机携带少量爆炸物，撞击可能会致命。</p>
-<p>总之，对于那些蓄意攻击客机的半自动或全自动无人机集群，根本就没有好的技术对策。</p>
-<p>2、<a href="https://spectrum.ieee.org/telecom/wireless/loons-balloons-will-fly-over-kenya-in-first-commercial-telecom-tryout">Loon 项目</a></p>
-<p>Loon 是谷歌的母公司 Alphabet 发起的一个实验项目。它为那些没有 4G 网络的地区发射气球，信号基站就设置在气球上，因此人们就可以使用 4G 服务了。比起地面基站，气球基站的覆盖范围更大，而且没有障碍物阻挡信号。</p>
-<p>气球会飞到距离地面18公里～25公里的平流层，那里没有上下气流，所以气球会停留在同一个高度上。但是，横向的风是很大的问题。为了防止气球被吹走，Loon 带有风向观察功能，一旦发现有风吹来，它会自动上升或下降，避开风，尽量停留在同一个地点。</p>
-<p>每个 Loon 气球实际上包含了两个气球。外层是一个充满氦气的气球，为整个产品提供所需的升力；内层是一个充满空气的内部气球，可以抽空或进气。当内层气球膨胀时，外层气球的氦被挤压到密度更高，从而降低升力，开始下降，反之开始上升。通过这种方式，Loon 的工程师可以控制气球的高度，也可以利用不同高度的风，使气球向需要的方向前进。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021524.jpg" /></p>
-<p>利用这种导航方式，气球已经可以长距离发射。工程师在新西兰发射气球，然后操纵它飘到阿根廷和澳大利亚的目标地区。该项目计划2019年在肯尼亚提供 4G 通信服务，气球就将在波多黎各发射，然后飘过大西洋，到达肯尼亚。</p>
-<p>气球通过自带的太阳能板获取电力，每只气球可以使用几百天。2017年，波多黎各飓风时期，地面通信都被摧毁了，Loon 气球成功地为灾区提供了手机信号。</p>
-<h2 id="本周图片">本周图片</h2>
-<p>1、<a href="https://www.citylab.com/design/2014/05/a-tiny-austrian-town-has-coolest-bus-shelters-weve-ever-seen/371078/">公共汽车的候车亭</a></p>
-<p>奥地利一个没有名气的小镇，希望发展旅游业。他们邀请世界最著名的设计师，为他们设计公共汽车的候车亭，报酬是可以来小镇免费度假。现在，这样的候车亭已经有了近10座。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021525.jpg" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021526.jpg" /></p>
-<p>2、<a href="https://www.bbc.com/news/in-pictures-46348917">声波反射器</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021527.jpg" /></p>
-<p>第一次世界大战是第一场有飞机参与的战争。当时还没有雷达，为了提早发现敌机的飞行路线，英国在海岸边的悬崖上架设了很多声音反射器，将飞机发动机的音波反射到地面上，以便提早发现。</p>
-<p>3、<strong>曼哈顿的航拍照片</strong></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/201902/bg2019021528.jpg" /></p>
-<h2 id="本周金句">本周金句</h2>
-<p>1、</p>
-<p>不要刻意去记住某件事，而要去寻找使其显而易见的解释。</p>
-<p>-- <a href="https://medium.com/taking-note/learning-from-the-feynman-technique-5373014ad230">理查德·费曼</a></p>
-<p>2、</p>
-<p>“X公司使用的是什么语言”，这种话毫无意义，编程语言与公司的成功关系不大。某个公司使用哪种语言，主要是早期创始人的偏好。</p>
-<p>-- <a href="https://medium.com/@nemshilov/on-choosing-programming-languages-8281c6f370b2">《论编程语言的选择》</a></p>
-<p>3、</p>
-<p>学习函数式编程对我产生的影响是，让我更加关注哪些概念自然地被视为“对象”，哪些概念是不可变的“值”。</p>
-<p>我还会更加注意，我的代码是否包含副作用，从而更谨慎地隔离这些地方，使代码更多是“纯的”，这大大提高了我的面向对象代码的可测试性。</p>
-<p>-- <a href="https://softwareengineering.stackexchange.com/questions/45231/does-learning-a-functional-language-make-a-better-oop-programmer/45236#45236">《函数式编程对面向对象的程序员有什么用？》</a></p>
-<p>4、</p>
-<p>招聘高级工程师时，不是公司选择候选人，而是候选人选择公司。</p>
-<p>-- <a href="https://hiringengineersbook.com/post/trouble-hiring/">《招聘人才不是买，而是卖》</a></p>
-]]></description>
-      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-43.md</link>
-      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-43.md</guid>
       <pubDate>Mon, 30 Sep 2024 00:57:23 -0000</pubDate>
     </item>
   </channel>
