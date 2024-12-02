@@ -6,7 +6,194 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2024</copyright>
-    <lastBuildDate>Mon, 25 Nov 2024 00:59:28 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Dec 2024 01:01:58 -0000</lastBuildDate>
+    <item>
+      <title>科技爱好者周刊（第 327 期）：没有链接的互联网</title>
+      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/5610">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
+<h2 id="封面图">封面图</h2>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112802.webp" /></p>
+<p>杭州钱江世纪城东部的一大片农田，号称“稻田 CBD”，最近迎来了丰收。该农地被政府保留，让城市与田园融合。（<a href="https://news.qq.com/rain/a/20241114A06IXJ00">via</a>）</p>
+<h2 id="没有链接的互联网">没有链接的互联网</h2>
+<p>你能想象吗，没有链接的互联网是什么样？</p>
+<p>不用想了，这正在变成现实。</p>
+<p>2017年，脸书（Facebook）出台了一项政策：只要帖子里面有（外部）链接，就会减少这个帖子的曝光。</p>
+<p>也就是说，<strong>只要你贴了链接，别人就（几乎）看不见你的帖子了</strong>。这样做是为了防止用户跳出脸书，也为了防止用户为其他网站引流。</p>
+<p>所以，你现在访问脸书，就会看到一种奇特的做法：大家发帖都没有链接，有些帖子甚至只是一句话的图片（下图），真正的链接放在帖子的置顶评论里面。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024111602.webp" /></p>
+<p>后来，其他的互联网平台纷纷跟进，限制链接。</p>
+<p>最典型的就是推特，它不断增加防止用户跳出的措施。先是推出“话题”功能（thread），后又解除字数限制，允许发布长文，尽量消除用户张贴链接的动机。最近，它将链接自动转成预览图时，甚至会<a href="https://www.theverge.com/2023/10/4/23903859/x-elon-musk-headlines-links-image-twitter">隐藏页面标题</a>，让用户察觉不到这是一个链接。</p>
+<p>就连谷歌这种搜索引擎，也在防止用户跳出。搜索时，谷歌会直接显示一段 AI 生成的内容总结（下图），避免你去点击外部链接。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112201.webp" /></p>
+<p>国内平台也是如此，有过之而无不及，比如微信、抖音，都严格限制外部链接。</p>
+<p>总之，<strong>大型互联网平台都在排斥链接</strong>。它们的共识就是，必须把用户留在自己的花园，防止他们离开。</p>
+<p>这种情况，将来恐怕愈演愈烈。因为 AI 可以实时生成内容，更没有必要让用户访问外部内容了。</p>
+<p><strong>没有链接可点击，这将彻底改变互联网生态</strong>。我看到<a href="https://www.techspot.com/article/2908-the-zero-click-internet/">一篇文章</a>，列出这种趋势的七大后果，总结得很好。</p>
+<p><strong>（1）独立网站会消失</strong>，因为没有流量来源了。所有人都依赖大平台，只能在平台上发布内容，否则没人能看到。</p>
+<p><strong>（2）数字出版行业终结</strong>，因为不需要单独的出版环节了，直接发布到大平台就可以了。</p>
+<p><strong>（3）域名不再具有价值</strong>，因为小网站不管采用什么域名，都没有访客。大多数域名注册商会关门。</p>
+<p><strong>（4）网络托管业务将会收缩</strong>，因为网站数量将减少，个人架设网站的需求越来越少。</p>
+<p><strong>（5）独立的互联网广告业也会消失</strong>。所有的互联网广告，都将由平台控制，独立的广告联盟一钱不值。小网站也不可能通过互联网广告赚到钱。</p>
+<p><strong>（6）SEO 无用了</strong>。小网站没有流量了，优化搜索引擎的排名有何意义呢？</p>
+<p><strong>（7）信息表面化</strong>。因为用户不太可能在平台上贡献深层次的详细内容，所以平台提供的大多是表面信息，能够帮助用户的深层次的内容将难找到。</p>
+<h2 id="科技动态">科技动态</h2>
+<p>1、<a href="https://theconversation.com/lucy-discovered-50-years-ago-in-ethiopia-stood-just-3-5-feet-tall-but-she-still-towers-over-our-understanding-of-human-origins-227866">露西50周年</a></p>
+<p>50年前的1974年，美国人类学家在埃塞俄比亚的偏远地区，发现了一具320万年前的南方古猿化石，取名为“露西”。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112516.webp" /></p>
+<p>她的身形跟一个四岁女孩差不多，后来被确认为目前发现的最古老的人类祖先化石。有人称她为“人类的祖母”。</p>
+<p>在发现她之前，科学家认为，人类是先进化出大脑，再直立行走。但是，露西的大脑很小，却是直立行走的，因此人类是先直立行走，再进化出大脑。</p>
+<p>2、<a href="https://simpleflying.com/swiss-entire-boeing-777-fleet-aeroshark/">鲨鱼皮飞机膜</a></p>
+<p>曾经有一种鲨鱼皮泳衣，模仿鲨鱼的皮肤特征，可以大大减少水的阻力，从而提高游泳速度。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024060510.webp" /></p>
+<p>因为这种泳衣的作用太明显，国际泳联不得不在2010年禁止在比赛中使用它。</p>
+<p>现在，有人想到一个点子，如果把这种鲨鱼皮做成膜，贴在飞机表面，不就能大幅降低空气阻力了吗？</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024060511.webp" /></p>
+<p>瑞士航空采纳了这个点子，在他们的12架波音777上，全部贴上鲨鱼皮飞机膜。上图的飞机表面反光处，就是贴了膜。</p>
+<p>他们现在宣布，经过一年的尝试，取得了良好效果，去年节省了近2,200吨煤油。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024060512.webp" /></p>
+<p>这种鲨鱼皮的膜并不完全光滑，有特定的凹槽，符合流体力学特征，有利于减少表面与空气的摩擦。</p>
+<p>以后，飞机可能跟手机一样，使用之前都要贴膜。</p>
+<p>3、<a href="https://cloud.tencent.com/developer/article/1678884">宽带的标准是多少？</a></p>
+<p>现在上网，全部都是宽带。但是，宽带到底需要多宽，却有着不一样的说法。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112804.webp" /></p>
+<p>以前的资料说，带宽 512kbps 以上就是宽带。这也未免太窄了，最高下载速度只有 64KB/s，下载一个 100MB 的文件，超过26分钟。这算什么宽带？</p>
+<p>美国联邦通信委员会 FCC，今年提高了宽带的标准，下行速度从 25Mbps 提高到 100Mbps，上行速度从 3Mbps 提高 20Mbps。</p>
+<p>也就是说，百兆是宽带的最低速度，低于100Mbps 就不叫宽带了。</p>
+<p>4、<strong>其他</strong></p>
+<p>（1）微软的<a href="https://techcrunch.com/2024/11/19/soon-microsoft-will-let-teams-meeting-attendees-clone-their-voices/">在线会议软件 Teams</a>，允许用户克隆自己的声音，以便用另一种语言跟其他国家的人交谈。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112511.webp" /></p>
+<p>（2）Starlink 宣布，明年推出<a href="https://www.starlink.com/business/direct-to-cell">手机卫星上网</a>，但需要手机直连天空，也就是不能室内使用。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112512.webp" /></p>
+<p>（3）新加坡为了节约淡水资源，推出用净化的<a href="https://apnews.com/article/beer-wastewater-sewage-recycling-singapore-climate-cop29-5ed7c8e19cd931f0748bddf97a2c542d">污水生产的啤酒</a>。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112515.webp" /></p>
+<h2 id="文章">文章</h2>
+<p>1、<a href="https://wompa.land/articles/iterm-status-bar">iTerm2 如何设置状态栏</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101604.webp" /></p>
+<p>iTerm2 是 Mac 电脑的终端模拟器，它有一个内置的状态栏，本文教你怎么设置。</p>
+<p>2、<a href="https://sofiapandelea.medium.com/monitor-replacement-using-a-projector-for-a-home-office-setup-231d2891b3ae">我用投影仪当作显示器</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112506.webp" /></p>
+<p>作者的家庭办公室，使用投影仪当作显示器，如果你也想这么做，可以参考本文。</p>
+<p>3、<a href="https://www.xda-developers.com/five-reasons-my-homelab-is-a-nightmare/">家庭机房的搭建感受</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112601.webp" /></p>
+<p>作者介绍搭建家庭机房的六点感受，其中一点是电费很贵。</p>
+<p>4、<a href="https://rxdb.info/articles/localstorage-indexeddb-cookies-opfs-sqlite-wasm.html">浏览器的数据存储方法比较</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101605.webp" /></p>
+<p>本文介绍浏览器现在的几种数据存储方法： LocalStorage、IndexedDB、Cookies、OPFS、WASM-SQLite。</p>
+<p>5、<a href="https://danielmangum.com/posts/this-website-is-hosted-on-bluesky/">Bluesky 可以托管网站</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112514.webp" /></p>
+<p>Bluesky 是一个类似推特的微型博客服务，但使用开放协议。该协议允许上传和直接返回文件，因此可以用它托管网站。</p>
+<p>6、<a href="https://www.speakeasy.com/post/vitest-vs-jest">Jest 与 Vitest</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112701.webp" /></p>
+<p>Jest 和 Vitest 是两个流行的 JS/TS 测试框架，本文对它们进行比较。</p>
+<h2 id="工具">工具</h2>
+<p>1、<a href="https://graphite.rs/">Graphite</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202307/bg2023072801.webp" /></p>
+<p>一款在线版的图像编辑器，代码开源。</p>
+<p>2、<a href="https://gimelstudio.github.io/">Gimel Studio</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202301/bg2023011205.webp" /></p>
+<p>平面图像编辑软件，最大特点是每一个编辑步骤都用一个节点表示，让你直观地编辑每个节点的参数。</p>
+<p>3、<a href="https://github.com/KusionStack/karpor">Karpor</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112401.webp" /></p>
+<p>开源的 Kubernetes 可视化工具，提供搜索、洞察、AI 等能力。（<a href="https://github.com/ruanyf/weekly/issues/5565">@elliotxx</a> 投稿）</p>
+<p>4、<a href="https://github.com/apades/dmMiniPlayer">dmMiniPlayer</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112406.webp" /></p>
+<p>开源的浏览器插件，在视频播放的画中画窗口里，配置进度条、音量等功能。（<a href="https://github.com/ruanyf/weekly/issues/5574">@apades</a> 投稿）</p>
+<p>5、<a href="https://github.com/KwokKwok/slide-lab">四象限编辑器</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112407.webp" /></p>
+<p>开源的在线工具，在网页上编辑、生成四象限图，可用于插图、PPT 等。（<a href="https://github.com/ruanyf/weekly/issues/5578">@KwokKwok</a> 投稿）</p>
+<p>6、<a href="https://github.com/lixianmin/git.stats">Git Stats</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112502.webp" /></p>
+<p>VS Code 插件，可视化查看团队成员的代码提交情况。（<a href="https://github.com/ruanyf/weekly/issues/5585">@lixianmin</a> 投稿）</p>
+<p>7、<a href="https://github.com/dafengzhen/bootstrap-react-logic">Bootstrap React Logic</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112705.webp" /></p>
+<p>基于 BootStrap 封装的 React 组件库。（<a href="https://github.com/ruanyf/weekly/issues/5601">@dafengzhen</a> 投稿）</p>
+<p>8、<a href="https://github.com/TBXark/rmtrash">rmtrash</a></p>
+<p>macOS 命令行工具 rm 的替代方案，用于将文件移动到废纸篓。（<a href="https://github.com/ruanyf/weekly/issues/5606">@TBXark</a> 投稿）</p>
+<p>9、<a href="https://mpv.io/">mpv</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024081802.webp" /></p>
+<p>一个命令行的视频播放器，跨平台。</p>
+<p>10、<a href="https://animate.style/">Animate.css</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024081907.webp" /></p>
+<p>一个网页动画的 CSS 库，指定 DOM 元素的类名，产生动画效果。</p>
+<h2 id="ai-相关">AI 相关</h2>
+<p>1、<a href="https://github.com/lobehub/lobe-chat">Lobe Chat</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112408.webp" /></p>
+<p>开源的 AI Chat 工具，支持几乎所有 AI 大模型。（<a href="https://github.com/ruanyf/weekly/issues/5579">@tcmonster</a> 投稿）</p>
+<p>2、<a href="https://github.com/ruanyf/weekly/issues/5572">AI git commit</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112405.webp" /></p>
+<p>一个 Jetbrains 插件，使用 AI 生成 git 的提交信息。（<a href="https://github.com/ruanyf/weekly/issues/5572">@HMYDK</a> 投稿）</p>
+<p>3、<a href="https://github.com/AndySpider/uicloner-extension">UICloner Extension</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112503.webp" /></p>
+<p>浏览器插件，一键克隆任意网页 UI 组件，生成代码。（<a href="https://github.com/ruanyf/weekly/issues/5587">@AndySpider</a> 投稿）</p>
+<p>4、<a href="https://github.com/idootop/MagicMirror">MagicMirror</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112704.webp" /></p>
+<p>一个开源的桌面应用，一键 AI 换脸、换发型和穿搭。（<a href="https://github.com/ruanyf/weekly/issues/5602">@idootop</a> 投稿）</p>
+<h2 id="资源">资源</h2>
+<p>1、<a href="https://github-insights-pro.toolsnav.top/">GitHub Insights Pro</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112404.webp" /></p>
+<p>GitHub 的数据分析与可视化平台，提供项目和用户的各种统计信息，以及排行榜和趋势榜。（<a href="https://github.com/ruanyf/weekly/issues/5569">@wincatcher</a> 投稿）</p>
+<p>另有一个同类项目 <a href="https://github-persona.pages.dev/">GitHub Persona</a>。（<a href="https://github.com/ruanyf/weekly/issues/5589">@Ray-D-Song</a> 投稿）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112510.webp" /></p>
+<p>2、<a href="https://mszula.github.io/visual-sorting/">Visual Sorting</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112507.webp" /></p>
+<p>各种排序算法的可视化演示，代码开源。</p>
+<p>3、<a href="https://probability.visualized.fun/">看见概率论</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112703.webp" /></p>
+<p>一个中文的数学教育网站，通过交互式可视化演示，讲解概率论知识。（<a href="https://github.com/ruanyf/weekly/issues/5595">@wincatcher</a> 投稿）</p>
+<h2 id="图片">图片</h2>
+<p>1、<a href="https://x.com/TaylorOgan/status/1859146242519167249/photo/1">比亚迪的厂房</a></p>
+<p>下图是比亚迪的郑州工厂与特斯拉的得州工厂的大小对比。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112505.webp" /></p>
+<p>左边的白色厂房群是比亚迪郑州工厂，宽度约为3.2公里。</p>
+<p>右边是同样比例尺的特斯拉得州工厂。</p>
+<p>2、<a href="https://en.wikipedia.org/wiki/Arecibo_message">发向 M13 星团的消息</a></p>
+<p>1973年11月16日，美国科学家通过波多黎各的阿雷西博望远镜，向 M13 星团发出一条二进制消息。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112402.webp" /></p>
+<p>这条二进制消息，解码后是一个长条的图形，包含了很多内容：人类长什么样、哪些化学元素和生物分子构成了人类的 DNA，太阳系的行星系统、1974年人口数量等等。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112403.webp" /></p>
+<p>该消息将在大约25000年后，到达 M13 星团。</p>
+<h2 id="文摘">文摘</h2>
+<p>1、<a href="https://ashore.io/journal/crossover-creativity/poisoning-the-day">高效率时段</a></p>
+<p>一天24小时，你无法每时每刻都保持专注。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024112702.webp" /></p>
+<p>一个人每天的高效率时段，只能持续一会，然后就会消失，无法再恢复。</p>
+<p>所以，如果某个时候，你不能保持专注了，那就不要再反复尝试，接受这个事实，转而去做一些更简单、不需要那么专注的事情。</p>
+<p>亚马逊创始人杰夫·贝佐斯，就曾经说过：“我喜欢上午10点举行重要会议。如果到了下午五点，我的脑子就什么也想不了，只能把事情推迟到第二天上午10点。”</p>
+<p>所以，你最好的选择就是，<strong>每天尽早完成尽可能多的工作</strong>。这段时间要限制外界的干扰，多做困难的事情，直到你感到疲劳为止。</p>
+<p>当你觉得疲劳、无法保持专注了，那就不要抵抗它，把还没做完的事情推迟到第二天，转向更简单的任务，或者干脆什么也不做了。</p>
+<p>有些人为了专注工作，会每天早起。我的一个朋友则是习惯在晚上11点到凌晨4点，全力工作。</p>
+<p>他们都会避开白天的高峰时段：炎热的天气，每个人都在忙，消息满天飞。即使你的能力再强，此时都无法逃脱外界的干扰。</p>
+<p>请记住，每天你一醒来，时间就在一分一秒流逝，你不知道自己的精力能维持多久。你需要做的，就是问自己：在你无法保持专注之前，能做多少事情？</p>
+<h2 id="言论">言论</h2>
+<p>1、</p>
+<p>几年前，马斯克宣布 Starship 飞船的火星计划时，我开玩笑说，等到它把人类送上火星时，英国还没有开通前往曼彻斯特的高铁。</p>
+<p>不幸一语成谶，英国首相今年早些时候宣布，取消曼彻斯特的高铁计划。</p>
+<p>-- <a href="https://x.com/peterrhague/status/1764746632011149655">彼得·黑格</a>，英国天文学家</p>
+<p>2、</p>
+<p>SUSE 公司的 Linux 企业级发行版，在2019年推出时，承诺对这个版本提供支持直到2038年。</p>
+<p>为什么支持期长达19年，而不是18年或20年？原因是 Unix 时间原点是1970年1月1日零点，32位系统会在2038年发生时间溢出。所以，他们就支持到2038年，时间溢出就不用管了。</p>
+<p>-- <a href="https://www.zdnet.com/article/suse-upgrades-its-distros-with-19-years-of-support-no-other-linux-comes-close/">《SUSE 为什么有19年支持期》</a></p>
+<p>3、</p>
+<p>为什么法律的语言这么难懂？一种解释是，这类似于咒语，古代的咒语也非常难懂，跟日常语言截然不同，这样象征着一种特殊的权威。</p>
+<p>-- <a href="https://phys.org/news/2024-08-laws-written-incomprehensible-style.html">《为什么法律以难以理解的方式书写？》</a></p>
+<p>4、</p>
+<p>我非常不喜欢，电视播放交响音乐演奏会。交响音乐会本质上是声学体验，但是电视使得人们的注意力转移到画面，变成了视觉体验。</p>
+<p>这对音乐不利，音乐的存在是为了听而不是为了看。</p>
+<p>-- <a href="https://www.theparisreview.org/blog/2024/05/20/televised-music-is-a-pointless-rigmarole/">《电视交响音乐毫无意义》</a></p>
+<p>5、</p>
+<p>斐波那契数列有一个有趣的特性，连续的两个数（比如，5和8，21和34）是英里和公里的关系，比如5英里约等于8公里。</p>
+<p>-- <a href="https://catonmat.net/fibonacci-miles-kilometers">《斐波那契数转换英里与公里》</a></p>
+<h2 id="往年回顾">往年回顾</h2>
+<p><a href="https://www.ruanyifeng.com/blog/2023/12/weekly-issue-280.html">机器点餐与宅文化</a>（2023 #280）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2022/11/weekly-issue-230.html">电子产品的用电量</a>（2022 #230）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2021/10/weekly-issue-180.html">你想住在中国哪里？</a>（2021 #180）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2020/10/weekly-issue-130.html">低龄化的互联网</a>（2020 #130）</p>
+<p>（完）</p>
+]]></description>
+      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-327.md</link>
+      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-327.md</guid>
+      <pubDate>Mon, 02 Dec 2024 01:01:58 -0000</pubDate>
+    </item>
     <item>
       <title>科技爱好者周刊（第 326 期）：世界没有那么多财富</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -1075,223 +1262,6 @@
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-322.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-322.md</guid>
       <pubDate>Mon, 28 Oct 2024 00:58:36 -0000</pubDate>
-    </item>
-    <item>
-      <title>科技爱好者周刊（第 321 期）：傅盛回忆录</title>
-      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
-<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/5253">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
-<h2 id="封面图">封面图</h2>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101507.webp" /></p>
-<p>上海新开张的耀雪冰雪世界，号称世界最大室内滑雪场，内部不仅有雪道，还搭建了一个北欧小镇。（<a href="https://new.qq.com/rain/a/20240726A075V100">via</a>）</p>
-<h2 id="傅盛回忆录">傅盛回忆录</h2>
-<p>傅盛是谁？<a href="https://money.163.com/baike/fusheng/">百度百科</a>是这样写的。</p>
-<blockquote>
-<p>1978年生于江西景德镇，2003年加入3721公司（后为奇虎360）。</p>
-<p>2010年出任金山网络 CEO，2014年金山网络改名为猎豹移动，担任 CEO 至今。</p>
-</blockquote>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101202.webp" /></p>
-<p>最近，我读了一本他跟别人合著的书<a href="https://book.douban.com/subject/27043167/">《创业就是要细分垄断》</a>（文化发展出版社，2017），以及他在2018年的<a href="https://m.cyzone.cn/article/481508.html">一篇演讲</a>。</p>
-<p>他在里面回忆了，自己这一路的创业经历，反反复复用了几万字，就在回答一个问题：</p>
-<blockquote>
-<p>“<strong>一个杀毒软件公司，为什么现在还活着，而且活得不错？</strong>”</p>
-</blockquote>
-<p>他的故事很精彩，下面分享给大家。我看了很佩服，在这个急速变化的时代，一个互联网企业如何求生，可以参考这个故事。</p>
-<h3 id="一金山毒霸时期">一、金山毒霸时期</h3>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101203.webp" /></p>
-<p>2010年，雷军有一次对金山的董事会说：​“我们的杀毒业务不行了，我要从外面找一个年轻人过来，这个人30岁，没管过大团队，他叫傅盛。​”</p>
-<p>当时，360推出了免费的 PC 杀毒软件，让收费杀毒的瑞星和金山极为受伤，市场崩盘，收入飞速下滑。</p>
-<p>傅盛上任后立即决定，金山毒霸也免费，收入改为依靠流量广告。就这样稳住了局面，收入停止下滑，在杀毒软件市场活了下来。</p>
-<p>傅盛说：“这件事让我们明白了，快速奔跑是多么重要，公司的名字也变成了‘猎豹’。”</p>
-<h3 id="二打不过360">二、打不过360</h3>
-<p>自从360成了市场老大，傅盛想了很多办法苦苦追赶，金山毒霸的市场份额最高追到360的三分之一，就再也追不上去了。</p>
-<p>傅盛想了一个大招——“敢赔”模式。只要用户打开该模式，如果发生钓鱼网站、网购木马造成的财产损失，金山毒霸承诺赔付，单笔最高6000元。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101612.webp" /></p>
-<p>这个措施引发了市场轰动，但是两周之后，360就推出了一模一样的服务，并且将赔付金额提高到36000元。</p>
-<p>傅盛说：“我曾寄希望于360的执行不如我们快，所以不停地创新。可是，我们推出新服务两周后，360就出了一样的服务，我实际上成了360的产品经理。”</p>
-<p>“那个时候我想明白了，我做的所有创新，360都可以做，而且做得比我们还好。在它视野之内的 PC 安全领域的任何创新，我都打不过，只不过它的迭代周期比我晚两周而已。”</p>
-<p>你做出什么功能，大公司直接找一群产品经理按照这个思路做就行了。一个大公司的战略动员能力远远超出你的想象。</p>
-<h3 id="三移动互联网的机会">三、移动互联网的机会</h3>
-<p>在360的步步紧逼之下，金山毒霸的市场份额不断下滑。傅盛意识到，<strong>小公司不可能在大公司的正面战场上战胜大公司，要想活下去，必须跳出 PC 杀毒软件，寻找其他战场</strong>。</p>
-<p>幸运的是，移动互联网革命此时来临了，一个比 PC 市场更大的移动市场开始出现了。</p>
-<p>智能手机的安全领域，成了新的战场。傅盛说：“当时我每天都在焦虑和思索，怎么才能拿到移动互联网的这张船票？”</p>
-<p>更幸运的是，360因为自身的战略原因，无法全力投入移动市场。当时，360正忙于与腾讯进行“3Q 大战”，除了 PC 杀毒软件，还在做搜索引擎和安全浏览器。</p>
-<p>傅盛判断，360的主要市场在国内的 PC 端，不会在海外市场和移动端投入重兵。他因此决定，金山毒霸要专门针对海外市场，做一款移动安全工具。</p>
-<h3 id="四手机清理大师-clean-master">四、手机清理大师 Clean Master</h3>
-<p>“当时我们看谷歌的安卓应用排行榜，发现 Utility（工具应用）排行榜的第三名叫 Advanced Task Killer，是哈尔滨的一个程序员做的。我们又发现图片应用排行榜里一个叫 Photo Grid 的程序不错，是杭州的一个程序员做的。这两人都没出过国。”</p>
-<p>“我就想，现象即规律嘛，和一个中国没有出过国的程序员相比，我不仅出过国，还有2000人，可以动用的战略资源是上亿人民币。他们的应用能够上榜，我全力以赴打这场仗，难道不能排到第一去吗？想了半天我觉得这件事一定可以做到，后来就开始全力以赴了。”</p>
-<p>为了尽量避开杀毒软件的老对手，傅盛没有做手机的杀毒软件，而是选择做清理工具。</p>
-<p>“大家都在做安全软件，没有本质的差异化，不如在安全软件旁边再开一条线，叫清理。360的大部分团队都扑在安全软件、搜索、浏览器上，就算要在海外市场做手机清理，也只能抽出边缘团队了。”</p>
-<p>猎豹的海外工具团队一开始只有四个人，做了一款手机清理大师 Clean Master，发现很受欢迎。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101204.webp" /></p>
-<p>傅盛于是下定决心，集中几乎所有的力量，都投在这个产品上面。</p>
-<p>“我从珠海把二三十位骨干从 PC 团队直接调到北京，立刻投入海外移动市场的清理领域，由这二三十人做骨架，迅速形成100人的规模。我们把 PC 端的盈利全部用来支持海外市场，保证了我们在这个战场的胜利。”</p>
-<h3 id="五公司上市">五、公司上市</h3>
-<p>Clean Master 只用了两年时间，就实现了日活过亿。傅盛抓住这个拳头产品，一口气推出了衍生的工具矩阵。</p>
-<p>猎豹就这样成了 Google Play 全球下载榜排名前三的公司，月度活跃用户超过6亿，其中80%的用户来自海外。</p>
-<p>2014年，借助这样辉煌的成绩，猎豹在纽约上市，实现了从 PC 安全软件到移动工具开发商的跨越。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101205.webp" /></p>
-<p>在这期间，为了减少国内同行的关注，傅盛从来不在国内宣传自己在做海外市场，Clean Master 甚至都没有国内版，奉行“哈巴狗”战略，坚决不咬人。</p>
-<h3 id="七多元化投资">七、多元化投资</h3>
-<p>猎豹上市时，共募集资金1.6亿美元。傅盛决定将这笔钱投向其他领域，多元化投资，分散安全工具的风险。</p>
-<p>他发现移动广告是一个巨大的风口，就收购了几家广告公司，建成自己的移动广告平台，一方面利用自家工具软件的流量，另一方面分销 Facebook 广告，还因此拥有了很强的大数据分析能力。</p>
-<p>据傅盛说，只用了两年时间，猎豹就成为了 Facebook 广告平台全球最大的流量贡献方。</p>
-<p>另一个重大举措是，猎豹在2014年投资了对口型的唱歌应用 Musical.ly，是后者的主要天使投资人。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101614.webp" /></p>
-<p>Musical.ly 推出后很受欢迎，引起了今日头条公司的注意，后者就做了一个模仿品，起名为“抖音”（国外名 TikTok）。</p>
-<p>2017年，傅盛同意今日头条以10亿美元收购 Musical.ly，随即今日头条就将 Musical.ly 合并进抖音。</p>
-<p>最近，有人问傅盛，是否后悔卖掉了 Musical.ly。傅盛说不后悔，如果留在手里，做不到今天这么好，何况当时也拿到了满意的财务回报。</p>
-<h3 id="八新方向">八、新方向</h3>
-<p>多元化投资并不能弥补，猎豹主营业务的放缓。由于没有达到收入增长目标，猎豹的股价在2016年出现了重挫。</p>
-<p>傅盛说：“稳定了情绪之后，我意识到一个可怕的事实：随着内容等优质流量的崛起，工具类流量的重要性已经显著下降。系统工具产品作为一个品类，已经不在移动互联网的主赛道上了。”</p>
-<p>他因此做出一个重大决定，公司将逐步淡出系统工具行业，再一次转型，全力投入两个新领域。</p>
-<p>首先，全面转型移动内容平台，做了海外直播平台 LiveMe，在海外模仿头条的模式，同时加强轻游戏投入，用直播和游戏这样的内容流量，代替工具流量。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101301.webp" /></p>
-<p>其次，成立子公司“猎户星空”，做 AI 和机器人产品，目前的主要产品是接待服务机器人“豹小秘”。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101615.webp" /></p>
-<p>机器人“豹小秘”早期的交互功能很弱，只能用来查询、送菜、做咖啡、红外测体温等等。</p>
-<p>2022年生成式 AI 诞生后，傅盛又看到了希望，猎户星空的定位已经变为大模型解决方案公司，“豹小秘”将尝试内置本地的 AI 模型，变成真正的智能机器人。</p>
-<h3 id="九小结">九、小结</h3>
-<p>猎豹的转型还在进行，它能成功变成一个内容平台和 AI 大模型的方案公司吗？让我们拭目以待。</p>
-<p>有一点可以肯定，如果发展得不好，傅盛未来还会再一次转型。</p>
-<p>他用自己的创业经历，证明了只要有强烈的求生求变意志，一家公司的发展可能性是无法被定义的。</p>
-<p>即使你的行业，如同杀毒软件那样消失了，你依然可以继续发展，并且发展得很好，<strong>你的发展可能性也是无法被定义的</strong>。我想这就是他的故事对普通人的意义。</p>
-<h2 id="科技动态">科技动态</h2>
-<p>1、<a href="https://www.xhby.net/content/s670b4bdbe4b03f223402d7f1.html">紫金山-阿特拉斯彗星</a></p>
-<p>紫金山-阿特拉斯彗星（国际编号C/2023 A3）10月9日进入近地点，直到26日离开。这段时间内，肉眼可以清晰看到。</p>
-<p>这几天，世界各地的天文爱好者拍下了许多照片。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101607.webp" /></p>
-<p>城市、海洋、沙漠、雪山……都留下了这颗彗星的踪迹。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101801.webp" /></p>
-<p>该彗星在2023年被紫金山天文台发现，所以由中国天文台命名。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101802.webp" /></p>
-<p>发现之初，曾预测该彗星的最大亮度可达0等（北斗星的亮度是2等），但是目前实际亮度只有4等，即使如此，它也是近期难得的亮彗星。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101803.webp" /></p>
-<p>它的轨道周期是6万多年，上次光临地球的时候，人类还是石器时代。</p>
-<p>2、<a href="https://www.newmobilelife.com/2024/10/14/i-robot-director-accuses-tesla-of-copying-film-designs/">特斯拉有没有抄袭</a></p>
-<p>上周，特斯拉在美国举行新产品发布会，一口气展示了 Cybercab（无人驾驶出租车）、Cybervan（无人驾驶小货车）和 Optimus（人形机器人）。</p>
-<p>这件事引起了2004年科幻电影《我，机器人》（I, robot）导演的愤怒。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101705.webp" /></p>
-<p>导演震惊地发现，特斯拉的新产品与电影很相似，于是指控特斯拉抄袭。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101706.webp" /></p>
-<p>上图左侧是电影，右侧是特斯拉的新产品。说实话，确实有点像。</p>
-<p>3、<strong>其他</strong></p>
-<p>（1）有人在电源插排植入<a href="https://j.021east.com/p/1728896700041676">窃听器</a>，然后在网上出售，现已被抓。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101503.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101504.webp" /></p>
-<p>（2）一所葡萄牙高校，创下了<a href="https://mathspp.com/blog/teaching-the-worlds-largest-programming-lesson">现场人数最多的编程课</a>的世界记录，共有1668名学生到场参加。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101513.webp" /></p>
-<p>上课内容是《零基础 Python 入门》，从零开始解一个数独游戏。老师在课后领取了吉尼斯世界纪录证书。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101514.webp" /></p>
-<h2 id="文章">文章</h2>
-<p>1、<a href="https://www.jiemian.com/article/11824869.html">SpaceX 的“筷子”式回收强在哪？</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101501.webp" /></p>
-<p>SpaceX 公司使用机械臂，夹住返回地面的火箭助推器。本文分析这种打破脑洞的回收方法的优点。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101502.webp" /></p>
-<p>2、<a href="https://finance.sina.com.cn/tech/roll/2024-10-14/doc-incspwep1786981.shtml">AI 假图在美国泛滥</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101505.webp" /></p>
-<p>美国最近遭遇了飓风，社交媒体出现了一张灾民的照片（上图），进行政治宣传，实际却是 AI 假图。这种事情在美国越来越多。</p>
-<p>3、<a href="https://www.infoq.com/presentations/threads-meta/">我们如何在五个月内推出 Threads</a>（英文）</p>
-<p>Threads 是 Meta 公司推出的替代品，从立项到发布，只用了五个月。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101606.webp" /></p>
-<p>这是 Threads 工程师的一个演讲稿，介绍了该项目的开发内幕。</p>
-<p>最有意思的一段话是，这个项目基于 Instagram 的代码库，内部人开玩笑，两者只是布局不同：Instagram 是图片在上，文字在下，Threads 正好反过来。</p>
-<p>4、<a href="https://plainvanillaweb.com/blog/articles/2024-08-30-poor-mans-signals/">JavaScript 信号简介</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202409/bg2024090503.webp" /></p>
-<p>“信号”（signal）是 JavaScript 引入的一个新概念，本文简单解释它是什么。</p>
-<p>5、<a href="https://www.xda-developers.com/windows-app-everything-you-need-to-know/">微软的远程桌面应用</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024100912.webp" /></p>
-<p>微软推出了一个叫做 Windows App 的应用，支持苹果设备和安卓，甚至可以浏览器使用，用来打开 Windows 系统远程桌面，本文是这个 App 的介绍。</p>
-<p>6、<a href="https://www.pixelstech.net/article/1677580861-Why-is-single-threaded-Redis-so-fast">为什么单线程 Redis 这么快</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202409/bg2024090502.webp" /></p>
-<p>本文解释 Redis 的单线程架构，为什么可以这么快，以及什么情况下，使用 Redis 的多线程。</p>
-<p>7、<a href="https://theconversation.com/dancing-raisins-a-simple-kitchen-experiment-reveals-how-objects-can-extract-energy-from-their-environment-and-come-to-life-223255">为什么葡萄干在汽水中“跳舞”</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202409/bg2024090501.webp" /></p>
-<p>一篇科普文章。将葡萄干放入汽水，葡萄干会上下跳动，本文解释这是为什么。</p>
-<h2 id="工具">工具</h2>
-<p>1、<a href="https://github.com/jpillora/chisel">Chisel</a></p>
-<p>一个 Linux 命令行软件，在 HTTP 通信上建立 TCP/UDP 隧道，由服务端和客户端两部分组成。</p>
-<p>2、<a href="https://github.com/zengm-games/facesjs">faces.js</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024040701.webp" /></p>
-<p>一个生成随机卡通头像的 JS 库。</p>
-<p>3、<a href="https://about.noteshub.app/">NotesHub</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101611.webp" /></p>
-<p>一个 Markdown 笔记软件，具有插入图表、曲谱、公式等多种功能，有 Web/桌面/手机客户端，支持 Git 仓库同步。</p>
-<p>4、<a href="https://github.com/Ray-D-Song/faker-server">Faker Server</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101410.webp" /></p>
-<p>一个基于 Faker.js 的 mock 服务器，用来模拟 API 的返回结果，自带一个前端的接口管理页面。（<a href="https://github.com/ruanyf/weekly/issues/5321">@Ray-D-Song</a> 投稿）</p>
-<p>5、<a href="https://github.com/nieheyong/logcat-in-devtools">Logcat in devtools</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101413.webp" /></p>
-<p>在 Chrome 开发者工具中查看安卓设备的 adb 日志。（<a href="https://github.com/ruanyf/weekly/issues/5326">@nieheyong</a> 投稿）</p>
-<p>6、<a href="https://github.com/lin-stephanie/astro-antfustyle-theme">Astro AntfuStyle Theme</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101408.webp" /></p>
-<p>一个 Astro 框架的博客网站皮肤，使用该框架时可作为参考。（<a href="https://github.com/ruanyf/weekly/issues/5315">@lin-stephanie</a> 投稿）</p>
-<p>7、<a href="https://github.com/zh-lx/vitepress-demo-plugin">vitepress-demo-plugin</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101518.webp" /></p>
-<p>Vitepress 插件，支持在文档页面中插入 Vue/React/HTML 组件。（<a href="https://github.com/ruanyf/weekly/issues/5331">@zh-lx</a> 投稿）</p>
-<p>8、<a href="https://github.com/ccbikai/BroadcastChannel">BroadcastChannel</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101616.webp" /></p>
-<p>将你的 Telegram Channel 转为微博客。（<a href="https://github.com/ruanyf/weekly/issues/5341">@ccbikai</a> 投稿）</p>
-<p>9、<a href="https://dns.surf/">DNS.Surf</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101617.webp" /></p>
-<p>检查域名在全球不同地区的 DNS 解析结果，<a href="https://github.com/ccbikai/DNS.Surf">代码开源</a>。（<a href="https://github.com/ruanyf/weekly/issues/5342">@ccbikai</a> 投稿）</p>
-<p>10、<a href="https://github.com/thinkerchan/notion2md">notion2md</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101407.webp" /></p>
-<p>一个示例项目，将 Notion 作为数据源，通过 GitHub Action 转成 Markdown 文件，生成网站。（<a href="https://github.com/ruanyf/weekly/issues/5304">@thinkerchan</a> 投稿）</p>
-<h2 id="ai-相关">AI 相关</h2>
-<p>1、<a href="https://bolt.new/">Bolt.new</a></p>
-<p>StackBlitz 公司推出的一个全栈应用的 AI 生成器。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101516.webp" /></p>
-<p>只要输入需求，它就会生成你要的全栈应用，前端代码和后端代码同时生成。你可以在它的页面上运行、编辑和部署该应用。</p>
-<p>2、<a href="https://d1tools.com/tools/ai-tts/">文字转语音</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101401.webp" /></p>
-<p>免费的在线文字转语音工具，支持74种语言318种声音。（<a href="https://github.com/ruanyf/weekly/issues/5298">@bingal</a> 投稿）</p>
-<p>3、<a href="https://chat100.ai/zh-CN">Chat100.ai</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101411.webp" /></p>
-<p>免费使用 GPT-4o 和 Claude 3.5 Sonnet 的 AI 在线聊天。（<a href="https://github.com/ruanyf/weekly/issues/5322">@aaamomo64</a> 投稿）</p>
-<h2 id="资源">资源</h2>
-<p>1、<a href="https://fontsensei.com/zh-cn">Font sensei</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101409.webp" /></p>
-<p>谷歌字体选择器，按照标签选择字体，包含中日韩字体。（<a href="https://github.com/ruanyf/weekly/issues/5296">@mrbirddev</a> 投稿）</p>
-<p>2、<a href="https://signaturegenerator-ai.com/">Signature</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101412.webp" /></p>
-<p>一个生成英语艺术签名的网站。（<a href="https://github.com/ruanyf/weekly/issues/5324">@nansshan</a> 投稿）</p>
-<p>3、<a href="https://how-i-experience-web-today.com/">今天的上网感受</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101515.webp" /></p>
-<p>这个网站模拟，一个普通用户从搜索引擎点进网站，所遇到的各种打扰。</p>
-<h2 id="图片">图片</h2>
-<p>1、<a href="https://www.reddit.com/r/korea/comments/hhz8ma/well_thats_one_way_to_encourage_people_to_use_the/">韩国地铁的电梯标识</a></p>
-<p>韩国首尔的地铁站里，有这样一个标识。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101506.webp" /></p>
-<p>瘦人的图案指向楼梯，胖人的图案指向电梯。</p>
-<p>这可能是为了激励胖人去走楼梯，运动减肥。但是，有人觉得这是公然的歧视。</p>
-<p>2、<a href="https://www.facebook.com/discoverytw/posts/pfbid031dRgsdNfWVFPXtKDGR4TnaiGWxPQ4c2EXvjpodkJE84UuzS9vpyfsxayLZMQjuBPl">中世纪城堡</a></p>
-<p>欧洲中世纪城堡的表面，经常有一个个突起的小房间，而且向下开口。</p>
-<p>你知道它是干什么的？</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202212/bg2022120701.webp" /></p>
-<h2 id="言论">言论</h2>
-<p>1、</p>
-<p>只要能够获得自然光，人们就可以生活在地下或土堆下，那么我们就可以拥有一个看起来像公园的城市！</p>
-<p>-- <a href="https://news.ycombinator.com/item?id=41823811">Hacker News 读者</a></p>
-<p>2、</p>
-<p>想法并不那么重要，执行和营销才是成功的决定因素。</p>
-<p>-- <a href="https://news.ycombinator.com/item?id=41839324">Hacker News 读者</a></p>
-<p>3、</p>
-<p>2014年，时任百度首席科学家、斯坦福大学副教授吴恩达表示，有些人担心 AI 会取代人类，这就好像担心火星出现人口过剩和环境污染一样。这种担心大致相当于在1850年撰写 iPhone 用户指南。</p>
-<p>-- <a href="https://www.humanityredefined.com/p/superintelligence10-years-later">《超级智能，10年后》</a></p>
-<p>4、</p>
-<p>工程团队可以分为防守和进攻两种角色。进攻角色负责开发新产品和增加功能，防守角色负责维护产品。</p>
-<p>这两个角色都很重要，但是公司往往更重视进攻角色。</p>
-<p>-- <a href="https://www.greptile.com/blog/how-we-engineer">《将工程团队分为防守和进攻》</a></p>
-<h2 id="往年回顾">往年回顾</h2>
-<p><a href="https://www.ruanyifeng.com/blog/2023/10/weekly-issue-274.html">加密通信的最后一块拼图</a>（2023 #274）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2022/09/weekly-issue-224.html">Figma 为什么赢了 Sketch</a>（2022 #224）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2021/09/weekly-issue-174.html">全能程序员 vs 特长程序员</a>（2021 #174）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2020/09/weekly-issue-124.html">华为如何考核员工</a>（2020 #124）</p>
-<p>（完）</p>
-]]></description>
-      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-321.md</link>
-      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-321.md</guid>
-      <pubDate>Mon, 21 Oct 2024 00:57:09 -0000</pubDate>
     </item>
   </channel>
 </rss>
