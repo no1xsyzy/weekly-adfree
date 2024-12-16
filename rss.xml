@@ -6,7 +6,258 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2024</copyright>
-    <lastBuildDate>Mon, 09 Dec 2024 01:02:34 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Dec 2024 01:06:01 -0000</lastBuildDate>
+    <item>
+      <title>科技爱好者周刊（第 329 期）：示意图利器 D2</title>
+      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/5610">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
+<h2 id="封面图">封面图</h2>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024121117.webp" /></p>
+<p>哈尔滨冰雪大世界即将开园，工人正在松花江上采冰，每天需要开采近万块大冰块。（<a href="https://app.xinhuanet.com/news/article.html?articleId=451916149ce4dde7e6035e935eb5a37f">via</a>）</p>
+<h2 id="示意图利器-d2">示意图利器 D2</h2>
+<p>制作示意图的工具有很多。</p>
+<p>我喜欢使用基于文本代码的作图工具，来绘制线框图，比如 Mermaid、Plantuml、Graphviz。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024121201.webp" /></p>
+<p>它们都能根据代码，生成图片，非常适合放入代码仓库，进行版本管理。</p>
+<p>最近，我发现了一个更易用的同类工具 <a href="https://d2lang.com">D2</a>，简单直观，功能强大，下面介绍给大家。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120613.webp" /></p>
+<p>D2 可以命令行使用，也可以浏览器使用。假定你有一个图片代码文件<code>example.d2</code>，那么生成图片的命令如下。</p>
+<blockquote>
+<p>$ d2 example.d2</p>
+</blockquote>
+<p>大部分时候，我都通过浏览器使用它。它有一个线上生成器 <a href="https://play.d2lang.com/">play.d2lang.com</a>（下图），把代码贴进去，按下“compile”按钮，马上生成图片。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024121202.webp" /></p>
+<p>想要 A 节点（节点的名称为 A），直接输入 A 就可以了。</p>
+<blockquote>
+<p>A</p>
+</blockquote>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120601.webp" /></p>
+<p>A 只是节点名称，如果要定制节点的内容，就像下面这样写。</p>
+<blockquote>
+<p>A: 甲</p>
+</blockquote>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120602.webp" /></p>
+<p>接着，添加一个节点。</p>
+<blockquote>
+<p>A: 甲<br />
+B: 乙</p>
+</blockquote>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120603.webp" /></p>
+<p>把它们连起来。</p>
+<blockquote>
+<p>A: 甲<br />
+B: 乙<br />
+A -&gt; B</p>
+</blockquote>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120604.webp" /></p>
+<p>连接可以用正箭头（<code>-&gt;</code>）、也可以用反箭头（<code>&lt;-</code>），甚至双向箭头（<code>&lt;-&gt;</code>）。如果不需要箭头，就直接连线（<code>--</code>）。</p>
+<p>箭头上还能添加文字。</p>
+<blockquote>
+<p>A: 甲<br />
+B: 乙<br />
+A -&gt; B: 连接</p>
+</blockquote>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120606.webp" /></p>
+<p>节点之间可以有多根连线。</p>
+<blockquote>
+<p>A: 甲<br />
+B: 乙<br />
+A -&gt; B: 请求<br />
+A &lt;- B: 响应</p>
+</blockquote>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120609.webp" /></p>
+<p>节点的连接也可以写在一行。</p>
+<blockquote>
+<p>甲 -&gt; 丙 &lt;- 乙: 连接</p>
+</blockquote>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120610.webp" /></p>
+<blockquote>
+<p>阶段一 -&gt; 阶段二 -&gt; 阶段三 -&gt; 阶段四<br />
+阶段四 -&gt; 阶段一: 反馈</p>
+</blockquote>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120611.webp" /></p>
+<p>这些语法就够画出基本的线框图了，是不是挺简单。</p>
+<p>D2 可以绘制非常复杂的图，更多语法参考<a href="https://d2lang.com/tour/intro">文档</a>。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120614.webp" /></p>
+<p>最后提一下，如果想修改节点形状，方框改成圆形，就像下面这样写。</p>
+<blockquote>
+<p>A: 甲<br />
+A.shape: circle</p>
+</blockquote>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120607.webp" /></p>
+<p>形状甚至可以改成一朵云，表示云服务。</p>
+<blockquote>
+<p>A: 甲<br />
+A.shape: cloud</p>
+</blockquote>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120608.webp" /></p>
+<p>线条颜色也可以改。</p>
+<blockquote>
+<p>A: 甲<br />
+A.style.stroke: red</p>
+</blockquote>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120612.webp" /></p>
+<h2 id="科技动态">科技动态</h2>
+<p>1、<a href="https://www.theglobeandmail.com/business/industry-news/property-report/article-the-worlds-largest-deep-lake-water-cooling-project-just-got-bigger/">深湖冷却</a></p>
+<p>加拿大最大城市多伦多，就在安大略湖旁边。安大略湖是一个很深的湖，最深处达到244米。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202404/bg2024041412.webp" /></p>
+<p>多伦多市正在建设一个非常酷的项目，使用安大略湖底的冷水，为城市提供冷却系统。</p>
+<p>安大略湖底部的水温是很低的，该项目从水底85米处取水，即使盛夏，水温也只有4摄氏度。</p>
+<p>这些水经过40公里的管道，进入市中心的热交换站，为城市带来天然的冷气。</p>
+<p>2、<a href="https://www.decarpentier.nl/carpentopod">自走桌</a></p>
+<p>一位国外工程师，制作了一张会自己行走的桌子。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202409/bg2024091217.webp" /></p>
+<p>这张木头桌子有12条腿，每次可以同时移动三条腿，每条腿都用电机驱动。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202409/bg2024091218.webp" /></p>
+<p>桌子内部有无线接收器，用来接收遥控信号。远端计算机发出遥控命令，并计算出移动哪几条腿，每条腿移动的角度和幅度。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202409/bg2024091219.webp" /></p>
+<p>3、<a href="https://www.tomshardware.com/tech-industry/big-tech/dog-like-robot-jams-home-networks-and-disables-devices-during-police-raids-dhs-develops-neo-robot-for-walking-denial-of-service-attacks">瘫痪网络的机器狗</a></p>
+<p>很多犯罪分子都在屋外装了摄像头，监控室外的风吹草动。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072405.webp" /></p>
+<p>美国国土安全部研发了一款机器狗，它的唯一作用就是瘫痪无线摄像头的通信。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072406.webp" /></p>
+<p>这个机器狗配备了一个天线阵列，接近目标后，会侦测周围无线信号的频率和信道，然后发送大量干扰信号，使得网络堵塞，无法通信。</p>
+<p>所有无线通信的智能家居设备，都会因此失效，包括摄像头。所以，重要地点的摄像头必须是有线的。</p>
+<p>4、<a href="https://www.bbc.com/news/articles/c4gv0rvx0dvo">无豆咖啡</a></p>
+<p>一些西方公司最近推出“无豆咖啡”，就是不使用咖啡豆制作的咖啡。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202409/bg2024091303.webp" /></p>
+<p>它采用废弃的枣子或果核，提取生物质，然后添加提取自茶叶的咖啡因，使其具有咖啡的味道。</p>
+<p>因此，它比较环保，可以减少食物垃圾，也不必破坏森林种植咖啡树。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202409/bg2024091304.webp" /></p>
+<p>据说，它的味道非常接近优质咖啡，普通人喝不出差异。只是成本不便宜，略高于传统的优质咖啡豆。</p>
+<h2 id="文章">文章</h2>
+<p>1、<a href="https://www.joshwcomeau.com/css/custom-css-reset/">CSS 重置（2024版）</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102501.webp" /></p>
+<p>作者提出，最新的 CSS 重置（CSS reset，即更改浏览器默认样式）只需要9条规则，每一条都详细解释。</p>
+<p>2、<a href="https://monokai.pro/history">Monokai 的历史</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103102.webp" /></p>
+<p>本文介绍流行的代码编辑器配色方案 Monokai 的诞生历史。</p>
+<p>3、<a href="https://www.rugu.dev/en/blog/concurrency-and-parallelism/">并发运行（Concurrency）和并行运行（Parallelism）：以 JavaScript 为例</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202409/bg2024091302.webp" /></p>
+<p>本文解释并发和并行的区别，然后给出 JavaScript 的示例。</p>
+<p>4、<a href="https://alfy.blog/2024/10/19/linking-directly-to-web-page-content.html">直接链接网页的某段文本</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102409.webp" /></p>
+<p>浏览器现在支持，URL 直接链接到网页的某个文本片段（text fragment）（上图的高亮部分），本文介绍如何使用。</p>
+<p>5、<a href="https://blog.hyperknot.com/p/understanding-round-robin-dns">了解多重 DNS</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102705.webp" /></p>
+<p>多重 DNS 就是同一个域名有多个 DNS 解析记录，可用来均衡负载。作者就测试了，均衡负载是否真能生效。</p>
+<p>6、<a href="https://medium.com/@vincentlambert0/it-all-started-with-a-perceptron-86bd0fb80b96">感知器是什么</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102908.webp" /></p>
+<p>本文解释神经网络的基础概念“感知器”（Perceptron）。</p>
+<h2 id="工具">工具</h2>
+<p>1、<a href="https://github.com/WCY-dt/EasyTransfer">EasyTransfer</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120701.webp" /></p>
+<p>开源的文件传输工具，匿名加密，只需访问网页，即可连接到其他设备，基于 webRTC 和 Vue.js，访问<a href="https://file.ch3nyang.top">试用网址</a>。（<a href="https://github.com/ruanyf/weekly/issues/5653">@ch3ny4ng</a> 投稿）</p>
+<p>2、<a href="https://screensharing.net">Screen Sharing</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120702.webp" /></p>
+<p>从浏览器分享你的屏幕给其他人，适合用来演示。（<a href="https://github.com/ruanyf/weekly/issues/5657">@markliuyuxiang</a> 投稿）</p>
+<p>3、<a href="https://github.com/maskerprc/pmatron">PMAtron</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024121001.webp" /></p>
+<p>将 phpMyAdmin 用 Electron 封装成跨平台桌面软件。（<a href="https://github.com/ruanyf/weekly/issues/5666">@MaskerPRC</a> 投稿）</p>
+<p>4、<a href="https://github.com/CodePhiliaX/fastexcel">FastExcel</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024121003.webp" /></p>
+<p>基于 Java 语言的 Excel 文件解析工具，可以用来提取数据。（<a href="https://github.com/ruanyf/weekly/issues/5671">@JerryFan626</a> 投稿）</p>
+<p>5、<a href="https://github.com/chrox/readest">Readest</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024120703.webp" /></p>
+<p>一款开源电子书阅读器，跨平台桌面应用，基于 Next.js 15和 Tauri v2。（<a href="https://github.com/ruanyf/weekly/issues/5663">@chrox</a> 投稿）</p>
+<p>6、<a href="https://img2avif.com">IMG2AVIF</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024121301.webp" /></p>
+<p>一个网页工具，将各种格式的图片转成 AVIF 格式。（<a href="https://github.com/ruanyf/weekly/issues/5678">@malagebidi</a> 投稿）</p>
+<p>7、<a href="https://www.ytpics.com/">YT Pics</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024021106.webp" /></p>
+<p>一个 Web 应用，输入 YouTube 网址和指定时间，它会自动截取该时间的截图。</p>
+<p>8、<a href="https://github.com/dvcoolarun/web2pdf">Web2pdf</a></p>
+<p>一个命令行工具，将网页保存成 PDF 文件，有很多增强功能（自定义样式、生成目录等）。</p>
+<p>9、<a href="https://labs.leaningtech.com/blog/cheerpj-3.0">CheerpJ</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202402/bg2024021302.webp" /></p>
+<p>浏览器里面的 JVM 编译器，让 Java 程序可以在浏览器运行。</p>
+<p>10、<a href="https://github.com/m31coding/fuzzy-search">fuzzy-search</a></p>
+<p>一个前端的模糊搜索库，支持东亚语言。</p>
+<h2 id="资源">资源</h2>
+<p>1、<a href="https://xdaforums.com/t/info-boot-process-android-vs-linux.3785254/">启动过程：Android 与 Linux</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202401/bg2024011705.webp" /></p>
+<p>这篇文章记录了 Linux 和 Android 各自的系统启动顺序。</p>
+<p>2、<a href="https://www.thebyte.com.cn">深入高可用系统原理与设计</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024121205.webp" /></p>
+<p>开源的中文电子书，梳理网络、云、容器、集群等知识。（<a href="https://github.com/ruanyf/weekly/issues/5683">@isno</a> 投稿）</p>
+<p>3、<a href="https://englishnewsinlevels.com">English News in Levels</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024121207.webp" /></p>
+<p>英语新闻分级阅读网站，实时更新新闻，分为三种难度，有重点词汇、理解测试和朗读音频。（<a href="https://github.com/ruanyf/weekly/issues/5699">@meterscao</a> 投稿）</p>
+<p>4、<a href="https://iohub.inshub.cn">GitHub Weekly</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024121208.webp" /></p>
+<p>这个网站将周刊讨论区的投稿，转成新闻卡片形式呈现。（<a href="https://github.com/ruanyf/weekly/issues/5701">@inshub</a> 投稿）</p>
+<h2 id="图片">图片</h2>
+<p>1、<a href="https://blog.archive.org/2024/06/01/the-backrooms-of-the-internet-archive/">密室照片</a></p>
+<p>2010年，美国互联网上流传一组密室照片，看上去非常空旷神秘。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024060904.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024060905.webp" /></p>
+<p>它们没有任何说明，不知道是在哪里拍的，也不知道是谁拍的。</p>
+<p>这样反而激起了网友的兴趣：昏黄的灯光，陈旧潮湿的地毯，黄色的荧光灯和墙壁，无限的空房间，没有任何窗户，你被困在里面。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024060906.webp" /></p>
+<p>经过不断转发，这些照片逐渐成为美国互联网经久不衰的一个神话，成为了很多电影和游戏的灵感，比如《命运规划局》、《黑暗城市》、《异次元杀阵》。</p>
+<p>最近，通过互联网档案馆（archive.org）的努力，现在终于查明，这组照片是一家家具店的二楼，当时正在进行翻新，一间间的小房间正是家具的陈列室。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202406/bg2024060907.webp" /></p>
+<h2 id="文摘">文摘</h2>
+<p>1、<a href="https://www.alexmurrell.co.uk/articles/the-age-of-average">大众审美</a></p>
+<p>人们眼中的美和丑，其实都是受到社会的影响，很少有人拥有自己独立的审美标准。</p>
+<p>1990年代初期，两位俄罗斯艺术家委托一家美国市场研究公司，进行市场调查，向1001位美国人询问下面的问题。</p>
+<blockquote>
+<ul>
+<li>你最喜欢的颜色是什么？</li>
+<li>你喜欢锐利的曲线还是柔和的曲线？</li>
+<li>你喜欢光滑的笔触还是厚重的笔触？</li>
+<li>你喜欢裸体还是穿着衣服的人物？</li>
+<li>你喜欢休闲的人物还是工作的人物？</li>
+<li>你喜欢室内场景还是室外场景？</li>
+<li>你喜欢什么样的风景？</li>
+</ul>
+</blockquote>
+<p>调查完成后，两位艺术家根据大多数人的偏好，绘制一幅画。理论上，这幅画应该受到最多社会大众的喜爱。</p>
+<p>后来，他们又在其他国家做这个调查，得到一个惊人的结果：每个国家的调查结果（即大众偏好），几乎都是一致的。</p>
+<blockquote>
+<p>“人们想要的都是风景画，周围有几个人物，前景是动物，主要色调是蓝色。”</p>
+</blockquote>
+<p>他们根据11个不同国家的调查结果，画出来的11幅画看上去几乎一样。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202303/bg2023032914.webp" /></p>
+<p>这证明了，全世界的大众审美正在趋同。从电影到时尚，从建筑到广告，全世界的人们喜欢差不多的东西，各国审美越来越接近，独特性越来越少。</p>
+<p>举例来说，AirBnB 上面的公寓，不管是哪个国家，装潢风格很多都是雷同的，可以称为 AirBnB 美学：白墙、原木、胶囊咖啡机、扶手椅、裸砖、木搁板、灯泡。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202303/bg2023032915.webp" /></p>
+<p>这种 AirBnB 美学既有工业主义的粗犷原始，又有古典主义的优雅极简。</p>
+<p>这种风格还影响到了咖啡店。</p>
+<p>世界各地的咖啡店（包括餐厅），也慢慢变得相似：粗糙的木桌、宽大的窗户、朴素的吊灯。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202303/bg2023032916.webp" /></p>
+<p>总之，随着互联网连接全球，全世界正在形成统一的大众审美。以后，无论去到哪个国家，旅馆和咖啡店可能都是一样的装修。</p>
+<h2 id="言论">言论</h2>
+<p>1、</p>
+<p>我生活中一切顺利的事情都遵循相同的过程:</p>
+<p>（1）我关注自己喜欢的​​事情。</p>
+<p>（2）我找到多做这些事情的方法。</p>
+<p>（3）我让有趣的人很容易发现我在做这些事情。</p>
+<p>（4）我和他们一起出去玩，一起做项目。</p>
+<p>-- <a href="https://www.henrikkarlsson.xyz/p/unfolding">亨里克·卡尔森</a></p>
+<p>2、</p>
+<p>伟大的科学家是想法大胆的人，但是对自己的想法同时持有高度批判的态度。接受自己的猜想之前，他们首先会严厉尝试反驳它。</p>
+<p>只有发现很难反驳成功时，他们才相信自己的想法是对的。</p>
+<p>-- <a href="https://igorpak.wordpress.com/2020/12/10/what-if-they-are-all-wrong/">卡尔·波普尔</a>，科学哲学家</p>
+<p>3、</p>
+<p>作为一个至少用过十几种语言进行过商业开发的程序员，我完全不同意有人说，一种语言的编程速度优于另一种语言。</p>
+<p>语言的编程速度因人而异，符合程序员的个人经历和思维习惯的语言，写起来最快。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=41616851">Hacker News 读者</a></p>
+<p>4、</p>
+<p>我长期以来一直认为地球是一个“水星球”，存在着大量的水覆盖星球。</p>
+<p>直到我做了数学计算，才意识到地球实际上是太空中的一块湿岩石，更像是用喷雾器喷了十几次的保龄球。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=41238102">Hacker News 读者</a></p>
+<h2 id="往年回顾">往年回顾</h2>
+<p><a href="https://www.ruanyifeng.com/blog/2023/12/weekly-issue-282.html">电动皮卡 Cybertruck 的 48V 供电</a>（2023 #282）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2022/11/weekly-issue-232.html">好用的平面设计软件</a>（2022 #232）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2021/11/weekly-issue-182.html">新人优惠的风险</a>（2021 #182）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2020/11/weekly-issue-132.html">快能力和慢能力</a>（2020 #132）</p>
+<p>（完）</p>
+]]></description>
+      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-329.md</link>
+      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-329.md</guid>
+      <pubDate>Mon, 16 Dec 2024 01:06:01 -0000</pubDate>
+    </item>
     <item>
       <title>科技爱好者周刊（第 328 期）：AI 模型不是一门好生意</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -1027,241 +1278,6 @@
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-324.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-324.md</guid>
       <pubDate>Mon, 11 Nov 2024 00:56:35 -0000</pubDate>
-    </item>
-    <item>
-      <title>科技爱好者周刊（第 323 期）：技术公司的口号比拼</title>
-      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
-<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/5445">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
-<h2 id="封面图">封面图</h2>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101905.webp" /></p>
-<p>去年建成的乌鲁木齐文化中心，包含图书馆、博物馆、大剧院等的六栋大楼。它们组成一个环形，中间是象征花蕊的文化塔（上图），里面有餐厅和观光平台。（<a href="https://www.archxy.com/101.html">via</a>）</p>
-<h2 id="技术公司的口号比拼">技术公司的口号比拼</h2>
-<p>技术公司一般有一个口号（slogan），用来介绍自己。</p>
-<p>全世界最有名的公司口号，大概就是下面这个。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024081103.webp" /></p>
-<p>我最近读到一篇<a href="https://slimsaas.com/blog/saas-copy-writing-saas-marketing-framework-works">老外的文章</a>，提出两个指标，判断口号的优劣。</p>
-<blockquote>
-<ul>
-<li><strong>清晰度</strong>（clarity）：口号是否准确传达了公司的特点。</li>
-<li><strong>影响力</strong>（impact）：市场是否接受该口号，即口号是否广为人知。</li>
-</ul>
-</blockquote>
-<p>根据上面两个指标，公司口号可以分成四类。</p>
-<blockquote>
-<ol>
-<li>高清晰度、高影响力</li>
-<li>低清晰度，高影响力</li>
-<li>高清晰度、低影响力</li>
-<li>低清晰度、低影响力</li>
-</ol>
-</blockquote>
-<p>第一类“高清晰度、高影响力”是最佳情况，口号清晰传达公司目标，并且深入人心。比如，GitHub 的口号“世界构建软件的地方”。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024081104.webp" /></p>
-<p>再比如，Notion 的口号“写作、计划、组织”。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024081105.webp" /></p>
-<p>第二类“低清晰度，高影响力”是市场记住了口号，但是口号过于笼统含糊，无法让人联想到公司。比如，Snowflake 的口号“AI 数据的云”（AI data cloud）。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024081106.webp" /></p>
-<p>第三类“高清晰度、低影响力”是口号很符合公司特点，但是市场记不住，消费者没感知。比如，Stripe 的口号“你的收入增长的金融基础设施”（Financial infrastructure to grow your revenue）。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024081107.webp" /></p>
-<p>第四类“低清晰度、低影响力”是最糟糕的情况，口号含糊不清，消费者视若无睹。比如，Dell 的口号“做得更多的力量”（The power to do more）。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024081108.webp" /></p>
-<p>再比如，Dropbox 的口号“简化你的生活”（Simplify your Life）。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024081109.webp" /></p>
-<p>我套用这个标准，对国内公司的口号进行分类。以下都为个人看法，纯属娱乐。</p>
-<p>“高清晰度、高影响力”。</p>
-<blockquote>
-<ul>
-<li>阿里巴巴：让天下没有难做的生意</li>
-<li>百度：百度一下，你就知道</li>
-<li>抖音：记录美好生活</li>
-</ul>
-</blockquote>
-<p>“低清晰度，高影响力”。</p>
-<blockquote>
-<ul>
-<li>网易：网聚人的力量</li>
-<li>快手：拥抱每一种生活</li>
-</ul>
-</blockquote>
-<p>“高清晰度、低影响力”。</p>
-<blockquote>
-<ul>
-<li>华为：构建万物互联的智能世界</li>
-<li>美团：帮大家吃得更好，生活更好</li>
-</ul>
-</blockquote>
-<p>“低清晰度、低影响力”。</p>
-<blockquote>
-<ul>
-<li>支付宝：生活好，支付宝</li>
-<li>小米：永远相信美好的事情即将发生</li>
-<li>荣耀：活出我的荣耀</li>
-<li>DJI：The Future of Possible（未来无所不能）</li>
-</ul>
-</blockquote>
-<h2 id="科技动态">科技动态</h2>
-<p>1、<a href="https://www.goodnewsnetwork.org/clever-orangutan-makes-a-tool-to-retrieve-floating-basket-from-pond-look/">猩猩的工具</a></p>
-<p>一位游客在捷克的布拉格动物园，拍到了一张神奇的照片。</p>
-<p>一只猩猩使用布条，去捞取漂浮在水面的篮子。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103017.webp" /></p>
-<p>这证明猩猩是有智能的，会使用工具。</p>
-<p>这件事最神奇之处，还不是这个，而是布条原本挂在树上，是干的。这只猩猩先从树上扯下布条。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103018.webp" /></p>
-<p>然后，它把干布条甩进水里，使得布条变重。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103019.webp" /></p>
-<p>接着，它把变重的湿布条，去勾取篮子。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103020.webp" /></p>
-<p>2、<a href="https://dingdongdoorbell.com/">二维码门铃</a></p>
-<p>一位外国程序员没有门铃，朋友要求他装一个。</p>
-<p>他突发奇想，能不能用二维码代替门铃？</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103009.webp" /></p>
-<p>他就开发一个手机 App，里面的二维码（上图）可以打印出来，贴在门上。</p>
-<p>访客用手机扫描这个二维码，它会打开 App 的官网。该网站调用手机摄像头，让你跟屋主人实时通话（下图）。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103010.webp" /></p>
-<p>二维码的好处是除了实时通话，还可以在网页预留信息。门牌旁边贴个二维码，可能是一个不错的主意。</p>
-<p>3、<a href="https://archaeologymag.com/2024/09/lion-of-st-marks-square-in-venice-is-chinese/">威尼斯青铜狮子</a></p>
-<p>威尼斯圣马可广场有一只标志性的青铜狮子，是这个城市的标志。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102506.webp" /></p>
-<p>但是，谁也不知道它从哪里来，为什么会放在广场上。人们只知道，最早在1293年就有它的记录。下图是1870年代的照片。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102507.webp" /></p>
-<p>最近，科学家对狮子的成份做了化验，根据铜的同位素比对，震惊地发现，这些铜来自中国。</p>
-<p>这只狮子很可能是在中国铸造的，因为它很像唐代的镇墓兽，来到威尼斯后，才被加上了翅膀。</p>
-<p>现在的问题是，古代的人们为什么大费周章，将这只庞然大物从中国运到威尼斯呢？</p>
-<h2 id="文章">文章</h2>
-<p>1、<a href="https://til.simonwillison.net/llms/streaming-llm-apis">OpenAI 如何发送数据</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202409/bg2024092301.webp" /></p>
-<p>OpenAI 的 AI 使用“服务器发送事件”（sse），向浏览器主动发送数据，本文演示它的数据格式。</p>
-<p>2、<a href="https://justyy.com/archives/66293">谷歌的三次面试记录</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103001.webp" /></p>
-<p>作者记录了在2016年、2020年、2024年三次面试谷歌软件工程师的经过。（<a href="https://github.com/ruanyf/weekly/issues/5440">@DoctorLai</a> 投稿）</p>
-<p>3、<a href="https://kaiwenwang.com/writing/canvases-versus-documents">画布与文档</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102904.webp" /></p>
-<p>本文认为，网页设计已经从文档演变成画布，更有设计感。他给出了很多例子，可以当作首页设计的参考。</p>
-<p>4、<a href="https://hughfenghen.github.io/posts/2024/10/28/webav-video-editor/">纯 Web 视频剪辑</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103007.webp" /></p>
-<p>本文介绍使用 WebCodecs API，构建一个基于网页的视频剪辑产品的原理。（<a href="https://github.com/ruanyf/weekly/issues/5438">@hughfenghen</a> 投稿）</p>
-<p>5、<a href="https://quantum5.ca/2023/07/14/introduction-to-bgp-from-operator-of-small-as/">BGP 协议简介</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102503.webp" /></p>
-<p>BGP（边界网关协议）是互联网各个子网之间的路由协议，本文是一篇简单介绍。虽然写得不太清楚，但可以看看。</p>
-<p>6、<a href="https://technicalwriting.dev/data/embeddings.html">机器学习的嵌入（embedding）是什么</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102505.webp" /></p>
-<p>嵌入（embedding）是机器学习的重要技术，本文解释它是什么，写得不错。</p>
-<p>7、<a href="https://nochlin.com/blog/6-techniques-i-use-to-create-a-great-user-experience-for-shell-scripts">提升 Shell 脚本用户体验</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202409/bg2024091401.webp" /></p>
-<p>Shell 脚本难读难写，本文给出6个小技巧，可以提升用户体验。</p>
-<h2 id="工具">工具</h2>
-<p>1、<a href="https://garagehq.deuxfleurs.fr/">Garage</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072001.webp" /></p>
-<p>一个开源分布式对象存储工具，AWS S3 的替代品，兼容 S3 的客户端，可以建立自己的网络存储系统。类似工具还有 <a href="https://github.com/seaweedfs/seaweedfs">SeaweedFS</a>。</p>
-<p>2、<a href="https://github.com/soupslurpr/Transcribro">Transcribro</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072116.webp" /></p>
-<p>安卓的语音输入法，底层使用 whisper 模型。</p>
-<p>3、<a href="https://github.com/BengbuGuards/StarLocator">StarLocator</a></p>
-<p>一个开源的天文学网页应用，上传星空的照片，就可以识别拍摄位置。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103002.webp" /></p>
-<p>但是，限制条件比较多，需要照片清晰，并且包含至少5个天体，以及给出拍摄时间和多条铅垂线。（<a href="https://github.com/ruanyf/weekly/issues/5420">@cheanus</a> 投稿）</p>
-<p>4、<a href="https://icraft.gantcloud.com">iCraft Editor</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102912.webp" /></p>
-<p>绘制 3D 架构图的网页应用，免费使用。（<a href="https://github.com/ruanyf/weekly/issues/5414">@yuanguandong</a> 投稿）</p>
-<p>5、<a href="https://github.com/w4n9hu1/hot-hub-web">HotHub</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103003.webp" /></p>
-<p>开源的热点话题查看和搜索网站，展示话题的热度趋势，基于 Next.js。（<a href="https://github.com/ruanyf/weekly/issues/5421">@w4n9hu1</a> 投稿）</p>
-<p>6、<a href="https://github.com/Ray-D-Song/web-archive">Web Archive</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103004.webp" /></p>
-<p>网页收藏备份的 Web 应用，基于 Cloudflare Worker，数据保存在 Cloudflare。（<a href="https://github.com/ruanyf/weekly/issues/5423">@Ray-D-Song</a> 投稿）</p>
-<p>7、<a href="https://github.com/CaoMeiYouRen/rss-impact-server">RSS Impact</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102913.webp" /></p>
-<p>一个开源的 RSS 在线订阅工具，支持各种机制的 Hook（网络钩子），可以用来触发各种操作。（<a href="https://github.com/ruanyf/weekly/issues/5418">@CaoMeiYouRen</a> 投稿）</p>
-<p>8、<a href="https://codess.dumogu.top/">codess</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103006.webp" /></p>
-<p>快速生成和在线管理 <a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets">VS Code 代码片段</a>。（<a href="https://github.com/ruanyf/weekly/issues/5435">@yayaluoya</a> 投稿）</p>
-<p>9、<a href="https://github.com/liujuntao123/bookmarks-artist">Bookmarks Artist</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103016.webp" /></p>
-<p>开源的 Chrome 浏览器插件，提供一个查看浏览器书签的全新界面。（<a href="https://github.com/ruanyf/weekly/issues/5444">@liujuntao123</a> 投稿）</p>
-<p>10、<a href="https://github.com/commandprompt/pgmanage">PgManage</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202407/bg2024072202.webp" /></p>
-<p>一个跨平台的 Postgres 数据库的桌面客户端，提供图形界面。</p>
-<h2 id="ai-相关">AI 相关</h2>
-<p>1、<a href="https://github.com/Skyvern-AI/Skyvern">Skyvern</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102502.webp" /></p>
-<p>一个开源项目，将 AI 模型与计算机视觉结合起来，用自然语言完成浏览器自动化。</p>
-<p>2、<a href="https://www.urlparser.online/">URL Parser Online</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103008.webp" /></p>
-<p>这个网站将 URL 转换成大模型可以输入的格式（Markdown、TXT、HTML）。（<a href="https://github.com/ruanyf/weekly/issues/5441">@jiangwei909</a> 投稿）</p>
-<p>3、<a href="https://github.com/Vanguard-s/Electronic-Component-Sorter">电子元件分类器</a>（Electronic Component Classifier）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101103.webp" /></p>
-<p>一个本机的 AI 工具，用摄像头识别电子元件。</p>
-<p>4、<a href="https://want-ai.top/writer/">爱享写作</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102911.webp" /></p>
-<p>Windows 桌面软件，无需 GPU，离线生成万字长文。（<a href="https://github.com/ruanyf/weekly/issues/5411">@taotaow</a> 投稿）</p>
-<h2 id="资源">资源</h2>
-<p>1、<a href="https://seismic-explorer.concord.org/">地震地图</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102504.webp" /></p>
-<p>这个网站是地震地图，标识出了1980年后大于5.2级的地震（共10万多次），可以清晰地看到地震带，也可以查看某个地区发生过的地震。</p>
-<p>2、<a href="https://wyag-zh.hanyujie.xyz/">自己动手写 Git</a>（中译版）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103005.webp" /></p>
-<p>本教程使用 Python 从头实现简化版 Git，帮助读者理解 Git 的核心原理。（<a href="https://github.com/ruanyf/weekly/issues/5431">@hanyujie2002</a> 投稿）</p>
-<p>3、<a href="https://kill-the-newsletter.com/">Kill the Newsletter!</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082603.webp" /></p>
-<p>这个免费服务可以将邮件列表，转为 RSS Feed。</p>
-<p>4、<a href="https://batteryuniversity.com/articles">了解电池</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202309/bg2023092408.webp" /></p>
-<p>一本免费的英文书籍，向普通读者介绍电池的基本知识。</p>
-<h2 id="图片">图片</h2>
-<p>1、<a href="https://practicalbetterments.com/order-and-orient-the-keys-on-your-keychain/">钥匙圈的窍门</a></p>
-<p>如果你还在使用钥匙圈，那么提高使用效率的一个窍门是，所有钥匙的牙齿朝向同一个方向。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102706.webp" /></p>
-<p>这样的话，使用钥匙时，就不用切换方向。</p>
-<p>另外，大多数人是顺时针切换钥匙，钥匙的排列顺序可以跟开门顺序对应起来。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024102707.webp" /></p>
-<p>最后，钥匙圈上面可以挂一个饰物，位置在第一把钥匙与最后一把钥匙之间。只要摸到饰物，根据顺时针，马上就能确定第一把钥匙和最后一把钥匙。</p>
-<h2 id="文摘">文摘</h2>
-<p>1、<a href="https://medium.com/mr-plan-publication/why-freelancing-isnt-the-dream-it-s-made-out-to-be-730b6f355681">为什么自由职业不是人们想象的那样</a></p>
-<p>很多人听到“自由职业”，想到的就是自己当老板，穿着睡衣工作，在咖啡馆喝拿铁咖啡，在海滩散步，同时赚大钱。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103103.webp" /></p>
-<p>根本不是这样，自由职业压力巨大。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024103104.webp" /></p>
-<p>（1）你的每个月都是一场赌博。这个月，你拿到高薪；下个月，客户就不来联系了，你不停刷新收件箱，什么也收不到。</p>
-<p>自由职业是不可预测的。客户随时会消失，你可能尽了最大努力，还是连续几周没有一个项目。</p>
-<p>除非你有很厚的家底（大多数人没有），否则，没有客户会让你晚上难以入眠，不知道怎么偿付房租和账单。</p>
-<p>（2）自由职业不会带来财务保障。全职工作所拥有的健康保险、退休储蓄、带薪休假，甚至可能还有休息室里的一些免费零食，自由职业全都没有。</p>
-<p>作为一名自由职业者，你赚到的每一分钱都不容易。你不仅要设法赚钱，还要搞清楚你自己的税务、健康保险、退休计划。你只要请假就意味着没有收入。</p>
-<p>你某一次的报酬可能看起来不错，但一旦考虑到税收、保险和费用，你很快就会意识到，自由职业并不具备传统工作所具有的财务缓冲。</p>
-<p>（3）自由职业不具有扩展性。你一个人就是整个公司，销售、会计、客服都要管，这意味着你能承受的工作量很有限。</p>
-<p>你想多做几个项目，很可能会精疲力尽。你也很难提高收费。</p>
-<p>到了某个时候，你会意识到，无论你多么努力工作，多么忙碌，一天的时间就只有这么多。自由职业者稍微忙碌，就会达到自己的上限，如果没有资源来雇人，你会感觉自己就是一只困在轮子上的仓鼠——不断地奔跑，但永远不会真正到达任何地方。</p>
-<p>（4）自由职业听起来像是自由，但它可能会变得非常孤独。在家工作意味着没有同事可以交流，没有办公室文化，也没有饮水机八卦，只有你和你的电脑。</p>
-<p>这种孤独会比你想象的更快地导致倦怠。你很容易感觉自己一直在工作，因为没有下午5点的下班时间，你可能午夜还在回复电子邮件，周末还在接听电话，不断感受到必须更加努力工作的压力，因为如果不这样做，可能会没有收入。这让人筋疲力尽，从长远来看是不可持续的。</p>
-<p>（5）结论：自由职业并不适合所有人。如果你能够承受不稳定的收入和心理压力，并且能够像专业人士一样管理自己的财务，那么你可能可以尝试自由职业。但是，你必须时时刻刻准备好，事情一旦出现问题，你有可靠的后备计划。</p>
-<h2 id="言论">言论</h2>
-<p>1、</p>
-<p>我热爱消费者市场，讨厌企业市场。我们推出了一种产品，告诉每个人，大家自己决定要不要买，这很简单。但是，企业市场不是这样，使用产品的人自己做不了主，而做主的人不使用产品。</p>
-<p>-- <a href="https://berthub.eu/articles/posts/open-source-by-itself-is-no-alternative-for-big-tech/">乔布斯</a></p>
-<p>2、</p>
-<p>我非常支持某些名校的录取条件，他们面试的前两项就是“你是否照顾过孤儿，是否照顾过孤寡老人”，如果没有，你就没有履行社会责任。</p>
-<p>这些名牌大学，培养的都是企业领袖、国家领袖、社会领袖……如果你不爱社会，只是为了多赚钱，你就是社会价值观的破坏者，而并不是社会的建设者。</p>
-<p>-- <a href="https://finance.eastmoney.com/a/202410313224805736.html">任正非</a>，《与 ICPC（国际大学生程序设计竞赛）成员的座谈》（2024年10月14日）</p>
-<p>3、</p>
-<p>两百多年来，美国从一个非常落后的国家变成一个非常发达的国家，在于其开放性、包容性，全球人才都到美国去创新，带来文化多元化、社会多元化、以及科学技术的多元化，创造了伟大的美国。</p>
-<p>美国给全世界的所有国家、所有公司树立了榜样，那就是必须开放，如果封闭起来就要落后。华为要向美国学习开放性、包容性。</p>
-<p>-- 任正非，同上</p>
-<p>4、</p>
-<p>人们不断为 JavaScript 语言发布新的捆绑器、压缩器、转译器、包管理器。这是一个警告，表明这门语言有些地方出了问题。</p>
-<p>显然经过一次次重写，问题还没有得到解决。对我来说，这表明存在根本问题：我们没有在正确的层次上解决问题，或者可能根本无法解决。</p>
-<p>-- <a href="https://news.ycombinator.com/item?id=40854325">Hacker News 读者</a></p>
-<p>5、</p>
-<p>我的生活态度是，早上起床想一想，我有可能活不到今天晚上，晚上上床想一想，我有可能活不到明天早上。</p>
-<p>-- <a href="https://www.theguardian.com/world/2024/oct/19/bodies-quarry-shafts-millions-buried-paris-catacombs">德图里子爵</a>（1776-1854），法国贵族</p>
-<h2 id="往年回顾">往年回顾</h2>
-<p><a href="https://www.ruanyifeng.com/blog/2023/11/weekly-issue-276.html">内容行业的衰落</a>（2023 #276）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2022/10/weekly-issue-226.html">谷歌出了什么问题？</a>（2022 #226）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2021/09/weekly-issue-176.html">中国法院承认 GPL 吗？</a>（2021 #176）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2020/09/weekly-issue-126.html">内卷化是什么？</a>（2020 #126）</p>
-<p>（完）</p>
-]]></description>
-      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-323.md</link>
-      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-323.md</guid>
-      <pubDate>Mon, 04 Nov 2024 00:57:25 -0000</pubDate>
     </item>
   </channel>
 </rss>
