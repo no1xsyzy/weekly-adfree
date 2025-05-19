@@ -6,7 +6,216 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2025</copyright>
-    <lastBuildDate>Mon, 12 May 2025 01:07:12 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 May 2025 01:08:01 -0000</lastBuildDate>
+    <item>
+      <title>科技爱好者周刊（第 348 期）：李飞飞，从移民到 AI 明星</title>
+      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/6771">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
+<h2 id="封面图">封面图</h2>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051203.webp" /></p>
+<p>5月1日，宇宙飞船造型的深圳科技馆新馆开馆，上图是设计团队在新馆前合影。（<a href="https://www.szstm.org.cn/">via</a>）</p>
+<h2 id="李飞飞从移民到-ai-明星">李飞飞，从移民到 AI 明星</h2>
+<p>大家知道<a href="https://baike.baidu.com/item/%E6%9D%8E%E9%A3%9E%E9%A3%9E/7448630">李飞飞</a>吧，AI 的明星教授。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051013.webp" /></p>
+<p>她在斯坦福大学任教，是美国国家工程院等三院院士，担任过斯坦福 AI 实验室主任，以及谷歌云 AI 首席科学家。</p>
+<p>她1976年出生于北京，在成都长大，16岁全家移民美国。</p>
+<p>我一直好奇，她怎么走上 AI 这条路，从移民变成学术明星？</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051014.webp" /></p>
+<p>这几天，我读完她的自传<a href="https://book.douban.com/subject/36672955/">《我看见的世界》</a>（中信出版集团，2024），才发现<strong>她的人生很有戏剧性，每当重要关头，都有幸运的事情发生</strong>。</p>
+<h3 id="1高中阶段">（1）高中阶段</h3>
+<p>她出生于一个普通家庭，中学阶段并无过人之处。</p>
+<blockquote>
+<p>我们家位于成都当时的外环路旁边，小区由三栋一模一样的塔楼组成，我家住在四楼。这个环路是不断扩张的城市边缘，一侧是工厂，另一侧是农田。</p>
+<p>我进入了一所吸引全市优秀学生的中学。在那几年里，对女孩的预设和偏见让我越来越不耐烦，这种情绪已经超出了课业的范围。在同龄人中，我已经有“假小子”的称号。</p>
+</blockquote>
+<p>1992年，移民美国后，她家的生活顿时变得困难。一家三口挤在新泽西乡下一间一居室公寓，她睡客厅，床就放在餐桌旁边。</p>
+<p>父亲在一家华人商店修理旧相机，后来被辞退，从此失业。母亲做杂货店营业员，后因风湿性心脏病，回家休养。李飞飞下课后，就要去打工，有时在中餐馆端盘子12个小时，每小时2美元。</p>
+<p>最后，实在走投无路，她们家决定买下社区的一家干洗店，靠洗衣为生。买下干洗店需要10万美元，全家仅有2万美元储蓄，其余8万美元都是借的。</p>
+<h3 id="2大学阶段">（2）大学阶段</h3>
+<p>1997年，李飞飞中学毕业，要申请大学了。</p>
+<blockquote>
+<p>一开始，我的目标大学主要是州立大学和社区大学，而不是常春藤学校。但我一直对一所顶级高校念念不忘，那就是普林斯顿大学。</p>
+<p>我们是一个靠从车库市场淘来的旧货才能勉强度日的家庭，连我用的计算器都是坏的，我们怎么可能负担得起常春藤学校的学费呢？</p>
+<p>尽管如此，我还是无法抑制内心的冲动，提交了申请。就算只是象征性地申请一下，我也感觉具有特殊意义。</p>
+</blockquote>
+<p>她申请了普林斯顿大学，结果好梦成真，普林斯顿给了全额奖学金。</p>
+<p>如果没有全奖，以她家的经济状况，负担不了学费。如果不去普林斯顿大学，她就不太可能走上学术道路了，更不要说后面的成就了。</p>
+<h3 id="3博士阶段">（3）博士阶段</h3>
+<p>大学毕业后，李飞飞原想去华尔街工作，解决家庭的经济问题。</p>
+<p>母亲鼓励她，继续追求自己的梦想。于是，她选择去加州理工学院读研究生，方向是视觉识别机制。</p>
+<p>2004年，李飞飞为了写博士论文，需要图片材料，来训练算法。她找了9000张图片，组成了一个图片集，手工对每张图片进行分类标注，一共分成101类。</p>
+<p>这个图片集叫做 Caltech 101，算法经过训练，就能从新图片识别出这101类物品。她因此顺利拿到了博士学位。</p>
+<h3 id="4助教阶段">（4）助教阶段</h3>
+<p>博士毕业后，李飞飞先去伊利诺伊大学，后去普林斯顿大学，都是担任计算机科学的助教。</p>
+<p>她继续探索视觉识别，想找到一种通用算法，能够识别所有种类的物品，而不是 Caltech 101 那样，只能识别出101类物品。</p>
+<p>这意味着她需要一个超大的图片训练集，能够包含了世界上所有物品。这可太难了，所有人都反对这件事。</p>
+<blockquote>
+<p>我们都是年轻的助理教授，所处的院系竞争激烈，在事业起步的那几年里，我们都面临着“要么发表论文，要么完蛋走人”的局面。压力之下，我们必须马不停蹄、保质保量地完成工作，因为我们知道，稍有懈怠就可能与终身教授的职位说再见，一同失去的还有获得稳定生计的最佳机会。</p>
+<p>我听到的劝阻之声已经多得够我用一辈子了（可能下辈子也够了）.</p>
+<p>有上万个类别的数据集有什么用？大部分模型连一两个类别都识别不准！</p>
+<p>你知道用这么多图像训练一个模型要花多长时间吗？这个时间可是用“年”来计算的。</p>
+<p>别人要怎么下载呢？你这个图像总量比大多数硬盘的存储量还要大。</p>
+<p>具体怎么做，你有计划了吗？几百万张图谁来做标注？要花多长时间？怎么验证所有内容的准确性呢？</p>
+</blockquote>
+<h3 id="5imagenet">（5）ImageNet</h3>
+<p>李飞飞坚持要做，这个通用图片集起名为 ImageNet。那时是2006年。</p>
+<p>她想到一个思路，英语词典有一些基本名词，用来解释其他所有物品。只要统计一下，基本名词有多少个，每一个又有多少变体，那就得到了所有物品的基本类别。</p>
+<p>统计结果是3万类。因此，李飞飞估计，ImageNet 将有3万个类别，总共包含2000万张图片，每张图片都要有分类和标注，需要从几亿张图片里面筛选出来。</p>
+<blockquote>
+<p>我们发出了邮件，招募愿意帮忙从网上下载和标注图片的本科生，工作时间灵活，每小时10美元。我们招募到一些学生，但是按照这样的进度，完成整个项目需要19年。</p>
+</blockquote>
+<p>这太慢了，项目方法做了改进，用脚本自动去谷歌搜索图片，然后抓取。但是这样也需要人工核对和筛选，只把19年的时间缩短到18年。</p>
+<p>幸运的是，亚马逊刚刚发布了众包平台“土耳其机器人”（Amazon Mechanical Turk，AMT）。在这个平台上，你可以出钱，通过互联网，把任务分包给世界各地接活的人。</p>
+<p>他们通过这个平台，将 ImageNet 分包出去，投入的人数一下子扩展到几千人，而人均费用只是原来的几十分之一。</p>
+<blockquote>
+<p>2009年6月，ImageNet 的初始版本终于完成了。我们成功达成了目标：收集了1500万张图片，涵盖了2.2万个不同类别。这些图片筛选自近10亿张候选图片，并由来自167个国家的4.8万多名全球贡献者进行了标注。</p>
+</blockquote>
+<h3 id="6ilsvrc-算法竞赛">（6）ILSVRC 算法竞赛</h3>
+<p>ImageNet 虽然完成了，但在学术界毫无反响，没有太多人关注。</p>
+<blockquote>
+<p>我们遇到了第一个也是最严重的挫折：在当年的“计算机视觉与模式识别大会”上，ImageNet 被降级为“海报展示”。</p>
+<p>所谓的“海报展示”是一个学术术语，意味着我们将不能在演讲厅内向听众展示我们的工作，只能在会场的指定区域里摆放一幅印有项目摘要的大幅海报，希望能引起路人的兴趣。</p>
+<p>我想过 ImageNet 可能被证明是对的，也可能被证明是错的，对于这两种可能性，我都做好了准备。无论是哪种结果，都会是一个学习的机会。然而，我万万没想到，它被忽视了。</p>
+</blockquote>
+<p>由于 ImageNet 得不到承认，李飞飞想到一个办法，她要每年举行一次算法比赛，看看哪种算法识别 ImageNet 图片集的正确率最高。</p>
+<p>这样一来，在计算机视觉领域，ImageNet 就会成为一个比较基准，各种算法都需要用它表示自己的识别能力，大家就不会忽视它了。这个比赛叫做 ILSVRC（ImageNet 大型视觉识别挑战赛，ImageNet Large Scale Visual Recognition Challenge）。</p>
+<p>2010年，第一届比赛令人失望，11个团队提交了35个参赛算法。冠军算法是传统的图片向量比较，并无创新之处，正确率也不高。</p>
+<p>2011年，第二届比赛更惨，获胜算法还是图片向量比较，正确率只提高了2个百分点。这意味着，没有任何创新和进展。</p>
+<blockquote>
+<p>最糟糕的是，参赛人数也出现急剧下降，参赛算法从35个减少到15个，愿意为此付出努力的人似乎越来越少。</p>
+<p>说这种经历“让人羞愧”已经远远不足以描述我们的心情了。为了推动 ImageNet 的发展，我们倾注了多年的心血，搜集的图片数量远远超过以往的任何数据集，还精心策划了一场国际竞赛来探索它的能力，但结果却只是简单地重复了现状。如果说ImageNet 是一场赌注，是时候开始思考我们是不是已经输了。</p>
+</blockquote>
+<p>眼看这个项目就要失败了，几年的心血付之东流。就在这个时候，李飞飞人生最大的惊喜和反转来临了。</p>
+<p>2012年，第三届比赛，一个加拿大团队使用被学术界遗忘已久的卷积神经网络，一举将图片识别正确率提高了10%。</p>
+<p>接下来的事情，就是被写进教科书的历史了。全世界被神经网络的效果轰动了，AI 研究出现突破，人类进入 AI 时代。</p>
+<p>李飞飞彻底翻身，一举成名，从助教变成世界知名的 AI 研究领头人物，人生从此海阔天空。</p>
+<p>她的故事令人感叹，如果神经网络算法没有在2012年出现，而是再晚几年，或者更早一点，亚马逊的土耳其机器人众包平台没有在2005年诞生，一切会怎样？</p>
+<p>这就是时运吧。科学家的人生和科学发现一样，都是由一些偶然事件推动的。个人奋斗固然重要，但是关键时刻还是离不开幸运。</p>
+<h2 id="科技动态">科技动态</h2>
+<p>（1）传统的脑电图，需要在头上布满电极（下图），有很多限制，也不舒适。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025050802.webp" /></p>
+<p>美国宾州大学的科学家，发明了一种<a href="https://newatlas.com/medical-devices/3d-printed-hairlike-eeg-electrode/">头发电极</a>，细得像头发一样，可以直接粘在皮肤上，淋浴和运动也不会掉下。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025050803.webp" /></p>
+<p>这种电极目前还是有线的，但是有计划开发无线版本。</p>
+<p>（2）<a href="https://finance.sina.cn/7x24/2025-05-09/detail-inevxzxx9213651.d.html">百度地图</a>在导航路面植入广告。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025050904.webp" /></p>
+<p>（3）谷歌的 AI 笔记应用 NotebookLM，可能很快就会添加“<a href="https://www.xda-developers.com/notebooklm-video-overviews/">视频概览</a>”功能。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051007.webp" /></p>
+<p>它已经支持生成音频和 AI 问答，如果再支持生成视频，简直难以想象，是否还需要真人老师。</p>
+<p>直接上传课本，它就生成讲课视频了。</p>
+<p>（4）安卓官方的<a href="https://www.androidauthority.com/android-desktop-mode-leak-3550321/">桌面模式</a>，泄露了运行照片。下图是它的多窗口模式。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051401.webp" /></p>
+<p>但是 Android 16 可能来不及，发布要等到 Android 17。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051402.webp" /></p>
+<p>手机当作桌面电脑，已经不远了。</p>
+<p>（5）百度公布“<a href="https://www.sohu.com/a/892944913_120347736">动物语言转换方法、装置、电子设备及存储介质</a>”专利，使用 AI 识别动物的情感状态，转换为人类能够理解的语言，从而实现动物与人类之间的情感交流和理解。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025050806.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025050807.webp" /></p>
+<h2 id="文章">文章</h2>
+<p>1、<a href="https://blog.castle.io/detect-and-crash-chromium-bots-with-one-weird-trick-bots-hate-it/">一段让 Chromium 机器人崩溃的代码</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051012.webp" /></p>
+<p>作者介绍了一段 JS 代码，让Chromium 无头浏览器（Puppeteer 和 Playwright）崩溃。它可以用来识别，访问者是不是机器人。</p>
+<p>2、<a href="https://opensource.com/article/21/4/git-worktree">Git worktree 简介</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051405.webp" /></p>
+<p>Git 仓库同时只能有一个工作区，如果想同时建立多个工作区，可以使用 git worktree 命令。</p>
+<p>3、<a href="https://imbant.github.io/blog/2025/05/07/ts-go/">用 Go 移植 TypeScript 的重要影响</a>（中文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051003.webp" /></p>
+<p>微软官方要用 Go 语言重写 TypeScript 项目，本文分析这样做的目的和影响。（<a href="https://github.com/ruanyf/weekly/issues/6817">@imbant</a> 投稿）</p>
+<p>4、<a href="http://hanzilu.com/wordpress/?p=376">为什么大模型可以控制手机</a>（中文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051002.webp" /></p>
+<p>开源项目 <a href="https://github.com/droidrun/droidrun">droidrun</a> 可以通过大模型，以自然语言操作安卓手机的 APP。本文分析它是如何做到的。（<a href="https://github.com/ruanyf/weekly/issues/6822">@lezhi12</a> 投稿）</p>
+<p>5、<a href="https://nexo.sh/posts/microservices-for-startups/">创业公司可能无法承受微服务</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025050903.webp" /></p>
+<p>本文提出，微服务需要很强的运维能力，并会增加代码复杂性，创业公司不要盲目采用，单体应用更简单。</p>
+<p>6、<a href="https://blog.appsignal.com/2025/05/07/migrating-a-javascript-project-from-prettier-and-eslint-to-biomejs.html">从 Prettier 和 ESLint 迁移到 BiomeJS</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025050808.webp" /></p>
+<p>BiomeJS 是用 Rust 语言写的工具，对 JS 代码进行格式化和语法检查，速度极快，可以取代 Prettier 和 ESLint。</p>
+<p>7、<a href="https://www.xda-developers.com/i-self-hosted-obsidian-so-i-can-access-it-in-web-browser-anywhere/">如何自己托管 Obsidian</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051301.webp" /></p>
+<p>Obsidian 是一个优秀的笔记软件，作者给出详细步骤，自己托管 Obsidian 服务器，从而在任何地方都可以通过浏览器使用。</p>
+<h2 id="工具">工具</h2>
+<p>1、<a href="https://github.com/voideditor/void">Void</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025050902.webp" /></p>
+<p>开源的 AI 代码编辑器，Cursor 的替代品，基于 VS Code。</p>
+<p>2、<a href="https://www.hyvector.com/">Hyvector</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051001.webp" /></p>
+<p>在线的矢量图（SVG 文件）编辑工具。</p>
+<p>3、<a href="https://github.com/karakeep-app/karakeep">Karakeep</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051005.webp" /></p>
+<p>一个自搭建的书签 App，提供全文搜索和 AI 自动分类标签，参见<a href="https://www.xda-developers.com/this-self-hosted-app-showed-me-been-using-bookmarks-wrong-all-life/">介绍文章</a>。</p>
+<p>4、<a href="https://pairdrop.net/">PairDrop</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051006.webp" /></p>
+<p>局域网传输文件的 Web 应用，<a href="https://github.com/schlagmichdoch/PairDrop">代码开源</a>，类似于 <a href="https://github.com/szimek/sharedrop">ShareDrop</a> 和 <a href="https://localsend.org/zh-CN">LocalSend</a>。</p>
+<p>5、<a href="https://www.zvault.io/">zVault</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051505.webp" /></p>
+<p>NAS 操作系统 TrueNAS 原本基于 FreeBSD，正在转向 Linux。zVault 是一个社区的分支，由社区推动继续在 FreeBSD 开发。</p>
+<p>6、<a href="https://github.com/yamlresume/yamlresume">YAMLResume</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051205.webp" /></p>
+<p>使用 YAML 格式创建简历，并通过 LaTeX 输出 PDF，方便进行版本管理。（<a href="https://github.com/ruanyf/weekly/issues/6837">@xiaohanyu</a> 投稿）</p>
+<p>7、<a href="https://github.com/allinssl/allinssl">AllinSSL</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051302.webp" /></p>
+<p>开源的 SSL 证书自动化管理平台，集证书申请、管理、部署和监控于一体。（<a href="https://github.com/ruanyf/weekly/issues/6842">@KincaidYang</a> 投稿）</p>
+<p>8、<a href="https://basecoatui.com/">Basecoat</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051404.webp" /></p>
+<p>一套基于 Shadcn UI 的组件库，但是不使用 React。</p>
+<p>9、<a href="https://github.com/jaypyles/Scraperr">Scraperr</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051503.webp" /></p>
+<p>网络爬虫的 Web 控制台。</p>
+<h2 id="资源">资源</h2>
+<p>1、<a href="https://idonthavespotify.donado.co/">I Don't Have Spotify</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051004.webp" /></p>
+<p>一个音乐搜索引擎，输入 Spotify、YouTube、Apple、SoundCloud 的音乐链接，它会提供该音乐在其他网站的链接。</p>
+<p>2、<a href="https://ipinfo.io/lite">IPinfo Lite</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025050901.webp" /></p>
+<p>地理位置数据库 IPinfo 推出的免费服务，IP 查询地理位置，无需信用卡，API 请求次数不受限制。</p>
+<p>1、<a href="https://plainvanillaweb.com/index.html">Web Component 教程</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051504.webp" /></p>
+<p>英文的 Web Component 入门教程。</p>
+<h2 id="图片">图片</h2>
+<p>1、<a href="https://www.doc.cc/articles/a-brief-history-of-the-numeric-keypad">数字键盘的样式</a></p>
+<p>数字键盘来源于电话。</p>
+<p>早期的电话都采用旋转的拨号盘。20世纪50年代，电话可以长途直拨了，拨打长途电话需要输入11个号码，拨号盘就太麻烦了，导致了数字键盘的诞生。</p>
+<p>1955年，AT&amp;T 公司的研究人员，做过一个研究，10个数字的小键盘应该怎样排列，效率最高？</p>
+<p>他们一共列出了15种排列。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025051202.webp" /></p>
+<p>经过研究和比较，用户更喜欢从左到右、从上到下的布局。</p>
+<p>具体来说，两排五列水平布局与现在普遍使用的 3x3+1 布局速度相当，差异很小。</p>
+<p>AT&amp;T 公司最终为电话选择了 3x3+1 布局，主要原因大概是它比较紧凑。</p>
+<h2 id="文摘">文摘</h2>
+<p>1、<a href="https://blog.jacobstechtavern.com/p/the-side-hustle-from-hell">我第一次加入创业公司的教训</a></p>
+<p>一位开发者大学毕业后，加入了一家创业公司。</p>
+<p>他逐渐发现，公司内部有很多矛盾，产品决策也有失误。</p>
+<p>最终，公司开始走下坡路，他就提交了辞呈，放弃了自己的期权。</p>
+<p>离职后，他写了<a href="https://blog.jacobstechtavern.com/p/the-side-hustle-from-hell">一篇文章</a>，总结了自己得到的教训。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202504/bg2025042817.webp" /></p>
+<p>（1）即使创业公司的每个员工都很有动力，但如果创始人并非顶尖人才，那么取得巨大成功的机会很低（但你仍然可以从中学到很多东西）。</p>
+<p>（2）创业公司只有两种工作：开发和销售。如果创始人既不做开发，也不做销售，不知道他在做什么，那就相信你的直觉吧。</p>
+<p>（3）创业公司的产品还未得到市场验证的情况下，为多个平台构建原生应用，是一种极其低效的行为。如果同时为两个产品在每个平台开发两个原生应用，简直是疯了。</p>
+<p>（4）创业公司的路演，大多是浪费时间。产品的验证来自于与用户交流和迭代，而不是打动评委。</p>
+<p>（5）没有什么比并肩作战、共同实现梦想更神奇的了。如果你经常见不到创始人，所有的沟通都只能通过远程进行，那可不是好兆头。</p>
+<p>（6）如果创业公司没有经过严格的面试，就录用了你，这是一个危险信号。他们到底是基于能力来录用你，还是因为你是第一个同意只收很少的报酬，就为他们工作的工程师？</p>
+<h2 id="言论">言论</h2>
+<p>1、</p>
+<p>科学项目日益大型化和制度化，使得个人的好奇心和创新，对于科学的推动正在减弱。科学的进步越来越依靠有效的组织和大量的投入。</p>
+<p>-- <a href="https://www.strangeloopcanon.com/p/on-thinkers-and-doers">《思想家和实干家》</a></p>
+<p>2、</p>
+<p>除非你参与过历史遗留项目，否则你不能自称高级工程师。</p>
+<p>-- <a href="https://www.infobip.com/developers/blog/seniors-working-on-a-legacy-project">infobip.com</a></p>
+<p>3、</p>
+<p>是什么让硅谷的公司如此强大？</p>
+<p>不仅仅是它们数十亿美元的资金或数十亿用户，也不仅仅是因为它们拥有惊人计算能力和数据储备，让学术实验室的资源相形见绌。它们之所以强大，是因为成千上万个才华横溢的人在同一个屋檐下共同努力。</p>
+<p>-- 《李飞飞自传》</p>
+<p>4、</p>
+<p>以前的小团队是1名高级开发人员 + 5名初级开发人员，以后是1名高级开发人员 + AI 大模型。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=43955519">Hacker News 读者</a></p>
+<p>5、</p>
+<p>我打赌，以后的工程师必须深入底层，更接近硅片的层面。开发应用程序将不再需要精通技术的人，AI 让每个人都可以开发自己的应用程序。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=43965599">Hacker News 读者</a></p>
+]]></description>
+      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-348.md</link>
+      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-348.md</guid>
+      <pubDate>Mon, 19 May 2025 01:08:01 -0000</pubDate>
+    </item>
     <item>
       <title>科技爱好者周刊（第 347 期）：冷启动的破解之道</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -1047,223 +1256,6 @@
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-343.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-343.md</guid>
       <pubDate>Mon, 31 Mar 2025 01:04:22 -0000</pubDate>
-    </item>
-    <item>
-      <title>科技爱好者周刊（第 342 期）：面试的 AI 作弊——用数字人去面试</title>
-      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
-<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/6189">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
-<h2 id="封面图">封面图</h2>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025032010.webp" /></p>
-<p>四川省彭州市的中国蔬菜博览馆，设有一个“种子银行”，保存了200多种蔬菜的种子。（<a href="https://www.news.cn/photo/20250313/cefe18dc58ca4d2fa588b772e0fbdb15/c.html">via</a>）</p>
-<h2 id="面试的-ai-作弊用数字人去面试">面试的 AI 作弊：用数字人去面试</h2>
-<p>大家肯定想到了，AI 的能力现在这么强，一定有人用来作弊。</p>
-<p>求职作弊是最简单的，求职信和履历都可以让 AI 生成，但是你未必能想到，<strong>面试也能 AI 作弊，派一个数字人来面试</strong>。</p>
-<p>“数字人”技术几年前就有了，现在添加了 AI，简直如虎添翼，可以乱真。</p>
-<p>网上有很多教程，教你怎么生成数字人，哪怕不懂软件，都可以跟着做出来。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031503.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031504.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031505.webp" /></p>
-<p>只要上传脸部照片和语音片段，<strong>AI 就会生成你的数字化身</strong>，它跟你长得一模一样，用你的声音和表情说话。你让它说什么，它就说什么，就像下图这样。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031506.webp" /></p>
-<p>现在，很多公司采用视频面试，尤其是招聘远程员工，可能只有视频面试，根本没有线下面试。</p>
-<p>数字人既然跟真人长得一样，当然可能冒充真人参加视频面试。</p>
-<p>最近，网上就爆出了一个<a href="https://newsletter.pragmaticengineer.com/p/ai-fakers">真实的案例</a>，波兰的一家创业公司遇到了数字人参加面试。</p>
-<p>这个叫做 Bratislav Rakočević 的应聘者，有着非常详细完整的 LinkedIn 主页（下图）。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031913.webp" /></p>
-<p>简历也毫无问题（下图），看上去很有说服力，罗列了掌握的前后端技能，申请职位是全栈工程师。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031914.webp" /></p>
-<p>顺理成章，他就进入了视频面试。面试官见到本人（下图右）时，就觉得跟网页头像（下图左）不太像。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031509.webp" /></p>
-<p>而且，他使用了背景滤镜，整个人的影像是提取出来的，贴在背景上，头部边缘显得模糊而不自然。面试官当时也没有多想。</p>
-<p>他的面试表现极佳，任何问题都能快速应对，在规定的2小时内完成了所有编码题目和后续提问，这是前所未有的。</p>
-<p>但是，在交谈过程中，面试官逐渐产生了怀疑。首先，按照简历，这个人在塞尔维亚读大学，但是却不会说塞尔维亚语，只会说英语。（事后推测，原因很可能是，他的语音引擎没有塞尔维亚语，或者不如英语逼真。）</p>
-<p>其次，他的英语缺乏语气语调变化，说话没有沟通技巧，让人感觉有点机械。</p>
-<p>最后，他对以前职位的细节，说得不清楚，难以令人信服。</p>
-<p>为了测试这是否真人，面试官临时加了一个项目。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031304.webp" /></p>
-<p>面试官做了一个示范动作，举起一只手，张开五个手指，挡住自己的脸部，要求应聘者照着做（上图）。</p>
-<p>结果，应聘者说了一堆理由，拒绝了这个要求。至此，面试官确定，对面是一个 AI 数字人。</p>
-<p>他们把这件事公开到网上，希望其他公司提高警惕，不要被骗了。</p>
-<p>这样的数字人面试，以后肯定越来越多，怎么应对呢？</p>
-<p>下面是一些破解方法。</p>
-<p>（1）要求应聘者给出推荐人，以供联系核对。</p>
-<p>（2）查找应聘者的网络活动痕迹。如果网上根本搜不到什么痕迹，就说明很可疑。</p>
-<p>（3）除了视频面试，再安排一场线下面试。</p>
-<p>（4）在视频面试中，要求应聘者做一些数字人无法处理的事情，看看有没有破绽。比如，站起身围绕摄像头转一圈，头部前后左右转动，以及举起手做一些动作。</p>
-<h2 id="科技动态">科技动态</h2>
-<p>1、<a href="https://electrek.co/2025/03/16/tesla-autopilot-drives-into-wall-camera-vs-lidar-test/">特斯拉的自动驾驶</a></p>
-<p>特斯拉的自动驾驶，完全依靠摄像头，没有激光雷达。也就是说，它只有视觉识别。</p>
-<p>一位美国工程师认为，这样是不够的。他做了一个实验，在道路中央架起了一块巨大的画布。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031708.webp" /></p>
-<p>掀起遮盖后，画上是延伸到前方的道路，跟周围融为一体。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031709.webp" /></p>
-<p>结果，特斯拉的自动驾驶，根本认不出来这是画，一头就撞上去了。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031710.webp" /></p>
-<p>相比之下，使用激光雷达的车型，则会在画前自动停下来。</p>
-<p>虽然这个实验是极端情况，但是摄像头在浓雾和大雨天气，效果不佳，却是不争的事实。</p>
-<p>2、<a href="https://www.pcworld.com/article/2614943/microsoft-is-paywalling-these-features-in-notepad-and-paint.html">Windows 记事本的收费功能</a></p>
-<p>记事本（Notepad）和画板（Paint），一直是 Windows 的基本组件，每一代 Windows 都内置了，免费使用。</p>
-<p>但是，Windows 11 最新一次的更新，为这两个软件加入了收费功能。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031711.webp" /></p>
-<p>微软为记事本和画板配置了 AI，前者可以自动重写、缩写、扩写文章，后者可以自动生成图像。</p>
-<p>这些 AI 功能只有 Microsoft 365 的订户才能使用（月费9.99美元）。如果没有付费，就无法使用，右上角的 AI 菜单会变灰色（上图）。</p>
-<p>从此，记事本和画板不再是免费软件了，部分功能有付费墙。</p>
-<p>3、<a href="https://techcrunch.com/2025/03/17/people-are-using-googles-new-ai-model-to-remove-watermarks-from-images/">AI 去除图像水印</a></p>
-<p>很多美国用户在社交媒体上反映，谷歌新发布的 Gemini 2.0 Flash 模型，去除图片水印的效果极佳。</p>
-<p>这是带有水印的原图。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031902.webp" /></p>
-<p>这是大模型去除水印的效果。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031903.webp" /></p>
-<p>该模型不仅能去除水印，还能填补去除水印而产生的任何空白。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031904.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031905.webp" /></p>
-<p>虽然其他模型也能去除水印，但是 Gemini 2.0 Flash 似乎特别擅长这件事，而且它可以免费使用。</p>
-<p>Gemini 2.0 Flash 可以在<a href="https://deepmind.google/technologies/gemini/flash/">谷歌官网</a>使用。另外，网友 <a href="https://github.com/ruanyf/weekly/issues/6340">@panjianning</a> 投稿了一个自己做的<a href="https://color-muse.tbonesoft.com/">调用地址</a>。</p>
-<p>4、<strong>其他</strong></p>
-<p>（1）中国首款超长寿命<a href="https://news.qq.com/rain/a/20250314A06UGW00">碳-14核电池</a>“烛龙一号”研制成功，利用同位素衰变供电，理论上可以持续放电上千年，适合高山海洋、宇宙空间、脑机接口、心脏起搏器等场景。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025032008.webp" /></p>
-<p>（2）美国劳工局统计，美国<a href="https://finance.sina.cn/7x24/2025-03-18/detail-ineqakci5392917.d.html">在职的程序员</a>目前有30多万，是1980年以来的最低值，仅为21世纪初互联网繁荣时期的一半。</p>
-<p>原因可能是 AI 的冲击，仅仅2023年一年，程序员就业人数就急剧下降了27.5%。</p>
-<p>（3）<a href="https://www.phoronix.com/news/Nginx-Dark-Mode-Errors-Rejected">Nginx 服务器</a>拒绝为默认的404页面，添加暗黑模式（下图右），理由是不愿增加复杂性，而且用户完全可以自定义这个页面。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031801.webp" /></p>
-<p>（4）谷歌 AI 部门负责人称，<a href="https://finance.sina.com.cn/stock/usstock/c/2025-03-17/doc-inepyrty0298446.shtml">通用人工智能</a>（AGI）将在未来五到十年内出现。</p>
-<h2 id="文章">文章</h2>
-<p>1、<a href="https://igorstechnoclub.com/server-sent-events-sse-are-underrated/">服务器发送事件（SSE）被低估了</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024122605.webp" /></p>
-<p>本文详细介绍“服务器发送事件”是什么，以及目前的 AI 服务如何使用它。</p>
-<p>2、<a href="https://blog.frankel.ch/on-inheritance/">关于继承和子类型</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202502/bg2025020404.webp" /></p>
-<p>Java、Go、Python 这三种语言，有不一样的继承设计，本文比较了它们各自如何实现一个子类型。</p>
-<p>3、<a href="https://www.silvestar.codes/articles/reset-with-css-unset/">CSS 属性的 unset 值</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024100303.webp" /></p>
-<p>CSS 属性几乎都可以设成三个值 initial（不继承）/inherit（继承）/unset（取消默认值），本文用例子解释它们的含义。</p>
-<p>4、<a href="https://katafrakt.me/2024/11/09/booleans-are-a-trap/">布尔属性的陷阱</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024111006.webp" /></p>
-<p>本文提出一个编程技巧：尽量少在类（class）里面设置布尔属性，而要改用枚举（enum）。</p>
-<p>5、<a href="https://andrewchilds.com/posts/building-a-t1d-smartwatch-from-scratch">我从零制作了一个智能手表</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202501/bg2025013003.webp" /></p>
-<p>作者介绍怎么制作一款智能手表，可以用来了解硬件工程师的工作。</p>
-<p>6、<a href="https://html-css-tip-of-the-week.netlify.app/tip/user-valid/">:user-valid 伪类</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202502/bg2025020103.webp" /></p>
-<p>一篇 CSS 教程，介绍 :user-valid 伪类（表示用户的输入通过了 input 输入框的校验）。</p>
-<p>7、<a href="https://til.simonwillison.net/github-actions/github-pages">使用 GitHub Actions 和 GitHub Pages 构建和部署网站</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025032004.webp" /></p>
-<p>本文是一篇教程，介绍如何使用 GitHub Actions 构建网站，然后部署到 GitHub Pages。</p>
-<h2 id="工具">工具</h2>
-<p>1、<a href="https://github.com/jbreckmckye/daylight">daylight</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031302.webp" /></p>
-<p>命令行查询日出日落时间，可以指定地点和日期。</p>
-<p>2、<a href="https://github.com/kern/filepizza">FilePizza</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031303.webp" /></p>
-<p>在浏览器里“点对点”传送文件的开源工具。</p>
-<p>3、<a href="https://github.com/sinclairtarget/git-who">git-who</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025032003.webp" /></p>
-<p>一个开源的命令行工具，显示 Git 仓库的提交者统计。</p>
-<p>4、<a href="https://github.com/giacomo-b/rust-stakeholder">rust-stakeholder</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031703.webp" /></p>
-<p>一个命令行工具，唯一作用就是让你的终端显得很忙，源源不断有输出，适合摸鱼。</p>
-<p>5、<a href="https://github.com/hoarder-app/hoarder">hoarder</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031712.webp" /></p>
-<p>一个自托管的书签应用，有 Web 端和手机端，可以用 AI 自动生成内容标签。</p>
-<p>6、<a href="https://github.com/xxnuo/serverless-qrcode-hub">微信群聊的永久二维码</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031502.webp" /></p>
-<p>微信群聊的二维码频繁变动，这个工具可以生成永久二维码，基于 Cloudflare Workers 和 KV 存储。（<a href="https://github.com/ruanyf/weekly/issues/6294">@xxnuo</a> 投稿）</p>
-<p>7、<a href="https://github.com/Jamesun921/cam-run">Webcam Runner</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025032001.webp" /></p>
-<p>一个对着电脑摄像头的开源跑步游戏，检测用户动作来控制游戏角色在无限场景中奔跑，适合室内锻炼身体。（<a href="https://github.com/ruanyf/weekly/issues/6334">@Jamesun921</a> 投稿）</p>
-<p>8、<a href="https://www.coverpage.one/image">Cover Page</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031901.webp" /></p>
-<p>免费的封面图制作网站。（<a href="https://github.com/ruanyf/weekly/issues/6307">@amuluze</a> 投稿）</p>
-<p>9、<a href="https://github.com/echoshare/echoshare">EchoShare</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031706.webp" /></p>
-<p>开源的基于 WebRTC 的在线屏幕共享工具，允许与他人共享屏幕、摄像头和音频。 （<a href="https://github.com/ruanyf/weekly/issues/6304">@shawroger</a> 投稿）</p>
-<p>10、<a href="https://github.com/maplelost/lazyeat">Lazyeat</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031907.webp" /></p>
-<p>开源的 Windows 桌面应用，手势控制电脑。（<a href="https://github.com/ruanyf/weekly/issues/6310">@maplelost</a> 投稿）</p>
-<h2 id="ai-相关">AI 相关</h2>
-<p>1、<a href="https://www.svgshow.cn">SVG 秀</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031501.webp" /></p>
-<p>根据文字描述，生成 SVG 图片，并可以编辑，代码开源（<a href="https://github.com/chaseFunny/svg-frontend">前端</a>和<a href="https://github.com/chaseFunny/svg-backend">后端</a>）。（<a href="https://github.com/ruanyf/weekly/issues/6293">@chaseFunny</a> 投稿）</p>
-<p>2、<a href="https://github.com/jorben/markpdfdown">MarkPDFDown</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031704.webp" /></p>
-<p>基于大模型的 PDF 转 Markdown 工具，实现文档结构化转换。（<a href="https://github.com/ruanyf/weekly/issues/6296">@jorben</a> 投稿）</p>
-<p>3、<a href="https://we0.ai/">We0</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031906.webp" /></p>
-<p>通过 AI 生成应用程序，支持后端生成和前端生成，还可以 Sketch/Figma 设计稿1:1还原，<a href="https://github.com/we0-dev/we0">代码开源</a>。（<a href="https://github.com/ruanyf/weekly/issues/6309">@Mashiro2000</a> 投稿）</p>
-<p>4、<a href="https://githubhunt.top/">Githubhunt</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031705.webp" /></p>
-<p>使用自然语言，搜索 GitHub 仓库。（<a href="https://github.com/ruanyf/weekly/issues/6300">@xgzlucario</a> 投稿）</p>
-<p>5、<a href="https://github.com/linshenkx/prompt-optimizer">Prompt Optimizer</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025032002.webp" /></p>
-<p>开源的 AI 提示词优化工具。（<a href="https://github.com/ruanyf/weekly/issues/6337">@linshenkx</a> 投稿）</p>
-<p>6、<a href="https://github.com/gray0128/bob-plugin-MTranServer">Bob plugin MTranServer</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031908.webp" /></p>
-<p><a href="https://bobtranslate.com/">Bob</a>（macOS 平台的翻译软件）的一个插件，引入本地翻译服务器 <a href="https://github.com/xxnuo/MTranServer">MTranServer</a>。（<a href="https://github.com/ruanyf/weekly/issues/6311">@gray0128</a> 投稿）</p>
-<h2 id="资源">资源</h2>
-<p>1、<a href="https://github.com/subframe7536/maple-font">Maple Mono</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031707.webp" /></p>
-<p>开源的等宽字体，支持中文。（<a href="https://github.com/ruanyf/weekly/issues/6306">@subframe7536</a> 投稿）</p>
-<p>2、<a href="https://2005.wong2.me">上网2005</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031909.webp" /></p>
-<p>还原20年前的中文互联网。（<a href="https://github.com/ruanyf/weekly/issues/6316">@wong2</a> 投稿）</p>
-<p>3、<a href="https://github.com/timqian/bambot">Bambot</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031910.webp" /></p>
-<p>网友开源的低成本（约2000元人民币）的人形机器人。（<a href="https://github.com/ruanyf/weekly/issues/6328">@timqian</a> 投稿）</p>
-<p>4、<a href="https://www.openapk.net/">OpenAPK</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031006.webp" /></p>
-<p>这个网站提供开源的安卓 App 下载。</p>
-<h2 id="图片">图片</h2>
-<p>1、<a href="https://petapixel.com/2025/03/17/photographers-once-in-a-lifetime-shots-of-the-lunar-eclipse-and-aurora/">极光月全食</a></p>
-<p>上个月，一个美国摄影师前往阿拉斯加州拍摄极光。</p>
-<p>他无意中发现，这段时间还有月全食，于是成功拍到了极光中的月全食。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031911.webp" /></p>
-<p>上面照片中，右下角的红点就是月球。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025031912.webp" /></p>
-<p>月全食的时候，月球、地球、太阳成一条直线，月球落在地球的阴影里面，照不到直接的太阳光，而是被地球大气层反射的太阳光照亮。</p>
-<p>地球反射的是太阳光的红光，所以月全食呈现红色，又称“血月”。这张绿色极光中的“血月”照片，非常难得。</p>
-<p>2、<a href="https://www.facebook.com/permalink.php?story_fbid=pfbid0gizRWURNZxRtVa5nCGkADbYgbda71e1mE8J5xj6BsAk6WcwVnoue4mWsX2QwiJCml&amp;id=100064747956101">EK215 航班路线</a></p>
-<p>地球是圆的，但是世界地图是采用“墨卡托投影法”绘制的平面地图，它会让高纬度地区被大大拉长，变形严重。</p>
-<p>阿联酋航空 EK215 航班，从迪拜飞往洛杉矶，下图是它的航线在地球仪上的样子，以及在平面地图上的样子。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025032009.webp" /></p>
-<p>可以看到，在地球仪上，这条航线基本是直的，路线非常合理。</p>
-<p>但是，在平面地图上，北极地区的航线被拉长成了一条巨大的弧线，越靠近北极，航线的变形就越严重。</p>
-<h2 id="文摘">文摘</h2>
-<p>1、<a href="https://kupajo.com/stamina-is-a-quiet-advantage/">耐力是一种优势</a></p>
-<p>人们常常低估耐力的作用，只把它理解成比别人更努力、更持久。</p>
-<p>实际上，耐力也是坚守自己的价值观和目标的能力，即使在看上去很难做到的时候，也不放弃。</p>
-<p>在缺乏明显进展的情况下，坚持去实现目标的能力，这就是耐力。</p>
-<p>在一个充满诱惑分散你注意力的世界中保持专注，克服困难，继续前进，你需要耐力。</p>
-<p>耐力是人们可以培养的最有用的品质之一。它比力量、智力、速度、魅力等特质，具有更大的适用性，日常生活很多时候都能用到。</p>
-<p>更聪明的人某些时候会表现出色，比你更快地解决难题。但只要凭着耐力，你可以解决更多的问题。</p>
-<h2 id="言论">言论</h2>
-<p>1、</p>
-<p>开源运动的人们完成了不可能的任务。他们创造了整个百科全书、地球上最成功、使用最广泛的操作系统、软件库和无数应用程序。他们对公共资源的贡献甚至在科幻小说中都难以想象，其中一些系统应该被视为世界的数字奇迹。</p>
-<p>-- <a href="https://tante.cc/2025/03/03/who-is-free-software-for/">《自由软件为了谁？》</a></p>
-<p>2、</p>
-<p>你的应用最好不要依赖云服务商，要做到“可弹出”（ejectable），即随时可以切换到自托管环境。</p>
-<p>你的应用应该有一个 workspace.zip 文件，里面包含了当前的所有状态。只要转移这个文件，就可以还原当前状态。</p>
-<p>--<a href="https://thymer.com/local-first-ejectable">《本地优先且可弹出》</a></p>
-<p>3、</p>
-<p>我见过的最好的工程师，是那些愿意在周末花几个小时构建一个现有软件的自己版本的人。</p>
-<p>这就是你获得创新和进步的方式。如果你不了解系统的工作原理，就无法找到改进的地方。</p>
-<p>-- <a href="https://eli.cx/blog/ai-is-making-developers-dumb">《AI 让开发者变蠢》</a></p>
-<p>4、</p>
-<p>使用 GitHub Copilot 后，我得了一种叫做“Copilot 延迟”的病。这种病指的是工程师在每次操作后都会暂停，等待 AI 提示他们下一步该做什么。</p>
-<p>很多工程师有了 AI 以后，就做不到只靠自己了，要靠 AI 告诉他们下一步。这类似于初级程序员在刚开始时，依靠资深的同事的指导开展工作。</p>
-<p>-- <a href="https://eli.cx/blog/ai-is-making-developers-dumb">《AI 让开发者变蠢》</a></p>
-<p>5、</p>
-<p>如果你成功了，记住你要去哪里，记住你来自哪里，并选择你要成为什么样的人。</p>
-<p>-- <a href="https://taylor.town/5w">《五周的独自创业》</a></p>
-<h2 id="往年回顾">往年回顾</h2>
-<p><a href="https://www.ruanyifeng.com/blog/2024/03/weekly-issue-295.html">巧妙的灯泡钟</a>（#295）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2023/03/weekly-issue-245.html">摩天大楼是反人类的</a>（#245）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2022/02/weekly-issue-195.html">你做过不在乎结果的项目吗？</a>（#195）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2021/02/weekly-issue-145.html">大家不出门，经济怎么办？</a>（#145）</p>
-<p>（完）</p>
-]]></description>
-      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-342.md</link>
-      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-342.md</guid>
-      <pubDate>Mon, 24 Mar 2025 01:01:21 -0000</pubDate>
     </item>
   </channel>
 </rss>
