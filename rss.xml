@@ -6,7 +6,204 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2025</copyright>
-    <lastBuildDate>Mon, 24 Nov 2025 01:08:27 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Dec 2025 01:17:24 -0000</lastBuildDate>
+    <item>
+      <title>科技爱好者周刊（第 375 期）：一扇门的 Bug</title>
+      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/8003">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
+<h2 id="封面图">封面图</h2>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112516.webp" /></p>
+<p>苏州当代美术馆即将开放，十个展馆的屋顶连成一片，象征着江南民居的瓦片屋檐。（<a href="https://www.archiposition.com/items/29335ee2bf">via</a>）</p>
+<h2 id="一扇门的-bug">一扇门的 Bug</h2>
+<p>最离奇的软件 Bug，你听说过哪些？</p>
+<p><a href="https://mastodon.gamedev.place/@TomF/115589875974658415">下面这个</a>是我本周看到，绝对可以排进史上前十名。</p>
+<p>我把它译出来，跟大家分享，以下是第一人称的叙述：</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112518.webp" /></p>
+<p>2013年，我在 Valve 公司从事游戏开发。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112201.webp" /></p>
+<p>当时，第一代虚拟现实 VR 头盔 Oculus DK1 刚刚发售。公司决定为这款头盔移植游戏，让我来移植，搞清楚 VR 的游戏环境。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112202.webp" /></p>
+<p>我就选了2004年我们公司开发的《半条命2》来移植。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112203.webp" /></p>
+<p>移植了一个片段后，我们发现实际效果很好，就决定移植整个游戏，并且发布了发售预告。</p>
+<p>移植过程中，我试玩了很多片段，但没有从头到尾玩一次。</p>
+<p>等到移植完成，就在发售前夕，我决定完整玩一次，如果发现有什么问题，就写在发布说明里面。</p>
+<p>我心想，应该不会有大问题，毕竟这个游戏已经发售10年了，无数人玩过，反响良好。</p>
+<p>但是，万万没有想到，我居然遇到了一个重大 Bug。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112205.webp" /></p>
+<p>游戏的开头部分，玩家来到火车站，一个守卫让你进去一个房间。很奇怪，房间的门是关着的，你进不去，就……卡住了。</p>
+<p>你没死，就是哪儿也去不了。前面的门关着，你进不去，也退不出去，身后的大门已经关上了。你被困在一个走廊里，旁边有个守卫，无路可走。真是奇怪。</p>
+<p>游戏的剧情是，你必须进入这个房间，才能往下玩。你又去找守卫，他指着锁着的门，仅此而已，你被困住了。</p>
+<p>我上网查了视频，心想自己是不是记错了。没错，门应该是自动打开的，你走进去就行了，但是……现在这扇门却关了！</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112206.webp" /></p>
+<p>我心想完蛋了，这游戏没法发布了。</p>
+<p>我赶忙联系了其他人，包括一些十年前参与这个游戏开发的人。他们测试后，都说确实有问题，而且在非 VR 模式下也一样，门也是关着的，所以肯定不是我移植弄坏的。但没人知道原因，因为代码根本没改过。</p>
+<p>有人甚至追溯到游戏的原始源代码，编译了最初发售时的游戏版本——结果发现，那个原始版本也坏了，门也是关着的。</p>
+<p>这怎么可能？大家慌了，这意味着这个 Bug 十年前就存在，但当年编译为什么没出现，十年后重新编译就出现了，这到底什么回事？</p>
+<p>在花了大约一天时间，重新使用当年的调试和回放工具之后，一位同事弄明白了哪里出了问题。</p>
+<p>如果仔细观看游戏，你会发现这扇门有一瞬间，其实自动解锁并打开了，但是房间里还有第二个守卫站在门后。这个守卫站得离门非常近，门打开的一瞬间会轻轻碰到守卫的脚趾，然后又弹回，重新关上，并自动上锁。由于游戏没有考虑怎么处理这种情况并重新打开门，所以游戏就卡住，你无法前进了。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112207.webp" /></p>
+<p>一旦弄明白怎么回事，解决方法就很简单。我们把守卫往后移大约一毫米，门就很顺利自动打开了。</p>
+<p>现在我们可以发布游戏了。但是，问题还是没有彻底解决。为什么这个游戏当初没有出现这个 Bug，原版里守卫的脚趾也挡着门啊？为什么十年后重新编译，Bug 就出现呢？或者说，Bug 其实一直都在，为什么十年前这扇门没有关上呢？</p>
+<p>于是，一场旷日持久的漏洞搜寻就此展开。</p>
+<p>我们终于发现了答案，就是老生常谈的浮点运算。</p>
+<p>《半条命2》于2004年发布，当时编译用的是较旧的8087或 x87 数学指令集。这些指令集的浮点数精度五花八门，有些是32位，有些是64位，有些是80位，不同的代码段使用了不同的精度。</p>
+<p>十年后的2013年，SSE 指令集已经成为所有 x86 CPU 的标准配置，编译器默认使用 SSE，它有明确的精度，根据代码需求使用32位或64位，是可以预测的。</p>
+<p>真相就是，十年前编译用了32位精度，现在用了64位，小数点的差异造成了几毫米的误差，让守卫的脚趾碰到了门。</p>
+<p>好了，现在玩家终于可以走进大门，继续玩下去了。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112208.webp" /></p>
+<h2 id="科技动态">科技动态</h2>
+<p>1、<a href="https://www.theguardian.com/education/2025/nov/20/university-of-staffordshire-course-taught-in-large-part-by-ai-artificial-intelligence">AI 授课</a></p>
+<p>英国斯塔福德郡大学的学生，向媒体投诉。</p>
+<p>他们上课时，老师的幻灯片（下图）完全是用 AI 生成的，甚至老师也不讲课，而是播放 AI 生成的授课语音。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112102.webp" /></p>
+<p>学生非常气愤，因为学校规定，学生如果提交 AI 生成的作业，会被开除，但是老师却在用 AI 讲课。</p>
+<p>这一方面反映了英国的大学教育质量日趋下降，另一方面也让人反思。如果大学广泛使用 AI 授课，或者老师的教学质量还不如 AI，那么学生还需要上大学吗，为什么不直接向 AI 学习？</p>
+<p>2、<a href="https://mossandfog.com/toyotas-crab-like-wheelchair-that-walks/">螃蟹椅</a></p>
+<p>丰田公司推出一款概念产品，像螃蟹一样行走的椅子。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025111217.webp" /></p>
+<p>它的四条腿可以活动，由电机控制铰链。人坐在上面，它会自己行走，还能爬台阶。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025111219.webp" /></p>
+<p>它还能趴下站起。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025111220.webp" /></p>
+<p>我预计，国内很快会推出类似产品，可以驮着人行走的机器人，市场很大。</p>
+<p>3、<a href="https://www.ianvisits.co.uk/articles/you-can-see-a-working-quantum-computer-in-ibms-london-office-85464/">量子计算机</a></p>
+<p>IBM 公司的伦敦办公室，正在展示一台量子计算机。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112503.webp" /></p>
+<p>这台机器建造于2019年，已经过时了。但是你不能走进办公室看，只能在门口远远地看。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112506.webp" /></p>
+<p>这东西据说是计算机的未来，可以快速破解现有的加密算法。不过，它工作时需要低温冷却，接近绝对零度，所以不可能在家里使用。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112504.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112505.webp" /></p>
+<p>4、<a href="https://www.abc.net.au/news/2025-11-23/bureau-of-meteorology-new-website-cost-blowout-to-96-million/106042202">政府网站的费用</a></p>
+<p>制作一个政府网站要花多少钱？答案是9650万澳元（约4.5亿人民币）。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112514.webp" /></p>
+<p>澳大利亚气象局的新网站，设计费用410万澳元，开发费用7980万澳元，发布和安全测试费用1260万澳元，共计9650万澳元。</p>
+<p>由于远远超过了410万澳元的预算，这件事被媒体披露后，引起了公众哗然。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112515.webp" /></p>
+<p>更可笑的是，新网站发布后，农民反映找不到降雨数据，不得不又换回旧版网站。</p>
+<p>政府的计算机系统，如何保证高效好用，又不浪费纳税人的钱，真是一个难题。</p>
+<p>大家可以去参观这个4.5亿人民币开发的网站 <a href="https://www.bom.gov.au/">bom.gov.au</a>。另外，<a href="https://reg.bom.gov.au/">旧版网站</a>目前也依然在线。</p>
+<h2 id="文章">文章</h2>
+<p>1、<a href="https://mehmetgoekce.substack.com/p/b-trees-why-every-database-uses-them">为什么每个数据库都使用 B 树</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112401.webp" /></p>
+<p>一篇科普文章，介绍为什么 B 树比二叉树更适合数据库。</p>
+<p>2、<a href="https://simonwillison.net/2025/Nov/24/claude-opus/">为什么评估新模型越来越难</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112508.webp" /></p>
+<p>著名程序员西蒙·威利森感叹，他已经评估不了最新的大模型了。因为各种模型的能力越来越强，简单的题目都会解，必须用很高深的题目去测。</p>
+<p>3、<a href="https://www.xda-developers.com/your-unpowered-ssd-is-slowly-losing-your-data/">固态硬盘不能长时间断电</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112509.webp" /></p>
+<p>本文指出，消费级的固态硬盘（SSD）在断电状态下，超过一年就会丢失数据。</p>
+<p>目前，最好的固态硬盘也不能断电超过十年。所以，如果长时间不用，数据不要保存在固态硬盘。</p>
+<p>4、<a href="https://lemire.me/blog/2025/11/23/how-good-are-chinese-cpus-benchmarking-the-loongson-3a6000/">中国龙芯的基准测试</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112522.webp" /></p>
+<p>一个老外程序员测试龙芯 3A6000 处理器，跟2021年发布的英特尔 Xeon Gold 6338 对比。</p>
+<p>5、<a href="https://susam.net/url-in-c.html">C 代码里面的 URL</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112706.webp" /></p>
+<p>上面这段 C 语言代码里面有一个 URL，居然是可以编译的，这是为什么？</p>
+<p>6、<a href="https://karboosx.net/post/4eZxhBon/building-a-simple-search-engine-that-actually-works">如何做一个简单的搜索引擎</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112602.webp" /></p>
+<p>本文介绍搜索引擎的原理，如何自己动手写一个简单的搜索引擎。</p>
+<p>7、<a href="https://blog.briancmoses.com/2025/11/diy-nas-2026-edition.html">DIY NAS：2026 年版</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112708.webp" /></p>
+<p>作者详细介绍自己组装 NAS 的配置，可以参考。</p>
+<h2 id="工具">工具</h2>
+<p>1、<a href="https://github.com/frankovo/dns-benchmark-tool">DNS Benchmark Tool</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112101.webp" /></p>
+<p>测试 DNS 服务器的命令行工具，可以测试本地到 DNS 服务器的延迟，以及 DNS 解析获取域名的 IP 地址的耗时。</p>
+<p>2、<a href="https://github.com/iDescriptor/iDescriptor">iDescriptor</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112405.webp" /></p>
+<p>一个跨平台的桌面应用，让电脑连接管理 iPhone。</p>
+<p>3、<a href="https://svgjs.dev">SVG.js</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112406.webp" /></p>
+<p>一个网页 JS 库，用来生成和操作 SVG 图片动画。</p>
+<p>4、<a href="https://github.com/pythops/impala">impala</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112303.webp" /></p>
+<p>Linux 平台管理 WiFi 的一个终端应用。</p>
+<p>5、<a href="https://github.com/YYsuni/2025-blog-public">2025-blog-public</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112106.webp" /></p>
+<p>一个基于 Next.js 的静态博客网站模版。（<a href="https://github.com/ruanyf/weekly/issues/8262">@YYsuni</a> 投稿）</p>
+<p>6、<a href="https://github.com/Master-Hash/pdfpc-ts">pdfpc-ts</a></p>
+<p>一个开源网站，用于幻灯片演示，特点是同时带有演示者视图，用于提词，类似于桌面应用 <a href="https://github.com/pdfpc/pdfpc">pdfpc</a>。（<a href="https://github.com/ruanyf/weekly/issues/8264">@Master-Hash</a> 投稿）</p>
+<p>7、<a href="https://github.com/snsogbl/clip-save">剪存</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112302.webp" /></p>
+<p>开源的桌面软件，用来保存剪贴板历史，支持 Windows/Mac。（<a href="https://github.com/ruanyf/weekly/issues/8269">@snsogbl</a> 投稿）</p>
+<p>8、<a href="https://github.com/hoa-js/hoa">Hoa</a></p>
+<p>一个受 Koa 和 Hono 启发的 JS 服务器框架，适用于 Cloudflare Worker。（<a href="https://github.com/ruanyf/weekly/issues/8289">@nswbmw</a> 投稿）</p>
+<p>9、<a href="https://github.com/aiprojecthub/nodebbs">NodeBBS</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112701.webp" /></p>
+<p>开源的基于 JS 语言的现代论坛系统。（<a href="https://github.com/ruanyf/weekly/issues/8294">@wengqianshan</a> 投稿）</p>
+<p>10、<a href="https://github.com/franklioxygen/MyTube">MyTube</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112704.webp" /></p>
+<p>一个需要自搭建的 Web 服务，用来下载与管理 Youtube/Bilibili 两大平台的视频。（<a href="https://github.com/ruanyf/weekly/issues/8300">@franklioxygen</a> 投稿）</p>
+<h2 id="资源">资源</h2>
+<p>1、<a href="https://www.luochang.ink/dive-into-langgraph/quickstart/">LangGraph 1.0 完全指南</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112501.webp" /></p>
+<p>LangGraph 是一个开源 Agent 开发框架，本教程是基于 Jupyter Notebook 的可交互教程，介绍这个框架的具体实践。（<a href="https://github.com/ruanyf/weekly/issues/8283">@luochang212</a> 投稿）</p>
+<p>2、<a href="https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/README_zh.md">Nano Banana Pro 提示词大全</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112702.webp" /></p>
+<p>这个仓库收集了500+的 Nano Banana Pro 模型提示词，每一个提示词都有图片，超过一半提示词带有参数。（<a href="https://github.com/ruanyf/weekly/issues/8297">@DophinL</a> 投稿）</p>
+<p>3、<a href="https://www.ocrarena.ai">OCR Arena</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112507.webp" /></p>
+<p>这个网站是一个 AI 竞技场，比较不同模型的 OCR（光学识别）能力，目前排名第一的是 Gemini 3。</p>
+<h2 id="图片">图片</h2>
+<p>1、<a href="https://www.core77.com/posts/138995/Historically-Accurate-Airport-Dioramas-by-AV-Pro-Designs">飞机场模型</a></p>
+<p>一位退休的美国飞行员，喜欢制作飞机场模型。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112510.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112511.webp" /></p>
+<p>他的网站上有大量的作品照片，大家可以点进去看。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112709.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112710.webp" /></p>
+<p>下面是他制作的孟买机场模型，甚至还能显示夜景。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112512.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112513.webp" /></p>
+<h2 id="文摘">文摘</h2>
+<p>1、<a href="https://thoughtcatalog.com/ryan-holiday/2017/01/to-everyone-who-asks-for-just-a-little-of-your-time/">对每一个要求“一点点”时间的人说不</a></p>
+<p>经常有人对我说：</p>
+<blockquote>
+<ul>
+<li>我想跟你简单聊聊天？</li>
+<li>下周我们一起喝咖啡吧？</li>
+<li>我们一起来讨论一下吧？</li>
+</ul>
+</blockquote>
+<p>我的回答永远是：不，不，不。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082212.webp" /></p>
+<p>我确实可以满足你的要求，但我就是不能做。</p>
+<p>即使它们可能是重要的机会，即使只需要花费我15分钟，即使这是其他人都会同意去做的事情，我也不想做。</p>
+<p>我必须限制一天中被别人占用的时间，否则我自己就没有剩下的时间了。</p>
+<p>即使我让你占用我的时间以后，还会剩下一些时间，我也可能因此失去能量和专注力，再来利用好这些剩下的时间。</p>
+<p>时间是我们最不可替代的资产——我们无法购买更多的时间。我们一秒钟都无法收回失去的时间。我们只能希望尽可能少地浪费。</p>
+<p>但是现实生活中，不知何故，很多人将时间视为所有资源中最可再生的，用掉就用掉了，反正还有别的时间。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082213.webp" /></p>
+<p>所以，如果你问我是否可以聊天或聚一聚，答案是不。我希望你能够明白，我这样回答的理由。</p>
+<h2 id="言论">言论</h2>
+<p>1、</p>
+<p>编程是我遇到过的最能抑制傲慢的良药。如果一个人很傲慢，你就让他去编程。</p>
+<p>-- <a href="https://tratt.net/laurie/blog/2020/automatic_syntax_error_recovery.html">tratt.net</a></p>
+<p>2、</p>
+<p>训练一个观点与众不同的模型，会越来越困难。因为如果你的观点与真实数据和真实世界不符，你就不能简单地用外部材料来训练模型。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=46050177">Hacker News 读者</a></p>
+<p>3、</p>
+<p>现在是2025年，AI 像病毒一样迅速传播。哪怕你还在坚持手工制作精品，人们也很容易将你的辛勤劳动误认为是毫无灵魂、缺乏灵感的机器垃圾。</p>
+<p>-- <a href="https://tonsky.me/blog/hiring-ai/">tonsky.me</a></p>
+<p>4、</p>
+<p>人生苦短，死亡来得如此轻易。如果我只是随波逐流，转眼间就会变成老翁。</p>
+<p>-- <a href="https://kottke.org/25/11/my-pace">小畑五郎</a>，一个日本 Youtuber</p>
+<p>5、</p>
+<p>如果一件东西100%实用，它就一定是漂亮的，比如没有丑陋的钉子或丑陋的锤子。但是，有很多丑陋的汽车，因为汽车并不是所有部分都实用。</p>
+<p>-- <a href="https://www.bedelstein.com/post/mcmaster-carr">Dan Gelbart</a>，一位工业发明家</p>
+<h2 id="往年回顾">往年回顾</h2>
+<p><a href="https://www.ruanyifeng.com/blog/2024/12/weekly-issue-328.html">AI 模型不是一门好生意</a>（#328）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2023/11/weekly-issue-278.html">棘手的 AI 版权</a>（#278）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2022/10/weekly-issue-228.html">人类和人生的意义</a>（#228）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2021/10/weekly-issue-178.html">家庭太阳能发电的春天</a>（#178）</p>
+<p>（完）</p>
+]]></description>
+      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-375.md</link>
+      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-375.md</guid>
+      <pubDate>Mon, 01 Dec 2025 01:17:24 -0000</pubDate>
+    </item>
     <item>
       <title>科技爱好者周刊（第 374 期）：6GHz 的问题</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -1045,231 +1242,6 @@
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-370.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-370.md</guid>
       <pubDate>Mon, 27 Oct 2025 01:07:57 -0000</pubDate>
-    </item>
-    <item>
-      <title>科技爱好者周刊（第 369 期）：Tim 与罗永浩的对谈</title>
-      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
-<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/7832">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
-<h2 id="封面图">封面图</h2>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101607.webp" /></p>
-<p>泡泡玛特在浙江嵊山岛的废弃渔村，举办了一个该品牌的公共艺术展，主角公仔的性格定位是“在荒野中寻找自我”。（<a href="https://socialbeta.com/campaign/26146">via</a>）</p>
-<h2 id="tim-与罗永浩的对谈">Tim 与罗永浩的对谈</h2>
-<p>10月10日，罗永浩的新节目《罗永浩的十字路口》，邀请了嘉宾“影视飓风”创始人 Tim（<a href="https://baike.baidu.com/item/%E6%BD%98%E5%A4%A9%E9%B8%BF/59401766">潘天鸿</a>）。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101502.webp" /></p>
-<p>他们进行了<a href="https://www.bilibili.com/video/BV1B5xkzPEhx/">一场对谈</a>，Tim 从头部 UP 主的角度，分享自己对视频行业怎么看，有意思的内容非常多。</p>
-<p>他们谈了三个小时，谈得非常深入尽兴，整理成文字稿有六、七万字。想看全文的同学，自己网上找，也可以下载字幕文件或者 AI 转录。</p>
-<p>下面是我的摘录，尽量囊括那些我觉得有意思的点。下面主要是 Tim 的叙述，也包括一些罗永浩的话，出于篇幅和阅读流畅性的考虑，就不一一注明了。</p>
-<h3 id="一短视频的流行导致了表达极端化">一、短视频的流行，导致了表达极端化</h3>
-<p>1、</p>
-<p>短视频的传播能力比长视频强很多。</p>
-<p>人的本性就是追求更高的信息密度，更容易接受短视频。但是只追求传播能力，最终就是博眼球，表达就会极端化。</p>
-<p>这两年我们最明显的一个变化就是，做视频封面也只能跟着极端起来，不然别人根本不会点进来。那我直接输给营销号了，我都不用看里面内容，我就输给他了。那怎么办？</p>
-<p>标题党这件事儿变得史无前例的重要。</p>
-<p>2、</p>
-<p>这两年视频的响度比十年前响了超级多。所有人都在偷偷把音量往上拉一点，音乐再往上拉一点。所以导致所有视频平台大家都在比谁叫得更响，这个响度比10年前要响了很多很多。</p>
-<p>所有的平台都在疯狂的竞争电平（音量），因为你第一秒就要让他感受刺激。</p>
-<p>3、</p>
-<p>现在手机有 HDR，就是屏幕变亮的这个功能，本来是为了看视频体验更好，但现在所有的广告都开始用，HDR 会特别亮。</p>
-<p>有一瞬间你会感觉你刷到朋友圈里面某个东西会特别亮，或者看到一个平台上面特别亮。这是因为厂商开始用 HDR 广告抢你的注意力。</p>
-<p>我的手机亮度本来是合理的，偶尔刷到一个 HDR 片子的时候，闪光让眼睛就特别疼。但是这件事可能会导致大家都使劲 HDR，该上不该上都上，最后就全是刺激眼睛的东西。</p>
-<p>4、</p>
-<p>还有一个例子，摇一摇跳转广告，这我觉得超级逆天。张衡都不用发明地动仪了，我在桌上放8台手机，哪边打开广告了，哪边地震。</p>
-<p>这就是网络的表达极端化的结果。因为博眼球的一方最终会胜利，所以各方都想尽一切办法赶上。</p>
-<h3 id="二互联网的平民化和碎片化">二、互联网的平民化和碎片化</h3>
-<p>5、</p>
-<p>在五年以前，我认为互联网在乎精英式表达，就是特别漂亮的置景，以及你讲话要侃侃而谈，给人一种精英高高在上的感觉。</p>
-<p>但是这两年，我明显感觉做内容你必须要接地气的平视化表达。就比如说，拍 vlog 我就是直接拿着相机拍我自己，大家已经开始拒绝精英式高密度表达，接受平视的表达。</p>
-<p>6、</p>
-<p>互联网起来之后，越来越产生了大量的碎片化内容。以前是有碎片化，也有大部头的内容，但现在读者越来越满足于那种即时的兴奋。</p>
-<p>现在超短的视频火到大家可以一晚上刷6个小时，我也有一点不安的感觉。年轻一代如果只看这些，会不会真的变笨？</p>
-<p>7、</p>
-<p>全社会包括精英阶层，都已经沦陷于那些不停地追求短时间的刺激和爽感的短视频了。</p>
-<p>不只是中国，全世界都是这样。以前咱们老说那些霸道总裁的爽文爽剧，好像就是在中国没受过文化的阶层特别喜欢。后来发现杀到全球都管用，中国做这些内容的杀到全球都管用。美国人太喜欢了。</p>
-<h3 id="三如何对待商单">三、如何对待商单</h3>
-<p>8、</p>
-<p>我们的核心收入是给汽车厂商、游戏厂商、手机厂商拍样片，这个钱我们都很乐意赚，这个是最赚钱最稳定的。</p>
-<p>9、</p>
-<p>汽车手机数码这种自媒体，你会发现超级难站着挣钱。因为你是观点的输出者，观众是来看你评测、看你来讲这个东西好不好的。但其实厂商只想你讲好的。</p>
-<p>当然你一开始可以保持中立，优缺点都讲，直到有一天厂商拿一笔大的预算来找你。</p>
-<p>我们跟厂商有合作。我们评测本身确实不收钱，但是现在有的时候是厂商雇我们去拍样片，跟我们拍样片时，他会问你能不能出个评测，这个时候会稍微有点难办，这是我们最近遇到的一个难题。评测必须好的坏的都说，但是你只要说一句坏的，厂商就不愿意给钱了。</p>
-<p>但是因为我们体量已经相对比较大了，影响力大，我们可以讲坏的。但就是你会有点意识到，他其实并不是真的想找你拍那个样片，他就想要你这个评测，他想要你这个曝光。这就拧巴了，其实我们已经算是比较好的，我们尽可能羊毛不出在羊身上。</p>
-<p>10、</p>
-<p>如果你的内容做得足够精彩和有足够多看的人，你完全拒绝这类合作也是可以的。但现在绝大多数自媒体做不到。</p>
-<p>怎么抵得住这个诱惑吗？你做得足够精彩，足够多的人看了，对面的价码也在不断加。他说我给你一千万，你接不接嘛？</p>
-<h3 id="四自媒体如何赚钱">四、自媒体如何赚钱</h3>
-<p>11、</p>
-<p>中国的 SaaS 太难做了，SaaS 就是订阅制，这个东西特别难做。</p>
-<p>我们这个时代，就是用户不愿意为内容付费，你必须得想办法。</p>
-<p>12、</p>
-<p>内容行业的最大问题是没有规模效应，你为别人出一期内容，收一笔钱，就算赚得多，它是没有规模效应的。每一期都要给厂商想个新的创意，这是个巨累无比的事情。</p>
-<p>怎么样实现规模效应呢？我们最终的答案是衣服。我现在身上穿的衣服就是我们的自有品牌。</p>
-<p>我们的T恤今年能卖到几十万到上百万件，已经超过大部分服装厂商了。今年单款可能到20万件，但是我们品类很多，所以这是我们今年跑出来的一条路。</p>
-<p>我发现电商可以靠规模效应，因为电商最重要是获客，这个我们有优势。</p>
-<p>13、</p>
-<p>美国的野兽先生做巧克力，我去了他那边看了以后，意识到真的可以奏效。他们巧克力能卖到人民币百亿一年。</p>
-<p>现在去线下任何一个国外的超市，你只要走进去，你会看到他的巧克力摆在最前面。我吃过，挺好吃的。</p>
-<p>重点是在于他的获客成本会比别家低很多很多，而且溢价也多一点。</p>
-<p>14、</p>
-<p>我们发现做硬件特别难。我们做过硬件，得出的结论就是，只要有电源的东西都得很小心。</p>
-<p>只要有电源，你会发现品控、东西复杂度就迅速上去了，然后利润也保证不了。</p>
-<h3 id="五tim-的目标">五、Tim 的目标</h3>
-<p>15、</p>
-<p>我们确实没有融资。很多人给我们开过很高的价码，有特别大的平台给我们特别高的价码，就是一亿往上很多的这种。</p>
-<p>我觉得，内容公司的扩张，钱没有太大帮助。你拿了钱，就是相当于把你同事一起卖了，然后换了钱。</p>
-<p>你可以用钱收购一堆团队，但是内容不是越多人就越好。最终你只是一个提款机，给投资人打款，帮他接商务推广而已。</p>
-<p>16、</p>
-<p>我把长视频和短视频当作 X 轴，把专业观众和大众观众当作 Y 轴，这样就有四个象限。我的目标是每个象限都有一个对应的账号，把这四个象限全部都吃透。</p>
-<p>17、</p>
-<p>我们现在的利润状况挺好的，现金流还是非常正的，整体运营都还是挺稳定的，也不用融资。</p>
-<p>我其实想探索自媒体的上限，就是我有点想探索这个点。假如我做服装我能做到多大？假如我做商业型的内容或者广告，我们最高能报到多少？</p>
-<p>全世界最成功的视频作者就是野兽先生，他们一年的收入是百亿人民币级别。</p>
-<h3 id="六视频的选题和指标">六、视频的选题和指标</h3>
-<p>18、</p>
-<p>赚钱就赚钱，播放量就播放量，这两个必须分开。你要做爆款内容，就别想做商单，你要做商单，就不要经常去想做爆款内容。这两个结合的确实有，但是很少能够做到，容易两头不讨好，内耗折磨自己。</p>
-<p>19、</p>
-<p>我觉得，自媒体最大的修炼的点是大众情绪感知。你必须能感知大众的情绪，才可以获得增长，这很难。</p>
-<p>我们的选题，必须是有高受众的内容。</p>
-<p>20、</p>
-<p>短视频的5秒留存最重要，只要一个人看不到5秒，这个作品就废了。</p>
-<p>长视频最重要的是三个指标。（1）CTR（基础点入率）就是看到你封面的人，有多少会进来；（2）AVD（平均用户观看时长）就是观众平均能停留多久；（3）平均播放百分比，就是观众平均看到百分之几走了。这几个指标能够维持住的话，内容就是好的。</p>
-<p>21、</p>
-<p>我一直有个理念，就是短视频已经证明比长视频的受众更大，然后有什么东西能比短视频更好呢？我认为就是把短视频拼成长视频的短视频合集。</p>
-<p>比如说，车祸视频有很多人喜欢看，但是车祸集锦视频看的人更多，因为它不需要有滑动的这个操作。</p>
-<p>人是越来越懒的。短视频需要划动，但整理好的短视频合集就不需要划。每个话题都是你感兴趣的，那当然是更优质的一个存在，所以这个内容形态是更领先的。</p>
-<p>短视频拼成一个长视频，你预测到观众会对下一个短视频感兴趣，所以你把它拼起来，变成一个长视频。以前长视频是花很长时间讲一件事，现在长视频是不断转场给你讲八件事。</p>
-<h3 id="七ai-的冲击">七、AI 的冲击</h3>
-<p>22、</p>
-<p>AI 这玩意儿，你会渐渐发现一个很恐怖的事情，就是你的努力，以前的努力，十年的努力，其实在 AI 面前配不上，你变得没有价值，你的努力变得没有价值。</p>
-<p>AI 打破了一个最核心的点，就是努力有回报，现在没有回报了。它是全知全能的，你的学习能力都比不过它的模型进化的速度。</p>
-<p>我觉得大家现在还坚持说，我手做的比 AI 做的好，那和以前老妈说洗衣机洗的没有手洗的干净，不是一样的吗？那不是笨蛋吗？</p>
-<p>23、</p>
-<p>AI 大面积的落地，最多就是两年里面的事情。</p>
-<p>我们的工作流里，AI 会先替代的岗位是调研和制图，制图就是做视频封面，已经不怎么需要人了。自动化拍摄目前还有点距离，但也不是很远，AI 生成电商图那些也很成熟了。</p>
-<p>AI 剪辑也可以，剪了十年的非常优秀剪辑师，AI 绝对能在两年内替代掉。</p>
-<p>我觉得，内部推动学习使用 AI，强调是没用的，主要靠员工的个人意识，不懂的人就是不懂，懂的人就已经疯狂在用了。我们公司5%的人已经懂了，还有95%的人没有意识到这个恐怖性。</p>
-<p>24、</p>
-<p>我主要使用 ChatGPT，用于文稿的校验和真实性核查，AI 的真实性核查比人好多了。生成类 AI 我不怎么用。</p>
-<p>我在疯狂学 AI，一直在看，哪怕没有亲自上手，我也是全行业的 AI 都在了解。</p>
-<p>25、</p>
-<p>我们这行的从业人员在 AI 时代最核心的竞争力，还是真实性的记录，就是讲故事的能力，AI 长时间连续性还是差一点。</p>
-<p>创意是绝对不安全的，这是我的观点。不在于你的创意好不好，而在于有这么多人现在加入了这个战场，你怎么确定你的创意是安全的？</p>
-<p>我觉得最安全的是人生经历，AI 对你的信息收集是不完整的，这个时候你就具有独立性。</p>
-<h2 id="科技动态">科技动态</h2>
-<p>1、<a href="https://www.news.cn/world/20251014/e98fef69c6c04aa092eba5956f898a57/c.html">中欧北极集装箱航线</a>的首艘货船，成功到达英国港口。</p>
-<p>该船满载了4000个标准集装箱，9月23日离开宁波港，穿过北极圈，10月13日到达英国，历时20天。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101411.webp" /></p>
-<p>这相比中欧班列的25天、苏伊士运河航线的40天、好望角航线的50天，有明显的时间优势。</p>
-<p>这条航线的缺点是北极圈沿途缺乏补给和支持，如果遇到海冰，还需要破冰船开路。</p>
-<p>2、上周诞生了第一位<a href="https://decrypt.co/344099/nobel-laureate-story-crypto-best-proof-money-virtual">把加密货币写入小说</a>的诺贝尔文学奖得主。</p>
-<p>今年的诺贝尔文学奖授予了匈牙利小说家拉斯洛·克拉斯纳霍凯（László Krasznahorkai）。他在得奖前几周，发表了一篇短篇小说。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101401.webp" /></p>
-<p>小说中，两个士兵在战壕中遭到了导弹袭击，他们受伤后躺在地上等死，开始了对于金钱的沉思。</p>
-<p>一个士兵说：“长期以来，货币都是虚拟的，如今最好的证明就是加密货币。”接着，他发表了对于加密货币的见解，认为加密货币将“越来越融入全球社会”，并称区块链是“近代历史上最伟大的发明之一”。</p>
-<p>3、<a href="https://www.thestack.technology/jeep-software-update-bricks-vehicles-leaves-owners-stranded/">美国汽车制造商 Jeep</a> 本周推送了一个软件更新包，导致自家汽车“变砖”。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101409.webp" /></p>
-<p>许多车主看到更新弹框后，不假思索点击了 Yes。更新完，看上去一切正常。</p>
-<p>离谱的是，开出一公里左右，汽车就会无法动弹。很多用户就这样突然停在高速公路上，十分危险，不得不叫拖车。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101408.webp" /></p>
-<p>用户感到匪夷所思，Jeep 公司难道不做测试，直接就全量推送吗？这件事反映了美国传统汽车业的糟糕现状，也说明汽车软件很麻烦，开发和更新都必须十分谨慎。</p>
-<h2 id="文章">文章</h2>
-<p>1、<a href="https://ramsayleung.github.io/zh/post/2025/%E5%85%B3%E4%BA%8E%E7%A0%B4%E8%A7%A3%E5%8A%A0%E6%8B%BF%E5%A4%A7%E8%88%AA%E7%A9%BA%E9%A3%9E%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%99%90%E5%88%B6%E7%9A%84%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B/">破解加拿大航空的飞机上网</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101006.webp" /></p>
-<p>作者连接飞机 Wifi 后，出现一个登录页。作者发现，网关这时不限制 DNS 请求，可以发出到外网，通过这一点进行破解。（<a href="https://github.com/ruanyf/weekly/issues/7869">@ramsayleung</a> 投稿）</p>
-<p>2、<a href="https://blog.daviddodda.com/how-i-almost-got-hacked-by-a-job-interview">面试官引诱我安装恶意软件</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101603.webp" /></p>
-<p>一个非常恶劣的案例，大家引以为戒。作者面试一家区块链公司，面试官给他一个代码库，让他运行后找出问题，结果里面藏着恶意代码，会窃取运行者的数字钱包。</p>
-<p>3、<a href="https://bun.com/blog/bun-v1.3">Bun 1.3 新功能介绍</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101104.webp" /></p>
-<p>Bun 号称是最好用的 JavaScript 运行时，本周发了1.3版，本文介绍新功能，确实比 node.js 好用。</p>
-<p>4、<a href="https://sconts.com/post/nginx-native-acme-support/">NGINX ACME 模块申请 HTTPS 证书</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101007.webp" /></p>
-<p>一篇操作教程，写得比较清楚，怎么让 nginx 服务器自己去申请 HTTPS 证书。（<a href="https://github.com/ruanyf/weekly/issues/7629">@hzbd</a> 投稿）</p>
-<p>5、<a href="https://www.alexedwards.net/blog/preventing-csrf-in-go">如何根据 HTTP 标头防止 CSRF 攻击</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101604.webp" /></p>
-<p>最新版本的 Go 标准库，内置了防止 CSRF 攻击的功能。它完全根据 HTTP 请求的 Sec-Fetch-Site 标头来判断，本文解释原理。</p>
-<p>6、<a href="https://www.xda-developers.com/i-installed-proxmox-on-a-decade-old-laptop/">我在一台10年前的笔记本安装 Proxmox</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202506/bg2025063002.webp" /></p>
-<p>本文推荐过时的老电脑安装 Proxmox 系统。它是流行的虚拟化平台，可以方便地运行各种各样的虚拟机和容器。</p>
-<h2 id="工具">工具</h2>
-<p>1、<a href="https://github.com/psalias2006/gpu-hot">GPU Hot</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101003.webp" /></p>
-<p>一个本地程序，Web 界面的 Nvidia GPU 实时面板。</p>
-<p>2、<a href="https://github.com/NICUP14/DebDroid">DebDroid</a></p>
-<p>在安卓手机上安装 Debian 系统，提供一个沙盒 Linux 环境。</p>
-<p>3、<a href="https://github.com/MaskerPRC/tab-hive">Tab Hive</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101211.webp" /></p>
-<p>多个窗格同时打开网页，省去切换标签页的麻烦，点击可以全屏查看单个网站。有网页版，也有桌面版。（<a href="https://github.com/ruanyf/weekly/issues/7886">@MaskerPRC</a> 投稿）</p>
-<p>4、<a href="https://github.com/bkhtmltopdf/bkhtmltopdf">bkhtmltopdf</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101302.webp" /></p>
-<p>一个 Jar 包，将 HTML 代码渲染为 PDF 文件，基于 Chromium 的渲染引擎 Blink，是 wkhtmltopdf 的替代品。（<a href="https://github.com/ruanyf/weekly/issues/7889">@hstyi</a> 投稿）</p>
-<p>5、<a href="https://www.online-collage-maker.com/editor">在线拼贴制作器</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101005.webp" /></p>
-<p>在浏览器里完成各种图片拼贴。（<a href="https://github.com/ruanyf/weekly/issues/7865">@LiveMediaTools</a> 投稿）</p>
-<p>6、<a href="https://github.com/idootop/mi-note-export">小米笔记备份助手</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101303.webp" /></p>
-<p>一键备份小米笔记（包含图片、录音等文件），并可以将其变为个人博客网站。（<a href="https://github.com/ruanyf/weekly/issues/7893">@idootop</a> 投稿）</p>
-<p>7、<a href="https://github.com/kunkundi/crossdesk">CrossDesk</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101304.webp" /></p>
-<p>一个轻量级的跨平台远程桌面软件。（<a href="https://github.com/ruanyf/weekly/issues/7894">@kunkundi</a> 投稿）</p>
-<p>8、<a href="https://github.com/baby7/agile-tiles">灵卡面板</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101501.webp" /></p>
-<p>Windows 桌面应用，隐藏到侧边的面板，可以自定义卡片布局。（<a href="https://github.com/ruanyf/weekly/issues/7911">@baby7</a> 投稿）</p>
-<p>9、<a href="https://gitassistant.pages.dev">Git Assistant</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101601.webp" /></p>
-<p>IntelliJ IDEA 插件，基于 Git 日志提供可视化分析，并可以使用 AI 生成提交信息。（<a href="https://github.com/ruanyf/weekly/issues/7914">@coolbeevip</a> 投稿）</p>
-<p>10、<a href="https://github.com/mmulet/term.everything">term.everything</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101602.webp" /></p>
-<p>一个神奇的实验软件，在 Linux 终端里面运行任何 GUI 程序，也就是字符界面运行图形界面。（<a href="https://github.com/ruanyf/weekly/issues/7920">@kero990</a> 投稿）</p>
-<h2 id="ai-相关">AI 相关</h2>
-<p>1、<a href="https://github.com/karpathy/nanochat">nanochat</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101406.webp" /></p>
-<p>著名 AI 科学家安德烈·卡帕斯（Andrej Karpathy）本周推出的 AI 教学模型，演示 ChatGPT 的原理。你只需花费100美元租用 GPU 训练，就能自己训练出一个类似于 GPT-2 生成能力的可用模型。</p>
-<p>2、<a href="https://github.com/ThinkInAIXYZ/deepchat">DeepChat</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101301.webp" /></p>
-<p>基于 Vue 的桌面 AI 客户端，支持各类主流 AI 模型。（<a href="http://github.com/ruanyf/weekly/issues/7888">@zerob13</a> 投稿）</p>
-<p>3、<a href="https://github.com/kid1412621/SummaryExpressive">Summary Expressive</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101103.webp" /></p>
-<p>一个开源的安卓应用，使用 AI 总结视频（YouTube、BiliBili）、文章、图像和文档。（<a href="https://github.com/ruanyf/weekly/issues/7880">@kid1412621</a> 投稿）</p>
-<h2 id="资源">资源</h2>
-<p>1、<a href="https://github.com/luzhenhua/NCE-Flow">NCE Flow</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101101.webp" /></p>
-<p>《新概念英语》点读，可以选择任一句开始播放，也可以自动朗读。（<a href="https://github.com/ruanyf/weekly/issues/7875">@luzhenhua</a> 投稿）</p>
-<p>2、<a href="https://github.com/zyronon/TypeWords">Type Words</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025101503.webp" /></p>
-<p>开源的 Web 应用，通过打字学习英语单词，加深记忆，有发音和例句，内置多个常用词库，可以<a href="https://2study.top/">线上试用</a>。（<a href="https://github.com/ruanyf/weekly/issues/7913">@zyronon</a> 投稿）</p>
-<h2 id="图片">图片</h2>
-<p>1、<a href="https://www.instagram.com/p/DImLi02SlZR/">山区火车站</a></p>
-<p>日本有一个山区火车站，既没有入口，也没有出口，没有任何道路（包括山路）可以到达这个车站。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202504/bg2025042103.webp" /></p>
-<p>它的唯一作用，就是让乘客下车呼吸一下新鲜空气，观赏山区的美景。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202504/bg2025042104.webp" /></p>
-<p>离开这个地方的唯一方法，就是等待下一班火车。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202504/bg2025042105.webp" /></p>
-<h2 id="言论">言论</h2>
-<p>1、</p>
-<p>2000年前后的互联网泡沫，留下了持久的基础设施，寿命长达数十年，可以重复使用，成为后来的宽带、云计算和现代网络的支柱。</p>
-<p>今天的 AI 泡沫完全不同，大部分投资都流向了专有的垂直集成系统 ，而不是开放的通用基础设施。那些极其昂贵的 GPU，使用寿命只有1-3年， 很快就会过时，并在高强度使用下磨损。</p>
-<p>这些芯片也不是通用计算引擎，它们是专为训练和运行 AI 模型而设计的 ，并针对少数几家大客户的特定架构和软件堆栈进行了定制。它们共同构成了一个封闭的生态系统，难以重新利用。</p>
-<p>-- <a href="https://blog.robbowley.net/2025/10/12/after-the-ai-boom-what-might-we-be-left-with/">《AI 热潮过后：我们还剩下什么？》</a></p>
-<p>2、</p>
-<p>毫不夸张地说，当我在 StackOverflow 上查看一年前关于 Next.js 的答案时，它通常已经过时了。而当我在 StackOverflow 上查看六年前关于 Django 的答案时，它几乎总是还能用。</p>
-<p>-- <a href="https://jmduke.com/posts/post/django/">《Django forever》</a></p>
-<p>3、</p>
-<p>AI 是人类历史上第一个拥有无限耐心的事物。无论何时何地，你始终可以跟它交谈，它会立刻回应，绝不会评判你或对你苛刻，倾听多久都不会感到沮丧。耐心从此变得廉价。</p>
-<p>-- <a href="https://www.seangoedecke.com/patience-too-cheap-to-meter/">《耐心是大模型的杀手锏》</a></p>
-<p>4、</p>
-<p>MOOC（慕课）炒作的顶峰是2013年～2015年，然后持续下降。各大平台多年前就停止使用“MOOC”这个词来描述课程了。随着 MOOC 网站纷纷破产，这个词一直在逐渐消亡。</p>
-<p>-- <a href="https://www.classcentral.com/report/coursera-preview-mode-paywall/">《MOOC 真正消亡之日》</a></p>
-<h2 id="往年回顾">往年回顾</h2>
-<p><a href="https://www.ruanyifeng.com/blog/2024/10/weekly-issue-322.html">内容行业的内幕</a>（#322）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2023/09/weekly-issue-272.html">Unity 的安装费，游戏业的缩影</a>（#272）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2022/09/weekly-issue-222.html">四十年编程感想</a>（#222）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2021/08/weekly-issue-172.html">我们会死于气候灾难吗？</a>（#172）</p>
-<p>（完）</p>
-]]></description>
-      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-369.md</link>
-      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-369.md</guid>
-      <pubDate>Mon, 20 Oct 2025 01:07:44 -0000</pubDate>
     </item>
   </channel>
 </rss>
