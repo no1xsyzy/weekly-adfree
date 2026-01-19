@@ -6,7 +6,188 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2026</copyright>
-    <lastBuildDate>Mon, 12 Jan 2026 01:13:49 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 01:15:17 -0000</lastBuildDate>
+    <item>
+      <title>科技爱好者周刊（第 381 期）：中国 AI 大模型领导者在想什么</title>
+      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/8591">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
+<h2 id="封面图">封面图</h2>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011024.webp" /></p>
+<p>刚刚运营的北京通州站位于地下，为了充分利用自然光，屋顶采用了透光的膜结构，上方还有一个风帆形状的保护架。（<a href="https://news.cnr.cn/native/gd/kx/20251226/t20251226_527472908.shtml">via</a>）</p>
+<h3 id="1智谱的起源">1、智谱的起源</h3>
+<p>2019年，我们开始研究，能不能让机器像人一样思考，当时就从清华成果转化，在学校的大力支持下，成立了智谱这么一家公司，我现在是智谱的首席科学家。</p>
+<p>那个时候，我们实验室在图神经网络、知识图谱方面，在国际上做的还行，但我们坚定地把这两个方向暂停了，暂时不做了，所有的人都转向做大模型。</p>
+<h3 id="2泛化和-scaling">2、泛化和 Scaling</h3>
+<p>我们希望机器有泛化能力，我教它一点点，它就能举一反三。就和人一样，教小孩子的时候，我们总希望教三个问题，他就会第四个、第十个，甚至连没教过的也会。怎么让机器拥有这种能力？</p>
+<p>目前为止，我们主要通过 Scaling（规模化）达到这个目标，在不同层面提高泛化能力。</p>
+<p>（1）我们最早期用 Transformer 训练模型，把所有的知识记忆下来。训练数据越多、算力越多，模型的记忆能力就越强，也就是说，它把世界上所有的知识都背下来了，并且有一定的泛化能力，可以抽象，可以做简单的推理。比如，你问中国的首都是什么？这时候模型不需要推理，它只是从知识库里拿出来。</p>
+<p>（2）第二层是把模型进行对齐和推理，让它有更复杂的推理能力，以及理解我们的意图。我们需要持续的 Scaling SFT（Supervised Fine-Tuning，监督式微调），甚至强化学习。通过人类大量的数据反馈，不断 Scaling 反馈数据，可以让模型变得更聪明、更准确。</p>
+<p>（3）今年是 RLVR（强化学习与可验证奖励）爆发年。这里的“可验证”是什么意思？比如，数学可以验证、编程可能可以验证，但更广泛地，网页好不好看，就不大好验证了，它需要人来判断。</p>
+<p>这就是为什么这个事情很难做，我们原来只能通过人类反馈数据来做，但人类反馈的数据里面噪音也非常多，而且场景也非常单一。</p>
+<p>如果我们有一个可验证的环境，这时候我们可以让机器自己去探索、自己去发现这个反馈数据，自己来成长。这是我们面临的一个挑战。</p>
+<h3 id="3从-chat-到做事新范式的开始">3、从 Chat 到做事：新范式的开始</h3>
+<p>大家可能会问，是不是不停地训练模型，智能就越来越强？其实也不是。</p>
+<p>2025年初，DeepSeek 出来，真是横空出世。大家原来在学术界、产业界都没有料到 DeepSeek 会突然出来，而且性能确实很强，一下子让很多人感到很震撼。</p>
+<p>我们当时就想一个问题，也许在 DeepSeek 这种范式下，Chat（对话）差不多算是解决了。也就是说我们做得再好，在 Chat 上可能做到最后跟 DeepSeek 差不多。或许我们可以再个性化一点，变成有情感的 Chat，或者再复杂一点，但是总的来讲，这个范式可能基本到头了，剩下更多的反而是工程和技术的问题。</p>
+<p>那么，AI 下一步朝哪个方向发展？我们当时的想法是，让每个人能够用 AI 做一件事情，这可能是下一个范式，原来是 Chat，现在是真的做事了。</p>
+<p>当时有两个方向，一个是编程，做 Coding、做 Agent；另一个是用 AI 来帮我们做研究，类似于 DeepResearch，甚至写一个复杂的研究报告。我们现在的选择是把 Coding、Agentic、Reasoning 这三个能力整合在一起。</p>
+<h3 id="4千问是怎么开源的">4、千问是怎么开源的</h3>
+<p>千问的开源模型比较多，很多人问这是为什么？</p>
+<p>这起源于2023年8月3日，我们开源了一个小模型，它是我们内部用来做实验的 1.8B 模型。我们做预训练，资源毕竟有限，你做实验的话不能通通用 7B 的模型来验，就拿 1.8B 的来验。</p>
+<p>当时我的师弟跟我说，我们要把这个模型开源出去。我非常不理解，我说这个模型在2023年几乎是一个不可用的状态，为什么要开源出去？他跟我说 7B 很消耗机器资源，很多硕士生和博士生没有机器资源做实验，如果 1.8B 开源出去的话，很多同学就有机会毕业了，这是很好的初心。</p>
+<p>干着干着，手机厂商跑来跟我们说 7B 太大，1.8B 太小，能不能给我们干一个 3B 或 4B 的，这个容易，没有什么很难的事情。一路干下来，型号类型越来越多，跟服务大家多多少少有一点关系。</p>
+<h3 id="5我们的追求是多模态模型">5、我们的追求是多模态模型</h3>
+<p>我们自己内心追求的，不仅仅是服务开发者或者服务科研人员，而是能不能做一个 Multimodal Foundation Agent（多模态基础智能体）。</p>
+<p>我特别相信这件事情，2023年的时候大模型是一个大家都不要的东西，多多少少有那么几分大炼钢铁的成分，多模态是我们从那时就一直想做的事情。</p>
+<p>为什么呢？我们觉得如果你想做一个智能的东西，天然的应该是 Multimodal（多模态），当然带有不同看法，各个学者都有一些看法，多模态能不能驱动智力的问题。我懒得吵这个架，人有眼睛和耳朵可以做更多的事情，我更多的考虑是 Foundation（基础智能体）有更多的生产力，能不能更好地帮助人类，毫无疑问我们应该做视觉，我们应该做语音。</p>
+<p>更进一步，我们要做什么东西呢？Omni 的模型（全模态模型）不仅仅是能够理解文本、视觉、音频，我们可能还让它生成文本、音频。今天我们已经做到了，但是我们还没有做到把视觉生成结合在一起。如果做到三进三出，我觉得至少是我个人喜欢的东西。</p>
+<h3 id="6to-c-和-to-b-的差异">6、To C 和 To B 的差异</h3>
+<p>我的一个观察是 To C（消费者模型）和 To B（商业用户模型）发生了明显的分化。</p>
+<p>大家一想到 AI，就会想到两个东西，一个是 ChatGPT，另外一个是 Claude Code。它们就是做 To C 和 To B 的典范。</p>
+<p>对于 To C 来说，大部分人大部分时候不需要用到那么强的智能，可能今天的 ChatGPT 和去年相比，研究分析的能力变强了，但是大部分人大部分时候感受不到，更多把它当作搜索引擎的加强版，很多时候也不知道该怎么去用，才能把它的智能激发出来。</p>
+<p>但对于 To B 来说，很明显的一点是智能越高，代表生产力越高，也就越值钱。所以，大部分时候很多人就是愿意用最强的模型。一个模型是200美元/月，第二强或者差一些的模型是50美元/月、20美元/月，我们今天发现很多美国的人愿意花溢价用最好的模型。可能他的年薪是20万美元，每天要做10个任务，一个非常强的模型可能10个任务中八九个做对了，差的是做对五六个，问题是你不知道这五六个是哪五六个的情况下，需要花额外精力去监控这个事情。</p>
+<p>所以，在 To B 这个市场上，强的模型和稍微弱点的模型，分化会越来越明显。</p>
+<h3 id="7垂直整合和模型应用分层">7、垂直整合和模型应用分层</h3>
+<p>我的第二点观察是，基础模型和上层应用，到底是垂直整合，还是模型应用分层，也开始出现了分化。</p>
+<p>比如，ChatGPT Agent 是垂直整合，Claude（或者 Gemini）+ Manus 是模型应用分层。过去大家认为，当你有垂直整合能力肯定做得更好，但起码今天来看并不一定。</p>
+<p>首先，模型层和应用层需要的能力还是挺不一样的，尤其是对于 To B 或者生产力这样的场景来说，可能更大的预训练还是一个非常关键的事情，这个事情对于产品公司确实很难做。但是想要把这么一个特别好的模型用好，或者让这样的模型有溢出能力，也需要在应用侧或者环境这一侧做很多相应的事情。</p>
+<p>我们发现，其实在 To C 的应用上，垂直整合还是成立的，无论 ChatGPT 还是豆包，模型和产品是非常强耦合、紧密迭代的。但是对于 To B 来说，这个趋势似乎是相反的，模型在变得越来越强、越来越好，但同样会有很多应用层的东西将好的模型用在不同的生产力环节。</p>
+<h3 id="8需要更大的-context">8、需要更大的 Context</h3>
+<p>怎么让今天的大模型或者 AI 能够给用户提供更多价值？我们发现，很多时候需要的是额外的 Context（上下文）。</p>
+<p>比如，我问 AI 今天该去吃什么？其实，你今天问 ChatGPT 和你去年问或者明天问，答案应该会差很多。这个事情想要做好，不是说你需要更大的模型、更强的预训练、更强的强化学习，而是可能需要更多额外的输入，或者叫 Context。如果它知道我今天特别冷，我需要吃些暖和的，我在今天这样的范围活动，可能我老婆在另一个地方吃什么等各种各样的事情，它的回答就会更好。</p>
+<p>回答这样的问题，更多需要的是额外的输入。我和老婆聊了很多天，我们可以把聊天记录转发给元宝，把额外的输入用好，会给用户带来很多额外的价值。这是我们对 To C 的思考。</p>
+<h2 id="四圆桌对话中国-ai-的未来">四、圆桌对话：中国 AI 的未来</h2>
+<p>李广密（主持人）：我想问大家一个问题，在三年和五年以后，全球最领先的 AI 公司是中国团队的概率有多大？我们从今天的跟随者变成未来的引领者，这个过程到底还有哪些需要去做好？</p>
+<h3 id="9姚顺雨的回答">9、姚顺雨的回答</h3>
+<p>我觉得概率还挺高的，我挺乐观的。目前看起来，任何一个事情一旦被发现，在中国就能够很快的复现，在很多局部做得更好，包括之前制造业、电动车这样的例子已经不断地发生。</p>
+<p>我觉得可能有几个比较关键的点。</p>
+<p>（1）中国的光刻机到底能不能突破，如果最终算力变成了瓶颈，我们能不能解决算力问题。</p>
+<p>（2）能不能有更成熟的 To B 市场。今天我们看到很多做生产力或者做 To B 的模型和应用，还是会诞生在美国，因为支付意愿更强，文化更好。今天在国内做这个事情很难，所以大家都会选择出海或者国际化。这和算力是比较大的客观因素。</p>
+<p>（3）更重要的是主观因素，我觉得中国想要突破新的范式或者做非常冒险事情的人可能还不够多。也就是说，有没有更多有创业精神或者冒险精神的人，真的想要去做前沿探索或者范式突破的事情。我们到底能不能引领新的范式，这可能是今天中国唯一要解决的问题，因为其他所有做的事情，无论是商业，还是产业设计，还是做工程，我们某种程度上已经比美国做得更好。</p>
+<h3 id="10林俊旸的回答">10、林俊旸的回答</h3>
+<p>这个问题是个危险的问题，理论上这个场合是不可以泼冷水的，但如果从概率上来说，我可能想说一下我感受到的中国和美国的差异。比如说，美国的 Compute（算力）可能整体比我们大1-2个数量级，但我看到不管是 OpenAI 还是什么，他们大量的算力投入到的是下一代研究当中去，我们今天相对来说捉襟见肘，光交付可能就已经占据了我们绝大部分的算力，这会是一个比较大的差异。</p>
+<p>这可能是历史上就有的问题，创新是发生在有钱的人手里，还是穷人手里。穷人不是没机会，我们觉得这些富哥真的很浪费，他们训练了这么多东西，可能训练了很多也没什么用。但今天穷的话，比如今天所谓的算法 Infra（基础设施）联合优化的事情，如果你真的很富，就没有什么动力去做这个事情。</p>
+<p>未来可能还有一个点，如果从软硬结合的角度，我们下一代的模型和芯片的软硬结合，是不是真的有可能做出来？</p>
+<p>2021年，我在做大模型，阿里做芯片的同学，找我说能不能预测一下，三年之后这个模型是不是 Transformer，是不是多模态。为什么是三年呢？他说我们需要三年时间才能流片。我当时的回答是三年之后在不在阿里巴巴，我都不知道！但我今天还在阿里巴巴，它果然还是 Transformer，果然还是多模态，我非常懊悔为什么当时没有催他去做。当时我们的交流非常鸡同鸭讲，他给我讲了一大堆东西，我完全听不懂，我给他讲，他也不知道我们在做什么，就错过了这个机会。这个机会有没有可能再来一次？我们虽然是一群穷人，是不是穷则思变，创新的机会会不会发生在这里？</p>
+<p>今天我们教育在变好，我属于90年代靠前一些的，顺雨属于90年代靠后一点的，我们团队里面有很多00后，我感觉大家的冒险精神变得越来越强。美国人天然有非常强烈的冒险精神，一个很典型的例子是当时电动车刚出来，甚至开车会意外身亡的情况下，依然会有很多富豪们都愿意去做这个事情，但在中国，我相信富豪们是不会去干这个事情的，大家会做一些很安全的事情。今天大家的冒险精神开始变得更好，中国的营商环境也在变得更好的情况下，我觉得是有可能带来一些创新的。概率没那么大，但真的有可能。</p>
+<p>三年到五年后，最领先的 AI 公司是一家中国公司的概率，我觉得是20%吧，20%已经非常乐观了，因为真的有很多历史积淀的原因在这里。</p>
+<h3 id="11唐杰的回答">11、唐杰的回答</h3>
+<p>首先我觉得确实要承认，无论是做研究，尤其是企业界的 AI Lab，和美国是有差距的，这是第一点。</p>
+<p>我们做了一些开源，可能有些人觉得很兴奋，觉得中国的大模型好像已经超过美国了。其实可能真正的情况是我们的差距也许还在拉大，因为美国那边的大模型更多的还在闭源，我们是在开源上面玩了让自己感到高兴的，我们的差距并没有像我们想象的那样好像在缩小。有些地方我们可能做的还不错，我们还要承认自己面临的一些挑战和差距。</p>
+<p>但我觉得，现在慢慢变得越来越好。</p>
+<p>（1）90后、00后这一代，远远好过之前。一群聪明人真的敢做特别冒险的事，我觉得现在是有的，00后这一代，包括90后这一代是有的，包括俊旸、Kimi、顺雨都非常愿意冒风险来做这样的事情。</p>
+<p>（2）咱们的环境可能更好一些，无论是国家的环境，比如说大企业和小企业之间的竞争，创业企业之间的问题，包括我们的营商环境。</p>
+<p>（3）回到我们每个人自己身上，就是我们能不能坚持。我们能不能愿意在一条路上敢做、敢冒险，而且环境还不错。如果我们笨笨的坚持，也许走到最后的就是我们。</p>
+<h2 id="科技动态">科技动态</h2>
+<p>1、<a href="http://news.cnhubei.com/content/2026-01/11/content_19769355.html">载人飞艇</a></p>
+<p>1月9日，湖北制造的载人飞艇祥云 AS700，完成了荆门至武汉往返航程。这是全国首次载人飞艇商业飞行，可能也是目前世界唯一运作的商业载人飞艇。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011101.webp" /></p>
+<p>飞艇总长50米，最大载客量9人。由于载客量太小，不可能用作常规的交通工具，只能做一些观光飞行。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011102.webp" /></p>
+<p>2、<a href="https://variationsonnormal.com/2011/04/28/finger-nose-stylus-for-touchscreens/">鼻子触控</a></p>
+<p>一个英国发明家想在洗澡时使用手机，结果因为手指带水无法触控。</p>
+<p>他灵机一动，发明了戴在鼻子上的触控笔。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011014.webp" /></p>
+<p>它的结构很简单，就是一个石膏纤维的鼻管，里面插着一支触控笔。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011015.webp" /></p>
+<p>这个发明看上去很有用，可以解放双手，也适合戴手套的情况和残疾人士。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011016.webp" /></p>
+<p>3、<a href="https://saigoneer.com/vietnam-news/28652-vienam-bans-unskippable-ads,-requires-skip-button-to-appear-after-5-seconds">越南禁止不可跳过的广告</a></p>
+<p>越南近日颁布第342号法令，禁止不可跳过的广告，将于2026年2月15日起生效。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011013.webp" /></p>
+<p>法令规定，视频广告的等待时间必须在5秒以内，否则观众可以选择跳过。而且，关闭方式应该是清晰简便的，禁止使用迷惑用户的虚假或模糊符号。</p>
+<p>这明显针对 Youtube 等视频平台的片头广告。这让人第一次感到，越南互联网值得叫好。</p>
+<h2 id="文章">文章</h2>
+<p>1、<a href="https://x.com/MarcJSchmidt/status/2009688028931875156">我所有的新代码都将闭源</a>（英文）</p>
+<p>作者是一个开源软件贡献者。他感到，自己的开源代码都被大模型抓取，导致仓库访问者减少，进而也没有收入，所以他后面的代码都要闭源。</p>
+<p>2、<a href="https://marending.dev/notes/visual-testing/">网站的视觉回归测试</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011201.webp" /></p>
+<p>本文介绍如何使用 Playwright，对网页进行视觉测试，看看哪里出现变动。</p>
+<p>3、<a href="https://dev.to/polliog/i-replaced-redis-with-postgresql-and-its-faster-4942">我用 PostgreSQL 代替 Redis</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011202.webp" /></p>
+<p>Redis 是最常用的缓存工具，作者介绍它的痛点在哪里，怎么用 PostgreSQL 数据库替代。</p>
+<p>4、<a href="https://aartaka.me/easy-fixes.html">如何用 CSS 修复水平滚动条</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011008.webp" /></p>
+<p>一篇 CSS 初级教程，介绍四个简单的技巧，让网页不会出现水平滚动条（即避免溢出）。</p>
+<p>5、<a href="https://www.cloudamqp.com/blog/message-queues-exaplined-with-analogies.html">消息队列原理简介</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011403.webp" /></p>
+<p>本文是初级教程，介绍消息队列（mesage queue）的概念和作用。</p>
+<p>6、<a href="https://noheger.at/blog/2026/01/11/the-struggle-of-resizing-windows-on-macos-tahoe/">macOS Tahoe 的圆角问题</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011207.webp" /></p>
+<p>macOS 最新版本 Tahoe 加大了圆角半径，造成调整窗口大小时经常失败。作者认为，从操作角度看，圆角面积最好超过端头的50%。</p>
+<h2 id="工具">工具</h2>
+<p>1、<a href="https://github.com/dbreunig/whenwords">whenwords</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011105.webp" /></p>
+<p>本周，GitHub 出现了一个奇特的库，没有一行代码，只有一个接口文档。</p>
+<p>用户需要自己将接口文档输入大模型，并指定编程语言，生成相应的库代码再使用。</p>
+<p>以后会不会都是这样，软件库没有代码，只有接口描述？</p>
+<p>2、<a href="https://github.com/dahlia/hongdown">Hongdown</a></p>
+<p>Markdown 文本的格式美化器，根据预设的规则，修改 Markdown 文本的风格样式。</p>
+<p>3、<a href="https://github.com/unhaya/vam-seek">VAM Seek</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011204.webp" /></p>
+<p>一个开源的网页视频播放器，会自动显示多个时点的视频缩略图，便于快速点击跳转。</p>
+<p>4、<a href="https://github.com/kalcaddle/kodbox">kodbox</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011205.webp" /></p>
+<p>开源的网页文件管理器。</p>
+<p>5、<a href="https://github.com/hoochanlon/Free-NTFS-for-Mac">Nigate</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011103.webp" /></p>
+<p>让 Mac 电脑读写 NTFS 磁盘的开源工具。（<a href="https://github.com/ruanyf/weekly/issues/8672">@hoochanlon</a> 投稿）</p>
+<p>6、<a href="https://github.com/huanglizhuo/Flappy.Lid">Flippy Lid</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011206.webp" /></p>
+<p>一个实验性软件，把 macbook 铰链开合作为输入，可以玩 Flippy Lid，也可以作为密码解锁。（<a href="https://github.com/ruanyf/weekly/issues/8683">@huanglizhuo</a> 投稿）</p>
+<p>7、<a href="https://github.com/CodyTseng/jumble">Jumble</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011301.webp" /></p>
+<p>nostr 网络的开源 Web 客户端，专门用来浏览以 feed 内容为主的 relay 节点。（<a href="https://github.com/ruanyf/weekly/issues/8692">@CodyTseng</a> 投稿）</p>
+<p>8、<a href="https://github.com/wangrongding/clash-kit">Clash Kit</a></p>
+<p>一个基于 Node.js 的 Clash 命令行管理工具。（<a href="https://github.com/ruanyf/weekly/issues/8703">@wangrongding</a> 投稿）</p>
+<p>9、<a href="https://github.com/maoruibin/SlideNote">SlideNote</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011501.webp" /></p>
+<p>开源的 Chrome 浏览器插件，在侧边栏做笔记，支持跨设备自动同步。（<a href="https://github.com/ruanyf/weekly/issues/8715">@maoruibin</a> 投稿）</p>
+<p>10、<a href="https://github.com/likaia/nginxpulse">NginxPulse</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011502.webp" /></p>
+<p>开源的 Nginx 访问日志分析与可视化面板，提供实时统计、PV 过滤、IP 归属地、客户端解析。 （<a href="https://github.com/ruanyf/weekly/issues/8696">@likaia</a> 投稿）</p>
+<h2 id="资源">资源</h2>
+<p>1、<a href="https://www.evermsg.com/zh">EverMsg</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026010902.webp" /></p>
+<p>这个网站可以查看 BTC 区块链的 OP_RETURN 字段，该字段记录了一段文本，只要发上区块链就永远不会删除和修改。（<a href="https://www.evermsg.com/zh">@blueslmj</a> 投稿）</p>
+<p>2、<a href="https://github.com/SeanWong17/Mammalia-tree">DeepTime Mammalia</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011208.webp" /></p>
+<p>沉浸式 3D/2D 网页可视化项目，交互式哺乳纲演化树，探索哺乳动物2亿年的演化。（<a href="https://github.com/ruanyf/weekly/issues/8688">@SeanWong17</a> 投稿）</p>
+<h2 id="图片">图片</h2>
+<p>1、<a href="https://eugene.kaspersky.com/2022/04/26/how-to-repair-the-underside-of-a-ships-hull-still-in-the-river-in-50%CB%9Ac-yakutsk/">冰下修船</a></p>
+<p>俄罗斯有一个船厂，位于北极圈附近。每年冬天，船坞都要结冰。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011001.webp" /></p>
+<p>为了冬天也能修船，船厂会把冰层凿掉一块，露出船底。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011002.webp" /></p>
+<p>冰层通常不会那么厚，不会结冰到船底，必须分层凿开。工人先用电锯，锯开最上层的冰层，然后等待下面的河水结冰，再用电锯向下切割，反复多次，直到船底结冰。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011003.webp" /></p>
+<p>有时，需要凿开一条很长的冰槽。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011004.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011005.webp" /></p>
+<p>下图是工人进入冰层下方，检修船底，由于冰下工作条件恶劣且有危险性，工人的工资都较高。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011006.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026011007.webp" /></p>
+<h2 id="言论">言论</h2>
+<p>1</p>
+<p>我对自己的代码被大模型吸收感觉如何？</p>
+<p>我很高兴这样，因为我把这看作是我一生努力的延续：民主化代码、系统和知识。</p>
+<p>大模型让我们更快编写更好、更高效的软件，并让小团队有机会与大公司竞争。这和 90 年代开源软件所做的事情一样。然而，这项技术太重要，绝不能只掌握在少数公司手中。</p>
+<p>-- <a href="https://antirez.com/news/158">Antirez</a>，Redis 项目的创始人</p>
+<p>2、</p>
+<p>即使你不相信 AI，但跳过它对你和你的职业都没有帮助。</p>
+<p>以前，你熬夜编程，看到项目顺利运行时，心潮翻滚。现在，如果你能有效利用 AI，可以建造更多更好的项目。乐趣依旧存在，未受影响。</p>
+<p>-- <a href="https://antirez.com/news/158">Antirez</a>，Redis 项目的创始人</p>
+<p>3、</p>
+<p>如果你不写作，你就是一个有限状态机。写作时，你拥有图灵机的非凡力量。</p>
+<p>-- <a href="http://muratbuffalo.blogspot.com/2026/01/the-agentic-self-parallels-between-ai.html">曼纽尔·布卢姆</a>（Manuel Blum），图灵奖得主</p>
+<p>4、</p>
+<p>人们陷入困境有三个主要原因：（1）行动力不足，（2）行动方向错误，（3）等待天上掉馅饼（幻想问题会缓解而拒绝采取行动）。</p>
+<p>-- <a href="https://www.experimental-history.com/p/so-you-wanna-de-bog-yourself">《当你想摆脱困境》</a></p>
+]]></description>
+      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-381.md</link>
+      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-381.md</guid>
+      <pubDate>Mon, 19 Jan 2026 01:15:17 -0000</pubDate>
+    </item>
     <item>
       <title>科技爱好者周刊（第 380 期）：为什么人们拥抱“不对称收益”</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -1033,203 +1214,6 @@
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-376.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-376.md</guid>
       <pubDate>Mon, 08 Dec 2025 01:06:27 -0000</pubDate>
-    </item>
-    <item>
-      <title>科技爱好者周刊（第 375 期）：一扇门的 Bug</title>
-      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
-<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/8003">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
-<h2 id="封面图">封面图</h2>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112516.webp" /></p>
-<p>苏州当代美术馆即将开放，十个展馆的屋顶连成一片，象征着江南民居的瓦片屋檐。（<a href="https://www.archiposition.com/items/29335ee2bf">via</a>）</p>
-<h2 id="一扇门的-bug">一扇门的 Bug</h2>
-<p>最离奇的软件 Bug，你听说过哪些？</p>
-<p><a href="https://mastodon.gamedev.place/@TomF/115589875974658415">下面这个</a>是我本周看到，绝对可以排进史上前十名。</p>
-<p>我把它译出来，跟大家分享，以下是第一人称的叙述：</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112518.webp" /></p>
-<p>2013年，我在 Valve 公司从事游戏开发。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112201.webp" /></p>
-<p>当时，第一代虚拟现实 VR 头盔 Oculus DK1 刚刚发售。公司决定为这款头盔移植游戏，让我来移植，搞清楚 VR 的游戏环境。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112202.webp" /></p>
-<p>我就选了2004年我们公司开发的《半条命2》来移植。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112203.webp" /></p>
-<p>移植了一个片段后，我们发现实际效果很好，就决定移植整个游戏，并且发布了发售预告。</p>
-<p>移植过程中，我试玩了很多片段，但没有从头到尾玩一次。</p>
-<p>等到移植完成，就在发售前夕，我决定完整玩一次，如果发现有什么问题，就写在发布说明里面。</p>
-<p>我心想，应该不会有大问题，毕竟这个游戏已经发售10年了，无数人玩过，反响良好。</p>
-<p>但是，万万没有想到，我居然遇到了一个重大 Bug。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112205.webp" /></p>
-<p>游戏的开头部分，玩家来到火车站，一个守卫让你进去一个房间。很奇怪，房间的门是关着的，你进不去，就……卡住了。</p>
-<p>你没死，就是哪儿也去不了。前面的门关着，你进不去，也退不出去，身后的大门已经关上了。你被困在一个走廊里，旁边有个守卫，无路可走。真是奇怪。</p>
-<p>游戏的剧情是，你必须进入这个房间，才能往下玩。你又去找守卫，他指着锁着的门，仅此而已，你被困住了。</p>
-<p>我上网查了视频，心想自己是不是记错了。没错，门应该是自动打开的，你走进去就行了，但是……现在这扇门却关了！</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112206.webp" /></p>
-<p>我心想完蛋了，这游戏没法发布了。</p>
-<p>我赶忙联系了其他人，包括一些十年前参与这个游戏开发的人。他们测试后，都说确实有问题，而且在非 VR 模式下也一样，门也是关着的，所以肯定不是我移植弄坏的。但没人知道原因，因为代码根本没改过。</p>
-<p>有人甚至追溯到游戏的原始源代码，编译了最初发售时的游戏版本——结果发现，那个原始版本也坏了，门也是关着的。</p>
-<p>这怎么可能？大家慌了，这意味着这个 Bug 十年前就存在，但当年编译为什么没出现，十年后重新编译就出现了，这到底什么回事？</p>
-<p>在花了大约一天时间，重新使用当年的调试和回放工具之后，一位同事弄明白了哪里出了问题。</p>
-<p>如果仔细观看游戏，你会发现这扇门有一瞬间，其实自动解锁并打开了，但是房间里还有第二个守卫站在门后。这个守卫站得离门非常近，门打开的一瞬间会轻轻碰到守卫的脚趾，然后又弹回，重新关上，并自动上锁。由于游戏没有考虑怎么处理这种情况并重新打开门，所以游戏就卡住，你无法前进了。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112207.webp" /></p>
-<p>一旦弄明白怎么回事，解决方法就很简单。我们把守卫往后移大约一毫米，门就很顺利自动打开了。</p>
-<p>现在我们可以发布游戏了。但是，问题还是没有彻底解决。为什么这个游戏当初没有出现这个 Bug，原版里守卫的脚趾也挡着门啊？为什么十年后重新编译，Bug 就出现呢？或者说，Bug 其实一直都在，为什么十年前这扇门没有关上呢？</p>
-<p>于是，一场旷日持久的漏洞搜寻就此展开。</p>
-<p>我们终于发现了答案，就是老生常谈的浮点运算。</p>
-<p>《半条命2》于2004年发布，当时编译用的是较旧的8087或 x87 数学指令集。这些指令集的浮点数精度五花八门，有些是32位，有些是64位，有些是80位，不同的代码段使用了不同的精度。</p>
-<p>十年后的2013年，SSE 指令集已经成为所有 x86 CPU 的标准配置，编译器默认使用 SSE，它有明确的精度，根据代码需求使用32位或64位，是可以预测的。</p>
-<p>真相就是，十年前编译用了32位精度，现在用了64位，小数点的差异造成了几毫米的误差，让守卫的脚趾碰到了门。</p>
-<p>好了，现在玩家终于可以走进大门，继续玩下去了。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112208.webp" /></p>
-<h2 id="科技动态">科技动态</h2>
-<p>1、<a href="https://www.theguardian.com/education/2025/nov/20/university-of-staffordshire-course-taught-in-large-part-by-ai-artificial-intelligence">AI 授课</a></p>
-<p>英国斯塔福德郡大学的学生，向媒体投诉。</p>
-<p>他们上课时，老师的幻灯片（下图）完全是用 AI 生成的，甚至老师也不讲课，而是播放 AI 生成的授课语音。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112102.webp" /></p>
-<p>学生非常气愤，因为学校规定，学生如果提交 AI 生成的作业，会被开除，但是老师却在用 AI 讲课。</p>
-<p>这一方面反映了英国的大学教育质量日趋下降，另一方面也让人反思。如果大学广泛使用 AI 授课，或者老师的教学质量还不如 AI，那么学生还需要上大学吗，为什么不直接向 AI 学习？</p>
-<p>2、<a href="https://mossandfog.com/toyotas-crab-like-wheelchair-that-walks/">螃蟹椅</a></p>
-<p>丰田公司推出一款概念产品，像螃蟹一样行走的椅子。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025111217.webp" /></p>
-<p>它的四条腿可以活动，由电机控制铰链。人坐在上面，它会自己行走，还能爬台阶。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025111219.webp" /></p>
-<p>它还能趴下站起。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025111220.webp" /></p>
-<p>我预计，国内很快会推出类似产品，可以驮着人行走的机器人，市场很大。</p>
-<p>3、<a href="https://www.ianvisits.co.uk/articles/you-can-see-a-working-quantum-computer-in-ibms-london-office-85464/">量子计算机</a></p>
-<p>IBM 公司的伦敦办公室，正在展示一台量子计算机。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112503.webp" /></p>
-<p>这台机器建造于2019年，已经过时了。但是你不能走进办公室看，只能在门口远远地看。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112506.webp" /></p>
-<p>这东西据说是计算机的未来，可以快速破解现有的加密算法。不过，它工作时需要低温冷却，接近绝对零度，所以不可能在家里使用。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112504.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112505.webp" /></p>
-<p>4、<a href="https://www.abc.net.au/news/2025-11-23/bureau-of-meteorology-new-website-cost-blowout-to-96-million/106042202">政府网站的费用</a></p>
-<p>制作一个政府网站要花多少钱？答案是9650万澳元（约4.5亿人民币）。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112514.webp" /></p>
-<p>澳大利亚气象局的新网站，设计费用410万澳元，开发费用7980万澳元，发布和安全测试费用1260万澳元，共计9650万澳元。</p>
-<p>由于远远超过了410万澳元的预算，这件事被媒体披露后，引起了公众哗然。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112515.webp" /></p>
-<p>更可笑的是，新网站发布后，农民反映找不到降雨数据，不得不又换回旧版网站。</p>
-<p>政府的计算机系统，如何保证高效好用，又不浪费纳税人的钱，真是一个难题。</p>
-<p>大家可以去参观这个4.5亿人民币开发的网站 <a href="https://www.bom.gov.au/">bom.gov.au</a>。另外，<a href="https://reg.bom.gov.au/">旧版网站</a>目前也依然在线。</p>
-<h2 id="文章">文章</h2>
-<p>1、<a href="https://mehmetgoekce.substack.com/p/b-trees-why-every-database-uses-them">为什么每个数据库都使用 B 树</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112401.webp" /></p>
-<p>一篇科普文章，介绍为什么 B 树比二叉树更适合数据库。</p>
-<p>2、<a href="https://simonwillison.net/2025/Nov/24/claude-opus/">为什么评估新模型越来越难</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112508.webp" /></p>
-<p>著名程序员西蒙·威利森感叹，他已经评估不了最新的大模型了。因为各种模型的能力越来越强，简单的题目都会解，必须用很高深的题目去测。</p>
-<p>3、<a href="https://www.xda-developers.com/your-unpowered-ssd-is-slowly-losing-your-data/">固态硬盘不能长时间断电</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112509.webp" /></p>
-<p>本文指出，消费级的固态硬盘（SSD）在断电状态下，超过一年就会丢失数据。</p>
-<p>目前，最好的固态硬盘也不能断电超过十年。所以，如果长时间不用，数据不要保存在固态硬盘。</p>
-<p>4、<a href="https://lemire.me/blog/2025/11/23/how-good-are-chinese-cpus-benchmarking-the-loongson-3a6000/">中国龙芯的基准测试</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112522.webp" /></p>
-<p>一个老外程序员测试龙芯 3A6000 处理器，跟2021年发布的英特尔 Xeon Gold 6338 对比。</p>
-<p>5、<a href="https://susam.net/url-in-c.html">C 代码里面的 URL</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112706.webp" /></p>
-<p>上面这段 C 语言代码里面有一个 URL，居然是可以编译的，这是为什么？</p>
-<p>6、<a href="https://karboosx.net/post/4eZxhBon/building-a-simple-search-engine-that-actually-works">如何做一个简单的搜索引擎</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112602.webp" /></p>
-<p>本文介绍搜索引擎的原理，如何自己动手写一个简单的搜索引擎。</p>
-<p>7、<a href="https://blog.briancmoses.com/2025/11/diy-nas-2026-edition.html">DIY NAS：2026 年版</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112708.webp" /></p>
-<p>作者详细介绍自己组装 NAS 的配置，可以参考。</p>
-<h2 id="工具">工具</h2>
-<p>1、<a href="https://github.com/frankovo/dns-benchmark-tool">DNS Benchmark Tool</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112101.webp" /></p>
-<p>测试 DNS 服务器的命令行工具，可以测试本地到 DNS 服务器的延迟，以及 DNS 解析获取域名的 IP 地址的耗时。</p>
-<p>2、<a href="https://github.com/iDescriptor/iDescriptor">iDescriptor</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112405.webp" /></p>
-<p>一个跨平台的桌面应用，让电脑连接管理 iPhone。</p>
-<p>3、<a href="https://svgjs.dev">SVG.js</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112406.webp" /></p>
-<p>一个网页 JS 库，用来生成和操作 SVG 图片动画。</p>
-<p>4、<a href="https://github.com/pythops/impala">impala</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112303.webp" /></p>
-<p>Linux 平台管理 WiFi 的一个终端应用。</p>
-<p>5、<a href="https://github.com/YYsuni/2025-blog-public">2025-blog-public</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112106.webp" /></p>
-<p>一个基于 Next.js 的静态博客网站模版。（<a href="https://github.com/ruanyf/weekly/issues/8262">@YYsuni</a> 投稿）</p>
-<p>6、<a href="https://github.com/Master-Hash/pdfpc-ts">pdfpc-ts</a></p>
-<p>一个开源网站，用于幻灯片演示，特点是同时带有演示者视图，用于提词，类似于桌面应用 <a href="https://github.com/pdfpc/pdfpc">pdfpc</a>。（<a href="https://github.com/ruanyf/weekly/issues/8264">@Master-Hash</a> 投稿）</p>
-<p>7、<a href="https://github.com/snsogbl/clip-save">剪存</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112302.webp" /></p>
-<p>开源的桌面软件，用来保存剪贴板历史，支持 Windows/Mac。（<a href="https://github.com/ruanyf/weekly/issues/8269">@snsogbl</a> 投稿）</p>
-<p>8、<a href="https://github.com/hoa-js/hoa">Hoa</a></p>
-<p>一个受 Koa 和 Hono 启发的 JS 服务器框架，适用于 Cloudflare Worker。（<a href="https://github.com/ruanyf/weekly/issues/8289">@nswbmw</a> 投稿）</p>
-<p>9、<a href="https://github.com/aiprojecthub/nodebbs">NodeBBS</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112701.webp" /></p>
-<p>开源的基于 JS 语言的现代论坛系统。（<a href="https://github.com/ruanyf/weekly/issues/8294">@wengqianshan</a> 投稿）</p>
-<p>10、<a href="https://github.com/franklioxygen/MyTube">MyTube</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112704.webp" /></p>
-<p>一个需要自搭建的 Web 服务，用来下载与管理 Youtube/Bilibili 两大平台的视频。（<a href="https://github.com/ruanyf/weekly/issues/8300">@franklioxygen</a> 投稿）</p>
-<h2 id="资源">资源</h2>
-<p>1、<a href="https://www.luochang.ink/dive-into-langgraph/quickstart/">LangGraph 1.0 完全指南</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112501.webp" /></p>
-<p>LangGraph 是一个开源 Agent 开发框架，本教程是基于 Jupyter Notebook 的可交互教程，介绍这个框架的具体实践。（<a href="https://github.com/ruanyf/weekly/issues/8283">@luochang212</a> 投稿）</p>
-<p>2、<a href="https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/README_zh.md">Nano Banana Pro 提示词大全</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112702.webp" /></p>
-<p>这个仓库收集了500+的 Nano Banana Pro 模型提示词，每一个提示词都有图片，超过一半提示词带有参数。（<a href="https://github.com/ruanyf/weekly/issues/8297">@DophinL</a> 投稿）</p>
-<p>3、<a href="https://www.ocrarena.ai">OCR Arena</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112507.webp" /></p>
-<p>这个网站是一个 AI 竞技场，比较不同模型的 OCR（光学识别）能力，目前排名第一的是 Gemini 3。</p>
-<h2 id="图片">图片</h2>
-<p>1、<a href="https://www.core77.com/posts/138995/Historically-Accurate-Airport-Dioramas-by-AV-Pro-Designs">飞机场模型</a></p>
-<p>一位退休的美国飞行员，喜欢制作飞机场模型。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112510.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112511.webp" /></p>
-<p>他的网站上有大量的作品照片，大家可以点进去看。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112709.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112710.webp" /></p>
-<p>下面是他制作的孟买机场模型，甚至还能显示夜景。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112512.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202511/bg2025112513.webp" /></p>
-<h2 id="文摘">文摘</h2>
-<p>1、<a href="https://thoughtcatalog.com/ryan-holiday/2017/01/to-everyone-who-asks-for-just-a-little-of-your-time/">对每一个要求“一点点”时间的人说不</a></p>
-<p>经常有人对我说：</p>
-<blockquote>
-<ul>
-<li>我想跟你简单聊聊天？</li>
-<li>下周我们一起喝咖啡吧？</li>
-<li>我们一起来讨论一下吧？</li>
-</ul>
-</blockquote>
-<p>我的回答永远是：不，不，不。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082212.webp" /></p>
-<p>我确实可以满足你的要求，但我就是不能做。</p>
-<p>即使它们可能是重要的机会，即使只需要花费我15分钟，即使这是其他人都会同意去做的事情，我也不想做。</p>
-<p>我必须限制一天中被别人占用的时间，否则我自己就没有剩下的时间了。</p>
-<p>即使我让你占用我的时间以后，还会剩下一些时间，我也可能因此失去能量和专注力，再来利用好这些剩下的时间。</p>
-<p>时间是我们最不可替代的资产——我们无法购买更多的时间。我们一秒钟都无法收回失去的时间。我们只能希望尽可能少地浪费。</p>
-<p>但是现实生活中，不知何故，很多人将时间视为所有资源中最可再生的，用掉就用掉了，反正还有别的时间。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202408/bg2024082213.webp" /></p>
-<p>所以，如果你问我是否可以聊天或聚一聚，答案是不。我希望你能够明白，我这样回答的理由。</p>
-<h2 id="言论">言论</h2>
-<p>1、</p>
-<p>编程是我遇到过的最能抑制傲慢的良药。如果一个人很傲慢，你就让他去编程。</p>
-<p>-- <a href="https://tratt.net/laurie/blog/2020/automatic_syntax_error_recovery.html">tratt.net</a></p>
-<p>2、</p>
-<p>训练一个观点与众不同的模型，会越来越困难。因为如果你的观点与真实数据和真实世界不符，你就不能简单地用外部材料来训练模型。</p>
-<p>-- <a href="https://news.ycombinator.com/item?id=46050177">Hacker News 读者</a></p>
-<p>3、</p>
-<p>现在是2025年，AI 像病毒一样迅速传播。哪怕你还在坚持手工制作精品，人们也很容易将你的辛勤劳动误认为是毫无灵魂、缺乏灵感的机器垃圾。</p>
-<p>-- <a href="https://tonsky.me/blog/hiring-ai/">tonsky.me</a></p>
-<p>4、</p>
-<p>人生苦短，死亡来得如此轻易。如果我只是随波逐流，转眼间就会变成老翁。</p>
-<p>-- <a href="https://kottke.org/25/11/my-pace">小畑五郎</a>，一个日本 Youtuber</p>
-<p>5、</p>
-<p>如果一件东西100%实用，它就一定是漂亮的，比如没有丑陋的钉子或丑陋的锤子。但是，有很多丑陋的汽车，因为汽车并不是所有部分都实用。</p>
-<p>-- <a href="https://www.bedelstein.com/post/mcmaster-carr">Dan Gelbart</a>，一位工业发明家</p>
-<h2 id="往年回顾">往年回顾</h2>
-<p><a href="https://www.ruanyifeng.com/blog/2024/12/weekly-issue-328.html">AI 模型不是一门好生意</a>（#328）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2023/11/weekly-issue-278.html">棘手的 AI 版权</a>（#278）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2022/10/weekly-issue-228.html">人类和人生的意义</a>（#228）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2021/10/weekly-issue-178.html">家庭太阳能发电的春天</a>（#178）</p>
-<p>（完）</p>
-]]></description>
-      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-375.md</link>
-      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-375.md</guid>
-      <pubDate>Mon, 01 Dec 2025 01:17:24 -0000</pubDate>
     </item>
   </channel>
 </rss>
