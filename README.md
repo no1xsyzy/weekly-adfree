@@ -42,4 +42,4 @@ poetry run python process.py proc-all
 ## 计划
 - [x] 性能优化
 - [x] RSS
-- [ ] GitHub Actions 自动化
+- [x] GitHub Actions 自动化
