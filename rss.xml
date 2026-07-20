@@ -6,7 +6,204 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2026</copyright>
-    <lastBuildDate>Mon, 13 Jul 2026 02:03:04 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 03:12:40 -0000</lastBuildDate>
+    <item>
+      <title>科技爱好者周刊（第 404 期）：你需要知道的 AI 内存知识</title>
+      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/10517">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
+<h2 id="封面图">封面图</h2>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071603.webp" /></p>
+<p>上海某商场正在举办的“海绵宝宝”展览。（<a href="https://m.thepaper.cn/newsDetail_forward_33450995">via</a>）</p>
+<h2 id="你需要知道的-ai-内存知识">你需要知道的 AI 内存知识</h2>
+<p>自己在家运行 AI 模型，可以选择两种硬件。</p>
+<p>一种是独立显卡，目前最顶级的消费级显卡是英伟达的 RTX 5090，带有 32GB 显存，售价3万元人民币左右。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071511.webp" /></p>
+<p>另一种是采用板载芯片组（CPU + 板载显卡 + 板载内存）的家用电脑，比如采用 AMD 公司 Strix Halo 芯片组（具体型号 Ryzen AI Max+ 395）的迷你电脑，自带 128GB 内存，售价2万元人民币左右。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071512.webp" /></p>
+<p>我问大家，哪种硬件更好？</p>
+<p>大部分人可能不假思索，就会选择独立显卡，毕竟独立显卡的算力远大于板载芯片组。</p>
+<p>根据我查到的资料，下面是两者的单精度32位浮点数算力（FP32）。</p>
+<blockquote>
+<ul>
+<li>独立显卡（RTX 5090）：<strong>104.8 TFLOPS</strong></li>
+<li>板载芯片组（AMD Ryzen AI Max+ 395）：<strong>14.8 TFLOPS</strong></li>
+</ul>
+</blockquote>
+<p>可以看到，独立显卡的算力，足足是板载芯片组的7倍。如果是更小位数的浮点数计算（比如 FP16 和 FP4），算力差距就更大了。</p>
+<p>但是，我告诉你，正确的答案其实是“不确定”。很多时候，板载芯片组的迷你 PC，才是更好的本地 AI 模型解决方案。</p>
+<p>原因很简单，大多数的 AI 模型（只要参数规模稍大），RTX 5090 根本运行不了。</p>
+<p>问题出在它的 32GB 显存实在太少了。一个 70B 参数的模型，如果每个参数使用4位精度，那么将所有参数的权重读入内存，大约需要 32.6GB 的内存，这超出了 RTX 5090 的显存大小，它根本跑不起来。</p>
+<p>相比之下，AMD 迷你电脑的板载内存有 128GB，载入模型毫无困难。<strong>板载芯片组的内存是显卡和 CPU 共用的，所以称为“统一内存”</strong>。它的好处是可以分出尽可能多的内存给单个处理器，所以能处理内存消耗量很大的 AI 模型。</p>
+<p>苹果的 M 系列芯片一直是这种“统一内存”架构，其他厂商现在也跟进了，AMD 的 Strix Halo、NVIDIA 的 DGX Spark、Intel 的 Core Ultra 和高通的 Snapdragon X 都采用这种架构。除了内存容量大，它的价格也比独立显卡低。</p>
+<p>读到这里，你可能会问，既然板载芯片组有这些优点，还有必要购买独立显卡吗？</p>
+<p>回答是，内存有两个指标，除了容量大小，还有一个指标“内存带宽”。<strong>板载芯片组的弱点，恰恰就是内存带宽。</strong></p>
+<p>所谓“内存带宽”，指的是内存向处理器传送数据的速度。虽然 RTX 5090 显存不多，但是内存带宽极大，达到了 1792GB/s，而 AMD 的内存带宽只有 256GB/s。</p>
+<p>AI 模型每生成一个 Token，需要处理器从内存中读取整个模型，进行计算。如果内存带宽是 256GB/s，那么 40GB 大小的模型，处理器一秒只能读取6次（256除以40），也就是说每秒只能生成6个 Token（这是理论值，实际可能还达不到）。这样的龟速，谁能忍受？</p>
+<p>即使是内存带宽最大的苹果 M3 Ultra 芯片，带宽为 819GB/s，每秒可以生成20个 Token，远不如 RTX 5090 的 1792GB/s。</p>
+<p>所以，内存大小和内存带宽，两者都是 AI 模型的瓶颈。这也是高带宽内存（HBM）价格涨疯了的原因。</p>
+<p>如果你选择板载芯片组的迷你电脑，就要做好心理准备，忍受非常慢的 Token 生成速度。</p>
+<p>好在为了节省计算量，出现了“混合专家模型（MoE）”这种架构，<strong>它计算 Token 时，不需要读取全部参数，只需要激活一部分参数即可</strong>。</p>
+<p>以 Qwen3-30B-A3B 模型为例，它包含 30B 个参数，但每次只激活 3B 个参数，因此每个 Token 需要读取的数据量不是 20GB，而是 2GB。那么在 AMD 迷你电脑上，每秒理论上可以生成100多个 Token，这样的速度就相当不错了。</p>
+<p>因此，如果你用“统一内存”模式的迷你电脑，就选用 MoE 模型吧。</p>
+<p>另外，迷你电脑还有一个很大的缺点，跟内存无关，而跟它的算力慢有关。</p>
+<p>我们知道，模型必须先处理用户的提示词，然后才能生成 Token。因为迷你电脑的算力慢，所以它处理提示词也很慢。</p>
+<p>根据<a href="https://vettedconsumer.com/unified-memory-explained-why-mini-pcs-can-run-70b-models-a-big-gpu-cant-and-where-they-slow-down/">实际测算</a>，AMD 迷你电脑使用 70B 的模型，提示词处理速度是每秒95个 Token。那么，用户提交4000个 token 的一个文档，大约需要40秒才能处理完，然后才能输出第一个 Token。</p>
+<p>可以想象，一旦用户往上下文窗口塞入更多的内容，单单是处理提示词，就会变成几分钟到几十分钟。</p>
+<p>总之，现阶段想在本地电脑运行大模型，无论是独立显卡还是板载芯片组，都有缺陷。你最多只能运行一些中等规模的 MoE 模型，而且提示词不能很长。</p>
+<h2 id="布尔变量如何起名">布尔变量如何起名</h2>
+<p>传说中，编程有两大难题，一个是缓存失效，另一个是变量起名。</p>
+<p>其中，布尔变量尤其难起名。怎样才能贴切地表达，这个变量是表示“真”（true）和“伪”（false）的布尔值呢？</p>
+<p>我最近读到一篇文章<a href="https://thatamazingprogrammer.com/posts/stop-naming-your-variables-flag-the-art-of-boolean-prefixes/">《布尔变量起名的艺术》</a>，提出使用四个前缀就能给布尔变量正确起名，我觉得很有启发。</p>
+<p>（1）<strong>is-</strong>：描述事物的状态，后面跟形容词，比如 isActive，isDeleted，isEmpty。</p>
+<p>（2）<strong>has-</strong>：描述事物的所有权或包含关系，后面跟名词，比如 hasAccess，hasChildren，hasValidationErrors。</p>
+<p>（3）<strong>can-</strong>：描述事物的能力或权限，比如 canEdit，canDelete，canRetry。</p>
+<p>（4）<strong>should-</strong>：描述事物的意图或逻辑，比如 shouldRetry，shouldCacheResponse。</p>
+<p>除了这四个前缀，起名还有另一条规则：永远不在布尔变量名中使用否定词。</p>
+<p>比如，不使用 isDisabled，而要用 <code>isEnabled = false</code>。</p>
+<h2 id="科技动态">科技动态</h2>
+<p>1、<a href="https://openai.com/zh-Hans-CN/supply/co-lab/work-louder/">OpenAI 键盘</a></p>
+<p>OpenAI 公司刚刚推出了一款便捷键盘，方便操作 AI 代理。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071601.webp" /></p>
+<p>键盘下方是一排快捷键，用于批准、否决、语音输入等操作。上方是一排 RGB 灯，表示 AI 代理目前的状态（思考、运行、等待、完成）。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071602.webp" /></p>
+<p>这东西售价230美元，看上去毫无新意，也未必比普通键盘方便。</p>
+<p>著名设计师乔纳森·艾维（Jony Ive）离开苹果公司后，现在负责 OpenAI 硬件设计。大家都盼望，他能拿出让人眼前一亮的智能硬件，但最先亮相的这个小键盘真是让人失望。</p>
+<p>2、<a href="https://www.cnsa.gov.cn/n6758823/n6758838/c10760422/content.html">小行星 2016HO3</a></p>
+<p>天问二号探测器于2025年5月发射，经过约400天的飞行，终于到达了目标——小行星 2016HO3，并传回了照片。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071501.webp" /></p>
+<p>这个小行星长度在20米左右，只比半个标准篮球场大一点，形状不规则，并有尖角，这表明它应该是碰撞后的碎片，而不是熔岩冷却形成的。</p>
+<p>天问二号拍摄照片时，距离这个小行星20公里，下一步将按照计划，采集这个小行星的岩石样本，送回地球。</p>
+<p>这件事的难点在于，天问二号翼展达到15米，只比这个小行星小一点，采样时可能会改变小行星的轨道。</p>
+<p>3、<a href="https://www.merelkarhof.nl/work/wind-knitting-factory">风力编织机</a></p>
+<p>一个荷兰设计师发明了家用的风力编织机，可以安装在阳台或楼顶。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202507/bg2025070405.webp" /></p>
+<p>风力带动叶片，在一个圆形的编织转盘上，将毛线编织成围巾。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202507/bg2025070406.webp" /></p>
+<p>风大的时候，编织速度非常快。它看上去是一个纯粹的机械装置，没有用到风力发电。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202507/bg2025070407.webp" /></p>
+<p>设计师的原意是向人们展示，在城市的楼宇里，也可以利用风力。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202507/bg2025070408.webp" /></p>
+<h2 id="文章">文章</h2>
+<p>1、<a href="https://silviasapora.github.io/blog/ml-interviews.html">机器学习博士求职指南</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071509.webp" /></p>
+<p>作者是一个美国的机器学习博士毕业生，已经进入了 DeepMind 工作，本文是求职过程回顾和总结。</p>
+<p>另有一篇<a href="https://alisawuffles.github.io/blog/job-search/">类似的文章</a>。</p>
+<p>2、<a href="https://hsm.tunnel53.net/article/dns-for-acme-challenges/">使用 DNS 通过 ACME 认证</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202509/bg2025092405.webp" /></p>
+<p>免费 HTTPS 证书需要通过 ACME 协议颁发。该协议要求认证域名所有权，一种认证方法就是使用 DNS，本文介绍这是怎么回事。</p>
+<p>3、<a href="https://www.andrewvittiglio.com/thoughts/go-killed-arenas">Go 语言的困境</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202512/bg2025120608.webp" /></p>
+<p>本文认为，Go 语言的处境尴尬，前途不看好。“随着慢语言变得更快，难语言变得更容易，Go 所占据的中间地带将不复存在。”</p>
+<p>4、<a href="https://lemire.me/blog/2025/01/11/javascript-hashing-speed-comparison-md5-versus-sha-256/">JavaScript 哈希算法速度比较</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202501/bg2025011918.webp" /></p>
+<p>MD5 和 SHA256 都是常用的哈希算法，本文探讨在 JavaScript 语言中，这两种哈希算法，谁的生成速度更快？答案可能跟你想的不一样。</p>
+<p>5、<a href="https://jvns.ca/blog/2024/10/31/ascii-control-characters/">终端控制字符一览表</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024110405.webp" /></p>
+<p>作者做了一张图（上图），列出命令行可以使用的控制符快捷键（比如快捷键 Ctrl-C 是终止当前命令），一共33个。</p>
+<p>6、<a href="https://longnow.org/ideas/richard-feynman-and-the-connection-machine/">理查德·费曼加入我的创业公司</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071605.webp" /></p>
+<p>作者回忆著名物理学家理查德·费曼，曾经加入他的创业公司，一起开发超级计算机，有很多有趣的内容。</p>
+<h2 id="工具">工具</h2>
+<p>1、<a href="https://github.com/darrylmorley/whatcable">WhatCable</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071510.webp" /></p>
+<p>macOS 的顶部菜单栏应用，可以显示当前插入电脑的 usb-c 电缆特征。</p>
+<p>2、<a href="https://amber-lang.com/">amber</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071401.webp" /></p>
+<p>一种简化 Bash 语法的新语言，它的脚本可以编译成 Bash。</p>
+<p>3、 <a href="https://antjs.org">Ant</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071402.webp" /></p>
+<p>一种轻量级的 JS/TS 语言运行时，好像是自己从头开始写的，二进制文件只有 8MB。</p>
+<p>4、<a href="https://github.com/ciddwd/overlay-translator">屏译</a>（Screen Translator）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071404.webp" /></p>
+<p>开源安卓应用，实时屏幕翻译工具。（<a href="https://github.com/ruanyf/weekly/issues/10701">@ciddwd</a> 投稿）</p>
+<p>5、<a href="https://turboocr.com/">TurboOCR</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071406.webp" /></p>
+<p>使用 GPU 进行高速文字识别（OCR）的工具。（<a href="https://github.com/ruanyf/weekly/issues/10706">@nataell95</a> 投稿）</p>
+<p>另有一个纯本地的文字识别库 <a href="https://github.com/arcships/light-ocr">light-ocr</a>，提供 JS/C++ API。（<a href="https://github.com/ruanyf/weekly/issues/10714">@eric8810</a> 投稿）</p>
+<p>6、<a href="https://visprex.com/">Visprex</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202411/bg2024111013.webp" /></p>
+<p>该网站可以上传 CSV 数据文件，自动生成可视化图形。</p>
+<p>7、<a href="https://www.loro.dev/">Loro</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023111321.webp" /></p>
+<p>一个开源的 CRDT 的同步算法库，用来多人实时同步状态。</p>
+<p>8、<a href="https://github.com/LoredCast">File Wizard</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202510/bg2025100202.webp" /></p>
+<p>一个自托管的、基于 Web 的常见文件格式转换服务，还支持图像 OCR、音频转文字。</p>
+<h2 id="ai-相关">AI 相关</h2>
+<p>1、<a href="https://github.com/oh-my-hf/ohmyhf">Oh My HuggingFace</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071405.webp" /></p>
+<p>非官方的 Hugging Face 开源跨平台客户端，用来浏览和下载模型、数据集等。（<a href="https://github.com/ruanyf/weekly/issues/10705">@fzlzjerry</a> 投稿）</p>
+<p>2、<a href="https://github.com/Europa2061/pi-auto-approval">pi-auto-approval</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071403.webp" /></p>
+<p>编程代理 Pi agent 的插件，自动批准低风险的权限确认，高风险依然会交给用户确认。（<a href="https://github.com/ruanyf/weekly/issues/10669">@Europa2061</a> 投稿）</p>
+<p>3、<a href="https://github.com/BuilderIO/gpt-crawler">GPT Crawler</a></p>
+<p>这个工具将指定网站的内容，抓取成一个 JSON 文件，然后上传到 ChatGPT，从而生成该网站的聊天机器人，允许你跟该网站聊天。</p>
+<p>4、<a href="https://github.com/1rgs/tokenwiz">Tokenwiz</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202311/bg2023111305.webp" /></p>
+<p>一个模仿 OpenAI 将输入文本进行词元分解（tokenization）的开源实现。</p>
+<h2 id="资源">资源</h2>
+<p>1、<a href="https://gotoonion.site/">Goto Onion</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071506.webp" /></p>
+<p>暗网 Tor 网站的网关，使得普通浏览器可以访问 Onion 网址。</p>
+<p>2、<a href="https://www.fadingmaize.com/">Fading Maize</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071507.webp" /></p>
+<p>一个很有意思的网站，一支美国大学乐队在2001年录制了专辑，随后就解散了。</p>
+<p>现在，他们让 AI 将当年的录音改成2026年的风格。该网站就将两种录音同时放出来，让大家比较。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071508.webp" /></p>
+<p>音乐真是很神奇，20多年前的音乐，毫无时光的痕迹，吉他声仿佛还是昨天。</p>
+<p>3、<a href="https://www.jamisbuck.org/mazes/">迷宫算法</a>（Maze Algorithms）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026012505.webp" /></p>
+<p>这个网站收集各种迷宫生成算法。</p>
+<h2 id="图片">图片</h2>
+<p>1、<a href="https://visitfaroeislands.com/en/plan-your-stay/getting-around/world-first-under-sea-roundabout">海底环岛</a></p>
+<p>环岛一般都在交通繁忙的路口，但是在大西洋的法罗群岛，有全世界独一无二的海底环岛。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071502.webp" /></p>
+<p>上图是法罗群岛的海底隧道示意图，在黄圈处，隧道一分为二，通向两个不同的岛屿。这里就建了一个海底环岛。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071503.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071504.webp" /></p>
+<p>为了引起司机的注意，政府请了艺术家，将其画成水母的形状。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071505.webp" /></p>
+<h2 id="文摘">文摘</h2>
+<p>1、<a href="https://decrypt.co/357527/ai-save-time-instead-created-new-kind-burnout">AI 本应节省时间，减少工作量</a></p>
+<p>人们本以为 AI 会节省时间，减少工作量，加州大学的一项调查发现，事实恰恰相反。AI 增加了工作量，让工作强度变大，使得人们产生职业倦怠。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202602/bg2026021615.webp" /></p>
+<p><strong>为什么 AI 不仅没有减少工作，反而增加了工作呢？</strong> 原因可能有下面几点。</p>
+<p><strong>（1）工作职责范围扩大</strong>。产品经理现在开始编写代码，研究人员开始维护服务器，人们的工作职责不再那么分明，而变得模糊不清。员工们开始处理职责范围之外的工作，AI 让这种转变变得切实可行。</p>
+<p>这产生了连锁反应。工程师们突然发现，自己需要审查、纠正和指导非程序员同事的代码，因为那些同事正在“氛围编码”（vibe coding）。</p>
+<p>在自己专业以外进行工作自动化的人，实际上是给其他人带来了更多的工作。</p>
+<p><strong>（2）工作/生活界限模糊化</strong>。AI 的对话式界面让工作变得轻松便捷，不再有面对空白页面的无助感，也没有令人望而生畏的学习曲线。</p>
+<p>因此，员工们开始在离开办公桌前（比如上厕所前）发送“快速提示”，让 AI 在他们离开期间处理一些琐事。许多人甚至在休息时间也输入提示词，让 AI 去跑。这些在非工作时间使用 AI 处理的工作累积起来，导致休息时间减少，工作时长大幅增加。</p>
+<p><strong>（3）多任务处理激增</strong>。由于 AI 给人一种错觉，任务可以在后台处理，因此员工被要求同时管理多个工作流程。</p>
+<p>这样做表面上可以提升生产力，但实际上往往转化为不断切换注意力以及更长的任务清单。</p>
+<p><strong>（4）以上因素的自我强化循环。</strong> AI 让事情变得更简单，于是员工们做了更多事情，导致更加依赖 AI 来简化这些事情。如此循环往复，最终导致倦怠。</p>
+<p>研究人员指出：“一些参与者表示，虽然他们感觉工作效率更高了，但并没有感觉轻松，反而感觉比以前更忙了。”</p>
+<p><strong>（5）解决方法</strong>。研究人员提出，为了解决 AI 带来的职业倦怠，公司应该制定有意识的对策，规范员工如何使用 AI。</p>
+<ol>
+<li>做出重要决定前，停一会手头的工作。</li>
+<li>安排工作顺序，以减少上下文切换。</li>
+<li>预留时间进行真正的人际交往。</li>
+</ol>
+<h2 id="言论">言论</h2>
+<p>1、</p>
+<p>如果你是太阳，我就是黑洞。</p>
+<p>-- <a href="https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html">史蒂芬·霍金</a></p>
+<p>2、</p>
+<p>AI 模型的世界就像一个城市，里面有五个企业总部区域，以及一个中国城。</p>
+<p>-- <a href="https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html">《奇点越来越近了》</a></p>
+<p>3、</p>
+<p>AI 是一个完全的黑箱，这意味着所谓的“AI 工程”或“提示工程”完全是骗局，任何声称能够以某种巧妙的方式操控黑箱的说法都是虚假的。</p>
+<p>你无法探究 AI 的运行逻辑，它只是一种机器实现的“相信我，兄弟”。</p>
+<p>-- <a href="https://bytecode.news/posts/2026/07/user-submission-ai-is-a-bad-tool">《AI 是一个糟糕的工具》</a></p>
+<p>4、</p>
+<p>我有一台面包机，它几乎包办一切：揉面、发酵、烘焙。我把原料倒进去，按下一个按钮，三个小时后面包就出炉了。</p>
+<p>嗯，三年里我大概只用过这台机器两次。相反，我每周都会去超市买一条包装好的预切片面包。</p>
+<p>这解释了为什么即使 AI 可以轻松生成代码，SaaS 公司仍远未走向衰落。</p>
+<p>-- <a href="https://www.joanwestenberg.com/p/the-bread-paradox-why-convenience">《为什么便利总是胜出，以及为什么 SaaS 不会消亡》</a></p>
+]]></description>
+      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-404.md</link>
+      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-404.md</guid>
+      <pubDate>Mon, 20 Jul 2026 03:12:40 -0000</pubDate>
+    </item>
     <item>
       <title>科技爱好者周刊（第 403 期）：为什么 Dropbox 不成功</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -973,210 +1170,6 @@
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-399.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-399.md</guid>
       <pubDate>Mon, 08 Jun 2026 02:52:28 -0000</pubDate>
-    </item>
-    <item>
-      <title>科技爱好者周刊（第 398 期）：Token 费用难以负担</title>
-      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
-<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/9815">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
-<h2 id="封面图">封面图</h2>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052803.webp" /></p>
-<p>去年开放的浙江省安吉县的安吉文化艺术中心。当地盛产竹子，屋顶都采用竹叶造型。（<a href="https://www.instagram.com/p/DYKVQBKiBG1/?img_index=1">daemin_kg@ig</a>）</p>
-<h2 id="token-费用难以负担">Token 费用难以负担</h2>
-<p>上周，OpenClaw（龙虾）的创始人彼得·斯坦伯格（Peter Steinberger）贴出了自己的 <a href="https://x.com/steipete/status/2055346265869721905">Token 使用量</a>。</p>
-<p>他不是故意炫耀，自己用了多少 Token，而是为了介绍工具软件 <a href="https://codexbar.app/">CodexBar</a>。这个菜单栏小工具可以统计你的 Token 使用量，计算出对应的费用。</p>
-<p>大家猜猜看，他用了多少 Token？</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026051701.webp" /></p>
-<p>根据截图，他一个月发出了760万个请求，消耗的 Token 数量为6030亿。根据预设的费率，这些 Token 价值130万美元！</p>
-<p>也就是说，<strong>他的 AI 编程平均每天要花费4万多美元</strong>。</p>
-<p>当然，这个数字不是真实支出。因为他是 OpenAI 公司的员工，可以无限量免费使用公司的 Token。所以，这些钱并不是真实的支出。</p>
-<p>但是，他的 Token 使用量是真的。绝大部分公司需要外购 Token，大家可以用他的例子计算一下，如果一个程序员每月用掉几千亿、甚至上万亿的 Token，公司要出多少钱？</p>
-<p>他一个人一个月130万美元，相当于近900万人民币，<strong>一年下来超过1亿人民币！</strong> 这就是放开使用顶级模型，公司要支付的费用。</p>
-<p>如果改用便宜的模型，国内最便宜的开源模型，价格大约是国外旗舰模型的1/30到1/50，那么一年就是200万～300万人民币。</p>
-<p>结论就是，<strong>如果放开不限量使用，一个程序员一年最少会花掉两三百万人民币的 Token 费用</strong>。要是使用美国的旗舰模型，费用会快速上涨到几千万甚至上亿人民币。</p>
-<p>公司想要降低成本，有两个方法：一是购买包月套餐，但是大项目不够用；二是自己架设开源模型，省掉外购的费用，但是硬件费用不便宜，而且最强的模型目前是不开源的。</p>
-<p>权衡下来，我猜想，<strong>公司几乎肯定会设置限制，不允许程序员无限量使用外部模型</strong>。那样的话，巨额的 Token 费用难以承受。程序员的工资已经不低了，再加上每人每年至少几百万人民币的 Token 费用，公司的开发成本会爆炸的。</p>
-<p>大家可以说说，有没有公司对程序员提供外部模型无限量 API 调用？我是没有听说过。</p>
-<p>事实上，因为 Token 费用太高，公司收紧 AI 编程的例子，我倒是知道几个。</p>
-<p>比如，网约车巨头 <a href="https://www.forbes.com/sites/janakirammsv/2026/05/17/uber-burns-its-2026-ai-budget-in-four-months-on-claude-code/">Uber</a> 今年头四个月就花完了全年34亿美元的 AI 预算，不得不限制使用 AI 了。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052405.webp" /></p>
-<p>再比如，<a href="https://aiweekly.co/alerts/microsoft-drops-claude-code-after-budget-overrun">微软</a>也因为费用超标，放弃了 Claude Code，改用自家托管的 OpenAI 模型。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052406.webp" /></p>
-<p>如果 Uber 和微软这样的巨头，都承受不了巨额的 Token 费用，那大概就没有公司能够承受了。</p>
-<p>总之，AI 编程虽然听起来很美好，但是看到账单的那一刻，公司就会清醒：<strong>AI 编程比真人程序员昂贵太多了</strong>。</p>
-<p>所以，AI 会替代程序员吗？对于有大型软件项目的公司，我认为不会大规模替代，因为成本放在那里。至少现阶段如此，如果未来 Token 费用大幅下降，那就难说了。</p>
-<h2 id="漏洞赏金计划的终结">漏洞赏金计划的终结</h2>
-<p><a href="https://turso.tech">Turso</a> 是一个开源的云数据库，代码放在 GitHub。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052804.webp" /></p>
-<p>它有一个赏金计划，给予发现漏洞的人1000美元奖金。本来运作得挺好，自从大模型可以用来发现漏洞以后，事情就不对了。</p>
-<p>它的仓库的 PR 页面（外部代码提交）已经变成下面这样。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026051606.webp" /></p>
-<p>提交漏洞的人泛滥成灾，都是冲着奖金而来。他们所谓的漏洞，往往是故意注入垃圾字节，或者是配置错误，自然就是无法运行。</p>
-<p>开发团队精疲力尽，不胜其扰。有时候，关掉这些 PR，提交者还会跟你争论，用 AI 生成的<a href="https://github.com/tursodatabase/turso/pull/6257#issuecomment-4216531987">长篇大论</a>告诉开发团队“我没错，你们搞错了”，令人啼笑皆非。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026051607.webp" /></p>
-<p>最终，开发团队只能宣布，<a href="https://turso.tech/blog/the-wonders-of-ai">终止赏金计划</a>，提交漏洞和 PR 都不会有奖金。</p>
-<blockquote>
-<p>炮制垃圾内容的人可能只需要一分钟就能提交，但我们却要花费数小时来阅读、理解和回应。而且，这类内容的生成速度几乎是无限的。</p>
-<p>虽然可以设置自动化脚本来过滤 PR，但由于涉及到奖金，提交 AI 代码的动机实在太大，总是有人无休止地争论、重新打开同一个 PR 等等。</p>
-</blockquote>
-<p>这件事告诉我们，传统的漏洞赏金计划在 AI 时代大概率行不通。以后，发现漏洞很可能没有奖金。不知道这会不会导致线上攻击行为的增加。</p>
-<h2 id="科技动态">科技动态</h2>
-<p>1、<a href="https://news.yale.edu/2026/05/20/warmer-temps-heavier-owl-monkeys-climate-linked-weight-gain-primates">体重与气温</a></p>
-<p>一支耶鲁大学的考察队，发现阿根廷的猫头鹰猴比25年前更重。2023年的猴子平均体重比1999年重了50克，相当于增加了4%。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052103.webp" /></p>
-<p>科学家认为，这与气温上升有关。1999年阿根廷的日平均气温为22.2摄氏度，2023年上升到了23.8摄氏度。</p>
-<p>气温上升使得猴子减少用于体温调节的能量消耗，从而有额外的卡路里来增重。</p>
-<p>该理论看上去也适用于人类，也就是说，全球变暖可能让胖子变多。</p>
-<p>2、<a href="https://www.nationalgeographic.com/science/article/artificial-egg-colossal-chickens-moa-dodo">人工蛋壳</a></p>
-<p>美国生物科技公司 Colossal 制造了“人工蛋壳”，已经孵化了26只小鸡。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052403.webp" /></p>
-<p>它的外壳是一个坚固的六边形杯状结构，起到支撑作用；内壁是一层半透膜材料，能让氧气轻松通过，又能保持水分。</p>
-<p>科研人员将小鸡胚胎放入“人工蛋壳”，在孵化箱中成功孵化了小鸡。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052404.webp" /></p>
-<p>上图中，蛋壳上方是透明的，可以观察内部情况。</p>
-<p>Colossal 公司制造这个装置的目的，是为了复活已经灭绝的渡渡鸟。否则，就算做出了渡渡鸟的克隆胚胎，还是要放在其他动物（比如鸵鸟）体内进行繁殖。</p>
-<p>3、<a href="https://p26.bg/news/dupkite-po-ul-chiprovci-v-sofiya-se-prevarnaha-v-ulichna-galeriya-snimki-4310news.html">艺术抗议</a></p>
-<p>保加利亚首都索非亚，马路上有一个小坑，市政府长期不修补。</p>
-<p>两个艺术家感到不满，就在这个小坑上涂鸦，画了一个生气的鬼脸。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026051702.webp" /></p>
-<p>鲜艳的图案让司机和行人更容易注意到，减少了事故。同时，也引起了大众的兴趣，新闻媒体纷纷报道，小坑很快就修补了。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026051703.webp" /></p>
-<p>这件事告诉我们，不满还是要表达出来，可以推动解决，并且采用艺术形式表达，效果会比较好，容易让人接受。</p>
-<h2 id="文章">文章</h2>
-<p>1、<a href="https://davidoks.blog/p/ai-is-killing-the-cheap-smartphone">内存涨价的原因</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052301.webp" /></p>
-<p>内存厂商生产三种内存：DDR（桌面电脑用的内存）、LPDDR（手机用的低功率内存）、HBM（AI 机房用的高带宽内存）。</p>
-<p>由于 AI 公司对 HBM 的需求激增，开出高价，内存厂商的生产能力转向 HBM，减少了 DDR 和 LPDDR 的产量，导致消费电子设备的内存短缺，价格上涨。</p>
-<p>2、<a href="https://www.jonaharagon.com/posts/im-getting-into-mesh-networks-meshtastic-meshcore-and-reticulum/">我开始研究 Reticulum</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052801.webp" /></p>
-<p>Reticulum 是一个自己组网的项目，可以在各种物理网络（WiFi、有线网、无线电、LoRa 等）之上架设虚拟网络，本文是一个简介。</p>
-<p>3、<a href="https://z3ugma.github.io/2019/11/18/warm-up-your-macbook/">预热你的 MacBook</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052802.webp" /></p>
-<p>一篇很冷的文章，Mac 系统有一个 stress 命令，用来让 CPU 运行负载。本文提出可以用这个命令，让冬天冰冷的 MacBook 金属外壳变热。</p>
-<p>4、<a href="https://abuseofnotation.github.io/boolean-thinking/">为什么我反对布尔逻辑</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052302.webp" /></p>
-<p>一篇偏哲学思辨的文章。布尔逻辑只有两个值（真和伪），作者认为，这会导致非黑即白的二元思维。真实世界是非布尔逻辑，充满了不确定性和不唯一性。</p>
-<p>5、<a href="https://www.quantamagazine.org/the-math-that-explains-why-bell-curves-are-everywhere-20260316/">为什么中心极限定理无处不在？</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202603/bg2026031915.webp" /></p>
-<p>一篇科普文章，介绍中心极限定理的历史和含义。这个定理发现了样本平均值的分布规律，所以极其重要。</p>
-<p>样本平均值满足正态分布，但有两个注意点，一是每次的样本必须相互独立，二是有时异常值比平均值更重要。</p>
-<h2 id="工具">工具</h2>
-<p>1、<a href="https://github.com/eigenpal/docx-editor">DOCX Editor</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052202.webp" /></p>
-<p>开源的 docx 文件的网页编辑器，所见即所得。</p>
-<p>2、<a href="https://dynip.dev/">DvnIP</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052601.webp" /></p>
-<p>动态 IP 服务，个人用户免费。</p>
-<p>3、<a href="https://editor.graphite.rs/">Graphite</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202410/bg2024101704.webp" /></p>
-<p>一个矢量作图的 Web 应用，<a href="https://github.com/GraphiteEditor/Graphite">代码开源</a>。</p>
-<p>4、<a href="https://github.com/chaosprint/hindsight">Hindsight</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026010203.webp" /></p>
-<p>一个命令行工具，扫描本地的 git 仓库，生成 GitHub 风格的个人提交热力图。</p>
-<p>5、<a href="https://github.com/nyakang/nyaterm">NyaTerm</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052201.webp" /></p>
-<p>跨平台的桌面应用，将 SSH、终端会话、远程文件、认证信息、端口转发和配置备份放在同一个工作区。（<a href="https://github.com/ruanyf/weekly/issues/10021">@nyakang</a> 投稿）</p>
-<p>6、<a href="https://github.com/wagoodman/dive">diving-rs</a></p>
-<p>一个命令行工具，展示 docker 镜像内部的每一层文件列表。（<a href="https://github.com/ruanyf/weekly/issues/10037">@vicanso</a> 投稿）</p>
-<p>7、<a href="https://github.com/nine19een/CanvasCast">CanvasCast</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052401.webp" /></p>
-<p>白板录制的网页应用，在浏览器中直接绘制、演示、录制白板风格的内容。（<a href="https://github.com/ruanyf/weekly/issues/10055">@Hao4Wang</a> 投稿）</p>
-<p>8、<a href="https://github.com/echo-loop/Echo-Loop">Echo Loop</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052704.webp" /></p>
-<p>开源的英语听说训练 App。（<a href="https://github.com/ruanyf/weekly/issues/10082">@echo-loop</a> 投稿）</p>
-<p>9、<a href="https://github.com/Simon-He95/vue-tui">Vue TUI</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052705.webp" /></p>
-<p>基于 Vue 的终端组件库，可以用来开发 agent。（<a href="https://github.com/ruanyf/weekly/issues/10083">@Simon-He95</a> 投稿）</p>
-<p>10、<a href="https://github.com/pranshuparmar/witr">witr</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202601/bg2026010313.webp" /></p>
-<p>命令行工具，显示当前每个进程对应什么命令，可以用命令名或端口号查询。</p>
-<h2 id="ai-相关">AI 相关</h2>
-<p>1、<a href="https://github.com/esengine/DeepSeek-Reasonix">DeepSeek Reasonix</a></p>
-<p>专为 DeepSeek 设计的终端 AI 编程 agent，充分利用了缓存机制，可以极大降低费用，只支持 DeepSeek 的付费 API。</p>
-<p>2、<a href="https://github.com/modelscope/FunASR">FunASR</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052402.webp" /></p>
-<p>阿里通义实验室开源的工业级语音识别工具包，最近推出了桌面语音输入法工具。（<a href="https://github.com/ruanyf/weekly/issues/10056">@LauraGPT</a> 投稿）</p>
-<p>另有两个基于它的衍生工具。</p>
-<ul>
-<li><a href="https://github.com/modelscope/FunClip">FunClip</a>：智能视频裁剪工具。输入关键词或句子，自动定位视频中对应的片段，一键裁剪导出。（<a href="https://github.com/ruanyf/weekly/issues/10057">@LauraGPT</a> 投稿）</li>
-<li><a href="https://github.com/FunAudioLLM/SenseVoice">SenseVoice</a>：语音理解工具，可以识别语音、语种、情感、声音事件。（<a href="https://github.com/ruanyf/weekly/issues/10058">@LauraGPT</a> 投稿）</li>
-</ul>
-<p>3、<a href="https://github.com/SakuraByteCore/codexmate">Codex Mate</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052706.webp" /></p>
-<p>一站式本地 AI 编程智能体管理面板。统一管理 Codex、Claude Code、Gemini CLI、CodeBuddy、OpenClaw。（<a href="https://github.com/ruanyf/weekly/issues/10088">@ymkiux</a> 投稿）</p>
-<h2 id="资源">资源</h2>
-<p>1、<a href="https://github.com/KeyAI/calculusmadeeasy-zh">微积分其实很容易</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052407.webp" /></p>
-<p>著名教材《Calculus Made Easy》非官方中文版，一本易读的微积分入门小书，可以<a href="https://keen-ginger-62hw.here.now/">在线阅读</a>。（<a href="https://github.com/ruanyf/weekly/issues/10065">@KeyAI</a> 投稿）</p>
-<p>2、<a href="https://funes.world/apps/the-hanging-sculptures-of-the-xiaoxitian">小西天 3D 全景</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052104.webp" /></p>
-<p>山西省隰县小西天的网页 3D 全景导览。</p>
-<p>3、<a href="https://stefansf.de/c-quiz/">C 语言小测验</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052304.webp" /></p>
-<p>一组 C 语言的语法选择题。</p>
-<h2 id="图片">图片</h2>
-<p>1、<a href="https://www.calculators.de/">袖珍计算器博物馆</a></p>
-<p>德国有一个网上博物馆，专门收集各种袖珍计算器，里面有一些奇特的电子计算器。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052205.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052206.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052207.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052204.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052203.webp" /></p>
-<h2 id="文摘">文摘</h2>
-<p>1、<a href="https://www.sina.cn/news/detail/5279286413232198.html">行为经济学诱饵</a></p>
-<p>行为经济学家丹·艾瑞里，有一天闲逛《经济学人》官网。</p>
-<p>他在订阅页面上，看到了三个选项：</p>
-<blockquote>
-<p>A. 电子版——59美元。 B. 纸质版——125美元。 C. 纸质版＋电子版——125美元。</p>
-</blockquote>
-<p>他愣住了。</p>
-<p>B 和 C，价格一模一样。一个只给纸质版，一个纸质版加电子版全送。谁会选 B？</p>
-<p>傻子都不会啊。但艾瑞里没有笑，马上意识到这是一个绝妙的设计。</p>
-<p>他拿着这三个选项，走进了麻省理工学院（MIT）的课堂，做了一个实验，让100个学生对这三个选项进行选择。</p>
-<p>结果：16%的学生选了 A，0%选了B，84%选了C。订阅费总收入：11,444美元。</p>
-<p>跟预想的一样，没有一个人选 B。</p>
-<p>然后艾瑞里做了一件小事：他把 B 删了，只留 A 和 C。</p>
-<p>逻辑上，一个从来没人选的东西，删掉它不应该影响任何结果，对吧？</p>
-<p>结果出来了：68%选了 A，32%选了 C。订阅费总收入暴跌到8,012美元。</p>
-<p>这就是选项 B 的作用。它从来没人选，自己一份都没卖出去，却在暗中帮旁边的最贵的 C 套餐，多卖了52%。</p>
-<p>仅仅因为它的"存在"，就让杂志社多赚了3,432美元。这就是行为经济学中著名的"诱饵效应"。</p>
-<p>原理很简单：人类不擅长判断一个东西的“绝对价值”，但极其擅长做“相对比较”。</p>
-<p>当只有59美元和125美元两个选项时，你的大脑在比较"便宜 vs 贵"，大多数人选便宜的。</p>
-<p>但当“125美元只买纸质版”这个诱饵一出现，你的大脑就不比较 A 和 C 了，它开始比较 B 和 C。</p>
-<p>同样的价格，C 多了一个电子版。天哪，这不是白捡的吗！于是你心满意足地选了 C。</p>
-<p>浑然不知自己刚刚多花了66美元——买了一本可能一辈子都不会翻开的纸质杂志。</p>
-<p>这个套路如今无处不在。咖啡店的中杯定价，只是为了让你觉得大杯“更划算”。视频网站的月卡，贵到让你觉得年卡“不买就亏”。</p>
-<p>手机发布会上，永远有一款“高价低配”机型，它唯一的使命，就是让旁边那款旗舰机型看起来“性价比极高”。</p>
-<p>当你觉得自己占了便宜的时候，多半是有人精心摆放了一个诱饵，让你心甘情愿走进了更贵的那扇门。</p>
-<p>那个没人选的选项，才是全场真正的主角。</p>
-<h2 id="言论">言论</h2>
-<p>1、</p>
-<p>很多人看不到 AI 改变世界的潜力，原因在于他们不明白一切事物都是算法。</p>
-<p>具体来说，他们没有意识到，社会和公司只不过是一系列算法的集合。</p>
-<p>-- <a href="https://danielmiessler.com/blog/companies-graph-of-algorithms">《公司不过是算法图而已》</a></p>
-<p>2、</p>
-<p>为了应对“软件包投毒”，现在的流行做法是，新发布的软件包设置一个冷却时间，普通用户需要过了“冷却期”才能安装这个包。</p>
-<p>这种机制可以有效抵御供应链攻击，但它有一个棘手的问题：它依赖于其他人先安装这个包。到哪里去找这些人，第一时间试用每个新发布的包呢？</p>
-<p>-- <a href="https://illegalcode.net/rfcs/phased_rollouts.html">《软件包应该分阶段推出》</a></p>
-<p>3、</p>
-<p>AI 可以一对一的定制化教育，效果更好，大学对很多人将变得没有价值。</p>
-<p>-- <a href="https://fortune.com/2025/07/24/sam-altman-college-not-working-great-stanford-dropout/">萨姆·奥特曼</a>（Sam Altman），OpenAI 公司首席执行官</p>
-<p>4、</p>
-<p>那些从未编写过一行代码的非技术型中层管理人员，现在感觉通往成功的最大障碍已经消失。</p>
-<p>他们再也不用应付那些烦人的程序员了，不需要程序员就能更改网页样式和用户体验，自己实现某些功能。而且，AI 不会抱怨，不会组织工会，也不会抗议，只会服从任何命令。</p>
-<p>-- <a href="https://pop.rdi.sh/where-does-next-token-prediction-leave-us/">《AI 将把我们引向何方》</a></p>
-<p>5、</p>
-<p>我喜欢 PHP 的一个理由是，它的变量使用美元符号（$）识别，这会提醒你，你使用它是为了什么。</p>
-<p>-- <a href="https://flowtwo.io/post/php&#39;s-oddities">《PHP 的奇特之处》</a></p>
-<h2 id="往年回顾">往年回顾</h2>
-<p><a href="https://www.ruanyifeng.com/blog/2025/06/weekly-issue-351.html">GitHub Issues（几乎）是最好的笔记应用</a>（#351）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2024/05/weekly-issue-301.html">OpenAI 的图书馆工位</a>（#301）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2023/04/weekly-issue-251.html">国产单板机值得推荐</a>（#251）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2022/04/weekly-issue-201.html">中国需要成立半导体部</a>（#201）</p>
-<p>（完）</p>
-]]></description>
-      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-398.md</link>
-      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-398.md</guid>
-      <pubDate>Mon, 01 Jun 2026 02:54:36 -0000</pubDate>
     </item>
   </channel>
 </rss>
