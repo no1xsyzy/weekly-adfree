@@ -225,7 +225,7 @@ macOS 的顶部菜单栏应用，可以显示当前插入电脑的 usb-c 电缆�
 
 一个开源的 CRDT 的同步算法库，用来多人实时同步状态。
 
-8、[File Wizard](https://github.com/LoredCast)
+8、[File Wizard](https://github.com/LoredCast/filewizard)
 
 ![](https://cdn.beekka.com/blogimg/asset/202510/bg2025100202.webp)
 
