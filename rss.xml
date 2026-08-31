@@ -6,7 +6,196 @@
     <description>使用朴素贝叶斯筛选器对阮一峰的网络日志进行去广告</description>
     <lang>zh-cn</lang>
     <copyright>Copyright 2026</copyright>
-    <lastBuildDate>Mon, 24 Aug 2026 00:51:11 -0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 02:44:53 -0000</lastBuildDate>
+    <item>
+      <title>科技爱好者周刊（第 410 期）：你需要知道的 AI 三种机制</title>
+      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/10950">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
+<h2 id="封面图">封面图</h2>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082701.webp" /></p>
+<p>宁夏沙坡头景区的巨型蒙眼雕塑。（<a href="https://www.4anet.com/p/01kzzn7qc04ts41frfk4zqjkc0">via</a>）</p>
+<h2 id="你需要知道的-ai-三种机制">你需要知道的 AI 三种机制</h2>
+<p>这是“AI 小知识系列”的第三篇，前两篇分别是<a href="https://www.ruanyifeng.com/blog/2026/07/weekly-issue-404.html">《大模型需要多少内存》</a>和<a href="https://www.ruanyifeng.com/blog/2026/08/weekly-issue-408.html">《AI 缓存是什么》</a>。</p>
+<p>我分享一些自己的学习笔记，用来理清对于 AI 技术的理解。我尽量写得通俗，希望对大家有用。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082703.webp" /></p>
+<p>今天谈一个基本问题：<strong>AI 为什么能够回答我们的提问，它怎么会知道答案？</strong></p>
+<p>你可以找到很多这方面的论文和书籍，详细解释大模型的运作，通常非常难懂。但是，对于非专业人士，只要简单知道 <a href="https://w4g1.dev/blog/models-are-getting-dumber-on-purpose">AI 的三个机制</a>，就可以了。</p>
+<p><strong>（1）参数机制</strong></p>
+<p>在宏观层面，<strong>所有大模型都是对人类知识的建模</strong>。它建立了一个数学模型，用来描述所有的人类知识。</p>
+<p>怎么描述呢？它使用的是一种参数机制，将知识分解成一个个“词元”（token），然后计算所有词元之间的数学关系。这个过程称为“训练”。</p>
+<p>这种数学关系使用无数个参数来表示。举例来说，大模型 GLM 5.3 有7440亿个参数，这些参数用来构建所有词元之间的关系（也就是权重）。所谓“训练”，其实就是找出这个7440亿个权重，描述人类知识的构成，也就是所有词元之间的关联。</p>
+<p>一旦训练完成，我们向大模型提问时，它就会根据这些权重，找出最可能的词元，从而生成符合概率的答案。</p>
+<p>所以，<strong>大模型本质上是一种“压缩-生成”机制</strong>，将人类知识抽象在无数参数之中，后期再生成出来。</p>
+<p><strong>（2）推理机制</strong></p>
+<p>不难理解，参数越多，模型的效果越好。因为更多的参数意味着，可以更精确地描述各种知识，从而可以更准确地将其还原出来。</p>
+<p>但是，一方面，参数不可能无限增加，训练和使用成本将直线上升，使用时的运算时间也会变长。</p>
+<p>另一方面，也没有必要包含所有的知识，很多知识不需要包含在参数之中，<strong>完全可以通过逻辑推理获得</strong>。</p>
+<p>举例来说，只需要知道某个城市的人口出生率和死亡率，就马上知道了人口的净增长率。这不需要记忆，可以通过推理得到。</p>
+<p>大模型就依靠推理机制，根据参数包含的知识，从逻辑规则出发，推断出那些它没有包含的知识。</p>
+<p><strong>（3）联网机制</strong></p>
+<p>不管模型有再多的参数、再强的推理，它不可能包含所有的知识，总有一些问题它回答不了。</p>
+<p>比如，你问大模型，今天股票的收盘指数是多少，它就回答不了。参数里面不包含这个知识，也无法推理得到。</p>
+<p>这时，模型就要依靠 Agent 或应用框架提供的联网机制，自动去互联网搜索那些它不知道的知识。</p>
+<p><strong>（4）总结</strong></p>
+<p>正是有了以上三种机制，AI 才能正确回答我们的问题。</p>
+<p>首先，参数机制提供了大模型的基本知识；其次，推理机制产生通过推理得到的知识；最后，联网机制用来获取前两种机制都无法得到的知识。</p>
+<h2 id="公开演讲的窍门">公开演讲的窍门</h2>
+<p>很多同学对于公开登台，在大庭广众进行演讲，会感到紧张。</p>
+<p>其实，只要掌握<a href="https://blog.guillheu.dev/articles/first-time-speaker/">几个窍门</a>，树立正确认知，就能进行一次成功的公开演讲。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082404.webp" /></p>
+<p>（1）成功的演讲，内容只占30%，表演技巧占70%。</p>
+<p>你要知道，演讲是一场秀，你要充分利用语气、动作、表情、手势等等，去吸引听众的注意力，内容其实不是决定性的。</p>
+<p>（2）提前做好充分准备。</p>
+<p>演讲稿、幻灯片、笑话、语调、节奏，所有细节最好都反复练习过。你无法预知上台时会发生什么，反复练习能让你沿着预设的轨道，顺利进行下去。</p>
+<p>（3）如果涉及具体技术细节，你最好多讲“为什么”（why），让听众明白为什么应该关注这些。</p>
+<p>至于“如何做”，略微讲一讲大致思路和一般概念即可，具体操作和实现可以全部跳过，因为没人想听你背诵文档。</p>
+<p>（4）紧张是正常的。</p>
+<p>但是，如果你做了充分准备，把稿子背得滚瓜烂熟，上台后一旦进入状态，你很快就会把紧张忘记。</p>
+<p>（5）不管讲得好与坏，你一定要自信。如果你自己都对所讲的内容有迟疑，就很难让听众信服。</p>
+<p>公开演讲的成功者，都是自信的人，而不是能力强的人。很多槽糕的管理者和骗子，都发表过成功的演讲，这说明内容绝非登上讲台的必要条件。</p>
+<p>（6）只要你渴望谈论某个话题，你就绝对有登上讲台的条件。</p>
+<h2 id="科技动态">科技动态</h2>
+<p>1、<a href="https://www.toxel.com/tech/2026/08/07/flat-chair-by-sara-paculdo/">平面椅</a></p>
+<p>一位美国设计师发明了一种玻璃纤维椅，用户拿到手的就是一块平板。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082405.webp" /></p>
+<p>花几分钟，将其拆开，组装起来就是一把椅子。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082406.webp" /></p>
+<p>这种平板设计，大大减少了运输体积、存储空间和运输成本。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082407.webp" /></p>
+<p>它依靠曲线的张力和互锁的部件，来提供足够的强度。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082408.webp" /></p>
+<p>2、<a href="https://www.billboard.com/music/country/dolly-parton-health-update-1236322526/">虚拟化身演唱会</a></p>
+<p>本周，美国著名歌星多莉·帕顿去世，享年80岁。这个消息非常突然，因为不久之前，她还表示将举行演唱会。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082502.webp" /></p>
+<p>但是，她不是自己登台演唱，而是授权制作一个“虚拟化身”，让这个化身在台上演唱。</p>
+<p>她没有透露具体细节，但在技术上，现在已经完全可行。现在的 AI 不仅唱得逼真，还能实时生成影像，与歌迷互动。</p>
+<p>这种“虚拟化身演唱会”有很多优点，比如可以大量举办，一天几场都可以，而且票价低，而且还可以做很多真人演唱会无法做到的事情，比如去世的歌星也可以开演唱会。相信只要有第一次，后面就会大量涌现，形成一个专门的市场。</p>
+<p>3、<a href="https://www.asus.com/accessories/bike-booster/asus-oxiis/oxiis-intelligent-bike-booster/">自行车助力器</a></p>
+<p>华硕推出了一种“自行车助力器”，任何自行车都可以安装，让普通自行车变成电助力自行车。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082704.webp" /></p>
+<p>它的原理很简单，就是一块电池带动一个轮子。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082705.webp" /></p>
+<p>你把它装在后轮上方，它就会自己带动后轮转动，从而提供助力。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082707.webp" /></p>
+<p>它对于爬坡和携带重物，很有帮助，值得推广。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082708.webp" /></p>
+<h2 id="文章">文章</h2>
+<p>1、<a href="https://www.gatesnotes.com/home/home-page-topic/reader/a-turbulent-ai-era-and-critical-choices-to-make">动荡的人工智能时代已经到来</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082709.webp" /></p>
+<p>比尔盖茨本周发表了一篇文章，提出 AI 有风险，应该减缓发展速度。</p>
+<p>但是，他在2023年发表过一篇完全相反的文章<a href="https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/the-risks-of-ai-are-real-but-manageable">《AI 的风险是可控的》</a>。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082710.webp" /></p>
+<p>到底为什么，三年的时间，改变了他的观点。不过，不管他怎么想，AI 的发展只可能加速，不可能慢下来。</p>
+<p>2、<a href="https://dejan.ai/blog/ox-alpha/">Ox Alpha 是 GLM</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082504.webp" /></p>
+<p>前些天，网上出现了一个匿名模型 Ox Alpha，性能优秀，各方纷纷猜测它出自哪家公司。最后，智谱承认它是 GLM 5.3 Flash。</p>
+<p>但是，在此之前，就有人用证据推测，它背后的公司是智谱。本文告诉你，怎么找到模型的作者。</p>
+<p>顺便说一句，这个模型的 Artificial Analysis 得分是57，高于 DeepSeek V4 Pro（得分53）。这真的很厉害，因为它的激活参数只有 18B，小于后者的 49B。而且，它的参数数量小，是可以在本地计算机跑的。</p>
+<p>3、<a href="https://barrd.dev/article/parallel-development-without-the-headaches-using-git-worktree/">Git worktree 使用详解</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082402.webp" /></p>
+<p>Git 仓库一般只有一个工作目录，如果同时开发两三个功能，切换起来很不方便。</p>
+<p>git worktree 命令可以新建多个工作目录，本文是使用详解。</p>
+<p>4、<a href="https://blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html">AliExpress 网页使用了 WebAudio 指纹识别</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082003.webp" /></p>
+<p>国外网友意外发现，AliExpress 首页有一段代码使用了 WebAudio API，导致每当打开这个页面，他的蓝牙耳机就会断掉。他仔细查了代码，发现这是为了识别用户。</p>
+<p>5、<a href="https://blog.elis.cc/articles/google-workspace-thinks-my-domain-is-an-email-provider/">Google Workspace 的域名 Bug</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082403.webp" /></p>
+<p>谷歌的企业办公服务 Google Workspace，需要绑定用户域名，但是作者的域名就是无法通过。</p>
+<p>作者去找客服，对方说了一堆废话，就是解决不了。最后，他实在受不了，自己查了前端源码，发现就是一个前端函数在检查域名，禁掉这个函数，域名就能绑定。谷歌的现状让人无语。</p>
+<p>6、<a href="https://www.alanzucconi.com/2026/08/15/xorshift-generators/">Xorshift 生成随机数（</a>英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082409.webp" /></p>
+<p>大家可能不知道，平时运算中的随机数，大部分是由 Xorshift 算法生成的：通过对种子值进行 Xor 运算和位移，得到随机数。本文介绍具体的实现细节。</p>
+<h2 id="工具">工具</h2>
+<p>1、<a href="https://vanillaos.org">Vanilla OS 3</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082601.webp" /></p>
+<p>一个基于 Debian 的 Linux 发行版，实现不可变（immutable）系统，所有操作都是原子化（atomic）操作。（<a href="https://github.com/ruanyf/weekly/issues/11356">@NN708</a> 投稿）</p>
+<p>2、<a href="https://github.com/Folgerjun/stock-tui">stock-tui</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082602.webp" /></p>
+<p>终端查看 A 股 K 线图、市盈率、成交量的小工具。（<a href="https://github.com/ruanyf/weekly/issues/11354">@Folgerjun</a> 投稿）</p>
+<p>3、<a href="https://veil.simoneamico.com/">Dark mode PDFs</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202603/bg2026032702.webp" /></p>
+<p>一个很有意思的小工具网站，将上传的 PDF 文件反转颜色，即白底黑字变成黑底白字。</p>
+<p>4、<a href="https://github.com/termio-sh/termio">Termio</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082410.webp" /></p>
+<p>mac 版的 AI 编程开发环境（ADE），有配套的 iPhone 版本。（<a href="https://github.com/ruanyf/weekly/issues/11273">@jiweiyuan</a> 投稿）</p>
+<p>5、<a href="https://github.com/amiaoapp/PicLite">PicLite</a>（图轻）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082411.webp" /></p>
+<p>跨平台的图片压缩工具，支持本地文件夹监控、图片格式转换、批量压缩、添加水印、上传图床等功能。（<a href="https://github.com/ruanyf/weekly/issues/11290">@amiaoapp</a> 投稿）</p>
+<p>6、<a href="https://github.com/hezhizheng/multi-row-tabs">Multi-Row Tabs</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082412.webp" /></p>
+<p>这个 Chrome 插件以多行平铺的形式，显示当前窗口的所有标签页。（<a href="https://github.com/ruanyf/weekly/issues/11310">@hezhizheng</a> 投稿）</p>
+<p>7、<a href="https://github.com/EthanYoQ/Invoice-Downloader">InvoiceFlowAI</a></p>
+<p>开源的电子发票整理与报销的桌面工具，连接用户自己的 QQ 或 163 邮箱，批量收集邮件中的发票，完成 OCR 识别、分类归档，并生成 Excel 汇总。（<a href="https://github.com/ruanyf/weekly/issues/11327">@EthanYoQ</a> 投稿）</p>
+<p>8、<a href="https://github.com/NomaDamas/CozyClay">CozyClay</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082501.webp" /></p>
+<p>在浏览器中搭建场景框架、摆放角色姿势、编写镜头运动和剪辑，然后交给 AI 视频模型更准确生成视频。（<a href="https://github.com/ruanyf/weekly/issues/11329">@HaD0Yun</a> 投稿）</p>
+<p>9、<a href="https://www.emailmd.dev/templates">Email.md</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202603/bg2026032801.webp" /></p>
+<p>这个网站提供电子邮件模板，用户只需填入 MarkDown 格式，就会生成一封格式化的电子邮件。</p>
+<p>10、<a href="https://github.com/nafey/minimalytics">Minimalytics</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202503/bg2025032101.webp" /></p>
+<p>一个统计服务器，记录和监控各种事件，基于 Go 语言和 SQLite 数据库，内置 Web 界面。</p>
+<h2 id="资源">资源</h2>
+<p>1、<a href="https://www.spacex.com/sites/starbase-la">星舰基地</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082603.webp" /></p>
+<p>SpaceX 公司要在路易斯安那州新建一个“星舰基地”，这是它的官网，看上去就像科幻电影一样。</p>
+<p>2、<a href="https://sf.thijs.gg/">漫游旧金山</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202608/bg2026082503.webp" /></p>
+<p>一款网页游戏，让用户在实景的旧金山街景地图上漫游，可以指定地点，非常酷。</p>
+<p>3、<a href="https://anvaka.github.io/city-roads/">城市道路</a>（city road）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202412/bg2024122612.webp" /></p>
+<p>这个网站可以将某个城市的所有道路，变成一张线条图，支持缩放。</p>
+<h2 id="图片">图片</h2>
+<p>1、<a href="https://lookup.london/londons-smallest-public-sculptures/">伦敦最小的雕塑</a></p>
+<p>伦敦有好几处小型的公共雕塑，让人意想不到。</p>
+<p>一条商业街的一楼街面最高处，有两只老鼠偷奶酪的雕塑。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026051704.webp" /></p>
+<p>据说，这是为了纪念一个悲剧事件。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026051705.webp" /></p>
+<p>19世纪时，两个工人在此处为了一块丢失的奶酪大打出手，闹出了命案，事后发现奶酪是被老鼠偷掉了。</p>
+<p>伦敦还有一处老鼠之家的雕塑。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026051706.webp" /></p>
+<p>这是因为这家店的店主发现，街道的门牌号少了一个，他就做了这个雕塑，把少掉的门牌号给了这个老鼠之家。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026051707.webp" /></p>
+<p>下面是其他一些微型雕塑。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026051708.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026051709.webp" /></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026051710.webp" /></p>
+<h2 id="文摘">文摘</h2>
+<p>1、<a href="https://www.science.org/doi/10.1126/science.aei2409">同质化网络</a></p>
+<p>社交媒体的一个根本属性是它们会催生“同质性”网络。</p>
+<p>同质性指的是用户会遇到相似的人。比如，观鸟爱好者会加入线上观鸟小组，保龄球爱好者会与其他保龄球爱好者聚会。</p>
+<p>这样的后果就是，网络会把边缘人聚在一起。认为地球是平的的人，可以轻松地在网上建立联系，这在现实生活中根本不可能，因为相信地球是平的人寥寥无几，彼此遇不到。</p>
+<p>同质性网络会扭曲人们对观点分布的认知。观点明明是少数的人，长期在同质性网络中，可能会误以为他们的观点代表了大多数人的共识，这称为虚假共识效应。</p>
+<p>虚假共识效应会带来几个问题。（1）这可能会加剧参与者对少数派观点的坚信不疑。（2）当一个人误认为少数派观点被广泛接受时，就会对按照多数人意愿行事的制度感到不满意，可能会产生自己被社会排斥的感觉。</p>
+<h2 id="言论">言论</h2>
+<p>1、</p>
+<p>一个人有教养的表现，就是他可以享受最好的，也可以承受最差的。</p>
+<p>-- <a href="https://news.pku.edu.cn/xwzh/129-116805.htm">唐师曾</a>，本周去世的著名记者</p>
+<p>2、</p>
+<p>我们的世界并不是一个常常设身处地为他人着想的世界。但是，如果你能够做到，向一个10岁的孩子解释世界，或者设计一个80岁的老人可以打开的罐子，有时会让你更好地完成最初想要做的事情。</p>
+<p>-- <a href="https://timharford.com/2026/08/explain-it-to-me-like-im-ten/">《请用10岁小孩都能听懂的方式向我解释》</a></p>
+<p>3、</p>
+<p>有人写了一篇《值班已成往事》，提出应该让 AI 来值班。只有当 AI 无法解决问题时，才应该让人类接手，而且应该由 AI 来呼叫人类。</p>
+<p>-- <a href="https://surfingcomplexity.blog/2026/08/22/wild-ai-related-reliability-incidents-are-coming/">《与 AI 相关的可靠性事故即将发生》</a></p>
+<p>4、</p>
+<p>人们逐渐意识到，如果使用 AI 学习新知识，学习速度比传统方法快得多，因为 AI 非常擅长概括大量不同的信息。</p>
+<p>但是，通过 AI 学习，大脑没有积极参与学习过程，对知识的理解和记忆不如传统方法。人脑的运作方式决定了，螺旋式学习是记忆知识的最佳方法之一。AI 直接给出了结果，让我们省略了中间的反复思考的步骤。</p>
+<p>-- <a href="https://www.aaron-gray.com/ai-and-chauffeur-knowledge/">《AI 和司机式知识》</a></p>
+<p>5、</p>
+<p>如果房价暴跌，我会遭受损失，但也又有好处：我的孩子能住上更便宜的房子。没错，他们继承的遗产会减少，但他们将终生享受更便宜的住房。</p>
+<p>-- <a href="https://www.betonit.ai/p/cds-vs-nimby">《CD 与邻避效应》</a></p>
+<h2 id="往年回顾">往年回顾</h2>
+<p><a href="https://www.ruanyifeng.com/blog/2025/08/weekly-issue-363.html">最好懂的神经网络解释</a>（#363）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2024/08/weekly-issue-313.html">如果新加坡没有空调</a>（#313）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2023/07/weekly-issue-263.html">开源软件如何赚钱？</a>（#263）</p>
+<p><a href="https://www.ruanyifeng.com/blog/2022/07/weekly-issue-213.html">知识孤岛，知识软件</a>（#213）</p>
+<p>（完）</p>
+]]></description>
+      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-410.md</link>
+      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-410.md</guid>
+      <pubDate>Mon, 31 Aug 2026 02:44:53 -0000</pubDate>
+    </item>
     <item>
       <title>科技爱好者周刊（第 409 期）：程序员的职业未来</title>
       <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
@@ -171,7 +360,7 @@
 <p>我之前读到过，动物（包括人类）的群体行为可以用两个非常简单的规则来解释：1）每个个体尽量跟上群体，2）个体之间尽量避免碰撞。</p>
 <p>-- <a href="https://community.wolfram.com/groups/-/m/t/122095">《模拟群体行为》</a></p>
 <p>3、</p>
-<p>互联网最初的设想，只是 <code>/var/ww/html</code>目录里面几个 HTML 文件，谁能想到后来竟变成了如今这样复杂的软件和内容管理系统。</p>
+<p>互联网最初的设想，只是 <code>/var/www/html</code> 目录里面几个 HTML 文件，谁能想到后来竟变成了如今这样复杂的软件和内容管理系统。</p>
 <p>-- <a href="https://brennan.day/webmaster-a-manifesto-for-everyone/">《网站管理员的宣言》</a></p>
 <p>4、</p>
 <p>拖延症患者安慰自己的方法：如果拖延解决问题的时间足够长，或许别人就会帮你解决了。</p>
@@ -185,7 +374,7 @@
 ]]></description>
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-409.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-409.md</guid>
-      <pubDate>Mon, 24 Aug 2026 00:51:11 -0000</pubDate>
+      <pubDate>Mon, 31 Aug 2026 02:44:53 -0000</pubDate>
     </item>
     <item>
       <title>科技爱好者周刊（第 408 期）：你需要知道的 AI 缓存知识</title>
@@ -976,216 +1165,6 @@
       <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-406.md</link>
       <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-406.md</guid>
       <pubDate>Mon, 03 Aug 2026 02:05:07 -0000</pubDate>
-    </item>
-    <item>
-      <title>科技爱好者周刊（第 405 期）：资源，社会公平与算力</title>
-      <description><![CDATA[<p>这里记录每周值得分享的科技内容，周五发布。</p>
-<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/10517">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（<a href="mailto:yifeng.ruan@gmail.com">yifeng.ruan@gmail.com</a>）。</p>
-<h2 id="封面图">封面图</h2>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072311.webp" /></p>
-<p>西安大明宫遗址，使用亚克力透明板绘制古代建筑，让游客在原址体验当年的场景。（<a href="https://www.zhihu.com/pin/1951269113574958756">via</a>）</p>
-<h2 id="资源社会公平与算力">资源，社会公平与算力</h2>
-<p>分享一个有趣的观点：<strong>资源太多，会造成社会不公平</strong>。我谈不上同意这个观点，就是觉得思路很奇特。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072314.webp" /></p>
-<p>这是奥地利哲学家<a href="https://caolan.uk/notes/2026-07-02_a_speed_limit_for_computers.cm">伊万·伊里奇</a>（Ivan Illich）在1973年的著作《能源与公平》（Energy and Equity ）中提出的，他认为用电量与社会公平有关。</p>
-<blockquote>
-<p>“能源和公平只能在一定程度上同时增长。人均用电量低于某个阈值时，增加用电量能够改善社会公平。高于这个阈值，能源增长就会以牺牲公平为代价。”</p>
-</blockquote>
-<p>他的意思是，让大家都能用上电，确实有助于社会公平。但是一旦电太多了，就会加剧社会的不公平。</p>
-<p>为了证明自己的观点，他举了一个更奇怪的例子：车速太快，也会加剧社会不公平。</p>
-<blockquote>
-<p>“车辆速度超过一定限度后，会造成人与人之间的距离感。它们会拉开所有人之间的距离，却只缩短少数人之间的距离。”</p>
-<p>“速度的提升不可避免地使得少数人拥有更大的马力，加剧大多数通勤者日益增长的时间紧迫感，并让他们更加感到自己落后于人。”</p>
-</blockquote>
-<p>就是说，车速快会拉开人与人的距离，但只有少数人能掌握高速交通工具，车速越快只会帮助这些人越加领先。</p>
-<p>而且，车速变快以后，时间的计量单位就缩小了。以前，时间按天计量，有了汽车以后，开始按小时计量，以后可能会按分钟计量。</p>
-<blockquote>
-<p>“似乎在世界各地，当一些车辆的速度突破 15 英里/小时（25 公里/小时）的限制后，与交通相关的时间紧迫性就开始加剧。”</p>
-</blockquote>
-<p>时间变得紧迫，也是对富有的人更有利。对于底层的人，当然也让人生变得更有价值，但也变得更累。</p>
-<p>因此，他的建议就是，<strong>应该限制车速，避免无限制地变快，不是为了交通安全，而是为了防止某些人领先太多</strong>。同理，也应该限制用电量，防止某些人掌握太多的能源。</p>
-<p>他的理论可以这样总结：一种资源发展到不再那么稀缺以后，就会落入少数人手中，这些人就会利用这种资源拉大人与人的差距，加剧社会不公平。</p>
-<p>按照这种理论，算力也是如此。开始的时候，普及算力会提高所有人的福利，改善社会公平。但是，到了一定限度之后，算力不再那么稀缺，算力越多，只会让少数人掌握更多的算力优势，加大社会不公平。</p>
-<p>所以，到了那个时候，政府有必要设置算力限制，防止少数人拥有过多的算力。</p>
-<p>我觉得，这个理论就是在说资源的分配问题，如何让每个人都能获取资源，同时防止少数人获取过多的资源。</p>
-<p>老实说，我有点悲观，觉得做不到，为了提高经济效率，就不可能保证资源的平均分配。</p>
-<h2 id="如何破坏一个组织">如何破坏一个组织</h2>
-<p>1944年，第二次世界大战正在进行。</p>
-<p>中央情报局的前身——战略情报局（OSS）秘密编写了一本小册子《简单破坏实战手册》，散发给德国和占领区民众，指导他们暗中破坏纳粹德国。</p>
-<p>2008年，这本小册子解密了，可以<a href="https://www.alephic.com/assets/sabotage/SimpleSabotage.pdf">公开下载</a>。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052701.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202605/bg2026052703.webp" /></p>
-<p>人们惊讶地<a href="https://www.alephic.com/sabotage">发现</a>，小册子的内容非常实用，完全没有过时，不仅可以破坏纳粹德国，也可以<strong>破坏任何一个组织</strong>。</p>
-<p>其中一章的主题是官僚主义：只要助长官僚主义，越严重越好，就会让组织的效率变差，难以有效运作，从而起到破坏组织的作用。</p>
-<blockquote>
-<p><strong>摧毁一个组织最有效的方法就是使其官僚化</strong>。每一次毫无意义的会议，每一份需要多个签名的表格，每一个原本只需六分钟最终完成却耗时六周的流程。层层叠叠的规章制度会扼杀实际工作。</p>
-</blockquote>
-<p>小册子列出了一些具体做法。</p>
-<ol>
-<li>绝不要自己做决定，要提交给委员会，由委员会做决定。</li>
-<li>对任何文件的具体措辞讨价还价。</li>
-<li>一遇到重要的事情，就提议召开会议。</li>
-<li>绝不通融，坚持一切严格按流程办事。</li>
-<li>文件要尽量冗长。</li>
-<li>增加办事程序和审批流程。</li>
-</ol>
-<p>只要坚持做到上面六点，就可以破坏一个组织，大到国家，小到团队。</p>
-<h2 id="科技动态">科技动态</h2>
-<p>1、<a href="https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/">Bash 汗衫</a></p>
-<p>美国 CDN 服务商 Akamai 与 UNIQLO 推出一件汗衫。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026070805.webp" /></p>
-<p>正面普普通通，背面却印着一大段代码。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026070806.webp" /></p>
-<p>仔细一看，是一个 Bash 脚本。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026070807.webp" /></p>
-<p>脚本的实际代码，都经过了 Base64 编码。</p>
-<p>有人拍了照片进行 OCR 转码，执行后是一个持续循环的正弦波，波浪状的文字为“万物和谐”（Peace for ALL）。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026070808.webp" /></p>
-<p>2、<a href="https://news.northwestern.edu/stories/2026/07/new-spinning-drone-hides-in-plain-sight">看不见的无人机</a></p>
-<p>美国西北大学的团队，研发了一款可以在人们眼前消失的无人机。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072306.webp" /></p>
-<p>我们知道，风扇高速旋转时，叶片是几乎看不见的。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072307.webp" /></p>
-<p>这个无人机就用了这个原理，机身尽量镂空，然后整体高速旋转，达到隐身效果。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072308.webp" /></p>
-<p>上图有一个无人机，正在飞行中，你能发现吗。</p>
-<p>问题是无人机的噪音很大，隐身无人机只能骗过摄像头，现场根本不可能不被注意到。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072309.webp" /></p>
-<p>3、<a href="https://finance.eastmoney.com/a/202607213815628820.html">位置口令</a></p>
-<p>高德地图推出新功能，为国内任意地点分配一个6位数字，叫做“位置口令”。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072312.webp" /></p>
-<p>你不用告诉别人具体位置，只需分享这个6位数字就可以了，更容易传播和记忆。</p>
-<p>可惜的是，这个数字是动态的，有点像“口令红包”，有效期15分钟，可延长到24小时。要是国家出台统一算法就好了，为每个地点生成一个固定不变的位置码，用处就大了。</p>
-<p>4、<a href="https://www.nytimes.com/2026/07/10/climate/fcc-space-mirror.html">太空镜</a></p>
-<p>美国政府批准了一家创业公司的计划，测试一颗卫星。该卫星将使用 18米x18米 的镜子在夜间将阳光反射回地球。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071610.webp" /></p>
-<p>该公司表示，太空镜可以使得夜间也能用太阳能发电，还能为救援人员提供照明，并照亮城市街道。</p>
-<p>他们的最终目标是将多达5万面大型反射镜送入太空。最大的一面镜子长宽各55米，据说可以提供相当于100个满月的光亮。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071609.webp" /></p>
-<p>他们计划，一面镜子的价格是每小时5000美元。</p>
-<p>随着火箭发射能力不断变强，太空中奇奇怪怪的创新项目估计会越来越多。</p>
-<h2 id="文章">文章</h2>
-<p>1、<a href="https://www.myzaker.com/article/6a60252f8e9f094b4d106689">图灵奖得主姚期智最新演讲</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072211.webp" /></p>
-<p>7月19日，姚期智在上海世界人工智能大会的思想者论坛上，发表演讲《AI 的第一性原理：人工智能的威力及其局限》，谈谈 AI 能做到什么不能做到什么。</p>
-<p>2、<a href="https://brainz.fun/blog/2026/06/01/mei-guo-zheng-fu-shi-ru-he-mei-shou-da-liang-bi-te-bi-de/">美国政府如何没收大量比特币</a>（中文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072209.webp" /></p>
-<p>新闻里经常有美国政府没收比特币，但是你想过没有，比特币放在加密的数字钱包，政府没有私钥如何能够没收。（<a href="https://github.com/ruanyf/weekly/issues/10792">@brain-zhang</a> 投稿）</p>
-<p>3、<a href="https://neciudan.dev/most-secure-way-to-store-auth-token">认证令牌的存储位置</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071611.webp" /></p>
-<p>本文认为，网站的认证令牌不应该放在 localStorage，而应该放在 Cookie。</p>
-<p>4、<a href="https://alexwlchan.net/2025/copying-sqlite-databases/">如何在服务器之间快速复制 SQLite 数据库</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202505/bg2025050409.webp" /></p>
-<p>本文介绍远程复制 SQLite 的方法。</p>
-<p>5、<a href="https://marijkeluttekes.dev/blog/articles/2025/09/03/git-exclude-a-handy-feature-you-might-not-know-about/">Git exclude 的用法</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202509/bg2025090710.webp" /></p>
-<p>有些本地文件不想提交到仓库，也不适合写入 gitignore（会影响其他人），那么就可以用 git exclude 文件。</p>
-<p>6、<a href="https://piccalil.li/blog/printing-the-web-making-webpages-look-good-on-paper/">CSS 的网页打印样式入门</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202506/bg2025062606.webp" /></p>
-<p>如果要把网页打印出来，CSS 的打印样式应该怎么设置，本文教你入门。</p>
-<h2 id="工具">工具</h2>
-<p>1、<a href="https://github.com/bruits/satteri">Satteri</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071606.webp" /></p>
-<p>一个 JS 的 Markdown 引擎，使用 Rust 语言开发，可以快速把 Markdown 语法转为 HTML，提供众多插件。</p>
-<p>2、<a href="https://asteroidos.org/">AsteroidOS</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202602/bg2026021801.webp" /></p>
-<p>智能手表的开源操作系统，不基于安卓，而是基于 Linux。</p>
-<p>3、<a href="https://www.texmacs.org">GNU TeXmacs</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072313.webp" /></p>
-<p>一个跨平台的桌面编辑器，主要用于编写科技文档，提供数学内容的“所见即所得”。</p>
-<p>4、<a href="https://elysiajs.com">Elysia</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202602/bg2026021614.webp" /></p>
-<p>一个基于 TypeScript 的轻量级 Web 框架，号称以简单易用的方式构建 Web 服务。</p>
-<p>5、<a href="https://github.com/MarSeventh/CloudFlare-ImgBed">CloudFlare-ImgBed</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072202.webp" /></p>
-<p>基于 Cloudflare 的零成本图床系统及配套桌面端，支持 Docker 和无服务器部署。（<a href="https://github.com/ruanyf/weekly/issues/10733">@MarSeventh</a> 投稿）</p>
-<p>6、<a href="https://github.com/harrisonwang/detect-radar">DetectRadar</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072203.webp" /></p>
-<p>这个工具核对当前出口 IP 地址与浏览器的时区、语言和环境特征，同时检查 WebRTC、DNS 和 IPv6 泄露，用来确认 IP 地址与你的其他网络特征一致，<a href="https://detectradar.com/">在线试用</a>。（<a href="https://github.com/ruanyf/weekly/issues/10746">@harrisonwang</a> 投稿）</p>
-<p>7、<a href="https://github.com/tianrking/Vespero">Véspero</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072204.webp" /></p>
-<p>一个代理网关，将各种出口流量放到一个 Web 控制台下管理。（<a href="https://github.com/ruanyf/weekly/issues/10757">@tianrking</a> 投稿）</p>
-<p>8、<a href="https://github.com/foursmith/vr">Foursmith VR</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072205.webp" /></p>
-<p>为手机和平面显示器打造的 VR 视频播放器。（<a href="https://github.com/ruanyf/weekly/issues/10760">@ourongxing</a> 投稿）</p>
-<p>9、<a href="https://github.com/AaronConlon/codia">Codia</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072208.webp" /></p>
-<p>开源的代码片段美化工具，<a href="https://codia.i5lin.top/try-it">在线试用</a>。（<a href="https://github.com/ruanyf/weekly/issues/10763">@AaronConlon</a> 投稿）</p>
-<p>10、<a href="https://github.com/heiheihoho1213/monto-email-builder">Email Builder</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072210.webp" /></p>
-<p>邮件模板的 React 拖拽编辑器，<a href="https://heiheihoho1213.github.io/monto-email-builder/">在线试用</a>。（<a href="https://github.com/ruanyf/weekly/issues/10807">@akira0912</a> 投稿）</p>
-<h2 id="ai-相关">AI 相关</h2>
-<p>1、<a href="https://github.com/MartinDelophy/ai-video-editor">Timeline Studio</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071805.webp" /></p>
-<p>在浏览器本地运行的视频 AI 编辑器，素材不上传到后端，具有多轨时间线、自动字幕、多语言配音、人声与伴奏分离、背景移除、智能裁剪和数字人等功能。（<a href="https://github.com/ruanyf/weekly/issues/10726">@MartinDelophy</a> 投稿）</p>
-<p>2、<a href="https://github.com/boommanpro/gaia-workflow-engine">Gaia</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072206.webp" /></p>
-<p>基于字节 <a href="https://flowgram.ai/">flowgram.ai</a> 的 AI 工作流编辑器。（<a href="https://github.com/ruanyf/weekly/issues/10761">@boommanpro</a> 投稿）</p>
-<p>3、<a href="https://github.com/Tencent/AI-Infra-Guard">AI-Infra-Guard</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072212.webp" /></p>
-<p>腾讯朱雀实验室推出的一站式 AI 安全测试平台，可以扫描 AI 应用的漏洞和安全风险，需要接入大模型。（<a href="https://github.com/ruanyf/weekly/issues/10827">@boy-hack</a> 投稿）</p>
-<p>4、<a href="https://github.com/MODSetter/SurfSense">SurfSense</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202508/bg2025083009.webp" /></p>
-<p>AI 笔记本，谷歌 NotebookLM 的开源替代品。</p>
-<h2 id="资源">资源</h2>
-<p>1、<a href="https://www.window-swap.com/">窗口交换</a>（WindowsSwap）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072201.webp" /></p>
-<p>世界各地的用户上传自家窗外的照片，你可以随机打开，也可以指定地点。</p>
-<p>2、<a href="https://shipthatcode.com/courses/build-redis">从零开始构建 Redis</a>（英文）</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071607.webp" /></p>
-<p>一个动手课程，从零开始构建一个功能齐全的 Redis 克隆，从中了解这个世界最流行数据库之一的内部工作原理。</p>
-<p>这个网站上面还有许多其他动手课程。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026071608.webp" /></p>
-<p>3、<a href="https://yoavsbg.github.io/css-flexbox-playground/">CSS Flexbox Playground</a></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202501/bg2025010601.webp" /></p>
-<p>一个练习 CSS Flex 布局的网站，可以调整各种参数，实时预览效果。</p>
-<h2 id="图片">图片</h2>
-<p>1、<a href="https://www.thisiscolossal.com/2026/07/daniel-gonzalez-matthew-reinhart-popup-book-los-anglees-library-world-record/">世界最大立体书</a></p>
-<p>美国洛杉矶中央图书馆，为了庆祝建馆100周年，制作了一本世界最大的立体书，正在图书馆大厅展出。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072301.webp" /></p>
-<p>这本书展开后尺寸为 9.45米 x 6.10米，重达一吨。</p>
-<p>它一共有两页，第一页是洛杉矶中央图书馆的大门。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072302.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072303.webp" /></p>
-<p>第二页以洛杉矶的城市天际线为背景，一棵大树立在中央，周围为各种生物，象征洛杉矶的多元文化。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072304.webp" /></p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202607/bg2026072305.webp" /></p>
-<p>2、<a href="https://www.nicchan.me/blog/the-f-off-contact-page/">联系页的设计</a></p>
-<p>很多公司的网站有一个“联系页”，让访问者通过表单留言（下图左）。</p>
-<p><img src="https://cdn.beekka.com/blogimg/asset/202512/bg2025120909.webp" /></p>
-<p>但是，有些公司的联系页是上图右边那样，潜台词就是“快滚，别来联系我”。</p>
-<h2 id="文摘">文摘</h2>
-<p>1、<a href="https://unchartedterritories.tomaspueyo.com/p/geohistory-dispatch">宗族对文明不利</a></p>
-<p>宗族指的是带有血缘和婚姻关系的几代人组成的一个集团。如果子女众多，并且互相保持世代联系，宗族的规模可能会相当庞大。</p>
-<p>仔细想想，宗族是一种相当自然的人类组织方式：你很可能更信任有血缘关系的人，而不是普通的陌生人。</p>
-<p>但是，宗族存在诸多弊端，主要是宗族内部的合作高于与外部人群的合作。宗族关系越强的社会，就越可能是人情社会。</p>
-<p>而且，宗族会扼杀人的雄心，因为你的成功会被整个宗族分享，同时你也能分享族人的成功，这会抑制个人奋斗和努力工作。</p>
-<h2 id="言论">言论</h2>
-<p>1、</p>
-<p>一加公司成立时表示：“我们将剔除手机的运营商功能、广告和无用软件，直接为科技爱好者打造终极、廉价、无预装软件的手机。”</p>
-<p>它现在说：“极客们买的手机数量不足以维持我们的生存，一旦其他手机的价格便宜10美元，他们就会立刻离开。我们必须把手机卖给普通消费者。”</p>
-<p>-- 著名美国科技网红 <a href="https://news.ycombinator.com/item?id=48945748">Marques</a>的评论，一加手机本周宣布退出欧美市场</p>
-<p>2、</p>
-<p>AI 的真正风险不在于使人懒惰，而在于让“懒惰”看起来像“高效”。花十分钟读一篇摘要，把它发到社交媒体上，你感觉自己很高效，但实际上什么都没记住。</p>
-<p>-- <a href="https://news.ycombinator.com/item?id=47555081">Hacker News 读者</a></p>
-<p>3、</p>
-<p>有人为了争夺某些原本简单明了的概念的命名权，发明了一堆新词。</p>
-<p>这样一来，在向外行解释时，根本无法清晰地传达概念，但通过这些晦涩难懂的词语，这些人就可以树立权威。</p>
-<p>-- <a href="https://alienchow.dev/post/ai_takeaways_mar_2026/">《一个 SRE 工程师的 AI 观点》</a></p>
-<p>4、</p>
-<p>建造房屋时，需要很多人参与：建筑师、土木工程师、水管工、电工、泥瓦匠、室内设计师、屋顶工、测量员、铺路工，等等。你不会指望一个人，甚至一家公司，完成所有这些工作。</p>
-<p>但是，很多公司现在招聘程序员，往往希望一个人完成所有开发工作，比如全栈程序员。</p>
-<p>-- <a href="https://0x1.pt/2025/04/06/the-insanity-of-being-a-software-engineer/">《做一个软件工程师的疯狂》</a></p>
-<h2 id="往年回顾">往年回顾</h2>
-<p><a href="https://www.ruanyifeng.com/blog/2025/07/weekly-issue-358.html">如何拯救一家濒临倒闭的创业公司</a>（#358）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2024/07/weekly-issue-308.html">工作找不到，博士能读吗？</a>（#308）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2023/06/weekly-issue-258.html">卡马克的猫</a>（#258）</p>
-<p><a href="https://www.ruanyifeng.com/blog/2022/05/weekly-issue-208.html">晋升制度的问题</a>（#208）</p>
-<p>（完）</p>
-]]></description>
-      <link>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-405.md</link>
-      <guid>https://github.com/no1xsyzy/weekly_adfree/blob/master/docs/issue-405.md</guid>
-      <pubDate>Mon, 27 Jul 2026 02:11:02 -0000</pubDate>
     </item>
   </channel>
 </rss>
